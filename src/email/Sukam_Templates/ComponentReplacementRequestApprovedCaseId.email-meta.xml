@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Component Replacement Request Approved</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Component Replacement Request Approved: {!Case.Id}</name>
+    <style>none</style>
+    <subject>Component Replacement Request Approved  :{!Service_Request__c.FSR_No__c}</subject>
+    <type>text</type>
+</EmailTemplate>

@@ -1,0 +1,2 @@
+<apex:page standardController="Component_Movement_Table__c" extensions="CMTNewOverrideController" action="{!redirt}">
+</apex:page>

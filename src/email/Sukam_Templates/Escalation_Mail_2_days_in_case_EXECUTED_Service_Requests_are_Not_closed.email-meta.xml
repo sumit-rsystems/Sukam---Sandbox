@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This mail will be sent in case the distributor does not close the SRs once they have been EXECUTED</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Escalation Mail (2 days) in case &quot;Executed&quot; Service Requests are Not closed</name>
+    <style>none</style>
+    <subject>Reminder to Close &quot;Executed&quot; Service Requests</subject>
+    <type>text</type>
+</EmailTemplate>

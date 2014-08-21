@@ -1,0 +1,213 @@
+<apex:page controller="clsPriceBook" renderAs="pdf">
+    
+    <left>
+        <apex:image id="theName" value="{!$Resource.SuKam}" />
+    </left>
+    <div style="text-align:center;font-weight:bold;text-decoration:uppercase">
+    
+            <apex:OutputText value="SU-KAM Power Systems Limited" />
+            &nbsp;<br />
+            <apex:OutputText value="54, Udyog Vihar Phase-VI, Sector-37, Gurgaon-122001" />
+            &nbsp;<br />
+    </div>
+    &nbsp;<br />    
+    <div style="text-align:left;font-weight:bold;text-decoration:uppercase">
+            <apex:outputText value="{!SelRefCode}" id="SF_000005"   rendered="{!!allProdCatSelected}">
+                &nbsp;<br /> 
+                &nbsp;<br />
+            </apex:outputText>
+            
+    </div>
+    
+    <div style="text-align:center;text-decoration:underline;font-weight:bold;text-decoration:uppercase">
+        <apex:outputText value="{!SelPriceListLine}" id="SF_000004"/>
+        
+    </div>
+    &nbsp;<br />
+    &nbsp;<br />
+    &nbsp;<br />    
+    <apex:pageBlock > 
+    <div style = "font-size:8px">
+        <apex:PageBlockSection columns="1" >
+            <apex:pageBlockTable value="{!custPBooks}" var="CustPBook" id="pgBlkTabSrch">
+                <apex:column width="100px">  
+                    <apex:facet name="header">  
+                        S No.
+                    </apex:facet>   
+                    <apex:OutputText value="{!CustPBook.sno}" />
+                </apex:column>
+                <apex:column width="350px">  
+                    <apex:facet name="header">
+                        Model
+                    </apex:facet>  
+                    <apex:OutputText value="{!CustPBook.pb.Model__c}"/>
+                </apex:column>
+                <apex:column width="150px" rendered="{!allProdCatSelected}">  
+                    <apex:facet name="header">
+                        Ref. Code
+                    </apex:facet>  
+                    <apex:OutputText value="{!CustPBook.pb.Reference_Code__c}"/>
+                </apex:column>
+                <apex:column width="150px" rendered="{!allProdCatSelected}">  
+                    <apex:facet name="header">
+                        Eff. date
+                    </apex:facet>  
+                    <apex:OutputText value="{!CustPBook.pb.Effective_Date__c}"/>
+                </apex:column>
+                <!--<apex:column width="350px">  
+                    <apex:facet name="header">
+                        Rating
+                    </apex:facet>  
+                    <apex:OutputText value="{!CustPBook.pb.Rating__c}"/>
+                </apex:column>                  
+                <apex:column width="600px">  
+                    <apex:facet name="header">
+                        DC BUS
+                    </apex:facet>  
+                    <apex:OutputText value="{!CustPBook.pb.DC_BUS__c}"/>
+                </apex:column>-->
+                <apex:column width="350px">  
+                    <apex:facet name="header">
+                        Capacity
+                    </apex:facet>  
+                    <apex:OutputText value="{!CustPBook.pb.Capacity__c}"/>
+                </apex:column>                 
+                <apex:column width="350px" rendered="{!bIOParam}">  
+                    <apex:facet name="header">
+                        I/O Param.
+                    </apex:facet>  
+                    <apex:OutputText value="{!CustPBook.pb.Input_Output_PARAMETER__c}"/>
+                </apex:column>                  
+                <apex:column width="300px">  
+                    <apex:facet name="header">
+                        Warranty
+                    </apex:facet>  
+                    <apex:OutputText value="{!CustPBook.pb.Warranty__c}"/>
+                </apex:column>
+                
+                <apex:column style="text-align:right" width="100px" rendered="{!bLevel3Sel}">  
+                    <apex:facet name="header">
+                        <div style="text-align:center;">
+                        Basic Price <BR/> (Rs.)
+                        </div>
+                    </apex:facet>
+                    <apex:OutputText style="text-align:right" value="{0, number, ##,##,###.00}">
+                        <apex:param value="{!CustPBook.pb.basic__c}"/>
+                    </apex:OutputText>                              
+                </apex:column>     
+                           
+                <!--                                         
+                <apex:column style="text-align:right" width="15px">  
+                
+                </apex:column>
+                
+                <apex:column width="100px" rendered="{!IndivSelect}" style="text-align:right;">  
+                    <apex:facet name="header">
+                        <div style="text-align:center;">
+                        {!SelFieldLabel} <BR/> (Rs.)
+                        </div>
+                    </apex:facet>
+                    <apex:OutputText style="text-align:right" value="{0, number, ##,##,###.00}">
+                        <apex:param value="{!CustPBook.currFieldValue}"/>
+                    </apex:OutputText>                                                             
+                </apex:column> -->
+                
+                                                                            
+                <apex:column style="text-align:right" width="15px">  
+                
+                </apex:column>
+                <apex:column width="100px" rendered="{!bLevel1Sel}" style="text-align:right;">  
+                    <apex:facet name="header">
+                        <div style="text-align:center;">
+                        Distributor Price <BR/> (Rs.)
+                        </div>
+                    </apex:facet>   
+                    <apex:OutputText style="text-align:right" value="{0, number, ##,##,###.00}">
+                        <apex:param value="{!CustPBook.pb.Distributor__c}"/>
+                    </apex:OutputText>                              
+                </apex:column>  
+
+                <apex:column style="text-align:right" width="15px">  
+                </apex:column>
+ 
+                 <apex:column width="100px" rendered="{!bLevel2Sel}" style="text-align:right;">   
+                    <apex:facet name="header">
+                        <div style="text-align:center;">
+                        Dealer Price<BR/> (Rs.)
+                        </div>
+                    </apex:facet>   
+                    <apex:OutputText style="text-align:right" value="{0, number, ##,##,###.00}">
+                        <apex:param value="{!CustPBook.pb.Dealer__c}"/>
+                    </apex:OutputText>                          
+                </apex:column>
+                                               
+                <apex:column style="text-align:right" width="15px">  
+                
+                </apex:column>
+                
+                <apex:column width="100px" style="text-align:right;">  
+                    <apex:facet name="header">
+                        <div style="text-align:center;">
+                        MRP<BR/> (Rs.)
+                        </div>
+                    </apex:facet>   
+                    <apex:OutputText style="text-align:right;" value="{0, number, ##,##,###.00}">
+                        <apex:param value="{!CustPBook.pb.MRP__c}" />
+                    </apex:OutputText>
+                </apex:column> 
+                                                              
+            </apex:pageBlockTable>          
+        </apex:PageBlockSection>
+    </div>             
+    </apex:pageBlock>
+    &nbsp;<br />
+    <!--<div style="text-align:left;text-decoration:underline;font-weight:bold;">
+        <apex:outputText value="NOTE" id="SF_000003"/>
+    </div>
+    &nbsp;<br />
+    &nbsp;<br />
+    <div style="text-align:left;text-decoration:none">
+        <apex:outputText value="Prices mentioned above do not include the price of Batteries and Trolleys" id="SF_000002"/>
+    </div>-->
+    &nbsp;<br />
+    &nbsp;<br />
+    &nbsp;<br />
+    <div style="text-align:left;text-decoration:underline;font-weight:bold;">
+                <apex:outputText value="Terms & Conditions :" id="SF_000001"/>
+    </div>
+    &nbsp;<br />
+    &nbsp;<br />
+    <div style="text-align:left;">
+        <apex:outputText value="1.  All products are manufactured as per Su-Kam design guidelines." id="SF_0001" />    &nbsp;<br />
+        <apex:outputText value="2.  This Price List supersedes any other Price List issued earlier." id="SF_0002" />    &nbsp;<br />
+        <apex:outputText value="3.  Prices are subjected to change without prior notice." id="SF_0003" />    &nbsp;<br />
+        <apex:outputText value="4.  Above mentioned prices are Ex-Works prices and inclusive of ED/CVD only." id="SF_0004" />    &nbsp;<br />
+        <apex:outputText value="5.  Prices are inclusive of VAT / Local Sales Tax (LST) and Duty." id="SF_0005" />    &nbsp;<br />
+        <apex:outputText value="6.  OCTROI/ Entry tax and any other Government Levies shall be charged extra as applicable." id="SF_0006" />    &nbsp;<br />
+        <apex:outputText value="7.  100% advance payment along with confirmed purchase order." id="SF_0007" />    &nbsp;<br />
+        <apex:outputText value="8.  Standard Packing, Forwarding, Freight charges are included in the above prices within city limits." id="SF_0008" />    &nbsp;<br />
+        <apex:outputText value="9.  Installation charges are extra as applicable." id="SF_0009" />    &nbsp;<br />
+        <apex:outputText value="10. Cash Discount and Turnover Discount as per company policies. Terms & Conditions apply" id="SF_0010" />    &nbsp;<br />
+        <apex:outputText value="11. Delivery shall be made either Ex-Stock or within 4-6 weeks from the date of receipt of confirmed purchase order." id="SF_0011" />    &nbsp;<br />
+    </div>
+    &nbsp;<br />
+    &nbsp;<br />
+    &nbsp;<br />
+    &nbsp;<br />
+    &nbsp;<br />
+    <div style="text-align:left;font-weight:bold;">
+        <apex:outputText value="This is a system generated document and does not require any signature." id="SF_000021"/>
+    </div>      
+    <!--
+    <div style="text-align:left;font-weight:bold;">
+                <apex:outputText value="For SU-KAM POWER SYSTEMS LTD." id="SF_000020"/>
+    </div>
+    &nbsp;<br />
+    &nbsp;<br />
+    &nbsp;<br />
+    &nbsp;<br />    
+    <div style="text-align:left;font-weight:bold;">
+                <apex:outputText value="AUTHORISED SIGNATORY" id="SF_000021"/>
+    </div> 
+    -->  
+</apex:page>

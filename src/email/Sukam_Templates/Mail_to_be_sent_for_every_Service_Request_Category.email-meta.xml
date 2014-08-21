@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Mail to be sent if Service Request Category is Category 1</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Mail to be sent for every Service Request Category</name>
+    <style>none</style>
+    <subject>Email Notification: FSR No. {!Service_Request__c.FSR_No__c}has been created with the category &quot;{!Service_Request__c.Category__c}&quot;</subject>
+    <type>text</type>
+</EmailTemplate>

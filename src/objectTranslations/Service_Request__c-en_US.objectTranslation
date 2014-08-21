@@ -1,0 +1,3855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Service Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Service Request</value>
+    </caseValues>
+    <fields>
+        <label><!-- AMC Amount --></label>
+        <name>AMC_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- AMC Created --></label>
+        <name>AMC_Created__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AMC Status --></label>
+        <name>AMC_Status__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AMC Type --></label>
+        <name>AMC_Type__c</name>
+        <picklistValues>
+            <masterLabel>Comprehensive</masterLabel>
+            <translation><!-- Comprehensive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Comprehensive</masterLabel>
+            <translation><!-- Non-Comprehensive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Service Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Action Taken --></label>
+        <name>Action_Taken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent_Name --></label>
+        <name>Agent_Name__c</name>
+        <picklistValues>
+            <masterLabel>AARTI</masterLabel>
+            <translation><!-- AARTI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANUJ</masterLabel>
+            <translation><!-- ANUJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARPIT</masterLabel>
+            <translation><!-- ARPIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASHISH</masterLabel>
+            <translation><!-- ASHISH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BALBIR</masterLabel>
+            <translation><!-- BALBIR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHAWNA</masterLabel>
+            <translation><!-- BHAWNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEVIKA</masterLabel>
+            <translation><!-- DEVIKA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HIMANSHU</masterLabel>
+            <translation><!-- HIMANSHU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAYANT</masterLabel>
+            <translation><!-- JAYANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAMTA</masterLabel>
+            <translation><!-- MAMTA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAGESH</masterLabel>
+            <translation><!-- NAGESH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POOJA BHARDWAJ</masterLabel>
+            <translation><!-- POOJA BHARDWAJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRAMOD BHATT</masterLabel>
+            <translation><!-- PRAMOD BHATT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRATHNA</masterLabel>
+            <translation><!-- PRATHNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRAVIN</masterLabel>
+            <translation><!-- PRAVIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAGHU CHAUDHARY</masterLabel>
+            <translation><!-- RAGHU CHAUDHARY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAHUL DAS</masterLabel>
+            <translation><!-- RAHUL DAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAJESH VERMA</masterLabel>
+            <translation><!-- RAJESH VERMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RANDHIR</masterLabel>
+            <translation><!-- RANDHIR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REKHA</masterLabel>
+            <translation><!-- REKHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAGAR BISHT</masterLabel>
+            <translation><!-- SAGAR BISHT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANDIP DAS</masterLabel>
+            <translation><!-- SANDIP DAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANJAY KUMAR</masterLabel>
+            <translation><!-- SANJAY KUMAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAPNA</masterLabel>
+            <translation><!-- SAPNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SATENDRA</masterLabel>
+            <translation><!-- SATENDRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUMAN</masterLabel>
+            <translation><!-- SUMAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VINEETA RAWAT</masterLabel>
+            <translation><!-- VINEETA RAWAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIVEK SHARMA</masterLabel>
+            <translation><!-- VIVEK SHARMA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Aging 1 --></label>
+        <name>Aging_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aging 2 --></label>
+        <name>Aging_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alternate FSR No. --></label>
+        <name>Alternate_FSR_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Request Status --></label>
+        <name>Approval_Request_Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Action Taken</masterLabel>
+            <translation><!-- Action Taken --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attended Date &amp; Time --></label>
+        <name>Attended_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Name --></label>
+        <name>Bank_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Basic Total --></label>
+        <name>Basic_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Battery Approval Date --></label>
+        <name>Battery_Approval_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Cust --></label>
+        <name>Bill_To_Cust__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Location Type --></label>
+        <name>Branch_Location_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- CALL SUB STATUS --></label>
+        <name>CALL_SUB_STATUS__c</name>
+        <picklistValues>
+            <masterLabel>APPROVAL ON HOLD</masterLabel>
+            <translation><!-- APPROVAL ON HOLD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APPROVED</masterLabel>
+            <translation><!-- APPROVED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CUSTOMER NOT AVAILABLE</masterLabel>
+            <translation><!-- CUSTOMER NOT AVAILABLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CUSTOMER REFUSED</masterLabel>
+            <translation><!-- CUSTOMER REFUSED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISAPPROVED</masterLabel>
+            <translation><!-- DISAPPROVED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOOR LOCK</masterLabel>
+            <translation><!-- DOOR LOCK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DUPLICATE CALL</masterLabel>
+            <translation><!-- DUPLICATE CALL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NO POWER</masterLabel>
+            <translation><!-- NO POWER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER BRAND PRODUCT</masterLabel>
+            <translation><!-- OTHER BRAND PRODUCT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHERS</masterLabel>
+            <translation><!-- OTHERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHERS-PENDING</masterLabel>
+            <translation><!-- OTHERS-PENDING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PART PENDING</masterLabel>
+            <translation><!-- PART PENDING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDING FOR PJP</masterLabel>
+            <translation><!-- PENDING FOR PJP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDING FOR REPLACEMENT</masterLabel>
+            <translation><!-- PENDING FOR REPLACEMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REFER TO TRC</masterLabel>
+            <translation><!-- REFER TO TRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TECHANICAL PROBLEM</masterLabel>
+            <translation><!-- TECHANICAL PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WRONG ADDRESS/ INVALID CONTACT No.</masterLabel>
+            <translation><!-- WRONG ADDRESS/ INVALID CONTACT No. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Call Type --></label>
+        <name>CALL_TYPE__c</name>
+        <picklistValues>
+            <masterLabel>COMPANY STOCK SET</masterLabel>
+            <translation><!-- COMPANY STOCK SET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPLAIN DEALER</masterLabel>
+            <translation><!-- COMPLAIN DEALER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPLAIN END USER</masterLabel>
+            <translation><!-- COMPLAIN END USER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEALER STOCK SET</masterLabel>
+            <translation><!-- DEALER STOCK SET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FREE SERVICE CAMP</masterLabel>
+            <translation><!-- FREE SERVICE CAMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GENERAL VISIT</masterLabel>
+            <translation><!-- GENERAL VISIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM VISIT</masterLabel>
+            <translation><!-- PM VISIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRODUCT SALE</masterLabel>
+            <translation><!-- PRODUCT SALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRC REPAIR</masterLabel>
+            <translation><!-- TRC REPAIR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CIN No. --></label>
+        <name>CIN_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case City --></label>
+        <name>Case_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Country --></label>
+        <name>Case_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case State --></label>
+        <name>Case_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Street --></label>
+        <name>Case_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Zip --></label>
+        <name>Case_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Amount --></label>
+        <name>Cash_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alarming Reason --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Battery Blast</masterLabel>
+            <translation><!-- Battery Blast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Battery Bulging</masterLabel>
+            <translation><!-- Battery Bulging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Battery smells(high fume release)</masterLabel>
+            <translation><!-- Battery smells(high fume release) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burn Smell</masterLabel>
+            <translation><!-- Burn Smell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shock problem in inverter</masterLabel>
+            <translation><!-- Shock problem in inverter --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cheque Amount --></label>
+        <name>Cheque_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cheque No. --></label>
+        <name>Cheque_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Case --></label>
+        <name>Close_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/Time Closed --></label>
+        <name>ClosedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Date Format --></label>
+        <name>Closed_Date_Format__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name : Billing City --></label>
+        <name>Company_Name_Billing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name : Mobile --></label>
+        <name>Company_Name_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name : Phone --></label>
+        <name>Company_Name_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complain Type --></label>
+        <name>Complain_Type__c</name>
+        <picklistValues>
+            <masterLabel>ADDITIONAL SERVICE</masterLabel>
+            <translation><!-- ADDITIONAL SERVICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPLAIN</masterLabel>
+            <translation><!-- COMPLAIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPLAIN STOCK SET</masterLabel>
+            <translation><!-- COMPLAIN STOCK SET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRODUCT SALE</masterLabel>
+            <translation><!-- PRODUCT SALE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Completion Date &amp; Time --></label>
+        <name>Completion_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component Bill No. --></label>
+        <name>Component_Bill_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component Charges --></label>
+        <name>Component_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component Tax Amount --></label>
+        <name>Component_Tax_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component Tax Rate --></label>
+        <name>Component_Tax_Rate_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component Tax Rate --></label>
+        <name>Component_Tax_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContactPhone --></label>
+        <name>ContactPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email --></label>
+        <name>Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Fax --></label>
+        <name>Contact_Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Mobile No. --></label>
+        <name>Contact_Mobile_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone No. --></label>
+        <name>Contact_Phone_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone --></label>
+        <name>Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Service Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Month --></label>
+        <name>Created_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer ID --></label>
+        <name>Customer_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Mobile No. --></label>
+        <name>Customer_Mobile_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/Time Opened --></label>
+        <name>Date_Time_Opened__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Name --></label>
+        <name>Dealer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount % in Component Charges --></label>
+        <name>Discount_in_Component_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount % in Service Charges --></label>
+        <name>Discount_in_Service_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- ERP Service Type --></label>
+        <name>ERP_Service_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email To Case --></label>
+        <name>Email_To_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Value of Service Request --></label>
+        <name>Estimated_Value_of_Service_Request__c</name>
+        <picklistValues>
+            <masterLabel>Above INR 50,000</masterLabel>
+            <translation><!-- Above INR 50,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upto INR 50,000</masterLabel>
+            <translation><!-- Upto INR 50,000 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FSR No. --></label>
+        <name>FSR_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSR Trig --></label>
+        <name>FSR_Trig__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grand Total --></label>
+        <name>Grand_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>Group__c</name>
+        <picklistValues>
+            <masterLabel>LA BATTERY</masterLabel>
+            <translation><!-- LA BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMF BATTERY</masterLabel>
+            <translation><!-- SMF BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAR BATTERY</masterLabel>
+            <translation><!-- SOLAR BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TUBULAR BATTERY</masterLabel>
+            <translation><!-- TUBULAR BATTERY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interim Approval --></label>
+        <name>Interim_Approval__c</name>
+        <picklistValues>
+            <masterLabel>Accept</masterLabel>
+            <translation><!-- Accept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accept 2</masterLabel>
+            <translation><!-- Accept 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reject</masterLabel>
+            <translation><!-- Reject --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invoice No. Available --></label>
+        <name>Invoice_No_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- LAst modified --></label>
+        <name>LAst_modified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc. Component Charges Remark --></label>
+        <name>Misc_Component_Charges_Remark__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc. Component Charges --></label>
+        <name>Misc_Component_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc. Service Charges Remark --></label>
+        <name>Misc_Service_Charges_Remark__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Basic CC Amount --></label>
+        <name>Net_Basic_CC_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Basic SC Amount --></label>
+        <name>Net_Basic_SC_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- OPERATING UNIT --></label>
+        <name>OPERATING_UNIT__c</name>
+        <picklistValues>
+            <masterLabel>SU-KAM POWER SYSTEMS LIMITED</masterLabel>
+            <translation><!-- SU-KAM POWER SYSTEMS LIMITED --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Origin --></label>
+        <name>Origin__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walk In</masterLabel>
+            <translation><!-- Walk In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other Expenses --></label>
+        <name>Other_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Owner --></label>
+        <name>Owner_Name__c</name>
+        <relationshipLabel><!-- Service Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- ** --></help>
+        <label><!-- Problem Observed By Engineer --></label>
+        <name>PROBLEM_OBSERVED__c</name>
+        <picklistValues>
+            <masterLabel>001 - SYSTEM NOT WORKING ON MAINS</masterLabel>
+            <translation><!-- 001 - SYSTEM NOT WORKING ON MAINS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>002 - FUSE BLOWN      AC</masterLabel>
+            <translation><!-- 002 - FUSE BLOWN      AC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>003 - FUSE HOLDER LOOSE/ MELT PROBLEM</masterLabel>
+            <translation><!-- 003 - FUSE HOLDER LOOSE/ MELT PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>004 - SYSTEM ON BUT NO OUTPUT</masterLabel>
+            <translation><!-- 004 - SYSTEM ON BUT NO OUTPUT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>005 - SYSTEM DEAD</masterLabel>
+            <translation><!-- 005 - SYSTEM DEAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>006 - MOSFET BURNT</masterLabel>
+            <translation><!-- 006 - MOSFET BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>007 - BACK UP PROBLEM</masterLabel>
+            <translation><!-- 007 - BACK UP PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>008 - DC MCB TRIPPS</masterLabel>
+            <translation><!-- 008 - DC MCB TRIPPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>009 - ON/OFF SWITCH FAULTY</masterLabel>
+            <translation><!-- 009 - ON/OFF SWITCH FAULTY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>010 - SYSTEM SHOWS LOW BATTERY</masterLabel>
+            <translation><!-- 010 - SYSTEM SHOWS LOW BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>011 - SYSTEM SHOWS OVER LOAD</masterLabel>
+            <translation><!-- 011 - SYSTEM SHOWS OVER LOAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>012 - CONNECTOR BURNT</masterLabel>
+            <translation><!-- 012 - CONNECTOR BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>013 - CARD BURNT</masterLabel>
+            <translation><!-- 013 - CARD BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>014 - CHANGEOVER PROBLEM</masterLabel>
+            <translation><!-- 014 - CHANGEOVER PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>015 - FAN NOT WORKING</masterLabel>
+            <translation><!-- 015 - FAN NOT WORKING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>016 - LED DISPLAY NOT WORKING</masterLabel>
+            <translation><!-- 016 - LED DISPLAY NOT WORKING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>017 - SYSTEM GENERATES HUMMING SOUND ( TRANSFORMER )</masterLabel>
+            <translation><!-- 017 - SYSTEM GENERATES HUMMING SOUND ( TRANSFORMER ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>018 - SYSTEM GENERATES  SOUND (  FAN )</masterLabel>
+            <translation><!-- 018 - SYSTEM GENERATES  SOUND (  FAN ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>019 - FLUCTUATION AT I/P OR O/P</masterLabel>
+            <translation><!-- 019 - FLUCTUATION AT I/P OR O/P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>020 - MAINS MCB TRIPPS</masterLabel>
+            <translation><!-- 020 - MAINS MCB TRIPPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>021 - CHARGING CONTINUSELY</masterLabel>
+            <translation><!-- 021 - CHARGING CONTINUSELY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>022 - FRONT PANEL DAMAGE</masterLabel>
+            <translation><!-- 022 - FRONT PANEL DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>023 - SYSTEM SHOWS OVER TEMPERATURE</masterLabel>
+            <translation><!-- 023 - SYSTEM SHOWS OVER TEMPERATURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>024 - SPARKING AT I/P AND O/P CONNECTIONS</masterLabel>
+            <translation><!-- 024 - SPARKING AT I/P AND O/P CONNECTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>025 - CARD REPLACED</masterLabel>
+            <translation><!-- 025 - CARD REPLACED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>026 - SHOCKING PROBLEM</masterLabel>
+            <translation><!-- 026 - SHOCKING PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>027 - SYSTEM OUTPUT VOLTAGE LOW</masterLabel>
+            <translation><!-- 027 - SYSTEM OUTPUT VOLTAGE LOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>028 - SYSTEM OUTPUT VOLTAGE HIGH</masterLabel>
+            <translation><!-- 028 - SYSTEM OUTPUT VOLTAGE HIGH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>029 - CABINET DAMAGE</masterLabel>
+            <translation><!-- 029 - CABINET DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>030 - SYSTEM BURNT</masterLabel>
+            <translation><!-- 030 - SYSTEM BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>031 - NOT CHARGING BATTERY</masterLabel>
+            <translation><!-- 031 - NOT CHARGING BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>032 - MAIN TRANSFORMER BURNT</masterLabel>
+            <translation><!-- 032 - MAIN TRANSFORMER BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>033 - SYSTEM TAKING HIGH I/P CURRENT</masterLabel>
+            <translation><!-- 033 - SYSTEM TAKING HIGH I/P CURRENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>034 - NO LOAD SHUT DOWN</masterLabel>
+            <translation><!-- 034 - NO LOAD SHUT DOWN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>035 - INPUT LEAD FAULTY</masterLabel>
+            <translation><!-- 035 - INPUT LEAD FAULTY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>036 -  OUTPUT SOCKET DAMAGE</masterLabel>
+            <translation><!-- 036 -  OUTPUT SOCKET DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>037 - SYSTEM NOT WORKING ON BATTERY</masterLabel>
+            <translation><!-- 037 - SYSTEM NOT WORKING ON BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>038 - AMC VISIT</masterLabel>
+            <translation><!-- 038 - AMC VISIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>039 - SITE VISIT</masterLabel>
+            <translation><!-- 039 - SITE VISIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>040 - LOOSE CONNECTIONS</masterLabel>
+            <translation><!-- 040 - LOOSE CONNECTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>041 - BOOTING PROBLEM</masterLabel>
+            <translation><!-- 041 - BOOTING PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>042 - FUSE BLOWN      DC</masterLabel>
+            <translation><!-- 042 - FUSE BLOWN      DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>043 - SYSTEM SHOWS SHORT CIRCUIT</masterLabel>
+            <translation><!-- 043 - SYSTEM SHOWS SHORT CIRCUIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>044 - TRANSIT DAMAGE</masterLabel>
+            <translation><!-- 044 - TRANSIT DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>045 - LCD HANG</masterLabel>
+            <translation><!-- 045 - LCD HANG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>046 - IGBT FAULTY</masterLabel>
+            <translation><!-- 046 - IGBT FAULTY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>047 - SCR FAULTY</masterLabel>
+            <translation><!-- 047 - SCR FAULTY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>048 - ROTARY SWITCH NOT WORKING</masterLabel>
+            <translation><!-- 048 - ROTARY SWITCH NOT WORKING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>049 - HRC FUSE</masterLabel>
+            <translation><!-- 049 - HRC FUSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>050 - CURRENT TRANSFORMER PROBLEM</masterLabel>
+            <translation><!-- 050 - CURRENT TRANSFORMER PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>051 - SENSING TRANSFORMER</masterLabel>
+            <translation><!-- 051 - SENSING TRANSFORMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>052 - I/P AVAILABLE BUT SYSTEMS RUNNING ON BATTERY</masterLabel>
+            <translation><!-- 052 - I/P AVAILABLE BUT SYSTEMS RUNNING ON BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>053 - MICRO IC PROBLEM</masterLabel>
+            <translation><!-- 053 - MICRO IC PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>054 - DSP HANG</masterLabel>
+            <translation><!-- 054 - DSP HANG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>055 - MOV BURNT</masterLabel>
+            <translation><!-- 055 - MOV BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>056 - MOV CUT</masterLabel>
+            <translation><!-- 056 - MOV CUT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>057 - INVERTER OTHER BRAND</masterLabel>
+            <translation><!-- 057 - INVERTER OTHER BRAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>058 - BATTERY LEAD PROBLEM</masterLabel>
+            <translation><!-- 058 - BATTERY LEAD PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>059 - HOUSE INTERNAL WIRING PROBLEM</masterLabel>
+            <translation><!-- 059 - HOUSE INTERNAL WIRING PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>060 - CARD REPAIRED</masterLabel>
+            <translation><!-- 060 - CARD REPAIRED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>061 - SYSTEM REPLACED</masterLabel>
+            <translation><!-- 061 - SYSTEM REPLACED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>062 - SYSTEM RE-START</masterLabel>
+            <translation><!-- 062 - SYSTEM RE-START --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>063 - NO PROBLEM  FOUND</masterLabel>
+            <translation><!-- 063 - NO PROBLEM  FOUND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>064 - CRYSTAL PROBLEM FOUND</masterLabel>
+            <translation><!-- 064 - CRYSTAL PROBLEM FOUND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>065 - PRODUCT SALE</masterLabel>
+            <translation><!-- 065 - PRODUCT SALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>066 - INSTALLATION</masterLabel>
+            <translation><!-- 066 - INSTALLATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>067 - COMPONENT SALE</masterLabel>
+            <translation><!-- 067 - COMPONENT SALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1a - PHYSICAL DEFECT - BODY CRACK / DAMAGED</masterLabel>
+            <translation><!-- 1a - PHYSICAL DEFECT - BODY CRACK / DAMAGED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1b - PHYSICAL DEFECT - LID CRACK / DAMAGED</masterLabel>
+            <translation><!-- 1b - PHYSICAL DEFECT - LID CRACK / DAMAGED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1c - PHYSICAL DEFECT - POSITIVE WIRE / POLE DISCONNECTED / BROKEN</masterLabel>
+            <translation><!-- 1c - PHYSICAL DEFECT - POSITIVE WIRE / POLE DISCONNECTED / BROKEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1d - PHYSICAL DEFECT - NEGATIVE WIRE / POLE DISCONNECTED / BROKEN</masterLabel>
+            <translation><!-- 1d - PHYSICAL DEFECT - NEGATIVE WIRE / POLE DISCONNECTED / BROKEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1e - PHYSICAL DEFECT - CONTAINER BULGED</masterLabel>
+            <translation><!-- 1e - PHYSICAL DEFECT - CONTAINER BULGED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1f - PHYSICAL DEFECT - BATTERY BURST DURING CHARGING</masterLabel>
+            <translation><!-- 1f - PHYSICAL DEFECT - BATTERY BURST DURING CHARGING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1g - PHYSICAL DEFECT - POSITIVE TERMINAL LOW</masterLabel>
+            <translation><!-- 1g - PHYSICAL DEFECT - POSITIVE TERMINAL LOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1h - PHYSICAL DEFECT - NEGATIVE TERMINAL LOW</masterLabel>
+            <translation><!-- 1h - PHYSICAL DEFECT - NEGATIVE TERMINAL LOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1i - PHYSICAL DEFECT - BOTH TERMINAL LOW</masterLabel>
+            <translation><!-- 1i - PHYSICAL DEFECT - BOTH TERMINAL LOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2a - PART MISSING / DEFECT - GAS TUBE MISSING</masterLabel>
+            <translation><!-- 2a - PART MISSING / DEFECT - GAS TUBE MISSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2b - PART MISSING / DEFECT - WARRANTY CARD MISSING</masterLabel>
+            <translation><!-- 2b - PART MISSING / DEFECT - WARRANTY CARD MISSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2c - PART MISSING / DEFECT - SL. NO PUNCH DEFECTIVE</masterLabel>
+            <translation><!-- 2c - PART MISSING / DEFECT - SL. NO PUNCH DEFECTIVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2d - PART MISSING / DEFECT - SCREEN PRINT DEFECTIVE</masterLabel>
+            <translation><!-- 2d - PART MISSING / DEFECT - SCREEN PRINT DEFECTIVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3a - LEAKAGE - LEAKAGE THROUGH CONTAINER</masterLabel>
+            <translation><!-- 3a - LEAKAGE - LEAKAGE THROUGH CONTAINER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3b - LEAKAGE - LEAKAGE THROUGH CONTAINER &amp; LID JOINT</masterLabel>
+            <translation><!-- 3b - LEAKAGE - LEAKAGE THROUGH CONTAINER &amp; LID JOINT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3c - LEAKAGE - LEAKAGE THROUGH VENTING</masterLabel>
+            <translation><!-- 3c - LEAKAGE - LEAKAGE THROUGH VENTING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3d - LEAKAGE - LEAKAGE THROUGH TERMINAL</masterLabel>
+            <translation><!-- 3d - LEAKAGE - LEAKAGE THROUGH TERMINAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4a - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 1ST CELL</masterLabel>
+            <translation><!-- 4a - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 1ST CELL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4b - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 2ND CELL</masterLabel>
+            <translation><!-- 4b - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 2ND CELL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4c - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 3RD CELL</masterLabel>
+            <translation><!-- 4c - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 3RD CELL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4d - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 4TH CELL</masterLabel>
+            <translation><!-- 4d - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 4TH CELL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4e - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 5TH CELL</masterLabel>
+            <translation><!-- 4e - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 5TH CELL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4f - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 6TH CELL</masterLabel>
+            <translation><!-- 4f - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 6TH CELL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4g - ELECTROLYTE - LOW SPECIFIC GRAVITY IN ALL CELLS</masterLabel>
+            <translation><!-- 4g - ELECTROLYTE - LOW SPECIFIC GRAVITY IN ALL CELLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4h - ELECTROLYTE - ELECTROLYTE LEVEL LOW</masterLabel>
+            <translation><!-- 4h - ELECTROLYTE - ELECTROLYTE LEVEL LOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4i - ELECTROLYTE - ELECTROLYTE DISCOLOURED</masterLabel>
+            <translation><!-- 4i - ELECTROLYTE - ELECTROLYTE DISCOLOURED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5a - O.C.V - ZERO O.C.V</masterLabel>
+            <translation><!-- 5a - O.C.V - ZERO O.C.V --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5b - O.C.V - LOW O.C.V (&lt;12.3 VOLT IN CHARGED CONDITION)</masterLabel>
+            <translation><!-- 5b - O.C.V - LOW O.C.V (&lt;12.3 VOLT IN CHARGED CONDITION) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6a - NOT CHARGING - LOW T.O.C VOLTAGE (&lt;14.0 VOLTS)</masterLabel>
+            <translation><!-- 6a - NOT CHARGING - LOW T.O.C VOLTAGE (&lt;14.0 VOLTS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6b - NOT CHARGING - HIGH T.O.C VOLTAGE (&gt;17.5 VOLTS)</masterLabel>
+            <translation><!-- 6b - NOT CHARGING - HIGH T.O.C VOLTAGE (&gt;17.5 VOLTS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6c - NOT CHARGING - 1ST CELL NOT GASSING</masterLabel>
+            <translation><!-- 6c - NOT CHARGING - 1ST CELL NOT GASSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6d - NOT CHARGING - 2ND CELL NOT GASSING</masterLabel>
+            <translation><!-- 6d - NOT CHARGING - 2ND CELL NOT GASSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6e - NOT CHARGING - 3RD CELL NOT GASSING</masterLabel>
+            <translation><!-- 6e - NOT CHARGING - 3RD CELL NOT GASSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6f - NOT CHARGING - 4TH CELL NOT GASSING</masterLabel>
+            <translation><!-- 6f - NOT CHARGING - 4TH CELL NOT GASSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6g - NOT CHARGING - 5TH CELL NOT GASSING</masterLabel>
+            <translation><!-- 6g - NOT CHARGING - 5TH CELL NOT GASSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6h - NOT CHARGING - 6TH CELL NOT GASSING</masterLabel>
+            <translation><!-- 6h - NOT CHARGING - 6TH CELL NOT GASSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7a - FAILURE IN LOAD - BATTERY UNABLE TO DELIVER CRANKING LOAD</masterLabel>
+            <translation><!-- 7a - FAILURE IN LOAD - BATTERY UNABLE TO DELIVER CRANKING LOAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7b - FAILURE IN LOAD - BATTERY UNABLE TO DELIVER LIGHTING / HORN LOAD</masterLabel>
+            <translation><!-- 7b - FAILURE IN LOAD - BATTERY UNABLE TO DELIVER LIGHTING / HORN LOAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7c - FAILURE IN LOAD - BATTERY UNABLE TO DELIVER REQUIRED BACK UP</masterLabel>
+            <translation><!-- 7c - FAILURE IN LOAD - BATTERY UNABLE TO DELIVER REQUIRED BACK UP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8a - BATTERY FOUND OK/ REVIVED</masterLabel>
+            <translation><!-- 8a - BATTERY FOUND OK/ REVIVED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8b - BATTERY FOUND OK/ SAME BACK</masterLabel>
+            <translation><!-- 8b - BATTERY FOUND OK/ SAME BACK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8c - BATTERY DEEP DISCHARGE</masterLabel>
+            <translation><!-- 8c - BATTERY DEEP DISCHARGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8d - BATTERY OVER CHARGE</masterLabel>
+            <translation><!-- 8d - BATTERY OVER CHARGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8e - BATTERY DRY RUN</masterLabel>
+            <translation><!-- 8e - BATTERY DRY RUN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY BLAST</masterLabel>
+            <translation><!-- BATTERY BLAST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY BULDGE</masterLabel>
+            <translation><!-- BATTERY BULDGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY CELL NO-1 SHORT</masterLabel>
+            <translation><!-- BATTERY CELL NO-1 SHORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY CELL NO-2 SHORT</masterLabel>
+            <translation><!-- BATTERY CELL NO-2 SHORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY CELL NO-3 SHORT</masterLabel>
+            <translation><!-- BATTERY CELL NO-3 SHORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY CELL NO-4 SHORT</masterLabel>
+            <translation><!-- BATTERY CELL NO-4 SHORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY CELL NO-5 SHORT</masterLabel>
+            <translation><!-- BATTERY CELL NO-5 SHORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY CELL NO-6 SHORT</masterLabel>
+            <translation><!-- BATTERY CELL NO-6 SHORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY CONTAINER DAMAGE</masterLabel>
+            <translation><!-- BATTERY CONTAINER DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY DEEP DISCHARGE</masterLabel>
+            <translation><!-- BATTERY DEEP DISCHARGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY DRY RUN</masterLabel>
+            <translation><!-- BATTERY DRY RUN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY FAILED DUE TO IDLING EFFECT</masterLabel>
+            <translation><!-- BATTERY FAILED DUE TO IDLING EFFECT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY HEAT SEALING LEAKAGE</masterLabel>
+            <translation><!-- BATTERY HEAT SEALING LEAKAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY INTER CELL DISCONNECTION</masterLabel>
+            <translation><!-- BATTERY INTER CELL DISCONNECTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY LOW BACKUP</masterLabel>
+            <translation><!-- BATTERY LOW BACKUP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY OVERHEATED</masterLabel>
+            <translation><!-- BATTERY OVERHEATED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY PLATE PASTE SHREDDING</masterLabel>
+            <translation><!-- BATTERY PLATE PASTE SHREDDING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY REVERSE CHARGED</masterLabel>
+            <translation><!-- BATTERY REVERSE CHARGED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY TERMINAL MELT/ DAMAGE</masterLabel>
+            <translation><!-- BATTERY TERMINAL MELT/ DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY TOP COVER DAMAGE</masterLabel>
+            <translation><!-- BATTERY TOP COVER DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY TRANSIT DAMAGE</masterLabel>
+            <translation><!-- BATTERY TRANSIT DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BOOTING PROBLEM</masterLabel>
+            <translation><!-- BOOTING PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CABINET DAMAGE</masterLabel>
+            <translation><!-- CABINET DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARD BURNT</masterLabel>
+            <translation><!-- CARD BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGEOVER PROBLEM</masterLabel>
+            <translation><!-- CHANGEOVER PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHARGING CONTINUSELY</masterLabel>
+            <translation><!-- CHARGING CONTINUSELY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTOR BURNT</masterLabel>
+            <translation><!-- CONNECTOR BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC MCB TRIPPS</masterLabel>
+            <translation><!-- DC MCB TRIPPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAN NOT WORKING</masterLabel>
+            <translation><!-- FAN NOT WORKING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLUCTUATION AT I/P OR O/P</masterLabel>
+            <translation><!-- FLUCTUATION AT I/P OR O/P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRONT DAMAGE</masterLabel>
+            <translation><!-- FRONT DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FUSE BLOWN</masterLabel>
+            <translation><!-- FUSE BLOWN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FUSE BROKEN</masterLabel>
+            <translation><!-- FUSE BROKEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INPUT AVAILABLE BUT SYSTEMS ON BATTERY</masterLabel>
+            <translation><!-- INPUT AVAILABLE BUT SYSTEMS ON BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INSTALLATION</masterLabel>
+            <translation><!-- INSTALLATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LED DISPLAY NOT WORKING</masterLabel>
+            <translation><!-- LED DISPLAY NOT WORKING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOOSE CONNECTIONS</masterLabel>
+            <translation><!-- LOOSE CONNECTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAIN LEAD FAULTY</masterLabel>
+            <translation><!-- MAIN LEAD FAULTY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINS MCB TRIPPS</masterLabel>
+            <translation><!-- MAINS MCB TRIPPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOSFET BURNT</masterLabel>
+            <translation><!-- MOSFET BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOV BURNT</masterLabel>
+            <translation><!-- MOV BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOT A SERVICE REQUEST</masterLabel>
+            <translation><!-- NOT A SERVICE REQUEST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOT CHARGING BATTERY</masterLabel>
+            <translation><!-- NOT CHARGING BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation><!-- OTHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PARTNER SALES</masterLabel>
+            <translation><!-- PARTNER SALES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SET FOUND OK</masterLabel>
+            <translation><!-- SET FOUND OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOCKET DAMAGE</masterLabel>
+            <translation><!-- SOCKET DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOFTWARE NOT WORKING</masterLabel>
+            <translation><!-- SOFTWARE NOT WORKING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPARKING AT I/P AND O/P CONNECTIONS</masterLabel>
+            <translation><!-- SPARKING AT I/P AND O/P CONNECTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWITCH FAULTY</masterLabel>
+            <translation><!-- SWITCH FAULTY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM BURNT</masterLabel>
+            <translation><!-- SYSTEM BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM DEAD</masterLabel>
+            <translation><!-- SYSTEM DEAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM GENERATES HUMMING SOUND</masterLabel>
+            <translation><!-- SYSTEM GENERATES HUMMING SOUND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM NOT WORKING ON BATTERY</masterLabel>
+            <translation><!-- SYSTEM NOT WORKING ON BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM NOT WORKING ON MAINS</masterLabel>
+            <translation><!-- SYSTEM NOT WORKING ON MAINS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM ON BUT NO OUTPUT</masterLabel>
+            <translation><!-- SYSTEM ON BUT NO OUTPUT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM OUTPUT HIGH</masterLabel>
+            <translation><!-- SYSTEM OUTPUT HIGH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM OUTPUT LOW</masterLabel>
+            <translation><!-- SYSTEM OUTPUT LOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM SHOWS LOW BATTERY</masterLabel>
+            <translation><!-- SYSTEM SHOWS LOW BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM SHOWS OVER LOAD</masterLabel>
+            <translation><!-- SYSTEM SHOWS OVER LOAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM SHOWS OVER TEMPERATURE</masterLabel>
+            <translation><!-- SYSTEM SHOWS OVER TEMPERATURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM SHOWS SHORT CIRCUIT</masterLabel>
+            <translation><!-- SYSTEM SHOWS SHORT CIRCUIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM TAKING HIGH I/P CURRENT</masterLabel>
+            <translation><!-- SYSTEM TAKING HIGH I/P CURRENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSFORMER BURNT</masterLabel>
+            <translation><!-- TRANSFORMER BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT DAMAGE</masterLabel>
+            <translation><!-- TRANSIT DAMAGE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Parent Case --></label>
+        <name>Parent__c</name>
+        <relationshipLabel><!-- Service Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payment Mode --></label>
+        <name>Payment_Mode__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Appointment Date --></label>
+        <name>Preferred_Date_for_Visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Time --></label>
+        <name>Preferred_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent</masterLabel>
+            <translation><!-- Urgent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Problem Detected (In Brief) --></label>
+        <name>Problem_Detected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+        <picklistValues>
+            <masterLabel>BATTERY</masterLabel>
+            <translation><!-- BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HUPS</masterLabel>
+            <translation><!-- HUPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INVERTER</masterLabel>
+            <translation><!-- INVERTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ON-LINE</masterLabel>
+            <translation><!-- ON-LINE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation><!-- OTHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAR</masterLabel>
+            <translation><!-- SOLAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS</masterLabel>
+            <translation><!-- UPS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Code --></label>
+        <name>Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Serial No. --></label>
+        <name>Product_Serial_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Products --></label>
+        <name>Products__c</name>
+        <relationshipLabel><!-- Service Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Purchase City --></label>
+        <name>Purchase_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Country --></label>
+        <name>Purchase_Country__c</name>
+        <picklistValues>
+            <masterLabel>Afghanistan</masterLabel>
+            <translation><!-- Afghanistan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Albania</masterLabel>
+            <translation><!-- Albania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Algeria</masterLabel>
+            <translation><!-- Algeria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Andorra</masterLabel>
+            <translation><!-- Andorra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Angola</masterLabel>
+            <translation><!-- Angola --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Antigua &amp; Deps</masterLabel>
+            <translation><!-- Antigua &amp; Deps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Argentina</masterLabel>
+            <translation><!-- Argentina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armenia</masterLabel>
+            <translation><!-- Armenia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Australia</masterLabel>
+            <translation><!-- Australia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Austria</masterLabel>
+            <translation><!-- Austria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Azerbaijan</masterLabel>
+            <translation><!-- Azerbaijan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bahamas</masterLabel>
+            <translation><!-- Bahamas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bahrain</masterLabel>
+            <translation><!-- Bahrain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bangladesh</masterLabel>
+            <translation><!-- Bangladesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barbados</masterLabel>
+            <translation><!-- Barbados --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belarus</masterLabel>
+            <translation><!-- Belarus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belgium</masterLabel>
+            <translation><!-- Belgium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belize</masterLabel>
+            <translation><!-- Belize --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benin</masterLabel>
+            <translation><!-- Benin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bhutan</masterLabel>
+            <translation><!-- Bhutan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bolivia</masterLabel>
+            <translation><!-- Bolivia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bosnia Herzegovina</masterLabel>
+            <translation><!-- Bosnia Herzegovina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Botswana</masterLabel>
+            <translation><!-- Botswana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brazil</masterLabel>
+            <translation><!-- Brazil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brunei</masterLabel>
+            <translation><!-- Brunei --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulgaria</masterLabel>
+            <translation><!-- Bulgaria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burkina</masterLabel>
+            <translation><!-- Burkina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burundi</masterLabel>
+            <translation><!-- Burundi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambodia</masterLabel>
+            <translation><!-- Cambodia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cameroon</masterLabel>
+            <translation><!-- Cameroon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cape Verde</masterLabel>
+            <translation><!-- Cape Verde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central African Rep</masterLabel>
+            <translation><!-- Central African Rep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chad</masterLabel>
+            <translation><!-- Chad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chile</masterLabel>
+            <translation><!-- Chile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>China</masterLabel>
+            <translation><!-- China --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colombia</masterLabel>
+            <translation><!-- Colombia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comoros</masterLabel>
+            <translation><!-- Comoros --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congo</masterLabel>
+            <translation><!-- Congo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congo {Democratic Rep}</masterLabel>
+            <translation><!-- Congo {Democratic Rep} --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Costa Rica</masterLabel>
+            <translation><!-- Costa Rica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Croatia</masterLabel>
+            <translation><!-- Croatia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cuba</masterLabel>
+            <translation><!-- Cuba --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cyprus</masterLabel>
+            <translation><!-- Cyprus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech Republic</masterLabel>
+            <translation><!-- Czech Republic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denmark</masterLabel>
+            <translation><!-- Denmark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Djibouti</masterLabel>
+            <translation><!-- Djibouti --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dominica</masterLabel>
+            <translation><!-- Dominica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dominican Republic</masterLabel>
+            <translation><!-- Dominican Republic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Timor</masterLabel>
+            <translation><!-- East Timor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ecuador</masterLabel>
+            <translation><!-- Ecuador --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Egypt</masterLabel>
+            <translation><!-- Egypt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>El Salvador</masterLabel>
+            <translation><!-- El Salvador --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equatorial Guinea</masterLabel>
+            <translation><!-- Equatorial Guinea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eritrea</masterLabel>
+            <translation><!-- Eritrea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estonia</masterLabel>
+            <translation><!-- Estonia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ethiopia</masterLabel>
+            <translation><!-- Ethiopia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fiji</masterLabel>
+            <translation><!-- Fiji --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finland</masterLabel>
+            <translation><!-- Finland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>France</masterLabel>
+            <translation><!-- France --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gabon</masterLabel>
+            <translation><!-- Gabon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gambia</masterLabel>
+            <translation><!-- Gambia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Georgia</masterLabel>
+            <translation><!-- Georgia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Germany</masterLabel>
+            <translation><!-- Germany --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ghana</masterLabel>
+            <translation><!-- Ghana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greece</masterLabel>
+            <translation><!-- Greece --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grenada</masterLabel>
+            <translation><!-- Grenada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guatemala</masterLabel>
+            <translation><!-- Guatemala --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guinea</masterLabel>
+            <translation><!-- Guinea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guinea-Bissau</masterLabel>
+            <translation><!-- Guinea-Bissau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guyana</masterLabel>
+            <translation><!-- Guyana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haiti</masterLabel>
+            <translation><!-- Haiti --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Honduras</masterLabel>
+            <translation><!-- Honduras --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hungary</masterLabel>
+            <translation><!-- Hungary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iceland</masterLabel>
+            <translation><!-- Iceland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>India</masterLabel>
+            <translation><!-- India --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesia</masterLabel>
+            <translation><!-- Indonesia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iran</masterLabel>
+            <translation><!-- Iran --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iraq</masterLabel>
+            <translation><!-- Iraq --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ireland {Republic}</masterLabel>
+            <translation><!-- Ireland {Republic} --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Israel</masterLabel>
+            <translation><!-- Israel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italy</masterLabel>
+            <translation><!-- Italy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ivory Coast</masterLabel>
+            <translation><!-- Ivory Coast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jamaica</masterLabel>
+            <translation><!-- Jamaica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japan</masterLabel>
+            <translation><!-- Japan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jordan</masterLabel>
+            <translation><!-- Jordan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kazakhstan</masterLabel>
+            <translation><!-- Kazakhstan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kenya</masterLabel>
+            <translation><!-- Kenya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kiribati</masterLabel>
+            <translation><!-- Kiribati --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korea North</masterLabel>
+            <translation><!-- Korea North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korea South</masterLabel>
+            <translation><!-- Korea South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kosovo</masterLabel>
+            <translation><!-- Kosovo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kuwait</masterLabel>
+            <translation><!-- Kuwait --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kyrgyzstan</masterLabel>
+            <translation><!-- Kyrgyzstan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laos</masterLabel>
+            <translation><!-- Laos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latvia</masterLabel>
+            <translation><!-- Latvia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lebanon</masterLabel>
+            <translation><!-- Lebanon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lesotho</masterLabel>
+            <translation><!-- Lesotho --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liberia</masterLabel>
+            <translation><!-- Liberia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Libya</masterLabel>
+            <translation><!-- Libya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liechtenstein</masterLabel>
+            <translation><!-- Liechtenstein --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lithuania</masterLabel>
+            <translation><!-- Lithuania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luxembourg</masterLabel>
+            <translation><!-- Luxembourg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Macedonia</masterLabel>
+            <translation><!-- Macedonia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Madagascar</masterLabel>
+            <translation><!-- Madagascar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malawi</masterLabel>
+            <translation><!-- Malawi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malaysia</masterLabel>
+            <translation><!-- Malaysia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maldives</masterLabel>
+            <translation><!-- Maldives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mali</masterLabel>
+            <translation><!-- Mali --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malta</masterLabel>
+            <translation><!-- Malta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marshall Islands</masterLabel>
+            <translation><!-- Marshall Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauritania</masterLabel>
+            <translation><!-- Mauritania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauritius</masterLabel>
+            <translation><!-- Mauritius --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mexico</masterLabel>
+            <translation><!-- Mexico --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Micronesia</masterLabel>
+            <translation><!-- Micronesia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moldova</masterLabel>
+            <translation><!-- Moldova --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monaco</masterLabel>
+            <translation><!-- Monaco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mongolia</masterLabel>
+            <translation><!-- Mongolia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montenegro</masterLabel>
+            <translation><!-- Montenegro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Morocco</masterLabel>
+            <translation><!-- Morocco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mozambique</masterLabel>
+            <translation><!-- Mozambique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Myanmar, {Burma}</masterLabel>
+            <translation><!-- Myanmar, {Burma} --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Namibia</masterLabel>
+            <translation><!-- Namibia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nauru</masterLabel>
+            <translation><!-- Nauru --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nepal</masterLabel>
+            <translation><!-- Nepal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Netherlands</masterLabel>
+            <translation><!-- Netherlands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Zealand</masterLabel>
+            <translation><!-- New Zealand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nicaragua</masterLabel>
+            <translation><!-- Nicaragua --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Niger</masterLabel>
+            <translation><!-- Niger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nigeria</masterLabel>
+            <translation><!-- Nigeria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norway</masterLabel>
+            <translation><!-- Norway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oman</masterLabel>
+            <translation><!-- Oman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pakistan</masterLabel>
+            <translation><!-- Pakistan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Palau</masterLabel>
+            <translation><!-- Palau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panama</masterLabel>
+            <translation><!-- Panama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Papua New Guinea</masterLabel>
+            <translation><!-- Papua New Guinea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paraguay</masterLabel>
+            <translation><!-- Paraguay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peru</masterLabel>
+            <translation><!-- Peru --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Philippines</masterLabel>
+            <translation><!-- Philippines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poland</masterLabel>
+            <translation><!-- Poland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portugal</masterLabel>
+            <translation><!-- Portugal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qatar</masterLabel>
+            <translation><!-- Qatar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Romania</masterLabel>
+            <translation><!-- Romania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian Federation</masterLabel>
+            <translation><!-- Russian Federation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rwanda</masterLabel>
+            <translation><!-- Rwanda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samoa</masterLabel>
+            <translation><!-- Samoa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Marino</masterLabel>
+            <translation><!-- San Marino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sao Tome &amp; Principe</masterLabel>
+            <translation><!-- Sao Tome &amp; Principe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saudi Arabia</masterLabel>
+            <translation><!-- Saudi Arabia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senegal</masterLabel>
+            <translation><!-- Senegal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serbia</masterLabel>
+            <translation><!-- Serbia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seychelles</masterLabel>
+            <translation><!-- Seychelles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sierra Leone</masterLabel>
+            <translation><!-- Sierra Leone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Singapore</masterLabel>
+            <translation><!-- Singapore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slovakia</masterLabel>
+            <translation><!-- Slovakia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slovenia</masterLabel>
+            <translation><!-- Slovenia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solomon Islands</masterLabel>
+            <translation><!-- Solomon Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somalia</masterLabel>
+            <translation><!-- Somalia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Africa</masterLabel>
+            <translation><!-- South Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spain</masterLabel>
+            <translation><!-- Spain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sri Lanka</masterLabel>
+            <translation><!-- Sri Lanka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>St Kitts &amp; Nevis</masterLabel>
+            <translation><!-- St Kitts &amp; Nevis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>St Lucia</masterLabel>
+            <translation><!-- St Lucia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>St Vincent &amp; Gr/dines</masterLabel>
+            <translation><!-- St Vincent &amp; Gr/dines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sudan</masterLabel>
+            <translation><!-- Sudan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suriname</masterLabel>
+            <translation><!-- Suriname --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swaziland</masterLabel>
+            <translation><!-- Swaziland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sweden</masterLabel>
+            <translation><!-- Sweden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switzerland</masterLabel>
+            <translation><!-- Switzerland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syria</masterLabel>
+            <translation><!-- Syria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taiwan</masterLabel>
+            <translation><!-- Taiwan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tajikistan</masterLabel>
+            <translation><!-- Tajikistan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tanzania</masterLabel>
+            <translation><!-- Tanzania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thailand</masterLabel>
+            <translation><!-- Thailand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Togo</masterLabel>
+            <translation><!-- Togo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tonga</masterLabel>
+            <translation><!-- Tonga --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trinidad &amp; Tobago</masterLabel>
+            <translation><!-- Trinidad &amp; Tobago --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tunisia</masterLabel>
+            <translation><!-- Tunisia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkey</masterLabel>
+            <translation><!-- Turkey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkmenistan</masterLabel>
+            <translation><!-- Turkmenistan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuvalu</masterLabel>
+            <translation><!-- Tuvalu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uganda</masterLabel>
+            <translation><!-- Uganda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ukraine</masterLabel>
+            <translation><!-- Ukraine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United Arab Emirates</masterLabel>
+            <translation><!-- United Arab Emirates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United Kingdom</masterLabel>
+            <translation><!-- United Kingdom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United States</masterLabel>
+            <translation><!-- United States --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uruguay</masterLabel>
+            <translation><!-- Uruguay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uzbekistan</masterLabel>
+            <translation><!-- Uzbekistan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vanuatu</masterLabel>
+            <translation><!-- Vanuatu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vatican City</masterLabel>
+            <translation><!-- Vatican City --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venezuela</masterLabel>
+            <translation><!-- Venezuela --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnam</masterLabel>
+            <translation><!-- Vietnam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yemen</masterLabel>
+            <translation><!-- Yemen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zambia</masterLabel>
+            <translation><!-- Zambia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zimbabwe</masterLabel>
+            <translation><!-- Zimbabwe --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchase Date Available --></label>
+        <name>Purchase_Date_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Date --></label>
+        <name>Purchase_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Invoice No. --></label>
+        <name>Purchase_Invoice_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase State --></label>
+        <name>Purchase_State__c</name>
+        <picklistValues>
+            <masterLabel>Andaman and Nicobar Islands</masterLabel>
+            <translation><!-- Andaman and Nicobar Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Andhra Pradesh</masterLabel>
+            <translation><!-- Andhra Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arunachal Pradesh</masterLabel>
+            <translation><!-- Arunachal Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assam</masterLabel>
+            <translation><!-- Assam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bihar</masterLabel>
+            <translation><!-- Bihar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chandigarh</masterLabel>
+            <translation><!-- Chandigarh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chhattisgarh</masterLabel>
+            <translation><!-- Chhattisgarh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dadra and Nagar Haveli</masterLabel>
+            <translation><!-- Dadra and Nagar Haveli --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daman and Diu</masterLabel>
+            <translation><!-- Daman and Diu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delhi</masterLabel>
+            <translation><!-- Delhi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goa</masterLabel>
+            <translation><!-- Goa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gujarat</masterLabel>
+            <translation><!-- Gujarat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haryana</masterLabel>
+            <translation><!-- Haryana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Himachal Pradesh</masterLabel>
+            <translation><!-- Himachal Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jammu &amp; Kashmir</masterLabel>
+            <translation><!-- Jammu &amp; Kashmir --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jharkhand</masterLabel>
+            <translation><!-- Jharkhand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Karnataka</masterLabel>
+            <translation><!-- Karnataka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kerala</masterLabel>
+            <translation><!-- Kerala --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lakshadweep</masterLabel>
+            <translation><!-- Lakshadweep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Madhya Pradesh</masterLabel>
+            <translation><!-- Madhya Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maharashtra</masterLabel>
+            <translation><!-- Maharashtra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manipur</masterLabel>
+            <translation><!-- Manipur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meghalaya</masterLabel>
+            <translation><!-- Meghalaya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mizoram</masterLabel>
+            <translation><!-- Mizoram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nagaland</masterLabel>
+            <translation><!-- Nagaland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orissa</masterLabel>
+            <translation><!-- Orissa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pondicherry</masterLabel>
+            <translation><!-- Pondicherry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Punjab</masterLabel>
+            <translation><!-- Punjab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajasthan</masterLabel>
+            <translation><!-- Rajasthan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sikkim</masterLabel>
+            <translation><!-- Sikkim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tamilnadu</masterLabel>
+            <translation><!-- Tamilnadu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tripura</masterLabel>
+            <translation><!-- Tripura --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uttar Pradesh</masterLabel>
+            <translation><!-- Uttar Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uttaranchal</masterLabel>
+            <translation><!-- Uttaranchal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Bengal</masterLabel>
+            <translation><!-- West Bengal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>Reason__c</name>
+        <picklistValues>
+            <masterLabel>001 - SYSTEM NOT WORKING ON MAINS</masterLabel>
+            <translation><!-- 001 - SYSTEM NOT WORKING ON MAINS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>002 - FUSE BLOWN      AC</masterLabel>
+            <translation><!-- 002 - FUSE BLOWN      AC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>003 - FUSE HOLDER LOOSE/ MELT PROBLEM</masterLabel>
+            <translation><!-- 003 - FUSE HOLDER LOOSE/ MELT PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>004 - SYSTEM ON BUT NO OUTPUT</masterLabel>
+            <translation><!-- 004 - SYSTEM ON BUT NO OUTPUT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>005 - SYSTEM DEAD</masterLabel>
+            <translation><!-- 005 - SYSTEM DEAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>006 - MOSFET BURNT</masterLabel>
+            <translation><!-- 006 - MOSFET BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>007 - BACK UP PROBLEM</masterLabel>
+            <translation><!-- 007 - BACK UP PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>008 - DC MCB TRIPPS</masterLabel>
+            <translation><!-- 008 - DC MCB TRIPPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>009 - ON/OFF SWITCH FAULTY</masterLabel>
+            <translation><!-- 009 - ON/OFF SWITCH FAULTY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>010 - SYSTEM SHOWS LOW BATTERY</masterLabel>
+            <translation><!-- 010 - SYSTEM SHOWS LOW BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>011 - SYSTEM SHOWS OVER LOAD</masterLabel>
+            <translation><!-- 011 - SYSTEM SHOWS OVER LOAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>012 - CONNECTOR BURNT</masterLabel>
+            <translation><!-- 012 - CONNECTOR BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>013 - CARD BURNT</masterLabel>
+            <translation><!-- 013 - CARD BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>014 - CHANGEOVER PROBLEM</masterLabel>
+            <translation><!-- 014 - CHANGEOVER PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>015 - FAN NOT WORKING</masterLabel>
+            <translation><!-- 015 - FAN NOT WORKING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>016 - LED DISPLAY NOT WORKING</masterLabel>
+            <translation><!-- 016 - LED DISPLAY NOT WORKING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>017 - SYSTEM GENERATES HUMMING SOUND ( TRANSFORMER )</masterLabel>
+            <translation><!-- 017 - SYSTEM GENERATES HUMMING SOUND ( TRANSFORMER ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>018 - SYSTEM GENERATES  SOUND (  FAN )</masterLabel>
+            <translation><!-- 018 - SYSTEM GENERATES  SOUND (  FAN ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>019 - FLUCTUATION AT I/P OR O/P</masterLabel>
+            <translation><!-- 019 - FLUCTUATION AT I/P OR O/P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>020 - MAINS MCB TRIPPS</masterLabel>
+            <translation><!-- 020 - MAINS MCB TRIPPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>021 - CHARGING CONTINUSELY</masterLabel>
+            <translation><!-- 021 - CHARGING CONTINUSELY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>022 - FRONT PANEL DAMAGE</masterLabel>
+            <translation><!-- 022 - FRONT PANEL DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>023 - SYSTEM SHOWS OVER TEMPERATURE</masterLabel>
+            <translation><!-- 023 - SYSTEM SHOWS OVER TEMPERATURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>024 - SPARKING AT I/P AND O/P CONNECTIONS</masterLabel>
+            <translation><!-- 024 - SPARKING AT I/P AND O/P CONNECTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>025 - CARD REPLACED</masterLabel>
+            <translation><!-- 025 - CARD REPLACED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>026 - SHOCKING PROBLEM</masterLabel>
+            <translation><!-- 026 - SHOCKING PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>027 - SYSTEM OUTPUT VOLTAGE LOW</masterLabel>
+            <translation><!-- 027 - SYSTEM OUTPUT VOLTAGE LOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>028 - SYSTEM OUTPUT VOLTAGE HIGH</masterLabel>
+            <translation><!-- 028 - SYSTEM OUTPUT VOLTAGE HIGH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>029 - CABINET DAMAGE</masterLabel>
+            <translation><!-- 029 - CABINET DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>030 - SYSTEM BURNT</masterLabel>
+            <translation><!-- 030 - SYSTEM BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>031 - NOT CHARGING BATTERY</masterLabel>
+            <translation><!-- 031 - NOT CHARGING BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>032 - MAIN TRANSFORMER BURNT</masterLabel>
+            <translation><!-- 032 - MAIN TRANSFORMER BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>033 - SYSTEM TAKING HIGH I/P CURRENT</masterLabel>
+            <translation><!-- 033 - SYSTEM TAKING HIGH I/P CURRENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>034 - NO LOAD SHUT DOWN</masterLabel>
+            <translation><!-- 034 - NO LOAD SHUT DOWN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>035 - INPUT LEAD FAULTY</masterLabel>
+            <translation><!-- 035 - INPUT LEAD FAULTY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>036 -  OUTPUT SOCKET DAMAGE</masterLabel>
+            <translation><!-- 036 -  OUTPUT SOCKET DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>037 - SYSTEM NOT WORKING ON BATTERY</masterLabel>
+            <translation><!-- 037 - SYSTEM NOT WORKING ON BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>038 - AMC VISIT</masterLabel>
+            <translation><!-- 038 - AMC VISIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>039 - SITE VISIT</masterLabel>
+            <translation><!-- 039 - SITE VISIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>040 - LOOSE CONNECTIONS</masterLabel>
+            <translation><!-- 040 - LOOSE CONNECTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>041 - BOOTING PROBLEM</masterLabel>
+            <translation><!-- 041 - BOOTING PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>042 - FUSE BLOWN      DC</masterLabel>
+            <translation><!-- 042 - FUSE BLOWN      DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>043 - SYSTEM SHOWS SHORT CIRCUIT</masterLabel>
+            <translation><!-- 043 - SYSTEM SHOWS SHORT CIRCUIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>044 - TRANSIT DAMAGE</masterLabel>
+            <translation><!-- 044 - TRANSIT DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>045 - LCD HANG</masterLabel>
+            <translation><!-- 045 - LCD HANG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>046 - IGBT FAULTY</masterLabel>
+            <translation><!-- 046 - IGBT FAULTY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>047 - SCR FAULTY</masterLabel>
+            <translation><!-- 047 - SCR FAULTY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>048 - ROTARY SWITCH NOT WORKING</masterLabel>
+            <translation><!-- 048 - ROTARY SWITCH NOT WORKING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>049 - HRC FUSE</masterLabel>
+            <translation><!-- 049 - HRC FUSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>050 - CURRENT TRANSFORMER PROBLEM</masterLabel>
+            <translation><!-- 050 - CURRENT TRANSFORMER PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>051 - SENSING TRANSFORMER</masterLabel>
+            <translation><!-- 051 - SENSING TRANSFORMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>052 - I/P AVAILABLE BUT SYSTEMS RUNNING ON BATTERY</masterLabel>
+            <translation><!-- 052 - I/P AVAILABLE BUT SYSTEMS RUNNING ON BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>053 - MICRO IC PROBLEM</masterLabel>
+            <translation><!-- 053 - MICRO IC PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>054 - DSP HANG</masterLabel>
+            <translation><!-- 054 - DSP HANG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>055 - MOV BURNT</masterLabel>
+            <translation><!-- 055 - MOV BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>056 - MOV CUT</masterLabel>
+            <translation><!-- 056 - MOV CUT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>057 - INVERTER OTHER BRAND</masterLabel>
+            <translation><!-- 057 - INVERTER OTHER BRAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>058 - BATTERY LEAD PROBLEM</masterLabel>
+            <translation><!-- 058 - BATTERY LEAD PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>059 - HOUSE INTERNAL WIRING PROBLEM</masterLabel>
+            <translation><!-- 059 - HOUSE INTERNAL WIRING PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>060 - CARD REPAIRED</masterLabel>
+            <translation><!-- 060 - CARD REPAIRED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>061 - SYSTEM REPLACED</masterLabel>
+            <translation><!-- 061 - SYSTEM REPLACED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>062 - SYSTEM RE-START</masterLabel>
+            <translation><!-- 062 - SYSTEM RE-START --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>063 - NO PROBLEM  FOUND</masterLabel>
+            <translation><!-- 063 - NO PROBLEM  FOUND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>064 - CRYSTAL PROBLEM FOUND</masterLabel>
+            <translation><!-- 064 - CRYSTAL PROBLEM FOUND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>065 - PRODUCT SALE</masterLabel>
+            <translation><!-- 065 - PRODUCT SALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>066 - INSTALLATION</masterLabel>
+            <translation><!-- 066 - INSTALLATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>067 - COMPONENT SALE</masterLabel>
+            <translation><!-- 067 - COMPONENT SALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1a - PHYSICAL DEFECT - BODY CRACK / DAMAGED</masterLabel>
+            <translation><!-- 1a - PHYSICAL DEFECT - BODY CRACK / DAMAGED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1b - PHYSICAL DEFECT - LID CRACK / DAMAGED</masterLabel>
+            <translation><!-- 1b - PHYSICAL DEFECT - LID CRACK / DAMAGED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1c - PHYSICAL DEFECT - POSITIVE WIRE / POLE DISCONNECTED / BROKEN</masterLabel>
+            <translation><!-- 1c - PHYSICAL DEFECT - POSITIVE WIRE / POLE DISCONNECTED / BROKEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1d - PHYSICAL DEFECT - NEGATIVE WIRE / POLE DISCONNECTED / BROKEN</masterLabel>
+            <translation><!-- 1d - PHYSICAL DEFECT - NEGATIVE WIRE / POLE DISCONNECTED / BROKEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1e - PHYSICAL DEFECT - CONTAINER BULGED</masterLabel>
+            <translation><!-- 1e - PHYSICAL DEFECT - CONTAINER BULGED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1f - PHYSICAL DEFECT - BATTERY BURST DURING CHARGING</masterLabel>
+            <translation><!-- 1f - PHYSICAL DEFECT - BATTERY BURST DURING CHARGING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1g - PHYSICAL DEFECT - POSITIVE TERMINAL LOW</masterLabel>
+            <translation><!-- 1g - PHYSICAL DEFECT - POSITIVE TERMINAL LOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1h - PHYSICAL DEFECT - NEGATIVE TERMINAL LOW</masterLabel>
+            <translation><!-- 1h - PHYSICAL DEFECT - NEGATIVE TERMINAL LOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1i - PHYSICAL DEFECT - BOTH TERMINAL LOW</masterLabel>
+            <translation><!-- 1i - PHYSICAL DEFECT - BOTH TERMINAL LOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2a - PART MISSING / DEFECT - GAS TUBE MISSING</masterLabel>
+            <translation><!-- 2a - PART MISSING / DEFECT - GAS TUBE MISSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2b - PART MISSING / DEFECT - WARRANTY CARD MISSING</masterLabel>
+            <translation><!-- 2b - PART MISSING / DEFECT - WARRANTY CARD MISSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2c - PART MISSING / DEFECT - SL. NO PUNCH DEFECTIVE</masterLabel>
+            <translation><!-- 2c - PART MISSING / DEFECT - SL. NO PUNCH DEFECTIVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2d - PART MISSING / DEFECT - SCREEN PRINT DEFECTIVE</masterLabel>
+            <translation><!-- 2d - PART MISSING / DEFECT - SCREEN PRINT DEFECTIVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3a - LEAKAGE - LEAKAGE THROUGH CONTAINER</masterLabel>
+            <translation><!-- 3a - LEAKAGE - LEAKAGE THROUGH CONTAINER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3b - LEAKAGE - LEAKAGE THROUGH CONTAINER &amp; LID JOINT</masterLabel>
+            <translation><!-- 3b - LEAKAGE - LEAKAGE THROUGH CONTAINER &amp; LID JOINT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3c - LEAKAGE - LEAKAGE THROUGH VENTING</masterLabel>
+            <translation><!-- 3c - LEAKAGE - LEAKAGE THROUGH VENTING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3d - LEAKAGE - LEAKAGE THROUGH TERMINAL</masterLabel>
+            <translation><!-- 3d - LEAKAGE - LEAKAGE THROUGH TERMINAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4a - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 1ST CELL</masterLabel>
+            <translation><!-- 4a - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 1ST CELL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4b - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 2ND CELL</masterLabel>
+            <translation><!-- 4b - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 2ND CELL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4c - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 3RD CELL</masterLabel>
+            <translation><!-- 4c - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 3RD CELL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4d - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 4TH CELL</masterLabel>
+            <translation><!-- 4d - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 4TH CELL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4e - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 5TH CELL</masterLabel>
+            <translation><!-- 4e - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 5TH CELL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4f - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 6TH CELL</masterLabel>
+            <translation><!-- 4f - ELECTROLYTE - LOW SPECIFIC GRAVITY IN 6TH CELL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4g - ELECTROLYTE - LOW SPECIFIC GRAVITY IN ALL CELLS</masterLabel>
+            <translation><!-- 4g - ELECTROLYTE - LOW SPECIFIC GRAVITY IN ALL CELLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4h - ELECTROLYTE - ELECTROLYTE LEVEL LOW</masterLabel>
+            <translation><!-- 4h - ELECTROLYTE - ELECTROLYTE LEVEL LOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4i - ELECTROLYTE - ELECTROLYTE DISCOLOURED</masterLabel>
+            <translation><!-- 4i - ELECTROLYTE - ELECTROLYTE DISCOLOURED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5a - O.C.V - ZERO O.C.V</masterLabel>
+            <translation><!-- 5a - O.C.V - ZERO O.C.V --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5b - O.C.V - LOW O.C.V (&lt;12.3 VOLT IN CHARGED CONDITION)</masterLabel>
+            <translation><!-- 5b - O.C.V - LOW O.C.V (&lt;12.3 VOLT IN CHARGED CONDITION) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6a - NOT CHARGING - LOW T.O.C VOLTAGE (&lt;14.0 VOLTS)</masterLabel>
+            <translation><!-- 6a - NOT CHARGING - LOW T.O.C VOLTAGE (&lt;14.0 VOLTS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6b - NOT CHARGING - HIGH T.O.C VOLTAGE (&gt;17.5 VOLTS)</masterLabel>
+            <translation><!-- 6b - NOT CHARGING - HIGH T.O.C VOLTAGE (&gt;17.5 VOLTS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6c - NOT CHARGING - 1ST CELL NOT GASSING</masterLabel>
+            <translation><!-- 6c - NOT CHARGING - 1ST CELL NOT GASSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6d - NOT CHARGING - 2ND CELL NOT GASSING</masterLabel>
+            <translation><!-- 6d - NOT CHARGING - 2ND CELL NOT GASSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6e - NOT CHARGING - 3RD CELL NOT GASSING</masterLabel>
+            <translation><!-- 6e - NOT CHARGING - 3RD CELL NOT GASSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6f - NOT CHARGING - 4TH CELL NOT GASSING</masterLabel>
+            <translation><!-- 6f - NOT CHARGING - 4TH CELL NOT GASSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6g - NOT CHARGING - 5TH CELL NOT GASSING</masterLabel>
+            <translation><!-- 6g - NOT CHARGING - 5TH CELL NOT GASSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6h - NOT CHARGING - 6TH CELL NOT GASSING</masterLabel>
+            <translation><!-- 6h - NOT CHARGING - 6TH CELL NOT GASSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7a - FAILURE IN LOAD - BATTERY UNABLE TO DELIVER CRANKING LOAD</masterLabel>
+            <translation><!-- 7a - FAILURE IN LOAD - BATTERY UNABLE TO DELIVER CRANKING LOAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7b - FAILURE IN LOAD - BATTERY UNABLE TO DELIVER LIGHTING / HORN LOAD</masterLabel>
+            <translation><!-- 7b - FAILURE IN LOAD - BATTERY UNABLE TO DELIVER LIGHTING / HORN LOAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7c - FAILURE IN LOAD - BATTERY UNABLE TO DELIVER REQUIRED BACK UP</masterLabel>
+            <translation><!-- 7c - FAILURE IN LOAD - BATTERY UNABLE TO DELIVER REQUIRED BACK UP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8a - BATTERY FOUND OK/ REVIVED</masterLabel>
+            <translation><!-- 8a - BATTERY FOUND OK/ REVIVED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8b - BATTERY FOUND OK/ SAME BACK</masterLabel>
+            <translation><!-- 8b - BATTERY FOUND OK/ SAME BACK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8c - BATTERY DEEP DISCHARGE</masterLabel>
+            <translation><!-- 8c - BATTERY DEEP DISCHARGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8d - BATTERY OVER CHARGE</masterLabel>
+            <translation><!-- 8d - BATTERY OVER CHARGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8e - BATTERY DRY RUN</masterLabel>
+            <translation><!-- 8e - BATTERY DRY RUN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9a - BATTERY BACK UP PROBLEM</masterLabel>
+            <translation><!-- 9a - BATTERY BACK UP PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9b - WATER TOPPING IN BATTERY</masterLabel>
+            <translation><!-- 9b - WATER TOPPING IN BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY BLAST</masterLabel>
+            <translation><!-- BATTERY BLAST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY BULDGE</masterLabel>
+            <translation><!-- BATTERY BULDGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY CELL NO-1 SHORT</masterLabel>
+            <translation><!-- BATTERY CELL NO-1 SHORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY CELL NO-2 SHORT</masterLabel>
+            <translation><!-- BATTERY CELL NO-2 SHORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY CELL NO-3 SHORT</masterLabel>
+            <translation><!-- BATTERY CELL NO-3 SHORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY CELL NO-4 SHORT</masterLabel>
+            <translation><!-- BATTERY CELL NO-4 SHORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY CELL NO-5 SHORT</masterLabel>
+            <translation><!-- BATTERY CELL NO-5 SHORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY CELL NO-6 SHORT</masterLabel>
+            <translation><!-- BATTERY CELL NO-6 SHORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY CONTAINER DAMAGE</masterLabel>
+            <translation><!-- BATTERY CONTAINER DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY DEEP DISCHARGE</masterLabel>
+            <translation><!-- BATTERY DEEP DISCHARGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY DRY RUN</masterLabel>
+            <translation><!-- BATTERY DRY RUN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY FAILED DUE TO IDLING EFFECT</masterLabel>
+            <translation><!-- BATTERY FAILED DUE TO IDLING EFFECT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY HEAT SEALING LEAKAGE</masterLabel>
+            <translation><!-- BATTERY HEAT SEALING LEAKAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY INTER CELL DISCONNECTION</masterLabel>
+            <translation><!-- BATTERY INTER CELL DISCONNECTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY LOW BACKUP</masterLabel>
+            <translation><!-- BATTERY LOW BACKUP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY OVERHEATED</masterLabel>
+            <translation><!-- BATTERY OVERHEATED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY PLATE PASTE SHREDDING</masterLabel>
+            <translation><!-- BATTERY PLATE PASTE SHREDDING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY REVERSE CHARGED</masterLabel>
+            <translation><!-- BATTERY REVERSE CHARGED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY TERMINAL MELT/ DAMAGE</masterLabel>
+            <translation><!-- BATTERY TERMINAL MELT/ DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY TOP COVER DAMAGE</masterLabel>
+            <translation><!-- BATTERY TOP COVER DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATTERY TRANSIT DAMAGE</masterLabel>
+            <translation><!-- BATTERY TRANSIT DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BOOTING PROBLEM</masterLabel>
+            <translation><!-- BOOTING PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CABINET DAMAGE</masterLabel>
+            <translation><!-- CABINET DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARD BURNT</masterLabel>
+            <translation><!-- CARD BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGEOVER PROBLEM</masterLabel>
+            <translation><!-- CHANGEOVER PROBLEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHARGING CONTINUSELY</masterLabel>
+            <translation><!-- CHARGING CONTINUSELY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTOR BURNT</masterLabel>
+            <translation><!-- CONNECTOR BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC MCB TRIPPS</masterLabel>
+            <translation><!-- DC MCB TRIPPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing problem</masterLabel>
+            <translation><!-- Existing problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAN NOT WORKING</masterLabel>
+            <translation><!-- FAN NOT WORKING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLUCTUATION AT I/P OR O/P</masterLabel>
+            <translation><!-- FLUCTUATION AT I/P OR O/P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRONT DAMAGE</masterLabel>
+            <translation><!-- FRONT DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FUSE BLOWN</masterLabel>
+            <translation><!-- FUSE BLOWN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FUSE BROKEN</masterLabel>
+            <translation><!-- FUSE BROKEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INPUT AVAILABLE BUT SYSTEMS ON BATTERY</masterLabel>
+            <translation><!-- INPUT AVAILABLE BUT SYSTEMS ON BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INSTALLATION</masterLabel>
+            <translation><!-- INSTALLATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instructions not clear</masterLabel>
+            <translation><!-- Instructions not clear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LED DISPLAY NOT WORKING</masterLabel>
+            <translation><!-- LED DISPLAY NOT WORKING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOOSE CONNECTIONS</masterLabel>
+            <translation><!-- LOOSE CONNECTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAIN LEAD FAULTY</masterLabel>
+            <translation><!-- MAIN LEAD FAULTY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINS MCB TRIPPS</masterLabel>
+            <translation><!-- MAINS MCB TRIPPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOSFET BURNT</masterLabel>
+            <translation><!-- MOSFET BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOT A SERVICE REQUEST</masterLabel>
+            <translation><!-- NOT A SERVICE REQUEST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOT CHARGING BATTERY</masterLabel>
+            <translation><!-- NOT CHARGING BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New problem</masterLabel>
+            <translation><!-- New problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation><!-- OTHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PARTNER SALES</masterLabel>
+            <translation><!-- PARTNER SALES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOCKET DAMAGE</masterLabel>
+            <translation><!-- SOCKET DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOFTWARE NOT WORKING</masterLabel>
+            <translation><!-- SOFTWARE NOT WORKING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPARKING AT I/P AND O/P CONNECTIONS</masterLabel>
+            <translation><!-- SPARKING AT I/P AND O/P CONNECTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWITCH FAULTY</masterLabel>
+            <translation><!-- SWITCH FAULTY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM BURNT</masterLabel>
+            <translation><!-- SYSTEM BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM DEAD</masterLabel>
+            <translation><!-- SYSTEM DEAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM GENERATES HUMMING SOUND</masterLabel>
+            <translation><!-- SYSTEM GENERATES HUMMING SOUND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM NOT WORKING ON BATTERY</masterLabel>
+            <translation><!-- SYSTEM NOT WORKING ON BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM NOT WORKING ON MAINS</masterLabel>
+            <translation><!-- SYSTEM NOT WORKING ON MAINS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM ON BUT NO OUTPUT</masterLabel>
+            <translation><!-- SYSTEM ON BUT NO OUTPUT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM OUTPUT HIGH</masterLabel>
+            <translation><!-- SYSTEM OUTPUT HIGH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM OUTPUT LOW</masterLabel>
+            <translation><!-- SYSTEM OUTPUT LOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM SHOWS LOW BATTERY</masterLabel>
+            <translation><!-- SYSTEM SHOWS LOW BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM SHOWS OVER LOAD</masterLabel>
+            <translation><!-- SYSTEM SHOWS OVER LOAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM SHOWS OVER TEMPERATURE</masterLabel>
+            <translation><!-- SYSTEM SHOWS OVER TEMPERATURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM SHOWS SHORT CIRCUIT</masterLabel>
+            <translation><!-- SYSTEM SHOWS SHORT CIRCUIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM TAKING HIGH I/P CURRENT</masterLabel>
+            <translation><!-- SYSTEM TAKING HIGH I/P CURRENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSFORMER BURNT</masterLabel>
+            <translation><!-- TRANSFORMER BURNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSIT DAMAGE</masterLabel>
+            <translation><!-- TRANSIT DAMAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User didn&apos;t attend training</masterLabel>
+            <translation><!-- User didn&apos;t attend training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Receiving Date --></label>
+        <name>Receiving_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommended Visit Date / Time --></label>
+        <name>Recommended_Visit_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFFLAG --></label>
+        <name>SFFLAG__c</name>
+    </fields>
+    <fields>
+        <label><!-- SR Created Date --></label>
+        <name>SR_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serial No. Available --></label>
+        <name>Serial_No_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Bill No. --></label>
+        <name>Service_Bill_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Centre City --></label>
+        <name>Service_Centre_City__c</name>
+        <relationshipLabel><!-- Service Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Centre Contact No. --></label>
+        <name>Service_Centre_Contact_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Charge Type --></label>
+        <name>Service_Charge_Type__c</name>
+        <picklistValues>
+            <masterLabel>Carry In</masterLabel>
+            <translation><!-- Carry In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Site</masterLabel>
+            <translation><!-- On Site --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Charges(After Tax) --></label>
+        <name>Service_Charges_After_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc. Service Charges --></label>
+        <name>Service_Charges_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Charges --></label>
+        <name>Service_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Engineer Assigned --></label>
+        <name>Service_Engineer_Assigned__c</name>
+        <relationshipLabel><!-- Service Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Engineer Code --></label>
+        <name>Service_Engineer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Engineer Id --></label>
+        <name>Service_Engineer_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Engineer Location Code --></label>
+        <name>Service_Engineer_Location_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Engineer Mobile No. --></label>
+        <name>Service_Engineer_Mobile_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Engineer Name --></label>
+        <name>Service_Engineer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Request Attended Date --></label>
+        <name>Service_Request_Attended_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Tax Amount --></label>
+        <name>Service_Tax_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Tax Rate --></label>
+        <name>Service_Tax_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Type --></label>
+        <name>Service_Type__c</name>
+        <picklistValues>
+            <masterLabel>CARRY IN</masterLabel>
+            <translation><!-- CARRY IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOCAL</masterLabel>
+            <translation><!-- LOCAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPCOUNTRY</masterLabel>
+            <translation><!-- UPCOUNTRY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ship To Cust --></label>
+        <name>Ship_To_Cust__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>ALLOCATED</masterLabel>
+            <translation><!-- ALLOCATED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATTENDED</masterLabel>
+            <translation><!-- ATTENDED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assigned</masterLabel>
+            <translation><!-- Assigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENDING</masterLabel>
+            <translation><!-- PENDING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REJECT</masterLabel>
+            <translation><!-- REJECT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ReOpen</masterLabel>
+            <translation><!-- ReOpen --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stock Point Owner Id --></label>
+        <name>Stock_Point_Owner_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock Point Type --></label>
+        <name>Stock_Point_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Group --></label>
+        <name>Sub_Group__c</name>
+        <picklistValues>
+            <masterLabel>100Ah</masterLabel>
+            <translation><!-- 100Ah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>150Ah</masterLabel>
+            <translation><!-- 150Ah --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub Status Remark --></label>
+        <name>Sub_Status_Remark__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Company --></label>
+        <name>SuppliedCompany__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Email --></label>
+        <name>SuppliedEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Name --></label>
+        <name>SuppliedName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Phone --></label>
+        <name>SuppliedPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Component Amount (After Tax) --></label>
+        <name>Total_Component_Amount_After_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Defective Quantity Returned --></label>
+        <name>Total_Defective_Quantity_Returned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Quantity Issued --></label>
+        <name>Total_Quantity_Issued__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Tax Amount --></label>
+        <name>Total_Tax_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Feature Request</masterLabel>
+            <translation><!-- Feature Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem</masterLabel>
+            <translation><!-- Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Question</masterLabel>
+            <translation><!-- Question --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Replacement --></label>
+        <name>Type_of_Replacement__c</name>
+        <picklistValues>
+            <masterLabel>Battery Replacement</masterLabel>
+            <translation><!-- Battery Replacement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Component Replacement</masterLabel>
+            <translation><!-- Component Replacement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Replacement</masterLabel>
+            <translation><!-- Product Replacement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Service Request --></label>
+        <name>Type_of_Service_Request__c</name>
+        <picklistValues>
+            <masterLabel>FOC</masterLabel>
+            <translation><!-- FOC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation Request</masterLabel>
+            <translation><!-- Installation Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sale of Component</masterLabel>
+            <translation><!-- Sale of Component --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warranty</masterLabel>
+            <translation><!-- Warranty --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Warranty Card Available --></label>
+        <name>Warranty_Card_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Card --></label>
+        <name>Warranty_Card__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Warranty --></label>
+        <name>Warranty_Status__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- case person city --></label>
+        <name>case_person_city__c</name>
+    </fields>
+    <fields>
+        <label><!-- case person country --></label>
+        <name>case_person_country__c</name>
+    </fields>
+    <fields>
+        <label><!-- case person state --></label>
+        <name>case_person_state__c</name>
+    </fields>
+    <fields>
+        <label><!-- case person street --></label>
+        <name>case_person_street__c</name>
+    </fields>
+    <fields>
+        <label><!-- case person zip --></label>
+        <name>case_person_zip__c</name>
+    </fields>
+    <layouts>
+        <layout>Call Center Layout</layout>
+        <sections>
+            <label><!-- AMC Details --></label>
+            <section>AMC Details</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Field Service Report Details --></label>
+            <section>Field Service Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Details --></label>
+            <section>Financial Details</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- Service Engineer Expense Details --></label>
+            <section>Service Engineer Expense Details</section>
+        </sections>
+        <sections>
+            <label><!-- Service Request Details --></label>
+            <section>Service Request Details</section>
+        </sections>
+        <sections>
+            <label><!-- Web  Information --></label>
+            <section>Web  Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Close Case Call Center</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed Case Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Field Service Report Details --></label>
+            <section>Field Service Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Details --></label>
+            <section>Financial Details</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Service Engineer Expense Details --></label>
+            <section>Service Engineer Expense Details</section>
+        </sections>
+        <sections>
+            <label><!-- Service Request Details --></label>
+            <section>Service Request Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Web Information --></label>
+            <section>Web Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed Case Layout For Admin</layout>
+        <sections>
+            <label><!-- AMC Details --></label>
+            <section>AMC Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Field Service Report Details --></label>
+            <section>Field Service Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Details --></label>
+            <section>Financial Details</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Details --></label>
+            <section>Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Service Engineer Expense Details --></label>
+            <section>Service Engineer Expense Details</section>
+        </sections>
+        <sections>
+            <label><!-- Service Request Details --></label>
+            <section>Service Request Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Web Information --></label>
+            <section>Web Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Service Center Layout</layout>
+        <sections>
+            <label><!-- AMC Details --></label>
+            <section>AMC Details</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Field Service Report Details --></label>
+            <section>Field Service Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Details --></label>
+            <section>Financial Details</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Details --></label>
+            <section>Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- Service Engineer Expense Details --></label>
+            <section>Service Engineer Expense Details</section>
+        </sections>
+        <sections>
+            <label><!-- Service Request Details --></label>
+            <section>Service Request Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Web Information --></label>
+            <section>Web Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Service Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Su-Kam Case Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- New Service Request --></label>
+        <name>New_Service_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Open Case Call Center --></label>
+        <name>Open_Case_Call_Center</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service Request Closed --></label>
+        <name>Service_Request_Closed</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service center layout --></label>
+        <name>Service_center_layout</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Attended Date &amp; Time can not be greater than Completion Date &amp; Time --></errorMessage>
+        <name>Attended_Date_Time_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Can not change the owner if call has been assigned. --></errorMessage>
+        <name>Can_not_change_owner_if_assigned</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in Information regarding Cash Amount &amp; Receiving Date --></errorMessage>
+        <name>Cash_Mode_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sub Status Remark Is mandatory if Call Status is either Pending or Reject. 
+OR 
+Sub status Remark can not have Value when sub status is not Pending and Reject. --></errorMessage>
+        <name>Check_Sub_Status_remark</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in values in Bank Name, Cheque No. and Cheque Amount and Receiving Date fields --></errorMessage>
+        <name>Cheque_Mode_Payment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Once a case is Closed or Reject  you will no longer be able to make changes to it. Please contact your System Administrator to have this case reopened if additional changes are necessary. --></errorMessage>
+        <name>Closed_Case_not_Editable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completion Date &amp; Time can not be greater than Closed Date &amp; Time --></errorMessage>
+        <name>Completion_Date_Time_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fill Component Bill No. , Component Tax Rate &amp; Component Charges . --></errorMessage>
+        <name>Component_Charges_Blank_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Discount percent can not be greater than 15 % in service Charges and 30% in Component Charges. --></errorMessage>
+        <name>Discount_in_Service_and_Component_charge</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is a FOC Case which needs to have approval before it is Closed. Kindly contact your Administrator --></errorMessage>
+        <name>FOC_Close_Case_on_Rejection</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is a FOC Case which needs to have approval before it is Closed. Please Submit for Approval. --></errorMessage>
+        <name>FOC_Close_Case_without_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure that the Service Engineer has submitted all the Defective Parts Returned by the Customer. &quot;Total Quantity Issued&quot; = &quot;Total Defective Quantity Returned&quot;. Contact your administrator for any exceptions --></errorMessage>
+        <name>FOC_Warranty_Defective_Parts_Returned</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invalid charges entered. Kindly recheck and update the Service Request --></errorMessage>
+        <name>Grand_Total_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Select Value for &quot;Estimated Value of Service Request&quot; --></errorMessage>
+        <name>Mandate_for_FOC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Select Value for &quot;Estimated Value of Service Request&quot; --></errorMessage>
+        <name>Mandate_for_Warranty_Component</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Component Bill no. field is mandatory for all SALE OF COMPONENT cases --></errorMessage>
+        <name>Mandatory_Comp_Bill_No</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Service Bill no. field is mandatory for cases, where type of Service Request is &apos;OTHERS&apos; or &apos;SALE OF COMPONENT&apos; --></errorMessage>
+        <name>Mandatory_Serv_Bill_No</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill Remark in case of Miscellaneous Charges. --></errorMessage>
+        <name>Miscllaneous_Remark_Mandatory_rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select Payment Mode --></errorMessage>
+        <name>Mode_of_Payment_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the Customer is under warranty then there can be no Service Charges. Please check --></errorMessage>
+        <name>No_Service_Charges_for_InWarranty_Cases</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please transfer the record to the appropriate user --></errorMessage>
+        <name>Owner_of_Record_cannot_be_Role_CEO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product Serial No. length should be greater then 10 . --></errorMessage>
+        <name>Product_Serial_No_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Purchase Date Can  Not Be Greater than Date Time Opened --></errorMessage>
+        <name>Purchase_Date_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add Items through &quot;Component Used in Service Request&quot; related list --></errorMessage>
+        <name>Sale_of_Component_Charges</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the Installation Charges in Service Charges (Other) --></errorMessage>
+        <name>Service_Charge_Other_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Service Bill No. is Mandatory in case Service Charges(After Tax). --></errorMessage>
+        <name>Service_Charges_After_Tax_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select appropriate Service Charges --></errorMessage>
+        <name>Service_Charges_are_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fill call sub status if status is either &quot;Pending&quot; or &quot;Reject&quot; --></errorMessage>
+        <name>Status_and_Call_Sub_Status_rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Select Type of Service Request --></errorMessage>
+        <name>Type_of_Service_Request_is_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Kindly don&apos;t enter &apos; (apostrophe) in the Service Bill No --></errorMessage>
+        <name>Validate_Service_Bill_No</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Service Engineer does not belong to this Service Center. Please choose a valid Service Engineer --></errorMessage>
+        <name>Validate_Service_Engineer_Owner_Id</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please choose a valid Service Engineer. --></errorMessage>
+        <name>Validate_Stock_Point_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is a Warranty Case for Product Replacement / Battery Replacement - which needs to have approval before it is Closed. Kindly contact your Administrator --></errorMessage>
+        <name>Warranty_Close_Case_on_Rejection</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is a Warranty Case for Product Replacement / Battery Replacement - which needs to have approval before it is Closed. Kindly contact your Administrator --></errorMessage>
+        <name>Warranty_Close_Case_without_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Misc. Service Charges and Misc. Component Charges can not have negative values. --></errorMessage>
+        <name>service_charges_other_rule</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Close_Service_Request --></label>
+        <name>Close_Service_Request</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- InvoicePDF --></label>
+        <name>InvoicePDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Open_Service_Request --></label>
+        <name>Open_Service_Request</name>
+    </webLinks>
+</CustomObjectTranslation>

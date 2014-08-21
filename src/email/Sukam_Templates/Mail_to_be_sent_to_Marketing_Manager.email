@@ -1,0 +1,7 @@
+Hi, 
+
+The complaint number {!Partner_Service_Request__c.Name} has been generated. Details are provided in the link below. 
+
+{!Partner_Service_Request__c.Link} 
+
+Thanks

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Products</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Products</value>
+    </caseValues>
+    <fields>
+        <label><!-- Category Code --></label>
+        <name>Category_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Description --></label>
+        <name>Category_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Battery</masterLabel>
+            <translation><!-- Battery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HUPS</masterLabel>
+            <translation><!-- HUPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS</masterLabel>
+            <translation><!-- UPS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Family --></label>
+        <name>Family__c</name>
+        <picklistValues>
+            <masterLabel>Components</masterLabel>
+            <translation><!-- Components --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finished Goods</masterLabel>
+            <translation><!-- Finished Goods --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>Group__c</name>
+        <picklistValues>
+            <masterLabel>LA Battery</masterLabel>
+            <translation><!-- LA Battery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMF Battery</masterLabel>
+            <translation><!-- SMF Battery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tubular Battery</masterLabel>
+            <translation><!-- Tubular Battery --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. Of PM --></label>
+        <name>No_Of_PM__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ProductUpsertId --></label>
+        <name>ProductUpsertId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+        <picklistValues>
+            <masterLabel>BATTERY</masterLabel>
+            <translation><!-- BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPONENT</masterLabel>
+            <translation><!-- COMPONENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GENSET</masterLabel>
+            <translation><!-- GENSET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HUPS</masterLabel>
+            <translation><!-- HUPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INVERTER</masterLabel>
+            <translation><!-- INVERTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation><!-- OTHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAR CHARGE CONTROLLER</masterLabel>
+            <translation><!-- SOLAR CHARGE CONTROLLER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAR INVERTER</masterLabel>
+            <translation><!-- SOLAR INVERTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAR PCU</masterLabel>
+            <translation><!-- SOLAR PCU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAR PRODUCT</masterLabel>
+            <translation><!-- SOLAR PRODUCT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS</masterLabel>
+            <translation><!-- UPS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Code --></label>
+        <name>Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Description --></label>
+        <name>Product_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Group --></label>
+        <name>Sub_Group__c</name>
+        <picklistValues>
+            <masterLabel>135Ah</masterLabel>
+            <translation><!-- 135Ah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>150Ah</masterLabel>
+            <translation><!-- 150Ah --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UoM --></label>
+        <name>UoM__c</name>
+        <picklistValues>
+            <masterLabel>Ea</masterLabel>
+            <translation><!-- Ea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kg</masterLabel>
+            <translation><!-- Kg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lts</masterLabel>
+            <translation><!-- Lts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mts</masterLabel>
+            <translation><!-- Mts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Set</masterLabel>
+            <translation><!-- Set --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Component Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pricebook Entry --></label>
+            <section>Pricebook Entry</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Finished Good Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pricebook Entry --></label>
+            <section>Pricebook Entry</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pricebook Entry --></label>
+            <section>Pricebook Entry</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Components --></label>
+        <name>Components</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Finished Goods --></label>
+        <name>Finished_Goods</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

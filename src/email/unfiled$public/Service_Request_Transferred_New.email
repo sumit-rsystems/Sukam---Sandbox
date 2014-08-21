@@ -1,0 +1,2 @@
+Service Request  No.{!Service_Request__c.Name}has been assigned to you. Please click on the link below to view the record.
+{!Service_Request__c.Link}

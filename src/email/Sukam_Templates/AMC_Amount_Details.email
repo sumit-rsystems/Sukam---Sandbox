@@ -1,0 +1,14 @@
+Dear Sir,
+
+Please find the details regarding AMC Amount for Contract No. - 
+{!Contracts__c.00N90000003PLsJ}
+Customer Name: {!Contracts__c.Account_Name__c}
+Customer Address (Bill To):{!Contracts__c.Billing_Address__c}
+Customer Address (Ship To):{!Contracts__c.Shipping_Address__c}
+Contract No.: {!Contracts__c.00N90000003PLsJ}
+AMC Start Date: {!Contracts__c.Start_Date__c}
+AMC End Date: {!Contracts__c.00N90000003PLsR}
+Type of AMC: {!Contracts__c.AMC_Type__c}
+Amount : {!Contracts__c.AMC_Amount__c}
+
+Thanks,

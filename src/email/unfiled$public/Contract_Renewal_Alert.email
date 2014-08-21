@@ -1,0 +1,9 @@
+*** Contract Renewal Alert Notification*** 
+
+This is to alert that the following Contract is expiring today: 
+
+Customer Name: {!Contract.Account} 
+Contract Owner: {!Contract.OwnerFullName} 
+Contract Number: {!Contract.ContractNumber} 
+
+Click on the link to access the contract: {!Contract.Link}

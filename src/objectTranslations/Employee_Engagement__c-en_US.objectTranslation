@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Employee Engagement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Employee Engagements</value>
+    </caseValues>
+    <fields>
+        <label><!-- Business Plan --></label>
+        <name>Business_Plan__c</name>
+        <picklistValues>
+            <masterLabel>Long</masterLabel>
+            <translation><!-- Long --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short</masterLabel>
+            <translation><!-- Short --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Battery</masterLabel>
+            <translation><!-- Battery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Plan</masterLabel>
+            <translation><!-- Business Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distribution</masterLabel>
+            <translation><!-- Distribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Engagement</masterLabel>
+            <translation><!-- Employee Engagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New products</masterLabel>
+            <translation><!-- New products --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <layouts>
+        <layout>Employee Engagement Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Category should be Employee Engagement --></errorMessage>
+        <name>Category_should_be_Employee_Engagement</name>
+    </validationRules>
+</CustomObjectTranslation>

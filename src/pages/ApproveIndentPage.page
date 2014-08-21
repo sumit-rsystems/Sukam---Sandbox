@@ -1,0 +1,126 @@
+<apex:page standardController="Indent_Request__c" extensions="ViewIndentExtension" id="mainPage">
+    <apex:form id="mainForm">
+        <apex:pageMessages id="msg1" escape="false"/>
+        <apex:pageBlock title="Indent Requestion Form" id="mainBlock">
+
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="Save"/>
+                <apex:commandButton action="{!cancel}" value="Cancel" immediate="true"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Indent Request">
+                <apex:outputField value="{!indentRequestObj.Name}"/>
+                <apex:outputField value="{!indentRequestObj.Ownerid}"/>            
+                <apex:outputField value="{!indentRequestObj.Indent_Request_Status__c}"/>
+                <apex:outputField value="{!indentRequestObj.Requisition_Date__c}"/>
+                <apex:outputField value="{!indentRequestObj.Dispatch_Sts__c}"/>
+                <apex:outputField value="{!indentRequestObj.Approval_Date__c}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Address Details">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Service Centre</apex:outputLabel>
+                    <apex:outputText >{!scName}</apex:outputText>
+                </apex:pageBlockSectionItem>
+                <apex:outputField value="{!indentRequestObj.State__c}"/>
+                <apex:outputField value="{!indentRequestObj.Address__c}"/>               
+                <apex:outputField value="{!indentRequestObj.City__c}"/>
+                <apex:outputText />
+                <apex:outputField value="{!indentRequestObj.Pincode__c}"/>
+            </apex:pageBlockSection>
+
+
+            <apex:pageBlockSection title="Indent Request Details" columns="1" id="detailSection">
+                <apex:outputPanel >
+                    <apex:variable value="{!VALUE('0')}" var="num"/>
+                    <table align="left" width ="100%" id="mainTable">
+                        <tr>
+                            <th width="5%">Sl No.</th>
+                            <th width="22%">Product</th>
+                            <th width="10%">Product Code</th>
+                            <th width="11%">Requested Quantity</th>
+                            <th width="11%">Item Priority</th>
+                            <th width="10%">Remarks</th>
+                            <th width="10%">Line Status</th>
+                            <th width="11%">Approved Quantity</th>
+                            <th width="10%">Reason</th>
+                        </tr>
+                        <apex:repeat value="{!detailList}" var="RequestDetail" id="theRepeat">
+                        <tr onmouseout="if (window.hiOff){hiOff(this);} " onBlur="if (window.hiOff){hiOff(this);}" onFocus="if (window.hiOn){hiOn(this );}" onmouseover="if (window.hiOn){hiOn(this);} ">
+                        <td>
+                            <apex:variable var="num" value="{!num + 1}"/>
+                            {!FLOOR(num)}
+                        </td>
+                        <td>
+                            <apex:outputField id="Product" value="{!RequestDetail.Products__c}"/>
+                        </td>
+                        <td>
+                            <apex:outputField id="ProductCode" value="{!RequestDetail.Product_Code__c}"/>
+                        </td>
+                        <td>
+                            <apex:outputField id="quantity" value="{!RequestDetail.Requested_Quantity__c}"/>
+                        </td>
+                        <td>
+                            <apex:outputField id="priority" value="{!RequestDetail.Item_Priority__c}"/>
+                        </td>
+                        <td>
+                            <apex:outputField id="remarks" value="{!RequestDetail.Remarks__c}"/>
+                        </td>
+                        <td>
+                            <apex:inputField id="lineStatus" value="{!RequestDetail.Line_Status__c}" required="true" onchange="disableQuantity(this,'{!$Component.approvedQuantity}')"/>
+                        </td>
+
+                        <td>
+                          <apex:inputText id="approvedQuantity" value="{!RequestDetail.Approved_Quantity__c}" required="true"/>
+                            <!--apex:inputField id="approvedQuantity" value="{!RequestDetail.Approved_Quantity__c}"/-->
+                        </td>
+                        <td>
+                            <apex:inputField id="reason" value="{!RequestDetail.Reason__c}"/>
+                        </td>
+                        </tr>
+                         <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>  
+                        <script>
+                            //alert(document.getElementById("{!$Component.lineStatus}").value);
+                            if(document.getElementById("{!$Component.lineStatus}").value == 'Accepted')
+                            {
+                                document.getElementById("{!$Component.approvedQuantity}").disabled = false;
+                            }
+                            else if(document.getElementById("{!$Component.lineStatus}").value == 'Rejected')
+                            {
+                                document.getElementById("{!$Component.approvedQuantity}").disabled = true;
+                                //alert(document.getElementById("{!$Component.approvedQuantity}").disabled);
+                            } 
+                                      
+                        </script>
+                        </apex:repeat>
+                    </table>                    
+                </apex:outputPanel>
+
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+<script>
+function disableQuantity(obj,qid)
+{
+    //alert(qid);
+    if(obj.value == 'Accepted')
+    {
+        document.getElementById(qid).disabled = false;
+    }
+    else if(obj.value =='Rejected')
+    {
+        document.getElementById(qid).disabled = true;
+    }
+}
+</script>
+</apex:page>

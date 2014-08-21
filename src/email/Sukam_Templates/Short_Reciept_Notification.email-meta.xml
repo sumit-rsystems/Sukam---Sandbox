@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Short Reciept Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Short Reciept Notification</name>
+    <style>none</style>
+    <subject>Short Reciept Notification: Transaction Id: {!01I90000000tU9g.Name}</subject>
+    <textOnly>Dear Sir,
+
+Please be informed that a Stock Transfer (via MRN No. {!01I90000000tU9g.00N90000003PBtl}) was recieved by {!01I90000000tU9g.OwnerFullName}
+
+Transaction Id: {!01I90000000tU9g.Name}
+
+The list of items received short is as follows
+
+1) Component Code: 
+{!01I90000000tU9g.00N90000003PBt0}
+Component Description: 
+{!01I90000000tU9g.00N90000003PBue}	
+Short Quantity: {!01I90000000tU9g.00N90000003PBui}
+
+*******
+
+2) Component Code: 
+{!01I90000000tU9g.00N90000003PBsd}
+Component Description:
+{!01I90000000tU9g.00N90000003PBub}	
+Short Quantity:
+{!01I90000000tU9g.00N90000003PBuj}
+
+*******
+
+3) Component Code: 
+{!01I90000000tU9g.00N90000003PBsy}
+Component Description: 	
+{!01I90000000tU9g.00N90000003PBuc}
+Short Quantity:
+{!01I90000000tU9g.00N90000003PBuk}
+
+*******
+ 	
+4) Component Code: 	
+{!01I90000000tU9g.00N90000003PBsz}
+Component Description: 
+{!01I90000000tU9g.00N90000003PBud}	
+Short Quantity:
+{!01I90000000tU9g.00N90000003PBul}
+
+********	
+ 	 	 
+
+Regards,
+{!01I90000000tU9g.OwnerFullName}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

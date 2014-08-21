@@ -1,0 +1,5 @@
+<apex:page standardController="Contracts__c">
+    <apex:form >
+        <apex:detail inlineEdit="false" relatedList="true"/>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,81 @@
+<apex:page standardController="Indent_Request__c" extensions="IndentRequestController" >
+    <apex:form id="mainForm">
+        <apex:pageMessages id="msg1" escape="false"/>
+        <apex:pageBlock title="Indent Requisition Form">
+
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!saveIndentRequest}" value="Save"/>
+                <apex:commandButton action="{!cancel}" value="Cancel" immediate="true"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Indent Request">
+                <!--<apex:outputField value="{!indentRequestObj.Name}"/>-->
+                <!--<apex:outputField value="{!indentRequestObj.Ownerid}"/>-->
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Owner</apex:outputLabel>
+                    <apex:outputText >{!$User.FirstName} {!$User.LastName}</apex:outputText>
+                </apex:pageBlockSectionItem>
+                <apex:outputField value="{!indentRequestObj.Indent_Request_Status__c}"/>
+                <apex:outputField value="{!indentRequestObj.Requisition_Date__c}"/>
+                <apex:outputField value="{!indentRequestObj.Dispatch_Sts__c}"/>
+                <apex:outputField value="{!indentRequestObj.Approval_Date__c}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Address Details">
+                <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Service Centre</apex:outputLabel>
+                        <apex:outputText >{!scName}</apex:outputText>
+                </apex:pageBlockSectionItem>
+                <apex:outputField value="{!indentRequestObj.Address__c}"/>
+                <apex:outputField value="{!indentRequestObj.City__c}"/>
+                <apex:outputField value="{!indentRequestObj.Pincode__c}"/>
+            </apex:pageBlockSection>
+
+
+            <apex:pageBlockSection title="Indent Request Details" id="block2" columns="1">
+                <apex:variable value="{!VALUE('0')}" var="num"/>
+                <apex:inputHidden value="{!deletedItem}" id="deleteitem"/>
+                <apex:pageBlockTable value="{!indentRequestDetailList}" var="detailItem">
+                    
+                    <apex:column headerValue="Sl No.">
+                        {!FLOOR(num +1)}       
+                    </apex:column>
+                    
+                    <apex:column headerValue="Product">
+                        <apex:inputField value="{!detailItem.Products__c}"/>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Requested Quantity">
+                        <apex:outputPanel layout="block" styleClass="requiredInput" >
+                            <apex:outputPanel styleClass="requiredBlock"/>
+                            <apex:inputField value="{!detailItem.Requested_Quantity__c}" required="false"/>
+                        </apex:outputPanel>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Priority">
+                        <apex:inputField value="{!detailItem.Item_Priority__c}"/>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Remarks">
+                        <apex:inputField value="{!detailItem.Remarks__c}"/>
+                    </apex:column>
+                    
+                    <apex:column >
+                        <apex:commandButton value="Delete" styleClass="btnImportant" onclick="selectDeleted('{!num}','{!$Component.deleteitem}');" reRender="block2" action="{!onDelete}"/>
+                        <apex:variable var="num" value="{!num + 1}"/>   
+                    </apex:column>
+                    
+                </apex:pageBlockTable>    
+            </apex:pageBlockSection>
+            <br/>
+            <apex:commandButton action="{!addLineItems}" value="Add More" reRender="block2"/>
+        </apex:pageBlock>
+    </apex:form>
+    <script type="text/javascript">
+        function selectDeleted(num,comp)
+        {
+            //alert(num);
+            document.getElementById(comp).value=num;
+        }
+   </script>
+</apex:page>

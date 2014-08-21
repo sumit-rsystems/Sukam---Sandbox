@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Enterprise Contact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Enterprise Contacts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Company_Name__c</name>
+    </fields>
+    <fields>
+        <name>LeadSource</name>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chat</masterLabel>
+            <translation><!-- Chat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer shop</masterLabel>
+            <translation><!-- Dealer shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Referral</masterLabel>
+            <translation><!-- Employee Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Referral</masterLabel>
+            <translation><!-- External Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoardings</masterLabel>
+            <translation><!-- Hoardings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newspaper/Magazine</masterLabel>
+            <translation><!-- Newspaper/Magazine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OOH</masterLabel>
+            <translation><!-- OOH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous customer</masterLabel>
+            <translation><!-- Previous customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Brochure/Flyer</masterLabel>
+            <translation><!-- Product Brochure/Flyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations</masterLabel>
+            <translation><!-- Public Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio</masterLabel>
+            <translation><!-- Radio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred by a friend</masterLabel>
+            <translation><!-- Referred by a friend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research</masterLabel>
+            <translation><!-- Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Internal</masterLabel>
+            <translation><!-- Seminar - Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Partner</masterLabel>
+            <translation><!-- Seminar - Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shopping Mall</masterLabel>
+            <translation><!-- Shopping Mall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Television</masterLabel>
+            <translation><!-- Television --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word of mouth</masterLabel>
+            <translation><!-- Word of mouth --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- LANDLINE: Please put in the correct phone no. Eg. 0(STD Code)Phone No. - 01122120767; when STD Code is 011 
+
+MOBILE: Please put in the correct phone no. Eg. 0Mobile No. 
+Ex: 09988899888 --></errorMessage>
+        <name>HomePhone_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- LANDLINE: Please put in the correct phone no. Eg. 0(STD Code)Phone No. - 01122120767; when STD Code is 011 
+
+MOBILE: Please put in the correct phone no. Eg. 0Mobile No. 
+Ex: 09988899888 --></errorMessage>
+        <name>Home_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- LANDLINE: Please put in the correct phone no. Eg. 0(STD Code)Phone No. - 01122120767; when STD Code is 011 
+
+MOBILE: Please put in the correct phone no. Eg. 0Mobile No. 
+Ex: 09988899888 --></errorMessage>
+        <name>MobilePhone_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- LANDLINE: Please put in the correct phone no. Eg. 0(STD Code)Phone No. - 01122120767; when STD Code is 011 
+
+MOBILE: Please put in the correct phone no. Eg. 0Mobile No. 
+Ex: 09988899888 --></errorMessage>
+        <name>OtherPhone_Validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+</CustomObjectTranslation>

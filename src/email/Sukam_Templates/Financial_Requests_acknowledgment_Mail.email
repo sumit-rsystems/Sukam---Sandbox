@@ -1,0 +1,5 @@
+Hi {!Partner_Service_Request__c.OwnerFullName}, 
+
+Thank you for your service request number {!Partner_Service_Request__c.Name} . This service request will be addressed within 5 working days. 
+
+Thanks

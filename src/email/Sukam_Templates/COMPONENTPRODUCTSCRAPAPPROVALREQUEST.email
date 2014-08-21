@@ -1,0 +1,9 @@
+Dear Sir, 
+
+Kindly send us your approval for Component / Product Scrap. 
+
+Click on the link to access the Scrap Details 
+{!Scrap_del__c.Link}
+
+Best Regards, 
+{!User.FirstName}

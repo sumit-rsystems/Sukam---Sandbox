@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>ServiceRequestsNewOverridePage</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Customer_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_of_Purchase__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Purchase</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Dealer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Dealer Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Escalation_Date_2_days_for_SR_Closure__c</fullName>
+        <description>This field will calculate that the escalation date for closure of SRs is 2 days after it has been last modified i.e. the SR has been executed</description>
+        <externalId>false</externalId>
+        <formula>LastModifiedDate + 2</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Escalation Date 2 days for SR Closure</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Esclation_Date_30_days__c</fullName>
+        <externalId>false</externalId>
+        <formula>LastModifiedDate +30</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Esclation Date 30 days</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Esclation_Date_45_days__c</fullName>
+        <externalId>false</externalId>
+        <formula>LastModifiedDate + 45</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Esclation Date 45 days</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Esclation_Date_5_days__c</fullName>
+        <externalId>false</externalId>
+        <formula>LastModifiedDate +5</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Esclation Date 5 days</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Esclation_Date_7_days__c</fullName>
+        <externalId>false</externalId>
+        <formula>LastModifiedDate + 7</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Esclation Date 7 days</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Esclation_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>LastModifiedDate + 10</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Esclation Date 10 days</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Feedback__c</fullName>
+        <externalId>false</externalId>
+        <label>Feedback</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>From__c</fullName>
+        <externalId>false</externalId>
+        <label>From</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Phone_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone No</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Product_Model__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Model</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity_Approved__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity Approved</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Remarks</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Serial_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Serial Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Request_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( &apos;/&apos;&amp; Id,
+CASE($RecordType.Name , &apos;Financial Service Request&apos; , &apos;FIN&apos;,&apos;Closed Financial&apos; , &apos;FIN&apos;, 
+&apos;General Complaints&apos;   , &apos;MAR&apos;, &apos;Closed General Complaints&apos;   , &apos;MAR&apos;,
+&apos;Marketing Material Request&apos;   , &apos;MM&apos;, &apos;Closed Marketing Material Request&apos;   , &apos;MM&apos;,
+&apos;Product Complaint &apos; , &apos;SERV&apos; ,&apos;Closed Product Complaints&apos; , &apos;SERV&apos; ,&apos;&apos;)  &amp;  Name )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Service Request No</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Executed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>To__c</fullName>
+        <externalId>false</externalId>
+        <label>To</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Type_Of_Complaint__c</fullName>
+        <externalId>false</externalId>
+        <label>Type Of Complaint</label>
+        <picklist>
+            <picklistValues>
+                <fullName>SYSTEM NOT WORKING ON MAINS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SYSTEM NOT WORKING ON BATTERY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MAINS MCB TRIPPS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DC MCB TRIPPS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FUSE BLOWN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FUSE BROKEN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Our product</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Service Centre</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Office</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Services / Sales Engineer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Logistics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type_Of_Request__c</fullName>
+        <externalId>false</externalId>
+        <label>Type Of Request</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Outstanding – Ageing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accounts Statement (Overall)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bills</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Debit Note</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Credit Note</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Payments</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cheque Bounce Details</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Returns</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Financial Details</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Our product</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Service Centre</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Office</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Services / Sales Engineer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PoP - Brochure</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PoP - Leaflet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PoP - Catalogue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PoP - Z Cards</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PoP - Danglers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PoP - Posters</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PoP - Collaterals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PoP - CD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dealer Certificates</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Boards</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Service Requests</label>
+    <nameField>
+        <displayFormat>{0000000}</displayFormat>
+        <label>Service Request No</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Service Requests</pluralLabel>
+    <recordTypes>
+        <fullName>Closed_Financial</fullName>
+        <active>true</active>
+        <label>Closed Financial</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Complaint__c</picklist>
+            <values>
+                <fullName>DC MCB TRIPPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FUSE BLOWN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FUSE BROKEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MAINS MCB TRIPPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SYSTEM NOT WORKING ON BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SYSTEM NOT WORKING ON MAINS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Request__c</picklist>
+            <values>
+                <fullName>Accounts Statement %28Overall%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bills</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque Bounce Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Debit Note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Financial Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outstanding %E2%80%93 Ageing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Returns</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Closed_General_Complaints</fullName>
+        <active>true</active>
+        <label>Closed General Complaints</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Complaint__c</picklist>
+            <values>
+                <fullName>DC MCB TRIPPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FUSE BLOWN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FUSE BROKEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MAINS MCB TRIPPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Our product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SYSTEM NOT WORKING ON BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SYSTEM NOT WORKING ON MAINS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Centre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services %2F Sales Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Request__c</picklist>
+            <values>
+                <fullName>Accounts Statement %28Overall%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bills</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque Bounce Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Debit Note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Financial Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Our product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outstanding %E2%80%93 Ageing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Returns</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Centre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services %2F Sales Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Closed_Marketing_Material_Request</fullName>
+        <active>true</active>
+        <label>Closed Marketing Material Request</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Complaint__c</picklist>
+            <values>
+                <fullName>DC MCB TRIPPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FUSE BLOWN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FUSE BROKEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MAINS MCB TRIPPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Our product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SYSTEM NOT WORKING ON BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SYSTEM NOT WORKING ON MAINS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Centre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services %2F Sales Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Request__c</picklist>
+            <values>
+                <fullName>Boards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer Certificates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PoP - Brochure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PoP - CD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PoP - Catalogue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PoP - Collaterals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PoP - Danglers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PoP - Leaflet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PoP - Posters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PoP - Z Cards</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Closed_Product_Complaints</fullName>
+        <active>true</active>
+        <label>Closed Product Complaints</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Complaint__c</picklist>
+            <values>
+                <fullName>DC MCB TRIPPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FUSE BLOWN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FUSE BROKEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MAINS MCB TRIPPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SYSTEM NOT WORKING ON BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SYSTEM NOT WORKING ON MAINS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Request__c</picklist>
+            <values>
+                <fullName>Accounts Statement %28Overall%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bills</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque Bounce Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Debit Note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Financial Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outstanding %E2%80%93 Ageing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Returns</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Financial_Service_Request</fullName>
+        <active>true</active>
+        <label>Financial Service Request</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Complaint__c</picklist>
+            <values>
+                <fullName>DC MCB TRIPPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FUSE BLOWN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FUSE BROKEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MAINS MCB TRIPPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SYSTEM NOT WORKING ON BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SYSTEM NOT WORKING ON MAINS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Request__c</picklist>
+            <values>
+                <fullName>Accounts Statement %28Overall%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bills</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque Bounce Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Debit Note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Financial Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outstanding %E2%80%93 Ageing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Returns</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>General_Information_Complaints</fullName>
+        <active>true</active>
+        <label>General Information / Complaints</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Complaint__c</picklist>
+            <values>
+                <fullName>Logistics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Our product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Centre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services %2F Sales Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Request__c</picklist>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Our product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Centre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services %2F Sales Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Marketing_Material_Request</fullName>
+        <active>true</active>
+        <label>Marketing Material Request</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Complaint__c</picklist>
+            <values>
+                <fullName>DC MCB TRIPPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FUSE BLOWN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FUSE BROKEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MAINS MCB TRIPPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Our product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SYSTEM NOT WORKING ON BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SYSTEM NOT WORKING ON MAINS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Centre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services %2F Sales Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Request__c</picklist>
+            <values>
+                <fullName>Boards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer Certificates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PoP - Brochure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PoP - CD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PoP - Catalogue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PoP - Collaterals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PoP - Danglers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PoP - Leaflet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PoP - Posters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PoP - Z Cards</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Product_Complaint</fullName>
+        <active>true</active>
+        <label>Product Complaint</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Complaint__c</picklist>
+            <values>
+                <fullName>DC MCB TRIPPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FUSE BLOWN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FUSE BROKEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MAINS MCB TRIPPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SYSTEM NOT WORKING ON BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SYSTEM NOT WORKING ON MAINS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Request__c</picklist>
+            <values>
+                <fullName>Accounts Statement %28Overall%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bills</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque Bounce Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Debit Note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Financial Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outstanding %E2%80%93 Ageing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Returns</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Financial_Request_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>From__c   &gt;  TODAY() ||  To__c    &gt;  TODAY()</errorConditionFormula>
+        <errorMessage>Date Specified should not be more than Today&apos;s Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SR_Status_Change_Restriction_CRM_User_Ac</fullName>
+        <active>true</active>
+        <description>This validation is being used to ensure that the CRM user cannot change the status after a Service Request has been &quot;Executed&quot;</description>
+        <errorConditionFormula>AND ((OR ($Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;PRM User CRM&quot;)), (ISCHANGED (Status__c)), (OR (ISPICKVAL(Status__c, &apos;Open&apos;), ISPICKVAL(Status__c, &apos;Closed&apos;))))</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>The Su-Kam CRM can only maintain the status as EXECUTED</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SR_Status_Change_Restriction_on_Partner</fullName>
+        <active>true</active>
+        <description>This validation will ensure that the SR status cannot be changed to OPEN after it has been EXECUTED / CLOSED</description>
+        <errorConditionFormula>AND (OR ($Profile.Name = &apos;Sukam Partner User&apos;, $Profile.Name = &apos;Dummy - Partner Profile&apos; ), ISCHANGED (Status__c), ISPICKVAL(Status__c, &apos;Open&apos;))</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>The Service Request cannot be OPENED once it has been EXECUTED / CLOSED</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>To_date_has_to_be_after_From_date</fullName>
+        <active>true</active>
+        <description>&apos;To&apos; date cannot be before from date</description>
+        <errorConditionFormula>To__c   &lt;   From__c</errorConditionFormula>
+        <errorDisplayField>To__c</errorDisplayField>
+        <errorMessage>The &apos;To&apos; date cannot be before the &apos;From&apos; date. Please check</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Update_Request</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Update Request</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var url= &apos;/apex/PartnerRequestPage?retURL=%2Fa0P%2Fo&amp;RecordType=&apos;+&apos;{!Partner_Service_Request__c.RecordTypeId}&apos;+&apos;&amp;mode=EDIT&amp;prId=&apos;+&apos;{!Partner_Service_Request__c.Id}&apos;; 
+
+window.parent.location.href = url;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Details</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View Details</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var url= &apos;/apex/PartnerRequestPage?retURL=%2Fa0P%2Fo&amp;RecordType=&apos;+&apos;{!Partner_Service_Request__c.RecordTypeId}&apos;+&apos;&amp;mode=VIEW&amp;prId=&apos;+&apos;{!Partner_Service_Request__c.Id}&apos;; 
+
+window.parent.location.href = url;</url>
+    </webLinks>
+</CustomObject>

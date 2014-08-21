@@ -1,0 +1,11 @@
+*** AMC Payment ALERT *** 
+
+This is to alert that 3rd AMC Payment is due for the following: 
+
+Customer Name: {!Contract.Account}
+Contract Owner: {!Contract.OwnerFullName}
+Contract Number: {!Contract.ContractNumber}
+3rd Payment Due Date: {!Contract.X3rd_Payment_Due_Date__c}
+3rd Payment Amount Due: {!Contract.X3rd_Payment_Amount_Due__c}
+
+Click on the link to access the case: {!Contract.Link}

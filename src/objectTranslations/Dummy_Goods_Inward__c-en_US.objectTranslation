@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sukam Invoice</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sukam Invoices</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assigned To --></label>
+        <name>Assigned_To__c</name>
+        <relationshipLabel><!-- Sukam Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Base Value --></label>
+        <name>Base_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defective Quantity --></label>
+        <name>Defective_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grand Total --></label>
+        <name>Grand_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oracle Invoice No. --></label>
+        <name>Invoice_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Inward_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Inward_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Date / Time --></label>
+        <name>Order_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Details --></label>
+        <name>Order_Details__c</name>
+        <relationshipLabel><!-- Sukam Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Name --></label>
+        <name>Order_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order No --></label>
+        <name>Order_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Sukam Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Transit</masterLabel>
+            <translation><!-- In Transit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Invoice Value --></label>
+        <name>Total_Invoice_Val__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Invoice Value --></label>
+        <name>Total_Invoice_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usable Quantity --></label>
+        <name>Usable_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT --></label>
+        <name>VAT__c</name>
+    </fields>
+    <layouts>
+        <layout>Sukam Invoice Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

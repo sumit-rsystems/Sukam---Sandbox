@@ -1,0 +1,6 @@
+Hi {!Partner_Service_Request__c.OwnerFullName}, 
+
+Thank you for using PRM. Your complaint number {!Partner_Service_Request__c.Name} has been addressed and closed. 
+
+Thanks 
+{!Partner_Service_Request__c.LastModifiedBy}

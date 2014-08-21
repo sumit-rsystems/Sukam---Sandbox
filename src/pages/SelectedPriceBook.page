@@ -1,0 +1,60 @@
+<apex:page standardController="Product__c" extensions="CreatePriceBookEntryCon" title="Add List Price">
+    <apex:sectionHeader title="Price Book Selected"/>
+    <script>
+        function copyStandardPrice(checkbox, target, value) {
+            Alert(checkbox);   
+            var targetElement = document.getElementsByName(target)[0];
+            Alert(targetElement);
+            var checkboxElement = document.getElementsByName(checkbox)[0];
+            alert(checkboxElement);
+            if (checkboxElement.checked == true) {
+            targetElement.value = value;
+            targetElement.disabled = true;
+            } else {
+            targetElement.disabled = false;
+            }
+            }
+    </script> 
+   <style>
+       th {
+    border-top-color: #FFFFFF;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+   </style>
+    <apex:form >
+        <apex:OutputLabel value="You need to specify a List Price if you want to add a product to the price book.">
+        </apex:OutputLabel>
+        <br/><br/><br/>
+       <apex:pageBlock >
+        <apex:pageBlockButtons >
+            <apex:commandButton action="{!doSave}" value="save"/>
+            <apex:commandButton action="{!doSaveAndMore}" value="Save & More"/>
+            <apex:commandButton action="{!docancel}" value="Cancel"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockTable value="{!finalWrapperList}" var="fwl">
+        <!--<apex:dataTable  styleClass="tabularEditElement genericTable brndScnBrd">-->
+           <apex:column headervalue="Product" value="{!fwl.product}" />
+           <apex:column headervalue="Price Book" value="{!fwl.priceBook.Name }" />
+           <apex:column headervalue="Use Standard Price" >
+                <table width="100%" style="border-bottom:0px white;">
+                    <tr>
+                        <td width="40%" align="left"  style="border-bottom:none;">{!fwl.stdPrice.CurrencyIsoCode}&nbsp;{!fwl.stdPrice.Standard_Price__c }</td>
+                        <td width="20%" align="left" style="border-bottom:none;"><apex:inputCheckbox value="{!fwl.flag}" id="checkThis"/>
+                        </td>
+                    </tr>
+                </table>
+                 
+                   
+           </apex:column>
+           <apex:column headervalue="List Price">
+               <apex:inputText value="{!fwl.unitPrice}" id="uPrice"/>
+           </apex:column>          
+           <apex:column headerValue="Active">
+               <apex:inputCheckbox value="{!fwl.selected }"/>
+           </apex:column>
+           
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+     </apex:form>
+</apex:page>

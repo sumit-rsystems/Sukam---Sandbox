@@ -1,0 +1,477 @@
+<apex:page controller="searchenginecontroller" sidebar="false" id="thePage">
+<!-- <apex:page controller="searchenginecontroller" sidebar="false" id="thePage" readOnly="true"> -->
+    <apex:form id="theForm">
+        <script language="javascript">
+            function addLoadEvent(func) {
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+            window.onload = func;
+            } else {
+            window.onload = function() {
+            if (oldonload) {
+            oldonload();
+            }
+            func();
+            }
+            }
+            }
+            
+            function dotest() {
+            twistSection(document.getElementById('thePage:theForm:pBlock:j_id1:sectItem:sect1').childNodes[0].childNodes[0]);
+            twistSection(document.getElementById('thePage:theForm:pBlock:j_id1:pbs:pbs1').childNodes[0].childNodes[0]);
+            
+          
+            }
+            
+            addLoadEvent(dotest);
+        </script>
+        <apex:pageblock id="pBlock">
+             <apex:pageBlockSection Columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Status" />
+                    <apex:outputLabel value="No.Of Calls" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="New" />
+                     <apex:commandLink value="{!strNew}"  action="{!refreshSearchResult}">
+                        <apex:param name="selectedStatus" value="New" />
+                    </apex:commandLink>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Assigned" />
+                    <apex:commandLink value="{!strAssigned}" action="{!refreshSearchResult}">
+                        <apex:param name="selectedStatus" value="Assigned"/>
+                    </apex:commandLink>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Allocated" />
+                    <apex:commandLink value="{!strAllocated}" action="{!refreshSearchResult}">
+                        <apex:param name="selectedStatus" value="Allocated"/>
+                    </apex:commandLink>
+                </apex:pageBlockSectionItem>
+                
+               <apex:pageBlockSectionItem id="sectItem">
+                    <apex:outputLabel value="Pending"/>
+                       <apex:outputPanel id="panel">
+                            <apex:commandLink value="{!strPending}" action="{!refreshSearchResult}">
+                                 <apex:param name="selectedStatus" value="Pending"/>
+                                    </apex:commandLink>
+                                 <apex:pageBlockSection title="SUB STATUS" Columns="1" collapsible="true" id="sect1">
+                                     <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="Part Pending" />
+                                          <apex:commandLink value="{!strPartPending}" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="Part Pending"/> 
+                                         </apex:commandLink>      
+                                     </apex:pageBlockSectionItem>
+                                     
+                                     <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="No Power" />
+                                          <apex:commandLink value="{!strNoPower}" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="No Power"/> 
+                                         </apex:commandLink>      
+                                     </apex:pageBlockSectionItem>
+                                  
+                                     <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="Door Lock" />
+                                          <apex:commandLink value="{!strDoorLock}" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="Door Lock"/> 
+                                         </apex:commandLink>      
+                                     </apex:pageBlockSectionItem>   
+                                     
+                                     <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="Customer Not Availble" />
+                                          <apex:commandLink value="{!strCustomerNotAvailble}" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="Customer Not Availble"/> 
+                                         </apex:commandLink>      
+                                     </apex:pageBlockSectionItem>  
+                                     
+                                     <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="Refer To Trc" />
+                                          <apex:commandLink value="{!strReferToTrc }" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="Refer To Trc"/> 
+                                         </apex:commandLink>      
+                                     </apex:pageBlockSectionItem>  
+                                     
+                                      <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="Pending For PJP" />
+                                          <apex:commandLink value="{!strPendingForPJP}" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="Pending For PJP"/> 
+                                         </apex:commandLink>      
+                                     </apex:pageBlockSectionItem>  
+                                     
+                                     <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="Technical Problem" />
+                                          <apex:commandLink value="{!strTechnicalProblem}" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="Technical Problem"/> 
+                                         </apex:commandLink>      
+                                     </apex:pageBlockSectionItem>  
+                                     
+                                     <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="Pending For Replacement" />
+                                          <apex:commandLink value="{!strPendingForReplacement}" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="Pending For Replacement"/> 
+                                         </apex:commandLink>      
+                                     </apex:pageBlockSectionItem>  
+                                     
+                                     <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="Approval On Hold" />
+                                          <apex:commandLink value="{!strApprovalOnHold}" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="Approval On Hold"/> 
+                                         </apex:commandLink>      
+                                     </apex:pageBlockSectionItem>  
+                                     
+                                     <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="Approved" />
+                                          <apex:commandLink value="{!strApproved}" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="Approved"/> 
+                                         </apex:commandLink>      
+                                     </apex:pageBlockSectionItem> 
+                                     
+                                      <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="Disapproved" />
+                                          <apex:commandLink value="{!strDisapproved}" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="Disapproved"/> 
+                                         </apex:commandLink>      
+                                     </apex:pageBlockSectionItem> 
+                                     
+                                    <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="Others-Pending" />
+                                          <apex:commandLink value="{!strOthersPending}" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="OTHERS-PENDING"/> 
+                                         </apex:commandLink>      
+                                     </apex:pageBlockSectionItem>   
+    
+                                  </apex:pageBlockSection>
+                                </apex:outputPanel>
+                         </apex:pageBlockSectionItem>
+            
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Attended" />
+                    <apex:commandLink value="{!strAttended}" action="{!refreshSearchResult}">
+                        <apex:param name="selectedStatus" value="Attended"/>
+                    </apex:commandLink>
+                </apex:pageBlockSectionItem>     
+                
+                
+                                                           
+                <apex:pageBlockSectionItem id="pbs" >
+                    <apex:outputLabel value="Reject" />
+                    <apex:outputPanel id="outp">
+                            <apex:commandLink value="{!strReject}" action="{!refreshSearchResultClosed}">
+                                 <apex:param name="selectedStatusClosed" value="Reject"/>
+                                    </apex:commandLink>
+                                 <apex:pageBlockSection title="SUB STATUS" Columns="1" collapsible="true" id="pbs1">
+                                     <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="Wrong Address/Invalid Contact No." />
+                                          <apex:commandLink value="{!strWrongAddress}" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="Wrong Address/Invalid Contact No."/> 
+                                         </apex:commandLink> 
+                                         </apex:pageBlockSectionItem>
+                                       
+                                        <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="Other Brand Product" />
+                                          <apex:commandLink value="{!strOtherBrandProduct}" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="Other Brand Product"/> 
+                                         </apex:commandLink> 
+                                         </apex:pageBlockSectionItem>
+                                       
+                                           <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="Customer Refused" />
+                                          <apex:commandLink value="{!strCustomerRefused}" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="Customer Refused"/> 
+                                         </apex:commandLink> 
+                                         </apex:pageBlockSectionItem>
+                                        
+                                        <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="Duplicate Call" />
+                                          <apex:commandLink value="{!strDuplicateCall}" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="Duplicate Call"/> 
+                                         </apex:commandLink> 
+                                         </apex:pageBlockSectionItem>
+                                         
+                                         <apex:pageBlockSectionItem >
+                                         <apex:outputLabel value="Others" />
+                                          <apex:commandLink value="{!strothers}" action="{!refreshSearchResult1}"> 
+                                              <apex:param name="selectedSubStatus" value="Others"/> 
+                                         </apex:commandLink> 
+                                         </apex:pageBlockSectionItem>
+                                       
+                                       </apex:pageBlockSection>
+                                   </apex:outputPanel>
+                                </apex:pageBlockSectionItem>
+   
+                
+                
+                                                              
+                    <apex:pageBlockSectionItem >            
+                    <apex:outputLabel value="Closed" />
+                     <apex:commandLink value="{!strClose}" action="{!refreshSearchResultClosed}">
+                            <apex:param name="selectedStatusClosed" value="Closed"/>
+                    </apex:commandLink>
+                </apex:pageBlockSectionItem> 
+              </apex:pageBlockSection>  
+        </apex:pageblock>
+        
+        
+        <apex:pageBlock tabStyle="Account">
+            <apex:pageMessages />
+            <apex:pageblockButtons location="Bottom">
+                <apex:commandButton value="Search" action="{!SearchResult}" /></apex:pageblockButtons>
+            <apex:pageBlockSection Columns="2" title="DATE FIELDS" collapsible="true">
+            
+             <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="From Created Date"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Created_Date__c}"/>
+                    </apex:pageBlockSectionItem>
+                    
+                     <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="To Created Date"></apex:outputLabel>
+                    <apex:inputField value="{!tosr.Created_Date__c}"/>
+                    </apex:pageBlockSectionItem>
+                    
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="From Appointment Date"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Preferred_Date_for_Visit__c}"/>
+                    </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="To Appointment Date"></apex:outputLabel>
+                    <apex:inputField value="{!toSr.Preferred_Date_for_Visit__c}"/>
+                    </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="From Visit Date"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Attended_Date_Time__c}"/>
+                    </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="To Visit Date"></apex:outputLabel>
+                    <apex:inputField value="{!toSr.Attended_Date_Time__c}"/>
+                    </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="From Completion Date"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Completion_Date_Time__c}" />
+                    </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="To Completion Date"></apex:outputLabel>
+                    <apex:inputField value="{!toSr.Completion_Date_Time__c}" />
+                    </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="From Close Date"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.ClosedDate__c}" /></apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="To Close Date"></apex:outputLabel>
+                    <apex:inputField value="{!toSr.ClosedDate__c}" />
+                    </apex:pageBlockSectionItem>
+               </apex:pageblockSection>
+               
+               
+                    <apex:pageblockSection Columns="2" title="BRANCH DETAILS" collapsible="true">
+                    
+                     <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Region"></apex:outputLabel>
+                    <apex:inputField value="{!thisUser.Region__c}" />
+                    </apex:pageBlockSectionItem>
+                    
+                        <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Branch State"></apex:outputLabel>
+                    <apex:inputField value="{!thisUser.Branch_State__c}" />
+                    </apex:pageBlockSectionItem>
+                    
+                        <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Branch"></apex:outputLabel>
+                    <apex:inputField value="{!thisUser.Branch__c}" />
+                    </apex:pageBlockSectionItem>
+                    
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value=" Call Owner"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Owner_Name__c}" /></apex:pageBlockSectionItem>
+            
+               
+            </apex:pageBlockSection>
+               
+                    <apex:pageblockSection Columns="2" title="CUSTOMER DETAILS" collapsible="true" >
+                    
+                    <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="CIN No."></apex:outputLabel>
+                    <apex:inputField value="{!thisAccount.Customer_ID__c}" />
+                    </apex:pageBlockSectionItem>
+                    
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Customer Name"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Account__c}" /></apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Mobile No."></apex:outputLabel>
+                    <apex:inputField value="{!thisAccount.Mobile_No__c}" />
+                    </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="State"></apex:outputLabel>
+                    <apex:inputField value="{!thisAccount.State__c}" /></apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="District"></apex:outputLabel>
+                    <apex:inputField value="{!thisAccount.District__c}" />
+                    </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="City"></apex:outputLabel>
+                    <apex:inputField value="{!thisAccount.City__c}" />
+                    </apex:pageBlockSectionItem>
+                    </apex:pageblockSection>
+                    
+                    <apex:pageblockSection Columns="2" title="CALL DETAILS" collapsible="true" >
+                    
+                    <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Complain Type"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Complain_Type__c}" />
+                    </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Call Type"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.CALL_TYPE__c}" /></apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Service Type"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Service_Type__c}" />
+                    </apex:pageBlockSectionItem>
+                    </apex:pageblockSection>
+                    
+                    
+                    <apex:pageblockSection Columns="2" title="PRODUCT DETAILS" collapsible="true">
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Category"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Product_Category__c}" />
+                    </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Group"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Group__c}" /></apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Sub Group"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Sub_Group__c}" /></apex:pageBlockSectionItem>
+                    
+                     <apex:pageBlockSectionItem >
+                    <apex:outputLabel value=" Product Description"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Products__c}" /></apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Product Code"></apex:outputLabel>
+                    <apex:inputField value="{!thisProduct.Product_Code__c}" />
+                    </apex:pageBlockSectionItem>
+                    
+                  <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Serial No."></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Product_Serial_No__c}" />
+                    </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Warranty"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Warranty_Status__c}" />
+                    </apex:pageBlockSectionItem>
+                </apex:pageblockSection>
+                
+                <apex:pageblockSection Columns="2" title="ENGINEER FEEDBACK DETAILS" collapsible="true">
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Service Engineer Assigned"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Service_Engineer_Assigned__c}" />
+                    </apex:pageBlockSectionItem>
+                    
+                     <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Alarming Reason"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Category__c}" /></apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Problem Observed By Engineer"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.PROBLEM_OBSERVED__c}" />
+                    </apex:pageBlockSectionItem>
+                
+                 <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Type Of Replacement"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Type_of_Replacement__c}" />
+                    </apex:pageBlockSectionItem>
+               
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Status"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.Status__c}" />
+                    </apex:pageBlockSectionItem>
+                    
+                      <apex:pageBlockSectionItem >
+                    <apex:outputLabel value=" Call Sub Status"></apex:outputLabel>
+                    <apex:inputField value="{!fromSr.CALL_SUB_STATUS__c}" />
+                    </apex:pageBlockSectionItem>
+                     
+              </apex:pageblockSection>
+  
+        </apex:pageBlock>
+        
+        <apex:pageBlock id="pbSearchREsultBlock11">
+       <b> Record Count : {!RecordCount}</b>
+       <br/>         
+       		<apex:pageBlockButtons location="top">
+       			<apex:commandButton value="Assign To Engineer" action="{!assignToEngineer}" rendered="{!isNewStatusSelected}" />
+       		</apex:pageBlockButtons>
+       		
+            <apex:pageblockTable value="{!pSearchItems.pageResultItems}" var="c1" id="rec">
+                <apex:column headerValue="Select" rendered="{!isNewStatusSelected}">
+                    <apex:inputCheckBox value="{!c1.isSelected}"  />
+                </apex:column>
+                <apex:column headerValue="Action">
+                    <apex:outputLink value="/{!c1.thisServiceReq.id}/e" target="_blank">Edit</apex:outputLink>
+                </apex:column>                
+                <apex:column headerValue="Service Request No.">
+                    <apex:outputLink value="/{!c1.thisServiceReq.id}" target="_blank">{!c1.thisServiceReq.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column headerValue="FSR No">{!c1.thisServiceReq.FSR_No__c}</apex:column>
+                <apex:column headerValue="Customer Name">{!c1.thisServiceReq.Account__r.Name}</apex:column>
+                <apex:column headerValue="District">{!c1.thisServiceReq.Account__r.District__c}</apex:column>
+                <apex:column headerValue="City">{!c1.thisServiceReq.Account__r.City__r.Name}</apex:column>
+                <apex:column headerValue="Service Engineer Assigned">{!c1.thisServiceReq.Service_Engineer_Assigned__r.Name}</apex:column>
+                <apex:column headerValue="Status">{!c1.thisServiceReq.Status__c }</apex:column>
+                <!-- <apex:column headerValue="Problem Reported By Customer">{!c1.thisServiceReq.Reason__c}</apex:column> 
+                <apex:column headerValue="Warranty">{!c1.thisServiceReq.Warranty_Status__c}</apex:column>
+                <apex:column headerValue=" Product Description">{!c1.thisServiceReq.Products__r.Name}</apex:column>
+                <apex:column headerValue="Product Code">{!c1.thisServiceReq.Product_Code__c}</apex:column> -->     
+                <apex:column headerValue="Created Date">{!c1.thisServiceReq.CreatedDate}</apex:column>
+                <apex:column headerValue="Owner Name">{!c1.thisServiceReq.owner.name}</apex:column>
+            </apex:pageBlockTable>
+            
+              <table style="width: 100%">
+                  <tr>
+                     <td style="width: 33%" align="left">
+                        <apex:outputPanel rendered="{!IF(pSearchItems.searchResultItems.size <= pSearchItems.pageSize,false,true)}" id="psizedd">
+                           <apex:outputText value="Display"></apex:outputText>
+                           <apex:selectList value="{!pSearchItems.pageSize}" size="1">
+                              <apex:selectOptions value="{!pageSizeList}" />
+                              <apex:actionSupport event="onchange" action="{!pSearchItems.resetPageSize}" rerender="pbSearchREsultBlock11"
+                              /></apex:selectList>
+                           <apex:outputText value="records per page"></apex:outputText>
+                        </apex:outputPanel>
+                     </td>
+                     <td style="width: 33%">
+                        <apex:outputPanel id="paginationLinks" rendered="{!IF(pSearchItems.totalPageNumber > 1,true,false)}">
+                           <apex:commandLink value="{!pSearchItems.firstString} | " action="{!pSearchItems.firstBtnClick}"
+                           rendered="{!pSearchItems.firstButtonEnabled}" rerender="pbSearchREsultBlock11"></apex:commandLink>
+                           <apex:outputLabel value="{!pSearchItems.firstString} | " rendered="{!NOT(pSearchItems.firstButtonEnabled)}"
+                           escape="false" />
+                           <apex:commandLink value="Previous | " action="{!pSearchItems.previousBtnClick}" rendered="{!pSearchItems.previousButtonEnabled}"
+                           rerender="pbSearchREsultBlock11"></apex:commandLink>
+                           <apex:outputLabel value="Previous | " rendered="{!NOT(pSearchItems.previousButtonEnabled)}"
+                           />
+                           <apex:commandLink value="Next | " action="{!pSearchItems.nextBtnClick}" rendered="{!pSearchItems.nextButtonEnabled}"
+                           rerender="pbSearchREsultBlock11"></apex:commandLink>
+                           <apex:outputLabel value="Next | " rendered="{!NOT(pSearchItems.nextButtonEnabled)}"
+                           />
+                           <apex:commandLink value="{!pSearchItems.lastString}" id="lastLink" action="{!pSearchItems.lastBtnClick}"
+                           rendered="{!pSearchItems.lastButtonEnabled}" rerender="pbSearchREsultBlock11"></apex:commandLink>
+                           <apex:outputLabel value="{!pSearchItems.lastString}" rendered="{!NOT(pSearchItems.lastButtonEnabled)}"
+                           escape="false" /></apex:outputPanel>
+                     </td>
+                     <td style="width: 33%" align="right">
+                        <apex:outputPanel rendered="{!IF(pSearchItems.totalPageNumber > 1,true,false)}">
+                           <apex:actionStatus startText=" (Loading...)" id="loadPage" />
+                           <apex:commandButton status="loadPage" id="cmdGoToButton" value="Go To Page"
+                           action="{!pSearchItems.goToPage}" rerender="pbSearchREsultBlock11" />
+                           <apex:inputText value="{!pSearchItems.pageNumber}" size="1" />
+                           <input type="hidden" id="cmdGoTo" value="{!$Component.cmdGoToButton}"
+                           />
+                           <apex:outputText value="of {!pSearchItems.totalPageNumber}"></apex:outputText>
+                        </apex:outputPanel>
+                     </td>
+                  </tr>
+               </table> 
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

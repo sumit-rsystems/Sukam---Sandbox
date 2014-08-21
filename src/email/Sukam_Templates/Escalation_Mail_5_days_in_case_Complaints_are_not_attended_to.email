@@ -1,0 +1,6 @@
+Hi Kamlesh,
+
+The service request number {!Partner_Service_Request__c.Name} has not been addressed within the prescribed timeline (5 days). For your information and needful action.
+
+Thanks
+{!Partner_Service_Request__c.CreatedBy}

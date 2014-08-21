@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Activate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Terminate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AMC_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>AMC Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AMC_Amount_after_Discount__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Total_AMC_Amount_Basic__c) - ((Total_AMC_Amount_Basic__c *  Discount__c ) + Discount_Amount__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>AMC Amount (after Discount)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AMC_Bill_No__c</fullName>
+        <externalId>false</externalId>
+        <label>AMC Bill No</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AMC_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>AMC Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Comprehensive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-Comprehensive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ActivatedById</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Bank_Name_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Name 1</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bank_Name_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Name 2</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bank_Name_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Name 3</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bank_Name_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Name 4</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cheque_No_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Cheque No. 1</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cheque_No_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Cheque No 2</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cheque_No_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Cheque No 3</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cheque_No_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Cheque No 4</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CompanySignedId</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CustomerSignedId</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Discount_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Discount__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Expiration_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>EndDate</formula>
+        <label>Expiration Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Online_Transaction_No_1__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <label>Online Transaction No 1</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Online_Transaction_No_2__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <label>Online Transaction No 2</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Online_Transaction_No_3__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <label>Online Transaction No 3</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Online_Transaction_No_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Online Transaction No 4</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Mode_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Mode 2</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Online Transaction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Mode_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Mode 3</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Online Transaction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Mode_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Mode 4</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Online Transaction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Mode__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Mode 1</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Online Transaction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Option__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Option</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Single Advance Payment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Half yearly Payment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quarterly Payment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product__r.ProductCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Quantity</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Serial_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Serial No.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SFFLAG__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>SFFLAG</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sale_Location_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>Service_Engineer_Ass__r.Service_Center_Location_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sale Location Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Engineer_Ass__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service Engineer Assigned</label>
+        <referenceTo>Stock_Point__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Service_Engineer_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Service_Engineer_Ass__r.Service_Engineer_Id__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Service Engineer Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Engineer_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Service_Engineer_Ass__r.Service_Engineer_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Service Engineer Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>In Approval Process</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Activated</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Draft</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TDS_Amount_1__c</fullName>
+        <externalId>false</externalId>
+        <label>TDS Amount 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TDS_Amount_2__c</fullName>
+        <externalId>false</externalId>
+        <label>TDS Amount 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TDS_Amount_3__c</fullName>
+        <externalId>false</externalId>
+        <label>TDS Amount 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TDS_Amount_4__c</fullName>
+        <externalId>false</externalId>
+        <label>TDS Amount 4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TDS_Details_1__c</fullName>
+        <externalId>false</externalId>
+        <label>TDS Details 1</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TDS_Details_2__c</fullName>
+        <externalId>false</externalId>
+        <label>TDS Details 2</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TDS_Details_3__c</fullName>
+        <externalId>false</externalId>
+        <label>TDS Details 3</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TDS_Details_4__c</fullName>
+        <externalId>false</externalId>
+        <label>TDS Details 4</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tax_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_AMC_Amount_After_Tax__c  -  AMC_Amount_after_Discount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tax Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Tax_Rate__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CreatedDate  &gt;    DATETIMEVALUE(&quot;2012-04-01 00:00:01&quot;), 12.36/100,10.30/100)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tax Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Total_AMC_Amount_After_Tax__c</fullName>
+        <externalId>false</externalId>
+        <formula>(AMC_Amount_after_Discount__c +(AMC_Amount_after_Discount__c *  Tax_Rate__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total AMC Amount (After Tax)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_AMC_Amount_Basic__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CreatedDate &lt; DATETIMEVALUE(&quot;2012-04-06 00:00:01&quot;), (AMC_Amount__c * Product_Quantity__c) 
+,(AMC_Amount__c * Product_Quantity__c*( ContractTerm/12)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total AMC Amount (Basic)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>X1st_Payment_Amount_Due__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+ISPICKVAL( Payment_Option__c , &quot;Half yearly Payment&quot;),  (Total_AMC_Amount_After_Tax__c  / 2),
+IF( 
+ISPICKVAL( Payment_Option__c , &quot;Quarterly Payment&quot;),  (Total_AMC_Amount_After_Tax__c  / 4),
+IF(ISPICKVAL( Payment_Option__c , &quot;Single Advance Payment&quot;),  (Total_AMC_Amount_After_Tax__c ),
+null)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>1st Payment Amount Due</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>X1st_Payment_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>1st Payment Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>X1st_Payment_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>1st Payment Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X1st_Payment_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>ActivatedDate</formula>
+        <label>1st Payment Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X2nd_Payment_Amount_Due__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+ISPICKVAL( Payment_Option__c , &quot;Half yearly Payment&quot;), (Total_AMC_Amount_After_Tax__c / 2), 
+IF( 
+ISPICKVAL( Payment_Option__c , &quot;Quarterly Payment&quot;), (Total_AMC_Amount_After_Tax__c / 4), 
+null))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>2nd Payment Amount Due</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>X2nd_Payment_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>2nd Payment Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>X2nd_Payment_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>2nd Payment Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X2nd_Payment_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+ISPICKVAL( Payment_Option__c , &quot;Half yearly Payment&quot;), (DATE(Year (datevalue( ActivatedDate)), Month (datevalue( ActivatedDate))+6, DAY(datevalue( ActivatedDate)))), 
+IF( 
+ISPICKVAL( Payment_Option__c , &quot;Quarterly Payment&quot;), (DATE(Year (datevalue( ActivatedDate)), Month (datevalue( ActivatedDate))+3, DAY(datevalue( ActivatedDate)))), 
+null))</formula>
+        <label>2nd Payment Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X3rd_Payment_Amount_Due__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+ISPICKVAL( Payment_Option__c , &quot;Quarterly Payment&quot;), (Total_AMC_Amount_After_Tax__c / 4), 
+null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>3rd Payment Amount Due</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>X3rd_Payment_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>3rd Payment Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>X3rd_Payment_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>3rd Payment Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X3rd_Payment_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+ISPICKVAL( Payment_Option__c , &quot;Quarterly Payment&quot;), 
+DATE(
+if(
+((MONTH(datevalue( ActivatedDate)) + 6) &gt; 12),
+(YEAR(datevalue( ActivatedDate)) + 1), 
+YEAR(datevalue( ActivatedDate))
+),
+if(
+((MONTH(datevalue( ActivatedDate)) + 6) &gt; 12), 
+MOD((MONTH(datevalue( ActivatedDate)) + 6), 12), 
+(MONTH(datevalue( ActivatedDate)) + 6)
+),
+DAY(datevalue( ActivatedDate))
+), 
+null
+)</formula>
+        <label>3rd Payment Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X4th_Payment_Amount_Due__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+ISPICKVAL( Payment_Option__c , &quot;Quarterly Payment&quot;), (Total_AMC_Amount_After_Tax__c / 4), 
+null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>4th Payment Amount Due</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>X4th_Payment_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>4th Payment Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>X4th_Payment_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>4th Payment Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X4th_Payment_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+ISPICKVAL( Payment_Option__c , &quot;Quarterly Payment&quot;), 
+DATE(
+if(
+((MONTH(datevalue( ActivatedDate)) + 9) &gt; 12),
+(YEAR(datevalue( ActivatedDate)) + 1), 
+YEAR(datevalue( ActivatedDate))
+),
+if(
+((MONTH(datevalue( ActivatedDate)) + 9) &gt; 12), 
+MOD((MONTH(datevalue( ActivatedDate)) + 9), 12), 
+(MONTH(datevalue( ActivatedDate)) + 9)
+),
+DAY(datevalue( ActivatedDate))
+), 
+null
+)</formula>
+        <label>4th Payment Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <listViews>
+        <fullName>AllActivatedContracts</fullName>
+        <columns>CONTRACT.CONTRACT_NUMBER</columns>
+        <columns>CONTRACT.START_DATE</columns>
+        <columns>CONTRACT.END_DATE</columns>
+        <columns>SFFLAG__c</columns>
+        <columns>Discount__c</columns>
+        <columns>Tax_Amount__c</columns>
+        <columns>Tax_Rate__c</columns>
+        <columns>TDS_Amount_1__c</columns>
+        <columns>TDS_Amount_2__c</columns>
+        <columns>TDS_Amount_3__c</columns>
+        <columns>TDS_Amount_4__c</columns>
+        <columns>TDS_Details_1__c</columns>
+        <columns>TDS_Details_2__c</columns>
+        <columns>TDS_Details_3__c</columns>
+        <columns>TDS_Details_4__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTRACT.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>A</value>
+        </filters>
+        <label>All Activated Contracts</label>
+    </listViews>
+    <listViews>
+        <fullName>AllContracts</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Contracts</label>
+    </listViews>
+    <listViews>
+        <fullName>AllDraftContracts</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTRACT.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>D</value>
+        </filters>
+        <label>All Draft Contracts</label>
+    </listViews>
+    <listViews>
+        <fullName>AllInApprovalContracts</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTRACT.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>P</value>
+        </filters>
+        <label>All In Approval Contracts</label>
+    </listViews>
+    <listViews>
+        <fullName>MyActivatedContracts</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CONTRACT.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>A</value>
+        </filters>
+        <label>My Activated Contracts</label>
+    </listViews>
+    <listViews>
+        <fullName>MyDraftContracts</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CONTRACT.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>D</value>
+        </filters>
+        <label>My Draft Contracts</label>
+    </listViews>
+    <listViews>
+        <fullName>MyInApprovalContracts</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CONTRACT.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>P</value>
+        </filters>
+        <label>My In Approval Contracts</label>
+    </listViews>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Active_Contracts_Type</fullName>
+        <active>true</active>
+        <description>Active Contracts Type will have locked layout</description>
+        <label>Active Contracts Type</label>
+        <picklistValues>
+            <picklist>AMC_Type__c</picklist>
+            <values>
+                <fullName>Comprehensive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Comprehensive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Mode_2__c</picklist>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online Transaction</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Mode_3__c</picklist>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online Transaction</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Mode_4__c</picklist>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online Transaction</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Mode__c</picklist>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online Transaction</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Option__c</picklist>
+            <values>
+                <fullName>Half yearly Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single Advance Payment</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Activated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Approval Process</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CONTRACT.CONTRACT_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTRACT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SALES.ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTRACT.STATUS</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTRACT.CONTRACT_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTRACT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USERS.ALIAS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTRACT.CONTRACT_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTRACT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CONTRACT.CONTRACT_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTRACT.NAME</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Cash_1_Mandate</fullName>
+        <active>true</active>
+        <description>Please put in the values for Payment Date and Payment Amount</description>
+        <errorConditionFormula>AND ( 
+ISPICKVAL( Payment_Mode__c, &quot;Cash&quot;), 
+OR( 
+ISNULL( X1st_Payment_Date__c ), 
+ISNULL( X1st_Payment_Amount__c )))</errorConditionFormula>
+        <errorMessage>Please put in the values for Payment Date and Payment Amount</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cash_2_Mandate</fullName>
+        <active>true</active>
+        <description>Please put in the values for Payment Date and Payment Amount</description>
+        <errorConditionFormula>AND ( 
+ISPICKVAL( Payment_Mode_2__c , &quot;Cash&quot;), 
+OR( 
+ISNULL( X2nd_Payment_Date__c ), 
+ISNULL( X2nd_Payment_Amount__c )))</errorConditionFormula>
+        <errorMessage>Please put in the values for Payment Date and Payment Amount</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cash_3_Mandate</fullName>
+        <active>true</active>
+        <description>Please put in the values for Payment Date and Payment Amount</description>
+        <errorConditionFormula>AND ( 
+ISPICKVAL( Payment_Mode_3__c , &quot;Cash&quot;), 
+OR( 
+ISNULL( X3rd_Payment_Date__c ), 
+ISNULL( X3rd_Payment_Amount__c )))</errorConditionFormula>
+        <errorMessage>Please put in the values for Payment Date and Payment Amount</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cash_4_Mandate</fullName>
+        <active>true</active>
+        <description>Please put in the values for Payment Date and Payment Amount</description>
+        <errorConditionFormula>AND ( 
+ISPICKVAL( Payment_Mode_4__c , &quot;Cash&quot;), 
+OR( 
+ISNULL( X4th_Payment_Date__c ), 
+ISNULL( X4th_Payment_Amount__c )))</errorConditionFormula>
+        <errorMessage>Please put in the values for Payment Date and Payment Amount</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cheque_1_Mandate</fullName>
+        <active>true</active>
+        <description>Please put in the values for Payment Date, Payment Amount, Bank Name &amp; Cheque No.</description>
+        <errorConditionFormula>AND ( 
+ISPICKVAL( Payment_Mode__c , &quot;Cheque&quot;), 
+OR( 
+ISNULL( X1st_Payment_Date__c ), 
+ISNULL( X1st_Payment_Amount__c ), 
+ISNULL( Bank_Name_1__c ), 
+ISNULL( Cheque_No_1__c )))</errorConditionFormula>
+        <errorMessage>Please put in the values for Payment Date, Payment Amount, Bank Name &amp; Cheque No.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cheque_2_Mandate</fullName>
+        <active>true</active>
+        <description>Please put in the values for Payment Date, Payment Amount, Bank Name &amp; Cheque No.</description>
+        <errorConditionFormula>AND ( 
+ISPICKVAL( Payment_Mode_2__c , &quot;Cheque&quot;), 
+OR( 
+ISNULL( X2nd_Payment_Date__c ), 
+ISNULL( X2nd_Payment_Amount__c ), 
+ISNULL( Bank_Name_2__c ), 
+ISNULL( Cheque_No_2__c )))</errorConditionFormula>
+        <errorMessage>Please put in the values for Payment Date, Payment Amount, Bank Name &amp; Cheque No.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cheque_3_Mandate</fullName>
+        <active>true</active>
+        <description>Please put in the values for Payment Date, Payment Amount, Bank Name &amp; Cheque No.</description>
+        <errorConditionFormula>AND ( 
+ISPICKVAL( Payment_Mode_3__c , &quot;Cheque&quot;), 
+OR( 
+ISNULL( X3rd_Payment_Date__c ), 
+ISNULL( X3rd_Payment_Amount__c ), 
+ISNULL( Bank_Name_3__c ), 
+ISNULL( Cheque_No_3__c )))</errorConditionFormula>
+        <errorMessage>Please put in the values for Payment Date, Payment Amount, Bank Name &amp; Cheque No.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cheque_4_Mandate</fullName>
+        <active>true</active>
+        <description>Please put in the values for Payment Date, Payment Amount, Bank Name &amp; Cheque No.</description>
+        <errorConditionFormula>AND ( 
+ISPICKVAL( Payment_Mode_4__c , &quot;Cheque&quot;), 
+OR( 
+ISNULL( X4th_Payment_Date__c ), 
+ISNULL( X4th_Payment_Amount__c ), 
+ISNULL( Bank_Name_4__c ), 
+ISNULL( Cheque_No_4__c )))</errorConditionFormula>
+        <errorMessage>Please put in the values for Payment Date, Payment Amount, Bank Name &amp; Cheque No.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Discount_not_less_than_0</fullName>
+        <active>true</active>
+        <description>Discount % cannot be less than 0%</description>
+        <errorConditionFormula>Discount__c &lt; 0</errorConditionFormula>
+        <errorDisplayField>Discount__c</errorDisplayField>
+        <errorMessage>You are not authorised to provide a discount of less than 0%.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Discount_not_more_than_15</fullName>
+        <active>true</active>
+        <description>Discount % cannot be more than 15%</description>
+        <errorConditionFormula>Discount__c &gt; 0.15</errorConditionFormula>
+        <errorDisplayField>Discount__c</errorDisplayField>
+        <errorMessage>You are not authorised to provide a discount of more than 15%.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Either_Discount_Amount_or_Discount_Perce</fullName>
+        <active>true</active>
+        <description>Put Either Discount Amount or Discount % for each Contract</description>
+        <errorConditionFormula>AND
+( Discount__c   &lt;&gt; 0,  Discount_Amount__c  &lt;&gt; 0)</errorConditionFormula>
+        <errorMessage>Put Either Discount Amount or Discount % for each Contract</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Online_1_Mandate</fullName>
+        <active>true</active>
+        <description>Please put in the values for Payment Date, Online Transaction No and Payment Amount</description>
+        <errorConditionFormula>AND ( 
+ISPICKVAL( Payment_Mode__c, &quot;Online Transaction&quot;), 
+OR( 
+ISNULL( X1st_Payment_Date__c ), 
+ISNULL( Online_Transaction_No_1__c ), 
+ISNULL( X1st_Payment_Amount__c )))</errorConditionFormula>
+        <errorMessage>Please put in the values for Payment Date, Online Transaction No and Payment Amount</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Online_2_Mandate</fullName>
+        <active>true</active>
+        <description>Please put in the values for Payment Date, Online Transaction No and Payment Amount</description>
+        <errorConditionFormula>AND ( 
+ISPICKVAL( Payment_Mode_2__c , &quot;Online Transaction&quot;), 
+OR( 
+ISNULL( X2nd_Payment_Date__c ), 
+ISNULL( Online_Transaction_No_2__c ), 
+ISNULL( X2nd_Payment_Amount__c )))</errorConditionFormula>
+        <errorMessage>Please put in the values for Payment Date, Online Transaction No and Payment Amount</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Online_3_Mandate</fullName>
+        <active>true</active>
+        <description>Please put in the values for Payment Date, Online TRansaction No and Payment Amount</description>
+        <errorConditionFormula>AND ( 
+ISPICKVAL( Payment_Mode_3__c , &quot;Online Transaction&quot;), 
+OR( 
+ISNULL( X3rd_Payment_Date__c ), 
+ISNULL( Online_Transaction_No_3__c ), 
+ISNULL( X3rd_Payment_Amount__c )))</errorConditionFormula>
+        <errorMessage>Please put in the values for Payment Date, Online TRansaction No and Payment Amount</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Online_4_Mandate</fullName>
+        <active>true</active>
+        <description>Please put in the values for Payment Date, Online Transaction No and Payment Amount</description>
+        <errorConditionFormula>AND ( 
+ISPICKVAL( Payment_Mode_4__c , &quot;Online Transaction&quot;), 
+OR( 
+ISNULL( X4th_Payment_Date__c ), 
+ISNULL( Online_Transaction_No_4__c ), 
+ISNULL( X4th_Payment_Amount__c )))</errorConditionFormula>
+        <errorMessage>Please put in the values for Payment Date, Online Transaction No and Payment Amount</errorMessage>
+    </validationRules>
+</CustomObject>

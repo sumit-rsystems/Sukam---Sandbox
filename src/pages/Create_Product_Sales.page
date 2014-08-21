@@ -1,0 +1,93 @@
+<apex:page controller="ProductSalesCtrl" tabStyle="Component_Movement_Table__c">
+    <apex:form id="theForm">
+        <apex:pageBlock title="Product Sales Transaction">
+            <!--<apex:outputPanel id="opProductCategory" rendered="true">-->
+                <apex:pageMessages ></apex:pageMessages>
+            <!--</apex:outputPanel>-->
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!doSave}" status="bstatus" reRender="theForm"/>
+                <apex:commandButton value="Cancel" action="{!doCancel}" status="bstatus" reRender="theForm" immediate="true"/>
+                <apex:actionStatus id="bstatus" startText="processing...">
+                    <apex:facet name="start" >
+                        <img src="/apexpages/devmode/img/saveStatus.gif"/>
+                    </apex:facet>
+                </apex:actionStatus>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Transaction Information">
+                <apex:inputField value="{!cmtRecord.Account_Name__c}" required="true"/>
+                <apex:inputField value="{!cmtRecord.Component_Status__c}" required="true"/>
+                <apex:inputField value="{!cmtRecord.Date__c}" required="true"/>
+                <apex:inputField value="{!cmtRecord.Dispatched_Through__c}" required="true"/>
+                <apex:inputField value="{!cmtRecord.Road_Permit__c}"/>
+                <apex:inputField value="{!cmtRecord.Road_Permit_No__c}"/>
+                
+                
+                <apex:inputField value="{!cmtRecord.Service_Engineer_Assigned__c}" required="true"/>
+                
+                <apex:inputField value="{!cmtRecord.Discount_in_component_charge__c}" required="true"/>
+                <apex:inputField value="{!cmtRecord.Misc_Component_Charges__c}" required="true"/>
+                
+                
+                                <apex:outputPanel id="opProductCategory" rendered="true">
+                  
+                  <apex:outputText >Product Category</apex:outputText>
+                  <apex:inputField value="{!cmtRecord.Product_Category__c}" required="true"/>
+                 
+                </apex:outputPanel>
+                
+            </apex:pageBlockSection>
+            <apex:actionRegion >
+            <apex:pageBlockSection columns="1" title="Add/ Remove Products">
+                <apex:outputPanel id="addRows">
+                    <apex:outputLabel style="margin-left:100px;color: #4a4a56;font-size: 91%;"><b>Number Of Rows</b></apex:outputLabel>&nbsp; &nbsp; &nbsp;
+                    
+                    <apex:inputText value="{!numberOfRows}" label="Number Of Rows"/> &nbsp; &nbsp; &nbsp;
+                    
+                    <apex:commandButton action="{!addRow}" value="Add Rows" status="bstatus" reRender="theTable, addRows"/>
+                    <apex:actionStatus id="bstatus" startText="processing...">
+                        <apex:facet name="start" >
+                            <img src="/apexpages/devmode/img/saveStatus.gif"/>
+                        </apex:facet>
+                    </apex:actionStatus>
+                    
+                </apex:outputPanel>
+                
+                <apex:outputPanel id="theTable">
+                    <apex:pageMessage severity="info" strength="3" summary="Please add atleast one Product." rendered="{!NOT(showTable)}"></apex:pageMessage>
+                    <apex:pageBlockTable value="{!lineItemWrapList}" var="li" rendered="{!showTable}">
+                        <apex:column headerValue="Sr. No">
+                            <apex:outputText value="{!li.index}."/>
+                        </apex:column>
+                        
+                            <apex:column headerValue="Select Component">
+                            <apex:actionRegion >
+                              <apex:inputField value="{!li.cmtliRecord.Select_Component__c}"   required="true">
+                                <apex:actionSupport event="onchange" reRender="opProductCategory" action="{!GetProductCategory}" />
+                              </apex:inputField>
+                              </apex:actionRegion>
+                            </apex:column>
+                            
+                        <apex:column headerValue="Quantity">
+                            <apex:inputField value="{!li.cmtliRecord.Quantity__c}" required="true"/>
+                        </apex:column>
+                        
+                        <apex:column headerValue="Remove">
+                            <apex:actionRegion >
+                            <apex:commandLink action="{!removeRow}" status="bstatus" reRender="theTable" style="text-decoration:none;">
+                                <apex:commandButton value="Remove"/>
+                                <apex:param name="indx" value="{!li.index}"/>
+                            </apex:commandLink>
+                            <apex:actionStatus id="bstatus" startText="processing...">
+                                <apex:facet name="start" >
+                                    <img src="/apexpages/devmode/img/saveStatus.gif"/>
+                                </apex:facet>
+                            </apex:actionStatus>
+                            </apex:actionRegion>
+                        </apex:column>
+                    </apex:pageBlockTable>
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+            </apex:actionRegion>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

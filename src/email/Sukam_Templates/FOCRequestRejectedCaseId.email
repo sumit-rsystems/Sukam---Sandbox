@@ -1,0 +1,4 @@
+Sorry ! Your FOC Request has been Rejected
+
+Please click on the link below to see the response to your approval request:
+{!Service_Request__c.Link}

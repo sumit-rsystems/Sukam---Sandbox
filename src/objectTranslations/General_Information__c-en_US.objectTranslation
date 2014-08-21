@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>General Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>General Information</value>
+    </caseValues>
+    <fields>
+        <label><!-- Click Here --></label>
+        <name>Click_Here__c</name>
+    </fields>
+    <layouts>
+        <layout>Document Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dummy-Message Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Documents --></label>
+        <name>Documents</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New Launch --></label>
+        <name>New_Launch</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Others --></label>
+        <name>Others</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Policy --></label>
+        <name>Policy</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Scheme --></label>
+        <name>Scheme</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,1616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Amount_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Rate_1__c * Quantity_1__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Rate_2__c * Quantity_2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_3__c</fullName>
+        <externalId>false</externalId>
+        <formula>Rate_3__c * Quantity_3__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_4__c</fullName>
+        <externalId>false</externalId>
+        <formula>Rate_4__c * Quantity_4__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount 4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Bill_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill Date</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Branch_Location_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Branch Location Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>CST_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>$User.Department</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CST No.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comment__c</fullName>
+        <externalId>false</externalId>
+        <label>Comment</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Component_Code1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Select_Item_1__r.Product_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Component Code1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Component_Code2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Select_Item_2__r.Product_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Component Code2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Component_Code3__c</fullName>
+        <externalId>false</externalId>
+        <formula>Select_Item_3__r.Product_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Component Code3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Component_Code4__c</fullName>
+        <externalId>false</externalId>
+        <formula>Select_Item_4__r.Product_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Component Code4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Component_Movement_Details__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field will bring in the adetails of the component movement table</description>
+        <externalId>false</externalId>
+        <label>Component Movement Details</label>
+        <referenceTo>Component_Movement_Table__c</referenceTo>
+        <relationshipLabel>Scrap Sales</relationshipLabel>
+        <relationshipName>Scrap_Sales</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Document_Invoice_No__c</fullName>
+        <externalId>true</externalId>
+        <label>Document / Invoice No.</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ERP_Bill_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( DAY(  Bill_Date__c  ) ) + &apos;-&apos; + 
+
+CASE( MONTH( Bill_Date__c ) , 
+1, &apos;JAN&apos;, 
+2, &apos;FEB&apos;, 
+3, &apos;MAR&apos;, 
+4, &apos;APR&apos;, 
+5, &apos;MAY&apos;, 
+6, &apos;JUN&apos;, 
+7, &apos;JUL&apos;, 
+8, &apos;AUG&apos;, 
+9, &apos;SEP&apos;, 
+10, &apos;OCT&apos;, 
+11, &apos;NOV&apos;, 
+12, &apos;DEC&apos;, 
+&apos;&apos; 
+) + &apos;-&apos; + 
+
+TEXT(YEAR( Bill_Date__c ) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ERP Bill Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ERP_Created_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( DAY( DATEVALUE(  CreatedDate  ) )) + &apos;-&apos; + 
+
+CASE( MONTH( DATEVALUE( CreatedDate  ) ) , 
+1, &apos;JAN&apos;, 
+2, &apos;FEB&apos;, 
+3, &apos;MAR&apos;, 
+4, &apos;APR&apos;, 
+5, &apos;MAY&apos;, 
+6, &apos;JUN&apos;, 
+7, &apos;JUL&apos;, 
+8, &apos;AUG&apos;, 
+9, &apos;SEP&apos;, 
+10, &apos;OCT&apos;, 
+11, &apos;NOV&apos;, 
+12, &apos;DEC&apos;, 
+&apos;&apos; 
+) + &apos;-&apos; + 
+
+TEXT(YEAR( DATEVALUE( CreatedDate   ) ) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ERP Created Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Grand_Total_Inclusive_Tax__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Amount__c  +  Vat_Amount__c  +  TCS_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Grand Total Inclusive Tax</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Grand_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Total_Amount__c + Tax__c )*(1+ TCS__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Grand Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Operating_Unit_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Operating Unit Name</label>
+        <picklist>
+            <picklistValues>
+                <fullName>SU-KAM POWER SYSTEMS LIMITED</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Purchaser_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchaser&apos;s Billing Address</label>
+        <length>255</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Purchaser_Billing_State__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchaser&apos;s Billing State</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Andaman and Nicobar Islands</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Andhra Pradesh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Arunachal Pradesh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Assam</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bihar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chandigarh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chhattisgarh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dadra and Nagar Haveli</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Daman and Diu</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delhi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Goa</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gujarat</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Haryana</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Himachal Pradesh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jammu &amp; Kashmir</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jharkhand</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Karnataka</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kerala</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lakshadweep</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Madhya Pradesh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Maharashtra</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manipur</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meghalaya</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mizoram</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nagaland</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Orissa</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pondicherry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Punjab</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rajasthan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sikkim</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tamilnadu</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tripura</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Uttaranchal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Uttar Pradesh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>West Bengal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Purchaser_CST_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchaser CST No.</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Purchaser_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchaser Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Purchaser_Shipping_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchaser&apos;s Shipping Address</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Purchaser_Shipping_State__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchaser&apos;s Shipping State</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Andaman and Nicobar Islands</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Andhra Pradesh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Arunachal Pradesh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Assam</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bihar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chandigarh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chhattisgarh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dadra and Nagar Haveli</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Daman and Diu</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delhi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Goa</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gujarat</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Haryana</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Himachal Pradesh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jammu &amp; Kashmir</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jharkhand</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Karnataka</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kerala</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lakshadweep</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Madhya Pradesh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Maharashtra</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manipur</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meghalaya</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mizoram</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nagaland</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Orissa</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pondicherry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Punjab</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rajasthan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sikkim</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tamilnadu</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tripura</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Uttaranchal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Uttar Pradesh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>West Bengal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Purchaser_TIN_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchaser TIN No.</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Purchaser_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchaser Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Registered</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unregistered</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Quantity_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity 4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Rate_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Rate_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Rate_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SFFLAG__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>SFFLAG</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sale_Location_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Sale Location Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Scrap_Approval_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Scrap Approval Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Select_Item_1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Select Item 1</label>
+        <referenceTo>Product__c</referenceTo>
+        <relationshipLabel>Scrap Sales</relationshipLabel>
+        <relationshipName>Scrap_Sales</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Select_Item_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Select Item 2</label>
+        <referenceTo>Product__c</referenceTo>
+        <relationshipLabel>Scrap Sales (Select Item 2)</relationshipLabel>
+        <relationshipName>Scrap_Sales1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Select_Item_3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Select Item 3</label>
+        <referenceTo>Product__c</referenceTo>
+        <relationshipLabel>Scrap Sales (Select Item 3)</relationshipLabel>
+        <relationshipName>Scrap_Sales2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Select_Item_4__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Select Item 4</label>
+        <referenceTo>Product__c</referenceTo>
+        <relationshipLabel>Scrap Sales (Select Item 4)</relationshipLabel>
+        <relationshipName>Scrap_Sales3</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Service_Engineer_Assigned__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Vendor Assigned</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Stock_Point__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Vendors</value>
+            </filterItems>
+            <filterItems>
+                <field>Stock_Point__c.Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Stock_Point__c</referenceTo>
+        <relationshipLabel>Scrap Sales</relationshipLabel>
+        <relationshipName>Scrap_Sales</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Service_Engineer_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Service_Engineer_Assigned__r.Service_Engineer_Id__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Service Engineer Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Type__c</fullName>
+        <defaultValue>&apos;Scrap&apos;</defaultValue>
+        <description>This field is made for ERP only</description>
+        <externalId>false</externalId>
+        <label>Service Type</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TCS_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Amount__c  *  TCS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TCS Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TCS__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>TCS %</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>TEST_Owner_Address__c</fullName>
+        <description>This field is being used for the Service Centre Address details in Mail Merge documents</description>
+        <externalId>false</externalId>
+        <formula>CreatedBy.Street + &apos;,&apos; + CreatedBy.City + &apos;,&apos; + CreatedBy.State + &apos;,&apos; + CreatedBy.PostalCode + &apos;,&apos; + CreatedBy.Country</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TIN_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>$User.Division</formula>
+        <label>TIN No.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tax_Rate1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Tax_Rate__c /100</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tax Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Tax_Rate__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+AND(
+ISPICKVAL(   Sale_Location_Type__c   , &quot;Interstate&quot;), 
+ISPICKVAL(    Purchaser_Type__c   , &quot;Registered&quot;)),  2, 
+
+IF(
+ISPICKVAL(   Purchaser_Billing_State__c   , &quot;Uttar Pradesh&quot;), 4, 
+IF(
+ISPICKVAL(   Purchaser_Billing_State__c   , &quot;Andhra Pradesh&quot;), 4, 
+IF(
+ISPICKVAL(   Purchaser_Billing_State__c   , &quot;Chandigarh&quot;), 4,
+IF(
+ISPICKVAL(   Purchaser_Billing_State__c   , &quot;Delhi&quot;), 4, 
+IF(
+ISPICKVAL(   Purchaser_Billing_State__c   , &quot;Himachal Pradesh&quot;), 4, 
+IF(
+ISPICKVAL(   Purchaser_Billing_State__c   , &quot;Jammu &amp; Kashmir&quot;), 4, 
+IF(
+ISPICKVAL(   Purchaser_Billing_State__c   , &quot;Maharashtra&quot;), 4, 
+IF(
+ISPICKVAL(   Purchaser_Billing_State__c   , &quot;Orissa&quot;), 4, 
+IF(
+ISPICKVAL(   Purchaser_Billing_State__c   , &quot;Punjab&quot;), 4, 
+IF(
+ISPICKVAL(   Purchaser_Billing_State__c   , &quot;West Bengal&quot;), 12.5, 
+IF(
+ISPICKVAL(   Purchaser_Billing_State__c   , &quot;Kerala&quot;), 4.04, 
+IF(
+ISPICKVAL(   Purchaser_Billing_State__c   , &quot;Gujarat&quot;), 5, 12.5)
+
+
+
+))))))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tax Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Tax__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Amount__c  *  (Tax_Rate__c / 100)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tax</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Test_Owner_CST__c</fullName>
+        <description>This field will contain the Service Centr Dept no. for Mail merge documents</description>
+        <externalId>false</externalId>
+        <formula>CreatedBy.CST_No__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner CST No.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Test_Owner_TIN_No__c</fullName>
+        <description>This field is being used only for the mail merge templete to get the Service Centre TIN NO.</description>
+        <externalId>false</externalId>
+        <formula>CreatedBy.TIN_NO__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner TIN No.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Amount_1__c + Amount_2__c + Amount_3__c + Amount_4__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Type_of_Scrap__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Scrap</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Battery Scrap</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Scrap</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>UoM_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Select_Item_1__r.UoM__c, &quot;Ea&quot;, &quot;Ea&quot;, &quot;Set&quot;,&quot;Set&quot;, &quot;Mts&quot;, &quot;Mts&quot;, &quot;Lts&quot;, &quot;Lts&quot;, &quot;Kg&quot;, &quot;Kg&quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UoM 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UoM_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Select_Item_2__r.UoM__c , &quot;Ea&quot;, &quot;Ea&quot;, &quot;Set&quot;,&quot;Set&quot;, &quot;Mts&quot;, &quot;Mts&quot;, &quot;Lts&quot;, &quot;Lts&quot;, &quot;Kg&quot;, &quot;Kg&quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UoM 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UoM_3__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Select_Item_3__r.UoM__c , &quot;Ea&quot;, &quot;Ea&quot;, &quot;Set&quot;,&quot;Set&quot;, &quot;Mts&quot;, &quot;Mts&quot;, &quot;Lts&quot;, &quot;Lts&quot;, &quot;Kg&quot;, &quot;Kg&quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UoM 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UoM_4__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Select_Item_4__r.UoM__c , &quot;Ea&quot;, &quot;Ea&quot;, &quot;Set&quot;,&quot;Set&quot;, &quot;Mts&quot;, &quot;Mts&quot;, &quot;Lts&quot;, &quot;Lts&quot;, &quot;Kg&quot;, &quot;Kg&quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UoM 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VAT_CST__c</fullName>
+        <externalId>false</externalId>
+        <label>VAT/CST %</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Vat_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Amount__c  *  VAT_CST__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Vat Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Scrap Sale</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Document_Invoice_No__c</columns>
+        <columns>Type_of_Scrap__c</columns>
+        <columns>NAME</columns>
+        <columns>Purchaser_Name__c</columns>
+        <columns>Purchaser_Address__c</columns>
+        <columns>Total_Amount__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Scrap Sale Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Scrap Sales</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>After_Approval_Scrap</fullName>
+        <active>true</active>
+        <description>Once the Scrap request is approved or rejected</description>
+        <label>After Approval Scrap</label>
+        <picklistValues>
+            <picklist>Branch_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Operating_Unit_Name__c</picklist>
+            <values>
+                <fullName>SU-KAM POWER SYSTEMS LIMITED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purchaser_Billing_State__c</picklist>
+            <values>
+                <fullName>Andaman and Nicobar Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Andhra Pradesh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arunachal Pradesh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bihar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chandigarh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chhattisgarh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dadra and Nagar Haveli</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Daman and Diu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delhi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gujarat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Haryana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Himachal Pradesh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jammu %26 Kashmir</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jharkhand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Karnataka</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kerala</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lakshadweep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Madhya Pradesh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maharashtra</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manipur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meghalaya</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mizoram</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nagaland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orissa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pondicherry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Punjab</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rajasthan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sikkim</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tamilnadu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tripura</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uttar Pradesh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uttaranchal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>West Bengal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purchaser_Shipping_State__c</picklist>
+            <values>
+                <fullName>Andaman and Nicobar Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Andhra Pradesh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arunachal Pradesh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bihar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chandigarh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chhattisgarh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dadra and Nagar Haveli</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Daman and Diu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delhi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gujarat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Haryana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Himachal Pradesh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jammu %26 Kashmir</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jharkhand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Karnataka</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kerala</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lakshadweep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Madhya Pradesh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maharashtra</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manipur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meghalaya</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mizoram</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nagaland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orissa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pondicherry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Punjab</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rajasthan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sikkim</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tamilnadu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tripura</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uttar Pradesh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uttaranchal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>West Bengal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purchaser_Type__c</picklist>
+            <values>
+                <fullName>Registered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unregistered</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sale_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Scrap_Approval_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Scrap__c</picklist>
+            <values>
+                <fullName>Battery Scrap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Scrap</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Document_Invoice_No__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Type_of_Scrap__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Purchaser_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Grand_Total__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER.ALIAS</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>Document_Invoice_No__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Purchaser_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Type_of_Scrap__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Grand_Total__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Purchaser_TIN_No_is_mandatory</fullName>
+        <active>true</active>
+        <description>Purchaser TIN No is mandatory in case of Registered Purchaser</description>
+        <errorConditionFormula>AND(
+ISPICKVAL( Purchaser_Type__c  , &quot;Registered&quot;),
+(Purchaser_TIN_No__c = &quot;&quot;))</errorConditionFormula>
+        <errorDisplayField>Purchaser_TIN_No__c</errorDisplayField>
+        <errorMessage>Purchaser TIN No is mandatory</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TCS_cant_be_negative</fullName>
+        <active>true</active>
+        <description>TCS % Can&apos;t be negative</description>
+        <errorConditionFormula>TCS__c &lt; 0</errorConditionFormula>
+        <errorDisplayField>TCS__c</errorDisplayField>
+        <errorMessage>TCS % can&apos;t be negative.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_State_for_InterState</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(Sale_Location_Type__c , &apos;Interstate&apos;) &amp;&amp;  ISPICKVAL(Purchaser_Billing_State__c ,&apos;&apos;)</errorConditionFormula>
+        <errorDisplayField>Purchaser_Billing_State__c</errorDisplayField>
+        <errorMessage>Please choose the Purchaser&apos;s Billing State</errorMessage>
+    </validationRules>
+</CustomObject>

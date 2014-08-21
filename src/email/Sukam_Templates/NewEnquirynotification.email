@@ -1,0 +1,14 @@
+*** NEW ENQUIRY NOTIFICATION ***  
+
+The following Enquiry has been created.  
+Company:  {!Lead.Company} 
+Lead Name:  {!Lead.Name}  
+Address: {!Lead.Address}
+Phone No: {!Lead.Phone}
+Email Id: {!Lead.Email}
+Description: {!Lead.Description}
+
+Thanks,
+Sukam Call Center
+
+Log In to SFDC and click on the link to access the lead directly:  {!Lead.Link}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Battery Scrap Request Rejected</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Battery Scrap Request Rejected</name>
+    <style>none</style>
+    <subject>Battery Scrap Request Rejected</subject>
+    <type>text</type>
+</EmailTemplate>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SecuritySettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <networkAccess>
+        <ipRanges>
+            <end>182.68.158.199</end>
+            <start>182.68.158.199</start>
+        </ipRanges>
+    </networkAccess>
+    <passwordPolicies>
+        <complexity>AlphaNumeric</complexity>
+        <expiration>Never</expiration>
+        <historyRestriction>0</historyRestriction>
+        <lockoutInterval>FifteenMinutes</lockoutInterval>
+        <maxLoginAttempts>TenAttempts</maxLoginAttempts>
+        <minPasswordLength>EightCharacters</minPasswordLength>
+        <obscureSecretAnswer>false</obscureSecretAnswer>
+        <questionRestriction>DoesNotContainPassword</questionRestriction>
+    </passwordPolicies>
+    <sessionSettings>
+        <disableTimeoutWarning>false</disableTimeoutWarning>
+        <enableCSRFOnGet>true</enableCSRFOnGet>
+        <enableCSRFOnPost>true</enableCSRFOnPost>
+        <enableCacheAndAutocomplete>true</enableCacheAndAutocomplete>
+        <enableClickjackNonsetupSFDC>true</enableClickjackNonsetupSFDC>
+        <enableClickjackNonsetupUser>false</enableClickjackNonsetupUser>
+        <enableClickjackSetup>true</enableClickjackSetup>
+        <enableSMSIdentity>true</enableSMSIdentity>
+        <forceRelogin>false</forceRelogin>
+        <lockSessionsToIp>false</lockSessionsToIp>
+        <sessionTimeout>TwoHours</sessionTimeout>
+    </sessionSettings>
+</SecuritySettings>

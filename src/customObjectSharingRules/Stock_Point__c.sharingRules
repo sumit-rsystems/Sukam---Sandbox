@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectSharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <criteriaBasedRules>
+        <fullName>Service_Center_To_Service_Center</fullName>
+        <sharedTo>
+            <group>Service_Center</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Service Center</value>
+        </criteriaItems>
+        <accessLevel>Read</accessLevel>
+        <name>Service Center To Service Center</name>
+    </criteriaBasedRules>
+    <criteriaBasedRules>
+        <fullName>Share_vendors</fullName>
+        <sharedTo>
+            <group>Service_Center</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Vendors</value>
+        </criteriaItems>
+        <accessLevel>Read</accessLevel>
+        <name>Share vendors</name>
+    </criteriaBasedRules>
+    <criteriaBasedRules>
+        <fullName>TRC_Branch_1_to_Service_Centers</fullName>
+        <sharedTo>
+            <group>TRC_Branch_1</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Service Center</value>
+        </criteriaItems>
+        <accessLevel>Read</accessLevel>
+        <name>TRC Branch 1 to Service Centers</name>
+    </criteriaBasedRules>
+</CustomObjectSharingRules>

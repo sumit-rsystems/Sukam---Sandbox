@@ -1,0 +1,71 @@
+<apex:page standardController="Product__c" extensions="priceBookEntryPageComponentCon">
+   
+      <SCRIPT LANGUAGE="JavaScript">
+    function editPricebook(var1){
+         if( var1 != null && var1 != '')
+             top.location.href = "/apex/editPricBookEntryList?pid={!product.id}&pbeId="+var1;
+         else
+            top.location.href = "/apex/editPricBookEntryList?pid={!product.id}";     
+       }
+       
+       function addPricebook(){
+          top.location.href = "/apex/SelectPriceBook?id={!product.id}";
+       
+       }
+        
+        function refresh(){
+         //alert('aaaa');
+         top.location.href = "/{!product.id}";
+       }
+       
+        function openPage(var2){
+             top.location.href = "/"+var2;
+       }
+       
+       
+</SCRIPT>
+    <apex:form >
+    
+        <apex:actionFunction action="{!deletePBE}" Name="deleterecord"/>
+        
+        <apex:PageMessages />
+           
+        <apex:pageBlock id="page" title="Price Book Entry" mode="edit">
+            <apex:pageBlockbuttons location="top">
+            <apex:CommandButton value="Create Price Book Entry" onClick="addPricebook();" />
+             <apex:commandButton value="Edit All" onclick="editPricebook('');" rendered="{!IF(OR(ISNULL(pbeList), pbelist.size == 0), false,true)}" />
+            </apex:pageBlockbuttons>
+                       
+            <apex:pageMessage summary="There is no record." severity="INFO" strength="2" rendered="{!IF(OR(ISNULL(pbeList), pbelist.size == 0), true,false)}"></apex:pageMessage>
+        
+            <apex:pageBlockTable value="{!pbeList}" var="pbe" rendered="{!IF(OR(ISNULL(pbeList), pbelist.size == 0), false,true)}" > 
+                <apex:column headerValue="Action" style="width:8%">
+                    <apex:commandLink value="Edit" style="color:rgb(1, 91, 167);" onclick="editPricebook('{!pbe.id}');">
+                       </apex:commandLink>
+                    &nbsp;|&nbsp;
+                    <apex:commandLink value="Del"  style="color:rgb(1, 91, 167);" action="{!deletePBE}" oncomplete="refresh();">
+                        <apex:param value="{!pbe.id}" name="pbeId"/>
+                    </apex:commandLink>
+                </apex:column>
+                <!--  
+                <apex:column headerValue="Price Book Entry Name">
+                    <apex:commandLink value="{!pbe.Name}" onclick="openPage('{!pbe.id}')">
+                    </apex:commandLink>
+                </apex:column>
+               -->
+                <apex:column headerValue="Price Book" >
+                   <apex:CommandLink onclick="openPage('{!pbe.Price_Book__c}');">
+                       <apex:outputText value="{!pbe.Price_book__r.Name}"></apex:outputText>
+                   </apex:commandLink>
+                </apex:column>
+               
+                <apex:column value="{!pbe.UnitPrice__c}" headerValue="List Price"/>
+                <apex:column value="{!pbe.UseStandardPrice__c}" headerValue="Use Standard Price"/>
+                <apex:column value="{!pbe.IsActive__c}" headerValue="Active"/>
+                   
+            </apex:pageBlockTable>
+            
+            
+        </apex:pageBlock>
+       </apex:form>      
+</apex:page>

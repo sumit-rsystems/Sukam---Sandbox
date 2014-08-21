@@ -1,0 +1,11 @@
+Hi
+
+Please note that the FSR No. {!Service_Request__c.FSR_No__c} has been created with the Category as {!Service_Request__c.Category__c}
+
+Please find the link to the case below.
+{!Service_Request__c.Link}
+
+Kindly follow-up with the team on the Service Request. This is FYI.
+
+Regards,
+{!Service_Request__c.OwnerFullName}

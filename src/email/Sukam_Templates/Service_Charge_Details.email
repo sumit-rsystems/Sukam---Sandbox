@@ -1,0 +1,26 @@
+Dear Sir,
+
+Please find the details regarding Service Charges for Service Request No. {!Service_Request__c.Name}
+
+Owner Name: {!Service_Request__c.OwnerFullName}
+Location Code: {!Service_Request__c.Stock_Point_Owner_Id__c}
+Customer Name: {!Service_Request__c.Contact_Name__c}/ {!Service_Request__c.AccountId__c}
+Customer Address (Bill To): {!Account.BillingAddress}
+Customer Address (Ship To): {!Account.ShippingAddress}
+Bill No. : {!Service_Request__c.Service_Bill_No__c}
+Complaint No.: {!Service_Request__c.FSR_No__c}
+Type of Service Request: {!Service_Request__c.Type_of_Service_Request__c}
+Service Engineer Details: {!Service_Request__c.Service_Engineer_Name__c}
+Type of Service Charge:{!Service_Request__c.Service_Charge_Type__c}
+Amount: {!Service_Request__c.Service_Charges__c}
+Tax %: 10.36
+
+***Payment Collected****
+
+Receiving Date: {!Service_Request__c.Receiving_Date__c}
+Bank Name: {!Service_Request__c.Bank_Name__c}
+Cheque Amount: {!Service_Request__c.Cheque_Amount__c}
+Cheque No.:{!Service_Request__c.Cheque_No__c}
+
+Cash Amount: {!Service_Request__c.Cash_Amount__c}
+Thanks,

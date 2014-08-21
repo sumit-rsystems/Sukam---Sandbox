@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Stock_Point__c.Employee_Code__c</field>
+    </columns>
+    <columns>
+        <field>Stock_Point__c.Related_to_Service_Center__c</field>
+    </columns>
+    <columns>
+        <field>Stock_Point__c.Service_Center_Location_Code__c</field>
+    </columns>
+    <columns>
+        <field>Stock_Point__c.Service_Engineer_Name__c</field>
+    </columns>
+    <columns>
+        <field>Stock_Point__c.Service_Engineer_Id__c</field>
+    </columns>
+    <columns>
+        <field>Stock_Point__c.Resign__c</field>
+    </columns>
+    <columns>
+        <field>Stock_Point__c.Active__c</field>
+    </columns>
+    <currency>INR</currency>
+    <description>Engineers Name list Report</description>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Stock_Point__c.ServiceEngineer</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Engineers Name list Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Stock_Point__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

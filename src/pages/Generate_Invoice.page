@@ -1,0 +1,38 @@
+<apex:page controller="GenerateInvoice" renderAs="pdf" action="{!GetInvoiceDetails}">
+  <!--<apex:form id="theForm">-->
+  <apex:message />
+  <div style="width:100%;font-style:bold;font-size:30px;text-align:center">Invoice Details</div>
+        <table style="width:100%;margin-top:20px;">
+        
+              <tr style="width:100%">
+                 <td><div>Invoice No.  </div> <apex:outputText value="{!WObj.InvoiceNo}"></apex:outputText></td>
+                 <td></td>
+                 <td></td>
+              </tr>
+              <tr style="width:100%">
+               <td>
+                <div>Component Bill No.  </div> <apex:outputText value="{!WObj.SRObj.Component_Bill_No__c}"></apex:outputText>
+              </td>
+              <td><div>Component Charges  </div><apex:outputText value="{!WObj.SRObj.Component_Charges__c}"></apex:outputText></td>
+              <td><div>Discount % in Component Charges  </div><apex:outputText value="{!WObj.SRObj.Discount_in_Component_Charges__c}"></apex:outputText></td>
+            </tr>
+            <tr>
+               <td>
+                <div>Misc. Component Charges  </div><apex:outputText value="{!WObj.SRObj.Misc_Component_Charges__c}"></apex:outputText>
+              </td>
+              <td><div>Misc. Component Charges Remark  </div><apex:outputText value="{!WObj.SRObj.Misc_Component_Charges_Remark__c}"></apex:outputText></td>
+              <td><div>Net Basic CC Amount  </div><apex:outputText value="{!WObj.SRObj.Net_Basic_CC_Amount__c}"></apex:outputText></td>
+            </tr>
+            
+            <tr>
+               <td>
+                <div>Component Tax Rate  </div><apex:outputText value="{!WObj.SRObj.Component_Tax_Rate_1__c}"></apex:outputText>
+              </td>
+              <td><div>Total Component Amount (After Tax)  </div><apex:outputText value="{!WObj.SRObj.Total_Component_Amount_After_Tax__c}"></apex:outputText></td>
+              <td><div>Grand Total  </div><apex:outputText value="{!WObj.SRObj.Grand_Total__c}"></apex:outputText></td>
+            </tr>
+            
+            </table>
+             
+    <!--</apex:form>-->
+</apex:page>

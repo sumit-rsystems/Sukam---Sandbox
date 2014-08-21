@@ -1,0 +1,147 @@
+<apex:page StandardController="Service_Request__c" extensions="CloseServiceRequestCon" id="page">
+    <apex:sectionHeader title="Close Service Request"/>
+         
+    <apex:form id="theForm">
+        
+        <apex:pageBlock id="pblock" title="Service Request Edit">
+            <apex:Pagemessages />
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!doSave}" rerender="pblock"/>
+                <apex:commandButton value="Cancel" action="{!doCancel}"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection title="Service Request Information" collapsible="false" id="pbSection1">
+                <apex:inputField value="{!srObj.Battery_Approval_Date__c}"/>  
+                <apex:inputField value="{!srObj.Service_Centre_City__c}" />
+                <apex:inputField value="{!srObj.Warranty_Card__c}"/> 
+                <apex:outputLabel ></apex:outputLabel>
+                <apex:inputField value="{!srObj.Product_Category__c}"/>
+                <apex:outputLabel ></apex:outputLabel>
+                <apex:inputField value="{!srObj.Completion_Date_Time__c}" required="true"/>
+                <apex:outputLabel ></apex:outputLabel>
+                <apex:inputField value="{!srObj.Attended_Date_Time__c}" required="true"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Service Request Details" collapsible="false">
+                <apex:inputField value="{!srObj.FSR_No__c}"/>
+                <apex:inputField value="{!srObj.Preferred_Time__c}"/>
+                <apex:inputField value="{!srObj.Alternate_FSR_No__c}"/>
+                <apex:inputField value="{!srObj.Reason__c}" required="true"/>
+                <apex:inputField value="{!srObj.Agent_Name__c}"/>
+                <apex:inputField value="{!srObj.Service_Type__c}" required="true"/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Status"/>
+                    <apex:OutputPanel layout="block" styleClass="requiredInput">
+                        <apex:outputPanel layout="block" styleClass="requiredBlock"/>
+                        <apex:SelectList value="{!selectedStatus}" Size="1" id="Status">
+                            <apex:SelectOptions value="{!Options}"/>
+                       </apex:SelectList>
+                   </apex:OutputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:inputField value="{!srObj.CALL_TYPE__c}" required="true"/>
+                <apex:outputLabel ></apex:outputLabel>
+                <apex:inputField value="{!srObj.Warranty_Status__c}" />
+                <apex:outputlabel ></apex:outputlabel>
+                <apex:inputField value="{!srObj.Preferred_Date_for_Visit__c}" required="true"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Product Details" collapsible="false">
+                <apex:inputField value="{!srObj.Products__c}"/>
+                <apex:inputField value="{!srObj.Product_Serial_No__c}" required="true"/>
+                <apex:inputField value="{!srObj.Purchase_Invoice_No__c}"/>
+                <apex:inputField value="{!srObj.Purchase_Date__c}"/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="AMC Status"></apex:outputLabel>
+                    <apex:outputpanel style="white-space:nowrap;">
+                    <apex:inputField value="{!srObj.AMC_Status__c}"/>
+                        <div class="mouseOverInfoOuter" onfocus="addMouseOver(this)" onmouseover="addMouseOver(this)" tabindex="22">
+                            <img src="/s.gif"  class="infoIcon" />
+                            <div class="mouseOverInfo" style="display: block; opacity: 0;">Dependent on warranty</div>
+                        </div>
+                    </apex:outputpanel>
+                </apex:pageBlockSectionItem>
+                <apex:inputField value="{!srObj.Dealer_Name__c}" />
+                <apex:inputField value="{!srObj.Purchase_Country__c}"/>
+                <apex:inputField value="{!srObj.Purchase_State__c}"/>
+                <apex:inputField value="{!srObj.Purchase_City__c}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Field Service Report Details" collapsible="false">
+                <apex:inputField value="{!srObj.Service_Engineer_Assigned__c}" required="true"/>
+                <apex:inputField value="{!srObj.Service_Request_Attended_Date__c}"/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Type of Service Request"></apex:outputLabel>
+                    <apex:outputpanel style="white-space:nowrap;">
+                    <apex:inputField value="{!srObj.Type_of_Service_Request__c}"/>
+                        <div class="mouseOverInfoOuter" onfocus="addMouseOver(this)" onmouseover="addMouseOver(this)" tabindex="22">
+                            <img src="/s.gif"  class="infoIcon" />
+                            <div class="mouseOverInfo" style="display: block; opacity: 0;">Dependent on warranty</div>
+                        </div>
+                    </apex:outputpanel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Type of Replacement"></apex:outputLabel>
+                    <apex:outputpanel style="white-space:nowrap;">
+                    <apex:inputField value="{!srObj.Type_of_Replacement__c}"/>
+                        <div class="mouseOverInfoOuter" onfocus="addMouseOver(this)" onmouseover="addMouseOver(this)" tabindex="22">
+                            <img src="/s.gif"  class="infoIcon" />
+                            <div class="mouseOverInfo" style="display: block; opacity: 0;">Dependent on Type of Service Request</div>
+                        </div>
+                    </apex:outputpanel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Estimated Value of Service Request"></apex:outputLabel>
+                    <apex:outputpanel style="white-space:nowrap;">
+                    <apex:inputField value="{!srObj.Estimated_Value_of_Service_Request__c}"/>
+                        <div class="mouseOverInfoOuter" onfocus="addMouseOver(this)" onmouseover="addMouseOver(this)" tabindex="22">
+                            <img src="/s.gif"  class="infoIcon" />
+                            <div class="mouseOverInfo" style="display: block; opacity: 0;">Dependent on Type of Replacement</div>
+                        </div>
+                    </apex:outputpanel>
+                </apex:pageBlockSectionItem>               
+                
+                <apex:inputField value="{!srObj.Approval_Request_Status__c}"/>
+                <apex:inputField value="{!srObj.PROBLEM_OBSERVED__c}" required="true"/>
+                <apex:outputLabel ></apex:outputLabel>
+                <apex:inputField value="{!srObj.Problem_Detected__c}"/>
+                <apex:outputLabel ></apex:outputLabel>
+                <apex:inputField value="{!srObj.Action_Taken__c}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Financial Details" collapsible="false">
+                <apex:inputField value="{!srObj.Component_Bill_No__c}"/> 
+                <apex:inputField value="{!srObj.Component_Charges__c}"/> 
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Service Charge Type"></apex:outputLabel>
+                    <apex:outputpanel style="white-space:nowrap;">
+                    <apex:inputField value="{!srObj.Service_Charge_Type__c}"/>
+                        <div class="mouseOverInfoOuter" onfocus="addMouseOver(this)" onmouseover="addMouseOver(this)" tabindex="22">
+                            <img src="/s.gif"  class="infoIcon" />
+                            <div class="mouseOverInfo" style="display: block; opacity: 0;">Dependent on AMC Status</div>
+                        </div>
+                    </apex:outputpanel>
+                </apex:pageBlockSectionItem>    
+                 
+                <apex:inputField value="{!srObj.Service_Charges_Other__c}"/> 
+                <apex:inputField value="{!srObj.Service_Charges__c}"/> 
+                <apex:outputlabel ></apex:outputlabel>
+                <apex:inputField value="{!srObj.CurrencyIsoCode}" required="true"/> 
+            </apex:pageBlockSection>
+            
+            <apex:pageblockSection title="Payment Details" collapsible="false">
+                <apex:inputField value="{!srObj.Payment_Mode__c}"/>
+                <apex:inputField value="{!srObj.Bank_Name__c}"/>
+                <apex:inputField value="{!srObj.Cheque_No__c}"/>
+                <apex:inputField value="{!srObj.Cheque_Amount__c}"/>
+                <apex:inputField value="{!srObj.Cash_Amount__c}"/>
+                <apex:inputField value="{!srObj.Receiving_Date__c}"/>  
+            </apex:pageblockSection>
+            
+            <apex:pageblockSection title="Service Engineer Expense Details" collapsible="false">
+                <apex:inputField value="{!srObj.Other_Expenses__c}"/>
+            </apex:pageblockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

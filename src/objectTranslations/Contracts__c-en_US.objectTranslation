@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contracts</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contracts</value>
+    </caseValues>
+    <fields>
+        <label><!-- AMC Amount --></label>
+        <name>AMC_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- AMC Amount (after Discount) --></label>
+        <name>AMC_Amount_after_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- AMC Bill No --></label>
+        <name>AMC_Bill_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- AMC Type --></label>
+        <name>AMC_Type__c</name>
+        <picklistValues>
+            <masterLabel>Comprehensive</masterLabel>
+            <translation><!-- Comprehensive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Activated By --></label>
+        <name>Activated_By__c</name>
+        <relationshipLabel><!-- Contracts (Activated By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Activated Date --></label>
+        <name>Activated_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Name 1 --></label>
+        <name>Bank_Name_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Name 2 --></label>
+        <name>Bank_Name_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Name 3 --></label>
+        <name>Bank_Name_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Name 4 --></label>
+        <name>Bank_Name_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Address --></label>
+        <name>Billing_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Location Type --></label>
+        <name>Branch_Location_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cheque No. 1 --></label>
+        <name>Cheque_No_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cheque No 2 --></label>
+        <name>Cheque_No_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cheque No 3 --></label>
+        <name>Cheque_No_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cheque No 4 --></label>
+        <name>Cheque_No_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Signed By --></label>
+        <name>Company_Signed_By__c</name>
+        <relationshipLabel><!-- Contracts (Company Signed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract End Date --></label>
+        <name>Contract_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Term (months) --></label>
+        <name>Contract_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Signed By --></label>
+        <name>Customer_Signed_By__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Signed Date --></label>
+        <name>Customer_Signed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Signed Title --></label>
+        <name>Customer_Signed_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Amount --></label>
+        <name>Discount_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount % --></label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- ERP Activated Date --></label>
+        <name>ERP_Activated_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ERP End Date --></label>
+        <name>ERP_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ERP Start Date --></label>
+        <name>ERP_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maintenance Done --></label>
+        <name>Maintenance_Done__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Maintenance Date --></label>
+        <name>Next_Maintenance_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- OPERATING_UNIT_NAME --></label>
+        <name>OPERATING_UNIT_NAME__c</name>
+        <picklistValues>
+            <masterLabel>SU-KAM POWER SYSTEMS LIMITED</masterLabel>
+            <translation><!-- SU-KAM POWER SYSTEMS LIMITED --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Online Transaction No 1 --></label>
+        <name>Online_Transaction_No_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Transaction No 2 --></label>
+        <name>Online_Transaction_No_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Transaction No 3 --></label>
+        <name>Online_Transaction_No_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Transaction No 4 --></label>
+        <name>Online_Transaction_No_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Expiration Notice --></label>
+        <name>Owner_Expiration_Notice__c</name>
+        <picklistValues>
+            <masterLabel>120 Days</masterLabel>
+            <translation><!-- 120 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 Days</masterLabel>
+            <translation><!-- 15 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 Days</masterLabel>
+            <translation><!-- 30 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45 Days</masterLabel>
+            <translation><!-- 45 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 Days</masterLabel>
+            <translation><!-- 60 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 Days</masterLabel>
+            <translation><!-- 90 Days --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Mode 2 --></label>
+        <name>Payment_Mode_2__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Transaction</masterLabel>
+            <translation><!-- Online Transaction --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Mode 3 --></label>
+        <name>Payment_Mode_3__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Transaction</masterLabel>
+            <translation><!-- Online Transaction --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Mode 4 --></label>
+        <name>Payment_Mode_4__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Transaction</masterLabel>
+            <translation><!-- Online Transaction --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Mode 1 --></label>
+        <name>Payment_Mode__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Transaction</masterLabel>
+            <translation><!-- Online Transaction --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Option --></label>
+        <name>Payment_Option__c</name>
+        <picklistValues>
+            <masterLabel>Half yearly Payment</masterLabel>
+            <translation><!-- Half yearly Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly Payment</masterLabel>
+            <translation><!-- Quarterly Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Advance Payment</masterLabel>
+            <translation><!-- Single Advance Payment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Quantity --></label>
+        <name>Product_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Serial No. --></label>
+        <name>Product_Serial_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Products --></label>
+        <name>Products__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SFFLAG --></label>
+        <name>SFFLAG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale Location Type --></label>
+        <name>Sale_Location_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Engineer Assigned --></label>
+        <name>Service_Engineer_Ass__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Engineer Code --></label>
+        <name>Service_Engineer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Engineer Name --></label>
+        <name>Service_Engineer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Address --></label>
+        <name>Shipping_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Terms --></label>
+        <name>Special_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Activated</masterLabel>
+            <translation><!-- Activated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stock Point Name --></label>
+        <name>Stock_Point_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock Point --></label>
+        <name>Stock_Point__c</name>
+        <relationshipLabel><!-- Contracts (Stock Point) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TDS Amount 1 --></label>
+        <name>TDS_Amount_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- TDS Amount 2 --></label>
+        <name>TDS_Amount_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- TDS Amount 3 --></label>
+        <name>TDS_Amount_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- TDS Amount 4 --></label>
+        <name>TDS_Amount_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- TDS Details 1 --></label>
+        <name>TDS_Details_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- TDS Details 2 --></label>
+        <name>TDS_Details_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- TDS Details 3 --></label>
+        <name>TDS_Details_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- TDS Details 4 --></label>
+        <name>TDS_Details_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Amount --></label>
+        <name>Tax_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Percentage --></label>
+        <name>Tax_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Rate --></label>
+        <name>Tax_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total AMC Amount (After Tax) --></label>
+        <name>Total_AMC_Amount_After_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total AMC Amount (Basic) --></label>
+        <name>Total_AMC_Amount_Basic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total AMC Amount (Inclusive Tax) --></label>
+        <name>Total_AMC_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Maintenance --></label>
+        <name>Total_Maintenance__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT Percentage --></label>
+        <name>VAT_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Payment Amount Due --></label>
+        <name>X1st_Payment_Amount_Due__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Payment Amount --></label>
+        <name>X1st_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Payment Date --></label>
+        <name>X1st_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Payment Due Date --></label>
+        <name>X1st_Payment_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Payment Amount Due --></label>
+        <name>X2nd_Payment_Amount_Due__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Payment Amount --></label>
+        <name>X2nd_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Payment Date --></label>
+        <name>X2nd_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Payment Due Date --></label>
+        <name>X2nd_Payment_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3rd Payment Amount Due --></label>
+        <name>X3rd_Payment_Amount_Due__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3rd Payment Amount --></label>
+        <name>X3rd_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3rd Payment Date --></label>
+        <name>X3rd_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3rd Payment Due Date --></label>
+        <name>X3rd_Payment_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- 4th Payment Amount Due --></label>
+        <name>X4th_Payment_Amount_Due__c</name>
+    </fields>
+    <fields>
+        <label><!-- 4th Payment Amount --></label>
+        <name>X4th_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- 4th Payment Date --></label>
+        <name>X4th_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- 4th Payment Due Date --></label>
+        <name>X4th_Payment_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- 70 percent Tax --></label>
+        <name>X70_percent_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- 80 percent vat --></label>
+        <name>X80_percent_vat__c</name>
+    </fields>
+    <layouts>
+        <layout>Active Contract Layout For Partner</layout>
+        <sections>
+            <label><!-- 1st Payment Details --></label>
+            <section>1st Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- 2nd Payment Details --></label>
+            <section>2nd Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- 3rd Payment Details --></label>
+            <section>3rd Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- 4th Payment Details --></label>
+            <section>4th Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- AMC Details --></label>
+            <section>AMC Details</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Signature Information --></label>
+            <section>Signature Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contracts Layout</layout>
+        <sections>
+            <label><!-- 1st Payment Details --></label>
+            <section>1st Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- 2nd Payment Details --></label>
+            <section>2nd Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- 3rd Payment Details --></label>
+            <section>3rd Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- 4th Payment Details --></label>
+            <section>4th Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- AMC Details --></label>
+            <section>AMC Details</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Signature Information --></label>
+            <section>Signature Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contracts Layout For Admin</layout>
+        <sections>
+            <label><!-- 1st Payment Details --></label>
+            <section>1st Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- 2nd Payment Details --></label>
+            <section>2nd Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- 3rd Payment Details --></label>
+            <section>3rd Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- 4th Payment Details --></label>
+            <section>4th Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- AMC Details --></label>
+            <section>AMC Details</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Signature Information --></label>
+            <section>Signature Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contracts Layout Part 1</layout>
+        <sections>
+            <label><!-- 1st Payment Details --></label>
+            <section>1st Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- 2nd Payment Details --></label>
+            <section>2nd Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- 3rd Payment Details --></label>
+            <section>3rd Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- 4th Payment Details --></label>
+            <section>4th Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- AMC Details --></label>
+            <section>AMC Details</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Signature Information --></label>
+            <section>Signature Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Saved Contract Info Layout</layout>
+        <sections>
+            <label><!-- 1st Payment Details --></label>
+            <section>1st Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- 2nd Payment Details --></label>
+            <section>2nd Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- 3rd Payment Details --></label>
+            <section>3rd Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- 4th Payment Details --></label>
+            <section>4th Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- AMC Details --></label>
+            <section>AMC Details</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Signature Information --></label>
+            <section>Signature Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Active Contracts Type --></label>
+        <name>Active_Contracts_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Contracts Layout Hide --></label>
+        <name>Contracts_Layout_Hide</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Inactive Contract Type --></label>
+        <name>Inactive_Contract_Type</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You can not edit the records Once It has been activated. --></errorMessage>
+        <name>Can_not_Edit_After_Activation_of_contrac</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the values for Payment Date and Payment Amount --></errorMessage>
+        <name>Cash_1_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the values for Payment Date and Payment Amount --></errorMessage>
+        <name>Cash_2_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the values for Payment Date and Payment Amount --></errorMessage>
+        <name>Cash_3_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the values for Payment Date and Payment Amount --></errorMessage>
+        <name>Cash_4_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the values for Payment Date, Payment Amount, Bank Name &amp; Cheque No. --></errorMessage>
+        <name>Cheque_1_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the values for Payment Date, Payment Amount, Bank Name &amp; Cheque No. --></errorMessage>
+        <name>Cheque_2_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the values for Payment Date, Payment Amount, Bank Name &amp; Cheque No. --></errorMessage>
+        <name>Cheque_3_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the values for Payment Date, Payment Amount, Bank Name &amp; Cheque No. --></errorMessage>
+        <name>Cheque_4_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not authorised to provide a discount of less than 0%. --></errorMessage>
+        <name>Discount_not_less_than_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not authorised to provide a discount of more than 15%. --></errorMessage>
+        <name>Discount_not_more_than_15</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Put Either Discount Amount or Discount % for each Contract --></errorMessage>
+        <name>Either_Discount_Amount_or_Discount_Perce</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the values for Payment Date, Online Transaction No and Payment Amount --></errorMessage>
+        <name>Online_1_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the values for Payment Date, Online Transaction No and Payment Amount --></errorMessage>
+        <name>Online_2_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the values for Payment Date, Online TRansaction No and Payment Amount --></errorMessage>
+        <name>Online_3_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the values for Payment Date, Online Transaction No and Payment Amount --></errorMessage>
+        <name>Online_4_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter value in Payment fields. --></errorMessage>
+        <name>Payment_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Activated date And Start Date Month should be same --></errorMessage>
+        <name>Start_Date_And_Activated_Date_Month</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Activate --></label>
+        <name>Activate</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- InvoicePDF --></label>
+        <name>InvoicePDF</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,7 @@
+<messaging:emailTemplate subject="Product Enquiry"  relatedToType="Enquiry__c">
+<messaging:plainTextEmailBody >
+Congratulations!
+{!relatedTo.name}
+This is your new Visualforce Email Template.
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

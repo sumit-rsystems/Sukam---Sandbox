@@ -1,0 +1,9 @@
+*** Check up Due Alert*** 
+
+This is to alert that Check Up is due for the following: 
+
+Customer Name: {!Contract.Account}
+Contract Owner: {!Contract.OwnerFullName}
+Contract Number: {!Contract.ContractNumber}
+
+Click on the link to access the case: {!Contract.Link}

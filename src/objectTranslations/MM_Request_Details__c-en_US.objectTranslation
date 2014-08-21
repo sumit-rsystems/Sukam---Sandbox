@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>MM Request Details</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>MM Request Details</value>
+    </caseValues>
+    <fields>
+        <label><!-- Approved Quantity --></label>
+        <name>Approved_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver Remarks --></label>
+        <name>Approver_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Area --></label>
+        <name>Dealer_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer District --></label>
+        <name>Dealer_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Name --></label>
+        <name>Dealer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Material Name --></label>
+        <name>Marketing_Material_Name__c</name>
+        <relationshipLabel><!-- MM Request Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Requests --></label>
+        <name>Service_Requests__c</name>
+        <relationshipLabel><!-- MM Request Details --></relationshipLabel>
+    </fields>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Approved Quantity / Approver Remarks should be provided for every Service Request line by the CRM user --></errorMessage>
+        <name>Approval_required_for_MM_Service_Request</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quantity must be less than 1000. --></errorMessage>
+        <name>Quantity_less_than_1000</name>
+    </validationRules>
+</CustomObjectTranslation>

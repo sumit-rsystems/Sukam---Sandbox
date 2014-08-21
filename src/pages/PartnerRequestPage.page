@@ -1,0 +1,228 @@
+<apex:page controller="PartnerRequestController">
+    <apex:form >
+    
+        <apex:pageBlock title="Partner Requests" rendered="{!(mode=='SELECT')}">        
+            <apex:pageBlockSection title="Create new request" columns="1" collapsible="false">
+            <br/>
+                <!--<apex:outputLink value="?reqType=POP-Brochure&mode=NEW">POP-Brochure</apex:outputLink>
+                <apex:outputLink value="?reqType=POP-Leaflet&mode=NEW">POP-Leaflet</apex:outputLink>
+                <apex:outputLink value="?reqType=POP-CD&mode=NEW">POP-CD</apex:outputLink>
+                <apex:outputLink value="?reqType=POP-Poster&mode=NEW">POP-Poster</apex:outputLink>
+                <apex:outputLink value="?reqType=POP-Catalogue&mode=NEW">POP-Catalogue</apex:outputLink>
+                <apex:outputLink value="?reqType=Board&mode=NEW">Board</apex:outputLink>
+                <apex:outputLink value="?reqType=DealerCertificate&mode=NEW">Dealer Certificate</apex:outputLink>
+                <apex:outputLink value="?reqType=Other&mode=NEW">Other</apex:outputLink>-->
+                
+                <center>
+                <apex:selectList value="{!req}" multiselect="false" size="1" onChange="getDirection(this.options[this.selectedIndex].value)">
+                    <apex:selectOption itemLabel="--Select one--" itemValue="" ></apex:selectOption>  
+                    <apex:selectOption itemLabel="PoP-Brochure" itemValue="?reqType=PoP-Brochure&mode=NEW&RecordType={!$CurrentPage.Parameters.RecordType}" ></apex:selectOption>  
+                    <apex:selectOption itemLabel="PoP-Leaflet" itemValue="?reqType=PoP-Leaflet&mode=NEW&RecordType={!$CurrentPage.Parameters.RecordType}" ></apex:selectOption>
+                    <apex:selectOption itemLabel="PoP-Catalogue" itemValue="?reqType=PoP-Catalogue&mode=NEW&RecordType={!$CurrentPage.Parameters.RecordType}" ></apex:selectOption>
+                    <apex:selectOption itemLabel="PoP-Z Cards" itemValue="?reqType=PoP-Z Cards&mode=NEW&RecordType={!$CurrentPage.Parameters.RecordType}" ></apex:selectOption>
+                    <apex:selectOption itemLabel="PoP-Poster" itemValue="?reqType=PoP-Poster&mode=NEW&RecordType={!$CurrentPage.Parameters.RecordType}" ></apex:selectOption>
+                    <apex:selectOption itemLabel="PoP-Dangler" itemValue="?reqType=PoP-Dangler&mode=NEW&RecordType={!$CurrentPage.Parameters.RecordType}" ></apex:selectOption>
+                    <apex:selectOption itemLabel="PoP-Collaterals" itemValue="?reqType=PoP-Collaterals&mode=NEW&RecordType={!$CurrentPage.Parameters.RecordType}" ></apex:selectOption>
+                    <apex:selectOption itemLabel="PoP-CD" itemValue="?reqType=PoP-CD&mode=NEW&RecordType={!$CurrentPage.Parameters.RecordType}" ></apex:selectOption>
+                    <apex:selectOption itemLabel="Board" itemValue="?reqType=Board&mode=NEW&RecordType={!$CurrentPage.Parameters.RecordType}" ></apex:selectOption>
+                    <apex:selectOption itemLabel="Dealer Certificate" itemValue="?reqType=DealerCertificate&mode=NEW&RecordType={!$CurrentPage.Parameters.RecordType}" ></apex:selectOption>
+                    <apex:selectOption itemLabel="Others" itemValue="?reqType=Other&mode=NEW&RecordType={!$CurrentPage.Parameters.RecordType}" ></apex:selectOption>
+                </apex:selectList>
+                </center>
+            </apex:pageBlockSection>
+            <!--<apex:pageBlockSection title="View/Edit request" columns="1">
+                <apex:pageBlockTable value="{!partnerReqs}" var="bean">
+                    <apex:column headerValue="Name">
+                         <apex:outputLink value="?prId={!bean.Id}&mode=EDIT">
+                            <apex:outputText value="{!bean.name}"/>
+                         </apex:outputLink>
+                    </apex:column>
+                    <apex:column headerValue="Type" value="{!bean.mmType}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>-->
+        </apex:pageBlock>
+        
+        <apex:pageBlock id="newReq" title="Request Details" rendered="{!(mode=='NEW')}">
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockButtons location="top">
+            
+                <apex:commandButton value="Save" action="{!save}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>             
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="New Request ({!mmType})" columns="1" collapsible="false">
+                <apex:pageBlockTable value="{!reqDetails}" var="bean">
+                    <apex:column headerValue="Name"  rendered="{!(displayType!='Board' && displayType!='DealerCertificate')}">
+                        <apex:outputPanel rendered="{!NOT(ISNULL(bean.thumbId))}">
+                            <apex:image url="/servlet/servlet.FileDownload?file={!bean.thumbId}" /> &nbsp;&nbsp;
+                        </apex:outputPanel>
+                        <a href="/{!bean.mmId}" target="_parent">{!bean.mmName}</a>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Language" value="{!bean.language}" rendered="{!(displayType=='POP')}"/>
+                    <apex:column headerValue="Size" value="{!bean.size}" rendered="{!(displayType=='POP')}"/>
+                    
+                    <apex:column headerValue="Description" value="{!bean.description}" rendered="{!(displayType=='POP-CD')}"/>
+                    <apex:column headerValue="Contents" value="{!bean.contents}" rendered="{!(displayType=='POP-CD')}"/>
+                    
+                    <apex:column headerValue="Board" rendered="{!(displayType=='Board')}">
+                        <apex:outputPanel rendered="{!NOT(ISNULL(bean.thumbId))}">
+                            <apex:image url="/servlet/servlet.FileDownload?file={!bean.thumbId}" /> &nbsp;&nbsp;
+                        </apex:outputPanel>
+                        <apex:outputText value="{!bean.board}"/>
+                        <!--<apex:selectList value="{!bean.board}" multiselect="false" size="1">-->
+                            <!--<apex:selectOptions value="{!boards}" ></apex:selectOptions>  -->
+                        <!--</apex:selectList>-->
+                    </apex:column>
+                    <apex:column headerValue="Size" rendered="{! (displayType=='Board')}">
+                        <apex:outputText value="{!bean.size}"/>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Name" rendered="{!(displayType=='DealerCertificate')}">
+                        <apex:inputText value="{!bean.mmName}"/>
+                    </apex:column>
+                    <apex:column headerValue="District" rendered="{!(displayType=='DealerCertificate')}">
+                        <apex:inputText value="{!bean.dcDistrict}"/>
+                    </apex:column>
+                    <apex:column headerValue="Area" rendered="{!(displayType=='DealerCertificate')}">
+                        <apex:inputText value="{!bean.dcArea}"/>
+                    </apex:column>
+                    <apex:column headerValue="Phone" rendered="{!(displayType=='DealerCertificate')}">
+                        <apex:inputText value="{!bean.dcPhone}"/>
+                    </apex:column>
+                    <apex:column headerValue="Product" rendered="{!(displayType=='DealerCertificate')}">
+                        <apex:inputText value="{!bean.dcProduct}"/>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Quantity" rendered="{!(displayType!='DealerCertificate')}">
+                        <apex:inputText value="{!bean.quantity}"/>
+                    </apex:column>         
+                    <apex:column headerValue="Remarks">
+                        <apex:inputText value="{!bean.remarks}"/>
+                    </apex:column>                  
+                    <!--<apex:column headerValue="File Download" rendered="{!(displayType =='PoP-Brochure')}">
+                        <a href="/{!bean.docId}" target="_new">{!bean.mmName}</a>
+                    </apex:column>-->
+                    <apex:column headerValue="File Download" rendered="{!(displayType =='PoP-Brochure' || displayType =='PoP')}">                       
+                        <apex:outputLink target="_blank" value="/servlet/servlet.FileDownload?file={!bean.docId}" rendered="{!IF(AND(OR(displayType ='PoP-Brochure',displayType ='PoP'),NOT(ISNULL(bean.docId))),true,false)}">Download</apex:outputLink>
+                         <!--<apex:image url="/servlet/servlet.FileDownload?file={!bean.docId}" rendered="{!IF(AND(OR(displayType ='PoP-Brochure',displayType ='PoP'),NOT(ISNULL(bean.docId))),true,false)}"/>-->
+                    </apex:column>  
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            <table width="100%">
+            <tr>
+            <td>
+            <apex:outputLink value="/apex/PartnerRequestPage?retURL=%2Fa0P%2Fo&RecordType='+{!$CurrentPage.Parameters.RecordType}+'&ent=01IT0000000975P">Back</apex:outputLink>
+            </td>
+            <td align="right">
+            <apex:commandLink value="Insert Rows" action="{!addRows}" rerender="newReq" rendered="{!(displayType=='DealerCertificate')}"/>
+            </td>
+            </tr>
+            </table>
+        </apex:pageBlock>
+
+        <apex:pageBlock title="Request Details" rendered="{!(mode=='EDIT')}">
+        <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Save" action="{!save}"/>
+                <apex:commandButton value="Cancel" action="{!cancelEdit}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="{!partnerRequest.name} ({!mmType})" columns="1" collapsible="false">
+                <apex:pageBlockTable value="{!reqDetails}" var="bean">
+                
+                    <apex:column headerValue="Name"  rendered="{!(displayType!='Board')}">
+                        <apex:outputPanel rendered="{!AND(displayType != 'Other', NOT(ISNULL(bean.thumbId)))}">
+                            <apex:image url="/servlet/servlet.FileDownload?file={!bean.thumbId}" /> &nbsp;&nbsp;
+                        </apex:outputPanel>
+                        <a href="/{!bean.mmId}" target="_parent">{!bean.mmName}</a>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Language" value="{!bean.language}" rendered="{!(displayType=='POP')}"/>
+                    <apex:column headerValue="Size" value="{!bean.size}" rendered="{!(displayType=='POP')}"/>
+                    
+                    <apex:column headerValue="Description" value="{!bean.description}" rendered="{!(displayType=='POP-CD')}"/>
+                    <apex:column headerValue="Contents" value="{!bean.contents}" rendered="{!(displayType=='POP-CD')}"/>
+                    
+                    <apex:column headerValue="Board" rendered="{!(displayType=='Board')}">
+                        <apex:outputPanel rendered="{!NOT(ISNULL(bean.thumbId))}">
+                            <apex:image url="/servlet/servlet.FileDownload?file={!bean.thumbId}" /> &nbsp;&nbsp;
+                        </apex:outputPanel>
+                        <apex:inputText value="{!bean.board}"/>
+                    </apex:column>
+                    <apex:column headerValue="Size" value="{!bean.size}" rendered="{!(displayType=='Board')}"/>
+                    
+                    <apex:column headerValue="District" value="{!bean.dcDistrict}" rendered="{!(displayType=='DealerCertificate')}"/>
+                    <apex:column headerValue="Area" value="{!bean.dcArea}" rendered="{!(displayType=='DealerCertificate')}"/>
+                    <apex:column headerValue="Phone" value="{!bean.dcPhone}" rendered="{!(displayType=='DealerCertificate')}"/>
+                    <apex:column headerValue="Product" value="{!bean.dcProduct}" rendered="{!(displayType=='DealerCertificate')}"/>
+                    
+                    <apex:column headerValue="Quantity" value="{!bean.quantity}" rendered="{!(displayType!='DealerCertificate')}"/>
+                    <apex:column headerValue="Remarks"  value="{!bean.remarks}"/>
+
+                    <apex:column headerValue="Approved Quantity" rendered="{!(displayType!='DealerCertificate')}">
+                        <apex:inputText value="{!bean.apprQty}"/>
+                    </apex:column>         
+                    <apex:column headerValue="Approver Remarks">
+                        <apex:inputText value="{!bean.apprRemarks}"/>
+                    </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            <!--<apex:outputLink value="PartnerRequestPage">Back</apex:outputLink>-->
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Request Details" rendered="{!(mode=='VIEW')}">
+            <apex:pageBlockButtons location="top">                
+                <apex:commandButton value="Cancel" action="{!cancelEdit}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="{!partnerRequest.name} ({!mmType})" columns="1" collapsible="false">
+                <apex:pageBlockTable value="{!reqDetails}" var="bean">
+                    <apex:column headerValue="Name"  rendered="{!(displayType!='Board')}">
+                        <apex:outputPanel rendered="{!AND(displayType != 'Other', NOT(ISNULL(bean.thumbId)))}">
+                            <apex:image url="/servlet/servlet.FileDownload?file={!bean.thumbId}" /> &nbsp;&nbsp;
+                        </apex:outputPanel>
+                        <a href="/{!bean.mmId}" target="_parent">{!bean.mmName}</a>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Language" value="{!bean.language}" rendered="{!(displayType=='POP')}"/>
+                    <apex:column headerValue="Size" value="{!bean.size}" rendered="{!(displayType=='POP')}"/>
+                    
+                    <apex:column headerValue="Description" value="{!bean.description}" rendered="{!(displayType=='POP-CD')}"/>
+                    <apex:column headerValue="Contents" value="{!bean.contents}" rendered="{!(displayType=='POP-CD')}"/>
+                    
+                    <apex:column headerValue="Board" rendered="{!(displayType=='Board')}">
+                        <apex:outputPanel rendered="{!NOT(ISNULL(bean.thumbId))}">
+                            <apex:image url="/servlet/servlet.FileDownload?file={!bean.thumbId}" /> &nbsp;&nbsp;
+                        </apex:outputPanel>
+                        <apex:inputText value="{!bean.board}"/>
+                    </apex:column>
+                    <apex:column headerValue="Size" value="{!bean.size}" rendered="{!(displayType=='Board')}"/>
+                    
+                    <apex:column headerValue="District" value="{!bean.dcDistrict}" rendered="{!(displayType=='DealerCertificate')}"/>
+                    <apex:column headerValue="Area" value="{!bean.dcArea}" rendered="{!(displayType=='DealerCertificate')}"/>
+                    <apex:column headerValue="Phone" value="{!bean.dcPhone}" rendered="{!(displayType=='DealerCertificate')}"/>
+                    <apex:column headerValue="Product" value="{!bean.dcProduct}" rendered="{!(displayType=='DealerCertificate')}"/>
+                    
+                    <apex:column headerValue="Quantity" value="{!bean.quantity}" rendered="{!(displayType!='DealerCertificate')}"/>
+                    <apex:column headerValue="Remarks"  value="{!bean.remarks}"/>
+
+                    <apex:column headerValue="Approved Quantity" rendered="{!(displayType!='DealerCertificate')}">
+                        <apex:outputText value="{!bean.apprQty}"/>
+                    </apex:column>         
+                    <apex:column headerValue="Approver Remarks">
+                        <apex:outputText value="{!bean.apprRemarks}"/>
+                    </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            <!--<apex:outputLink value="PartnerRequestPage">Back</apex:outputLink>-->
+        </apex:pageBlock>
+        
+        <script>
+            function getDirection(thisLocation)
+            {
+                //alert(" window.parent.location.href ^^^^^ "+window.parent.location.href+" thisLocation ^^^^ "+thisLocation + "thisLocation : " + thisLocation );                
+                if(thisLocation.length > 0)
+                    window.parent.location.href = thisLocation;   
+                
+            }
+        </script>
+    </apex:form>
+</apex:page>

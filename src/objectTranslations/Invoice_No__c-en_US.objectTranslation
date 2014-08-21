@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Invoice No</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Invoice No</value>
+    </caseValues>
+    <fields>
+        <label><!-- Full Invoice No --></label>
+        <name>Full_Invoice_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoive Number --></label>
+        <name>Invoive_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Request --></label>
+        <name>Service_Request__c</name>
+        <relationshipLabel><!-- Invoice No --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

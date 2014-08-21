@@ -1,0 +1,8 @@
+Dear Sir, 
+
+Kindly send us your approval for Product Replacement. 
+
+Click on the link to access the Service Request {!Service_Request__c.Link}
+
+Best Regards, 
+{!User.FirstName}

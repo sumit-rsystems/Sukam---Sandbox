@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Service Requests</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Service Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Customer Address --></label>
+        <name>Customer_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Purchase --></label>
+        <name>Date_of_Purchase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Name --></label>
+        <name>Dealer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Escalation Date 2 days for SR Closure --></label>
+        <name>Escalation_Date_2_days_for_SR_Closure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Esclation Date 30 days --></label>
+        <name>Esclation_Date_30_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Esclation Date 45 days --></label>
+        <name>Esclation_Date_45_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Esclation Date 5 days --></label>
+        <name>Esclation_Date_5_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Esclation Date 7 days --></label>
+        <name>Esclation_Date_7_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Esclation Date 10 days --></label>
+        <name>Esclation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback --></label>
+        <name>Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- From --></label>
+        <name>From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone No --></label>
+        <name>Phone_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Model --></label>
+        <name>Product_Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity Approved --></label>
+        <name>Quantity_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serial Number --></label>
+        <name>Serial_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Request No --></label>
+        <name>Service_Request_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executed</masterLabel>
+            <translation><!-- Executed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- To --></label>
+        <name>To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type Of Complaint --></label>
+        <name>Type_Of_Complaint__c</name>
+        <picklistValues>
+            <masterLabel>DC MCB TRIPPS</masterLabel>
+            <translation><!-- DC MCB TRIPPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FUSE BLOWN</masterLabel>
+            <translation><!-- FUSE BLOWN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FUSE BROKEN</masterLabel>
+            <translation><!-- FUSE BROKEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistics</masterLabel>
+            <translation><!-- Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINS MCB TRIPPS</masterLabel>
+            <translation><!-- MAINS MCB TRIPPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Our product</masterLabel>
+            <translation><!-- Our product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM NOT WORKING ON BATTERY</masterLabel>
+            <translation><!-- SYSTEM NOT WORKING ON BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYSTEM NOT WORKING ON MAINS</masterLabel>
+            <translation><!-- SYSTEM NOT WORKING ON MAINS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Office</masterLabel>
+            <translation><!-- Sales Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Centre</masterLabel>
+            <translation><!-- Service Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services / Sales Engineer</masterLabel>
+            <translation><!-- Services / Sales Engineer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type Of Request --></label>
+        <name>Type_Of_Request__c</name>
+        <picklistValues>
+            <masterLabel>Accounts Statement (Overall)</masterLabel>
+            <translation><!-- Accounts Statement (Overall) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bills</masterLabel>
+            <translation><!-- Bills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boards</masterLabel>
+            <translation><!-- Boards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque Bounce Details</masterLabel>
+            <translation><!-- Cheque Bounce Details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Note</masterLabel>
+            <translation><!-- Credit Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer Certificates</masterLabel>
+            <translation><!-- Dealer Certificates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debit Note</masterLabel>
+            <translation><!-- Debit Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Financial Details</masterLabel>
+            <translation><!-- Other Financial Details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Our product</masterLabel>
+            <translation><!-- Our product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outstanding – Ageing</masterLabel>
+            <translation><!-- Outstanding – Ageing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payments</masterLabel>
+            <translation><!-- Payments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoP - Brochure</masterLabel>
+            <translation><!-- PoP - Brochure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoP - CD</masterLabel>
+            <translation><!-- PoP - CD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoP - Catalogue</masterLabel>
+            <translation><!-- PoP - Catalogue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoP - Collaterals</masterLabel>
+            <translation><!-- PoP - Collaterals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoP - Danglers</masterLabel>
+            <translation><!-- PoP - Danglers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoP - Leaflet</masterLabel>
+            <translation><!-- PoP - Leaflet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoP - Posters</masterLabel>
+            <translation><!-- PoP - Posters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoP - Z Cards</masterLabel>
+            <translation><!-- PoP - Z Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Office</masterLabel>
+            <translation><!-- Sales Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Returns</masterLabel>
+            <translation><!-- Sales Returns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Centre</masterLabel>
+            <translation><!-- Service Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services / Sales Engineer</masterLabel>
+            <translation><!-- Services / Sales Engineer --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>CRM USer MM Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed  MM Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed Financial Service Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Remarks --></label>
+            <section>General Remarks</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed General Complaint Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed Product Complaint Service Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Remarks --></label>
+            <section>General Remarks</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Financial Service Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Remarks --></label>
+            <section>General Remarks</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MM Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partner Service Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Product Complaint Service Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Remarks --></label>
+            <section>General Remarks</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Service Request No</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Closed Financial --></label>
+        <name>Closed_Financial</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Closed General Complaints --></label>
+        <name>Closed_General_Complaints</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Closed Marketing Material Request --></label>
+        <name>Closed_Marketing_Material_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Closed Product Complaints --></label>
+        <name>Closed_Product_Complaints</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Financial Service Request --></label>
+        <name>Financial_Service_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- General Information / Complaints --></label>
+        <name>General_Information_Complaints</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Marketing Material Request --></label>
+        <name>Marketing_Material_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product Complaint --></label>
+        <name>Product_Complaint</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Date Specified should not be more than Today&apos;s Date --></errorMessage>
+        <name>Financial_Request_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Su-Kam CRM can only maintain the status as EXECUTED --></errorMessage>
+        <name>SR_Status_Change_Restriction_CRM_User_Ac</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Service Request cannot be OPENED once it has been EXECUTED / CLOSED --></errorMessage>
+        <name>SR_Status_Change_Restriction_on_Partner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The &apos;To&apos; date cannot be before the &apos;From&apos; date. Please check --></errorMessage>
+        <name>To_date_has_to_be_after_From_date</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Update_Request --></label>
+        <name>Update_Request</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Details --></label>
+        <name>View_Details</name>
+    </webLinks>
+</CustomObjectTranslation>

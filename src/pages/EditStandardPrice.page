@@ -1,0 +1,30 @@
+<apex:page standardController="Standard_Price__c" extensions="ProductController">
+    <apex:sectionHeader title="Add Standard Price" subtitle="{!prodRec.Name}"/>
+    
+    <apex:form >
+    <apex:messages />
+    <apex:pageBlock mode="edit">
+        <apex:pageBlockButtons location="bottom">
+            <apex:commandButton value="Save" action="{!doSave}"/>
+            <apex:commandButton value="Cancel" action="{!doCancel}"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection >
+            
+       <apex:dataTable value="{!stdPriceList}" var="w">
+                        
+           <apex:column headervalue="Product" value="{!productName}" width="400" rendered="{!IF(OR(ISNULL(stdPriceList), stdPriceList.size == 0), false,true)}" />
+           <apex:column headervalue="Currency" value="{!w.CurrencyIsoCode}" width="200"/>
+           
+           <apex:column headervalue="Standard Price" width="200">
+               <apex:inputText value="{!w.UnitPrice__c}"/>
+           </apex:column>   
+           <apex:column headervalue="Conversion Rate" value="{!w.Conversion_Rate__c}" width="200"/>       
+           <apex:column headerValue="Active" width="200">
+               <apex:inputCheckbox value="{!w.IsActive__c}"/>
+           </apex:column>
+        </apex:dataTable>
+
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

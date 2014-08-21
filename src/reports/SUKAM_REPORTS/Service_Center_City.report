@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Service_Centre_City__c.Code__c</field>
+    </columns>
+    <columns>
+        <field>Service_Centre_City__c.State__c</field>
+    </columns>
+    <columns>
+        <field>Service_Centre_City__c.District__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Service_Centre_City__c.Service_Center__c</field>
+    </columns>
+    <columns>
+        <field>Service_Centre_City__c.Branch__c</field>
+    </columns>
+    <columns>
+        <field>Service_Centre_City__c.Region__c</field>
+    </columns>
+    <columns>
+        <field>Service_Centre_City__c.Local_Upcountry__c</field>
+    </columns>
+    <currency>INR</currency>
+    <format>Tabular</format>
+    <name>Service Center City</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Service_Centre_City__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

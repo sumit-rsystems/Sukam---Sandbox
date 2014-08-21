@@ -1,0 +1,4493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>CMTNewOverride</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>All transactions related to movement of stocks between Stock Points</description>
+    <enableActivities>true</enableActivities>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Customer Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Components Movement Table</relationshipLabel>
+        <relationshipName>Components_Movement_Table</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Amount_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+ISPICKVAL( Type_of_Receipt__c , &quot;Purchase&quot;) , Quantity__c * Purchase_Rate_Unit_1__c , Quantity__c * Stock_Transfer_Price_Unit_1__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+ISPICKVAL( Type_of_Receipt__c , &quot;Purchase&quot;) ,  Quantity_2__c  *  Purchase_Rate_Unit_2__c  ,  Quantity_2__c *  Stock_Transfer_Price_Unit_2__c  )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_3__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+ISPICKVAL( Type_of_Receipt__c , &quot;Purchase&quot;) ,  Quantity_3__c  *  Purchase_Rate_Unit_3__c , Quantity_3__c  *  Stock_Transfer_Price_Unit_3__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_4__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+ISPICKVAL( Type_of_Receipt__c , &quot;Purchase&quot;) ,  Quantity_4__c  *  Purchase_Rate_Unit_4__c  , Quantity_4__c  *  Stock_Transfer_Price_Unit_4__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount 4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Basic__c</fullName>
+        <externalId>false</externalId>
+        <label>Basic</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Branch_Location_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Branch Location Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>CST_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.CST_No__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CST No.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cancelled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Cancelled</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Challan_No_Trig__c</fullName>
+        <externalId>false</externalId>
+        <label>Challan No Trig</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Challan_No__c</fullName>
+        <externalId>true</externalId>
+        <label>Challan No.</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comment__c</fullName>
+        <externalId>false</externalId>
+        <label>Comment</label>
+        <length>240</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Component_Code_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Select_Component_2__r.Product_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Component Code 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Component_Code_3__c</fullName>
+        <externalId>false</externalId>
+        <formula>Select_Component_3__r.Product_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Component Code 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Component_Code_4__c</fullName>
+        <externalId>false</externalId>
+        <formula>Select_Component_4__r.Product_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Component Code 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Component_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Select_Component__r.Product_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Component Code 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Component_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Component Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Usable</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Defective</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Created_By_Stock_Point__c</fullName>
+        <externalId>false</externalId>
+        <label>Created By Stock Point</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <defaultValue>Today()</defaultValue>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Defective_Amount1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Defective_Quantity1__c  *  Stock_Transfer_Price_Unit_1__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Defective Amount1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Defective_Amount2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Defective_Quantity2__c * Stock_Transfer_Price_Unit_2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Defective Amount2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Defective_Amount3__c</fullName>
+        <externalId>false</externalId>
+        <formula>Defective_Quantity3__c * Stock_Transfer_Price_Unit_3__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Defective Amount3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Defective_Amount4__c</fullName>
+        <externalId>false</externalId>
+        <formula>Defective_Quantity4__c * Stock_Transfer_Price_Unit_4__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Defective Amount4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Defective_Item_Returned__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Defective Item Returned</label>
+        <referenceTo>Product__c</referenceTo>
+        <relationshipLabel>Components Movement Table</relationshipLabel>
+        <relationshipName>Components_Movement_Table</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Defective_Item_is_different__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Defective Item is different</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Defective_Product_Serial_No_if_FG__c</fullName>
+        <externalId>false</externalId>
+        <label>Replaced Battery Serial No.</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Defective_Quantity1__c</fullName>
+        <externalId>false</externalId>
+        <label>Defective Quantity1</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Defective_Quantity2__c</fullName>
+        <externalId>false</externalId>
+        <label>Defective Quantity2</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Defective_Quantity3__c</fullName>
+        <externalId>false</externalId>
+        <label>Defective Quantity3</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Defective_Quantity4__c</fullName>
+        <externalId>false</externalId>
+        <label>Defective Quantity4</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Defective_Quantity_Returned__c</fullName>
+        <externalId>false</externalId>
+        <label>Defective Quantity Returned</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Destination_Branch__c</fullName>
+        <externalId>false</externalId>
+        <formula>Transferred_to_Stock_Point__r.Related_To_Branch__r.Service_Center_Location_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Destination Branch</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Destination_State__c</fullName>
+        <externalId>false</externalId>
+        <formula>Transferred_to_Stock_Point__r.Related_To_Branch__r.State__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Destination State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Discount_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Amount_1__c + Amount_2__c + Amount_3__c + Amount_4__c)* Discount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Discount Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Discount__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Discount_in_component_charge__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount%</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Dispatched_Through__c</fullName>
+        <externalId>false</externalId>
+        <label>Dispatched Through</label>
+        <picklist>
+            <picklistValues>
+                <fullName>By Hand</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>By Courier</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Document_Invoice_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Document / Invoice No.</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ERP_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( DAY(  Date__c ) ) + &apos;-&apos; +  
+
+        CASE( MONTH( Date__c  ) , 
+                   1, &apos;JAN&apos;, 
+                   2, &apos;FEB&apos;,
+                   3, &apos;MAR&apos;, 
+                   4, &apos;APR&apos;,
+                   5, &apos;MAY&apos;, 
+                   6, &apos;JUN&apos;, 
+                   7, &apos;JUL&apos;, 
+                   8, &apos;AUG&apos;,
+                   9, &apos;SEP&apos;, 
+                 10, &apos;OCT&apos;,
+                 11, &apos;NOV&apos;, 
+                 12, &apos;DEC&apos;,
+                  &apos;&apos;
+       ) + &apos;-&apos; +  
+
+TEXT(YEAR( Date__c  ) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ERP Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ERP_Received_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( DAY( Received_Date__c) ) + &apos;-&apos; + 
+
+CASE( MONTH( Received_Date__c ) , 
+1, &apos;JAN&apos;, 
+2, &apos;FEB&apos;, 
+3, &apos;MAR&apos;, 
+4, &apos;APR&apos;, 
+5, &apos;MAY&apos;, 
+6, &apos;JUN&apos;, 
+7, &apos;JUL&apos;, 
+8, &apos;AUG&apos;, 
+9, &apos;SEP&apos;, 
+10, &apos;OCT&apos;, 
+11, &apos;NOV&apos;, 
+12, &apos;DEC&apos;, 
+&apos;&apos; 
+) + &apos;-&apos; + 
+
+TEXT(YEAR(Received_Date__c ) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ERP Received Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ERP_Shipped_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( DAY( Shipped_Date__c) ) + &apos;-&apos; + 
+
+CASE( MONTH( Shipped_Date__c) , 
+1, &apos;JAN&apos;, 
+2, &apos;FEB&apos;, 
+3, &apos;MAR&apos;, 
+4, &apos;APR&apos;, 
+5, &apos;MAY&apos;, 
+6, &apos;JUN&apos;, 
+7, &apos;JUL&apos;, 
+8, &apos;AUG&apos;, 
+9, &apos;SEP&apos;, 
+10, &apos;OCT&apos;, 
+11, &apos;NOV&apos;, 
+12, &apos;DEC&apos;, 
+&apos;&apos; 
+) + &apos;-&apos; + 
+
+TEXT(YEAR( Shipped_Date__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ERP Shipped Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FROM_BRANCH__c</fullName>
+        <externalId>false</externalId>
+        <label>FROM BRANCH</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Filler1__c</fullName>
+        <externalId>false</externalId>
+        <label>Filler1</label>
+        <length>1</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Filler2__c</fullName>
+        <externalId>false</externalId>
+        <label>Filler2</label>
+        <length>1</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Filler3__c</fullName>
+        <externalId>false</externalId>
+        <label>Filler3</label>
+        <length>1</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>For_Service_Center__c</fullName>
+        <externalId>false</externalId>
+        <label>For Service Center</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>From_Org__c</fullName>
+        <externalId>false</externalId>
+        <label>From Org</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Generate_Invoice_Bill_No__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Generate Invoice &amp; Bill No.</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Grand_Total_For_Product_Sale__c</fullName>
+        <externalId>false</externalId>
+        <label>Grand Total For Product Sale</label>
+        <summarizedField>Component_Movement_line_Item__c.Total_Amount__c</summarizedField>
+        <summaryForeignKey>Component_Movement_line_Item__c.Component_Movement_Table__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Grand_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Amount_1__c  +Amount_2__c+  Amount_3__c + Amount_4__c)+ Vat_Amount__c + Tax_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Grand Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_No_Trig_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice_No_Trig_No</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice No.</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Created__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Created</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Issuing_Service_Center_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Issuing Service Center Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MRN_No_Trig__c</fullName>
+        <externalId>false</externalId>
+        <label>MRN No Trig</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MRN_No__c</fullName>
+        <externalId>true</externalId>
+        <label>MRN No.</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Misc_Component_Charges__c</fullName>
+        <externalId>false</externalId>
+        <label>Extra Charges</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_Service_Engineer__c</fullName>
+        <externalId>false</externalId>
+        <label>Name of Service Engineer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>OPERATING_UNIT_NAME__c</fullName>
+        <externalId>false</externalId>
+        <label>OPERATING UNIT NAME</label>
+        <picklist>
+            <picklistValues>
+                <fullName>SU-KAM POWER SYSTEMS LIMITED</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ORG_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>ORG ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OraFlag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>OraFlag</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ora_Id_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Ora Id 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ora_Id_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Ora Id 3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ora_Id_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Ora Id 4</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ora_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Ora Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAN_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.PAN_No__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PAN No.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone No</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Product_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Category</label>
+        <picklist>
+            <picklistValues>
+                <fullName>BATTERY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>INVERTER</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>COMPONENT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HUPS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SOLAR INVERTER</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SOLAR CHARGE CONTROLLER</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SOLAR PCU</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SOLAR PRODUCT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GENSET</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_Code_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Code 1</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Code_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Code 2</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Code_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Code 3</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Code_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Code 4</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Group</label>
+        <picklist>
+            <picklistValues>
+                <fullName>LA BATTERY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SMF BATTERY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Purchase_Rate_Unit_1__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Price / Unit at which the Item was purchased</inlineHelpText>
+        <label>Purchase Rate / Unit 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Purchase_Rate_Unit_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchase Rate / Unit 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Purchase_Rate_Unit_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchase Rate / Unit 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Purchase_Rate_Unit_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchase Rate / Unit 4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Quantity_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity 4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Quantity 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Received_Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <externalId>false</externalId>
+        <label>Received Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Received_Quantity1__c</fullName>
+        <externalId>false</externalId>
+        <label>Received Quantity1</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Received_Quantity2__c</fullName>
+        <externalId>false</externalId>
+        <label>Received Quantity2</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Received_Quantity3__c</fullName>
+        <externalId>false</externalId>
+        <label>Received Quantity3</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Received_Quantity4__c</fullName>
+        <externalId>false</externalId>
+        <label>Received Quantity4</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Received_from_Stock_Point__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Received from Stock Point</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+            <filterItems>
+                <field>Stock_Point__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Service Engineer</value>
+            </filterItems>
+            <filterItems>
+                <field>Stock_Point__c.Active__c</field>
+                <operation>equals</operation>
+                <value>true</value>
+            </filterItems>
+            <filterItems>
+                <field>Stock_Point__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Service Center</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Stock_Point__c</referenceTo>
+        <relationshipLabel>Components Movement Table</relationshipLabel>
+        <relationshipName>Components_Movement_Table</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Receiving_Service_Center_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Receiving Service Center Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Remarks</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Req_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Req No</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Road_Permit_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Road Permit No.</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Road_Permit__c</fullName>
+        <externalId>false</externalId>
+        <label>Road Permit</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SFFlag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>SFFLAG</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sale_Bill_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Sale Bill No.</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sale_Bill_Trig_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Sale_Bill_Trig_No</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sale_Location_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Sale Location Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Sale_Price_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Sale Price / Unit 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Select_Component_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Select Component 2</label>
+        <referenceTo>Product__c</referenceTo>
+        <relationshipLabel>Components Movement Table (Select Component 2)</relationshipLabel>
+        <relationshipName>Components_Movement_Table2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Select_Component_3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Select Component 3</label>
+        <referenceTo>Product__c</referenceTo>
+        <relationshipLabel>Components Movement Table (Select Component 3)</relationshipLabel>
+        <relationshipName>Components_Movement_Table3</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Select_Component_4__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Select Component 4</label>
+        <referenceTo>Product__c</referenceTo>
+        <relationshipLabel>Components Movement Table (Select Component 4)</relationshipLabel>
+        <relationshipName>Components_Movement_Table4</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Select_Component__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to select any stock type being transacted - component or finished good</inlineHelpText>
+        <label>Select Component 1</label>
+        <referenceTo>Product__c</referenceTo>
+        <relationshipLabel>Components Movement Table (Select Component 1)</relationshipLabel>
+        <relationshipName>Components_Movement_Table1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Service_Engineer_Assigned__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field will be used in Product Sale</description>
+        <externalId>false</externalId>
+        <label>Service Engineer Assigned</label>
+        <referenceTo>Stock_Point__c</referenceTo>
+        <relationshipLabel>Components Movement Table (Service Engineer Assigned)</relationshipLabel>
+        <relationshipName>Components_Movement_Table2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Service_Engineer_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Service_Engineer_Assigned__r.Service_Engineer_Id__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Service Engineer Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Engineer_del__c</fullName>
+        <externalId>false</externalId>
+        <formula>Service_Request__r.Service_Engineer_Name__c</formula>
+        <label>Service Engineer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Request__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service Request</label>
+        <referenceTo>Service_Request__c</referenceTo>
+        <relationshipLabel>Components Movement Table</relationshipLabel>
+        <relationshipName>Components_Movement_Table</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Service_Type__c</fullName>
+        <defaultValue>&apos;Other Sales&apos;</defaultValue>
+        <externalId>false</externalId>
+        <label>Service Type</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shipped_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Shipped Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Short_Receipt_Quantity1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity__c - Received_Quantity1__c - Defective_Quantity1__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Short Receipt Quantity1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Short_Receipt_Quantity2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity_2__c - Received_Quantity2__c - Defective_Quantity2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Short Receipt Quantity2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Short_Receipt_Quantity3__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity_3__c - Received_Quantity3__c - Defective_Quantity3__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Short Receipt Quantity3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Short_Receipt_Quantity4__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity_4__c - Received_Quantity4__c - Defective_Quantity4__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Short Receipt Quantity4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Source_Branch__c</fullName>
+        <externalId>false</externalId>
+        <label>Source Branch</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Source_State__c</fullName>
+        <externalId>false</externalId>
+        <label>Source State</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stock_Point_Owner_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Stock Point Owner Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stock_Point_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Stock Point Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stock_Point_to_be_Reconciled__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Stock Point to be Reconciled</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+            <filterItems>
+                <field>Stock_Point__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Service Engineer</value>
+            </filterItems>
+            <filterItems>
+                <field>Stock_Point__c.Active__c</field>
+                <operation>equals</operation>
+                <value>true</value>
+            </filterItems>
+            <filterItems>
+                <field>Stock_Point__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Service Center</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Stock_Point__c</referenceTo>
+        <relationshipLabel>Components Movement Table (Stock Point to be Reconciled)</relationshipLabel>
+        <relationshipName>Components_Movement_Table1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Stock_Transfer_Price_Unit_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Stock Transfer Price / Unit 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Stock_Transfer_Price_Unit_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Stock Transfer Price / Unit 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Stock_Transfer_Price_Unit_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Stock Transfer Price / Unit 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Stock_Transfer_Price_Unit_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Stock Transfer Price / Unit 4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Stock_Transfer_Sl_No_Trig__c</fullName>
+        <externalId>false</externalId>
+        <label>Stock Transfer Sl No Trig</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stock_Transfer_Sl_No__c</fullName>
+        <externalId>true</externalId>
+        <label>Stock Transfer Sl No</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stock_Transfer_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Stock Transfer Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Outward Movement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Transit</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Received</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Stock_Transfer_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount_1__c  +  Amount_2__c  +  Amount_3__c  +  Amount_4__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stock Transfer Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TIN_NO__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.TIN_NO__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TIN NO.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tax_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Amount_1__c + Amount_2__c+  Amount_3__c+  Amount_4__c )* Tax_Percentage__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Tax Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tax_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Tax Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Tax__c</fullName>
+        <externalId>false</externalId>
+        <label>Tax</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Amount_1__c  +Amount_2__c+  Amount_3__c + Amount_4__c)+ Discount_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Defective__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Defective_Amount1__c + Defective_Amount2__c + Defective_Amount3__c + Defective_Amount4__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total (Defective)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Net_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Net Amount</label>
+        <summarizedField>Component_Movement_line_Item__c.Total_Amount__c</summarizedField>
+        <summaryForeignKey>Component_Movement_line_Item__c.Component_Movement_Table__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity__c  +  Quantity_2__c  +  Quantity_3__c  +  Quantity_4__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Usable__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Usable_Amount1__c +  Usable_Amount2__c + Usable_Amount3__c + Usable_Amount4__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total (Usable)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_VAT_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total VAT Amount</label>
+        <summarizedField>Component_Movement_line_Item__c.VAT_Amount__c</summarizedField>
+        <summaryForeignKey>Component_Movement_line_Item__c.Component_Movement_Table__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Amount_1__c  +  Amount_2__c  + Amount_3__c + Amount_4__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Transfeerred_to_stock_point_CST_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>Transferred_to_Stock_Point__r.CST_No__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Transfeerred to stock point CST No.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transfeerred_to_stock_point_PAN_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>Transferred_to_Stock_Point__r.Pan_No__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Transfeerred to stock point PAN No.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transfeerred_to_stock_point_TIN_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>Transferred_to_Stock_Point__r.TIN_No__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Transfeerred to stock point TIN No.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transferred_to_Stock_Point__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Transferred to Stock Point</label>
+        <lookupFilter>
+            <active>false</active>
+            <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+            <filterItems>
+                <field>Stock_Point__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Service Engineer</value>
+            </filterItems>
+            <filterItems>
+                <field>Stock_Point__c.Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <filterItems>
+                <field>Stock_Point__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Branch, Service Center</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Stock_Point__c</referenceTo>
+        <relationshipLabel>Components Movement Table (Transferred to Stock Point)</relationshipLabel>
+        <relationshipName>R00N90000003PMFBEA4</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Type_of_Entry__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Entry</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Add</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deduct</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type_of_Receipt__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Receipt</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Returned by Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stock Returned by Service Engineer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Purchase</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type_of_Replacement_del__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Service_Request__r.Type_of_Replacement__c , &quot;Component Replacement&quot;, &quot;Component Replacement&quot;, &quot;Battery Replacement&quot;, &quot;Battery Replacement&quot;,&quot;Product Replacement&quot;,&quot;Product Replacement&quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Type of Replacement</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_of_Service_Request__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Service_Request__r.Type_of_Service_Request__c, &quot;Sale of Component&quot;, &quot;Sale of Component&quot;, &quot;Warranty&quot;, &quot;Warranty&quot;, &quot;FOC&quot;, &quot;FOC&quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Type of Service Request</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_of_Transfer__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Transfer</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Stock Transfer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transferred to Service Engineer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>UoM_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Select_Component__r.UoM__c, &quot;Ea&quot;, &quot;Ea&quot;, &quot;Set&quot;,&quot;Set&quot;, &quot;Mts&quot;, &quot;Mts&quot;, &quot;Lts&quot;, &quot;Lts&quot;, &quot;Kg&quot;, &quot;Kg&quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UoM 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UoM_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Select_Component_2__r.UoM__c, &quot;Ea&quot;, &quot;Ea&quot;, &quot;Set&quot;,&quot;Set&quot;, &quot;Mts&quot;, &quot;Mts&quot;, &quot;Lts&quot;, &quot;Lts&quot;, &quot;Kg&quot;, &quot;Kg&quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UoM 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UoM_3__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Select_Component_3__r.UoM__c , &quot;Ea&quot;, &quot;Ea&quot;, &quot;Set&quot;,&quot;Set&quot;, &quot;Mts&quot;, &quot;Mts&quot;, &quot;Lts&quot;, &quot;Lts&quot;, &quot;Kg&quot;, &quot;Kg&quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UoM 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UoM_4__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Select_Component_4__r.UoM__c, &quot;Ea&quot;, &quot;Ea&quot;, &quot;Set&quot;,&quot;Set&quot;, &quot;Mts&quot;, &quot;Mts&quot;, &quot;Lts&quot;, &quot;Lts&quot;, &quot;Kg&quot;, &quot;Kg&quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UoM 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UpsertId__c</fullName>
+        <externalId>false</externalId>
+        <label>UpsertId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Usable_Amount1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Received_Quantity1__c  *  Stock_Transfer_Price_Unit_1__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Usable Amount1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Usable_Amount2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Received_Quantity2__c  *  Stock_Transfer_Price_Unit_2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Usable Amount2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Usable_Amount3__c</fullName>
+        <externalId>false</externalId>
+        <formula>Received_Quantity3__c *  Stock_Transfer_Price_Unit_3__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Usable Amount3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Usable_Amount4__c</fullName>
+        <externalId>false</externalId>
+        <formula>Received_Quantity4__c * Stock_Transfer_Price_Unit_4__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Usable Amount4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Used_by_Service_Engineer__c</fullName>
+        <externalId>false</externalId>
+        <formula>Service_Request__r.Service_Engineer_Assigned__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Used by Service Engineer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UserAddress__c</fullName>
+        <externalId>false</externalId>
+        <label>UserAddress</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vat_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Amount_1__c + Amount_2__c + Amount_3__c+  Amount_4__c)*  Vat_Percentage__c</formula>
+        <label>Total Vat Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vat_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Vat Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Vehicle_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Vehicle No.</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>trgOldOwnerId__c</fullName>
+        <externalId>false</externalId>
+        <label>trgOldOwnerId</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Component Movement Table</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Challan_No__c</columns>
+        <columns>MRN_No__c</columns>
+        <columns>Stock_Transfer_Sl_No__c</columns>
+        <columns>Defective_Item_is_different__c</columns>
+        <columns>Defective_Quantity_Returned__c</columns>
+        <columns>Defective_Item_Returned__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Components_Sold</fullName>
+        <columns>NAME</columns>
+        <columns>Date__c</columns>
+        <columns>Type_of_Service_Request__c</columns>
+        <columns>Component_Code__c</columns>
+        <columns>Amount_1__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Component_Movement_Table__c.ComponentsUsedinServiceRequest</value>
+        </filters>
+        <label>Components Used in SR</label>
+    </listViews>
+    <listViews>
+        <fullName>Inward_Movement</fullName>
+        <booleanFilter>(1 OR 2 OR 3)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>MRN_No__c</columns>
+        <columns>MRN_No_Trig__c</columns>
+        <columns>Date__c</columns>
+        <columns>Type_of_Receipt__c</columns>
+        <columns>Stock_Transfer_Sl_No__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Type_of_Receipt__c</field>
+            <operation>equals</operation>
+            <value>Returned by Customer</value>
+        </filters>
+        <filters>
+            <field>Type_of_Receipt__c</field>
+            <operation>equals</operation>
+            <value>Stock Returned by Service Engineer</value>
+        </filters>
+        <filters>
+            <field>Type_of_Receipt__c</field>
+            <operation>equals</operation>
+            <value>Purchase</value>
+        </filters>
+        <label>Inward Movement</label>
+    </listViews>
+    <listViews>
+        <fullName>Outward_Lock</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>NAME</columns>
+        <columns>Challan_No__c</columns>
+        <columns>Challan_No_Trig__c</columns>
+        <columns>Component_Status__c</columns>
+        <columns>CST_No__c</columns>
+        <columns>Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Component_Movement_Table__c.Outward_Lock</value>
+        </filters>
+        <label>Outward Lock</label>
+    </listViews>
+    <listViews>
+        <fullName>Pending_Stock_Inward</fullName>
+        <columns>NAME</columns>
+        <columns>Stock_Transfer_Sl_No__c</columns>
+        <columns>Stock_Transfer_Sl_No_Trig__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Stock_Transfer_Status__c</field>
+            <operation>equals</operation>
+            <value>In Transit</value>
+        </filters>
+        <filters>
+            <field>Cancelled__c</field>
+            <operation>notEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>Pending Stock Inward</label>
+    </listViews>
+    <listViews>
+        <fullName>STN</fullName>
+        <columns>Stock_Transfer_Sl_No__c</columns>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Challan_No__c</columns>
+        <columns>MRN_No__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Stock_Transfer_Sl_No__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Stock_Transfer_Sl_No__c</field>
+            <operation>notContain</operation>
+            <value>STN</value>
+        </filters>
+        <label>STN</label>
+    </listViews>
+    <listViews>
+        <fullName>Stock_Transfer_Received</fullName>
+        <columns>NAME</columns>
+        <columns>MRN_No__c</columns>
+        <columns>Stock_Transfer_Sl_No__c</columns>
+        <columns>Date__c</columns>
+        <columns>Received_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Stock_Transfer_Status__c</field>
+            <operation>equals</operation>
+            <value>Received</value>
+        </filters>
+        <label>Stock Transfer Received</label>
+    </listViews>
+    <listViews>
+        <fullName>TRC_Stock_Transfer</fullName>
+        <booleanFilter>1</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Document_Invoice_No__c</columns>
+        <columns>From_Org__c</columns>
+        <columns>Transferred_to_Stock_Point__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>From_Org__c</field>
+            <operation>equals</operation>
+            <value>019-SC-GGN</value>
+        </filters>
+        <label>TRC Stock Transfer</label>
+    </listViews>
+    <nameField>
+        <displayFormat>TID-{0000000}</displayFormat>
+        <label>Component Movement Transaction</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Components Movement Table</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>ComponentsUsedinServiceRequest</fullName>
+        <active>true</active>
+        <description>Components Used in Service Request</description>
+        <label>Components Used in Service Request</label>
+        <picklistValues>
+            <picklist>Branch_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Component_Status__c</picklist>
+            <values>
+                <fullName>Defective</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Dispatched_Through__c</picklist>
+            <values>
+                <fullName>By Courier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Hand</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OPERATING_UNIT_NAME__c</picklist>
+            <values>
+                <fullName>SU-KAM POWER SYSTEMS LIMITED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Category__c</picklist>
+            <values>
+                <fullName>BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GENSET</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HUPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR CHARGE CONTROLLER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PRODUCT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Group__c</picklist>
+            <values>
+                <fullName>LA BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMF BATTERY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Road_Permit__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sale_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stock_Transfer_Status__c</picklist>
+            <values>
+                <fullName>In Transit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outward Movement</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Received</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Entry__c</picklist>
+            <values>
+                <fullName>Add</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deduct</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Receipt__c</picklist>
+            <values>
+                <fullName>Returned by Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stock Returned by Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Transfer__c</picklist>
+            <values>
+                <fullName>Stock Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transferred to Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>InwardMovement</fullName>
+        <active>true</active>
+        <description>All inward stock movement related to Service Center</description>
+        <label>Inward Movement</label>
+        <picklistValues>
+            <picklist>Branch_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Component_Status__c</picklist>
+            <values>
+                <fullName>Defective</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Dispatched_Through__c</picklist>
+            <values>
+                <fullName>By Courier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Hand</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OPERATING_UNIT_NAME__c</picklist>
+            <values>
+                <fullName>SU-KAM POWER SYSTEMS LIMITED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Category__c</picklist>
+            <values>
+                <fullName>BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GENSET</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HUPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR CHARGE CONTROLLER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PRODUCT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Group__c</picklist>
+            <values>
+                <fullName>LA BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMF BATTERY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Road_Permit__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sale_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stock_Transfer_Status__c</picklist>
+            <values>
+                <fullName>In Transit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outward Movement</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Received</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Entry__c</picklist>
+            <values>
+                <fullName>Add</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deduct</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Receipt__c</picklist>
+            <values>
+                <fullName>Stock Returned by Service Engineer</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Transfer__c</picklist>
+            <values>
+                <fullName>Stock Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transferred to Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Inward_Movement_Lock</fullName>
+        <active>true</active>
+        <label>Inward Movement Lock</label>
+        <picklistValues>
+            <picklist>Branch_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Component_Status__c</picklist>
+            <values>
+                <fullName>Defective</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Dispatched_Through__c</picklist>
+            <values>
+                <fullName>By Courier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Hand</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OPERATING_UNIT_NAME__c</picklist>
+            <values>
+                <fullName>SU-KAM POWER SYSTEMS LIMITED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Category__c</picklist>
+            <values>
+                <fullName>BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GENSET</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HUPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR CHARGE CONTROLLER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PRODUCT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Group__c</picklist>
+            <values>
+                <fullName>LA BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMF BATTERY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Road_Permit__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sale_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stock_Transfer_Status__c</picklist>
+            <values>
+                <fullName>In Transit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outward Movement</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Received</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Entry__c</picklist>
+            <values>
+                <fullName>Add</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deduct</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Receipt__c</picklist>
+            <values>
+                <fullName>Purchase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Returned by Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stock Returned by Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Transfer__c</picklist>
+            <values>
+                <fullName>Stock Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transferred to Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>OutwardMovement</fullName>
+        <active>true</active>
+        <description>All outward stock movement related to Service Center</description>
+        <label>Outward Movement</label>
+        <picklistValues>
+            <picklist>Branch_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Component_Status__c</picklist>
+            <values>
+                <fullName>Defective</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Dispatched_Through__c</picklist>
+            <values>
+                <fullName>By Courier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Hand</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OPERATING_UNIT_NAME__c</picklist>
+            <values>
+                <fullName>SU-KAM POWER SYSTEMS LIMITED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Category__c</picklist>
+            <values>
+                <fullName>BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GENSET</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HUPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR CHARGE CONTROLLER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PRODUCT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Group__c</picklist>
+            <values>
+                <fullName>LA BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMF BATTERY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Road_Permit__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sale_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stock_Transfer_Status__c</picklist>
+            <values>
+                <fullName>In Transit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outward Movement</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Received</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Entry__c</picklist>
+            <values>
+                <fullName>Add</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deduct</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Receipt__c</picklist>
+            <values>
+                <fullName>Returned by Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stock Returned by Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Transfer__c</picklist>
+            <values>
+                <fullName>Stock Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transferred to Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Outward_Lock</fullName>
+        <active>true</active>
+        <label>Outward Lock</label>
+        <picklistValues>
+            <picklist>Branch_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Component_Status__c</picklist>
+            <values>
+                <fullName>Defective</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Dispatched_Through__c</picklist>
+            <values>
+                <fullName>By Courier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Hand</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OPERATING_UNIT_NAME__c</picklist>
+            <values>
+                <fullName>SU-KAM POWER SYSTEMS LIMITED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Category__c</picklist>
+            <values>
+                <fullName>BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GENSET</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HUPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR CHARGE CONTROLLER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PRODUCT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Group__c</picklist>
+            <values>
+                <fullName>LA BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMF BATTERY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Road_Permit__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sale_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stock_Transfer_Status__c</picklist>
+            <values>
+                <fullName>In Transit</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Outward Movement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Received</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Entry__c</picklist>
+            <values>
+                <fullName>Add</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deduct</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Receipt__c</picklist>
+            <values>
+                <fullName>Purchase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Returned by Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stock Returned by Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Transfer__c</picklist>
+            <values>
+                <fullName>Stock Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transferred to Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Product_Sale</fullName>
+        <active>true</active>
+        <label>Product Sale</label>
+        <picklistValues>
+            <picklist>Branch_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Component_Status__c</picklist>
+            <values>
+                <fullName>Usable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Dispatched_Through__c</picklist>
+            <values>
+                <fullName>By Courier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Hand</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OPERATING_UNIT_NAME__c</picklist>
+            <values>
+                <fullName>SU-KAM POWER SYSTEMS LIMITED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Category__c</picklist>
+            <values>
+                <fullName>BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GENSET</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HUPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR CHARGE CONTROLLER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PRODUCT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Group__c</picklist>
+            <values>
+                <fullName>LA BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMF BATTERY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Road_Permit__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sale_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stock_Transfer_Status__c</picklist>
+            <values>
+                <fullName>In Transit</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Outward Movement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Received</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Entry__c</picklist>
+            <values>
+                <fullName>Add</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deduct</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Receipt__c</picklist>
+            <values>
+                <fullName>Purchase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Returned by Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stock Returned by Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Transfer__c</picklist>
+            <values>
+                <fullName>Stock Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transferred to Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Reconciliation</fullName>
+        <active>true</active>
+        <description>Reconciliation of Stocks</description>
+        <label>Reconciliation</label>
+        <picklistValues>
+            <picklist>Branch_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Component_Status__c</picklist>
+            <values>
+                <fullName>Defective</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Dispatched_Through__c</picklist>
+            <values>
+                <fullName>By Courier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Hand</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OPERATING_UNIT_NAME__c</picklist>
+            <values>
+                <fullName>SU-KAM POWER SYSTEMS LIMITED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Category__c</picklist>
+            <values>
+                <fullName>BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GENSET</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HUPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR CHARGE CONTROLLER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PRODUCT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Group__c</picklist>
+            <values>
+                <fullName>LA BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMF BATTERY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Road_Permit__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sale_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stock_Transfer_Status__c</picklist>
+            <values>
+                <fullName>In Transit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outward Movement</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Received</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Entry__c</picklist>
+            <values>
+                <fullName>Add</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deduct</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Receipt__c</picklist>
+            <values>
+                <fullName>Returned by Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stock Returned by Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Transfer__c</picklist>
+            <values>
+                <fullName>Stock Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transferred to Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ShortReceipt</fullName>
+        <active>true</active>
+        <description>All Short Receipt transactions</description>
+        <label>Short Receipt</label>
+        <picklistValues>
+            <picklist>Branch_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Component_Status__c</picklist>
+            <values>
+                <fullName>Defective</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Dispatched_Through__c</picklist>
+            <values>
+                <fullName>By Courier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Hand</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OPERATING_UNIT_NAME__c</picklist>
+            <values>
+                <fullName>SU-KAM POWER SYSTEMS LIMITED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Category__c</picklist>
+            <values>
+                <fullName>BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GENSET</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HUPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR CHARGE CONTROLLER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PRODUCT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Group__c</picklist>
+            <values>
+                <fullName>LA BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMF BATTERY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Road_Permit__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sale_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stock_Transfer_Status__c</picklist>
+            <values>
+                <fullName>In Transit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outward Movement</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Received</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Entry__c</picklist>
+            <values>
+                <fullName>Add</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deduct</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Receipt__c</picklist>
+            <values>
+                <fullName>Returned by Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stock Returned by Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Transfer__c</picklist>
+            <values>
+                <fullName>Stock Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transferred to Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Stock_Inward</fullName>
+        <active>true</active>
+        <label>Stock Inward</label>
+        <picklistValues>
+            <picklist>Branch_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Component_Status__c</picklist>
+            <values>
+                <fullName>Defective</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Dispatched_Through__c</picklist>
+            <values>
+                <fullName>By Courier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Hand</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OPERATING_UNIT_NAME__c</picklist>
+            <values>
+                <fullName>SU-KAM POWER SYSTEMS LIMITED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Category__c</picklist>
+            <values>
+                <fullName>BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GENSET</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HUPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR CHARGE CONTROLLER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PRODUCT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Group__c</picklist>
+            <values>
+                <fullName>LA BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMF BATTERY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Road_Permit__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sale_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stock_Transfer_Status__c</picklist>
+            <values>
+                <fullName>In Transit</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Received</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Entry__c</picklist>
+            <values>
+                <fullName>Add</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deduct</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Receipt__c</picklist>
+            <values>
+                <fullName>Purchase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Returned by Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stock Returned by Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Transfer__c</picklist>
+            <values>
+                <fullName>Stock Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transferred to Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Stock_Received</fullName>
+        <active>true</active>
+        <description>For Inward Received</description>
+        <label>Stock Received</label>
+        <picklistValues>
+            <picklist>Branch_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Component_Status__c</picklist>
+            <values>
+                <fullName>Defective</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Dispatched_Through__c</picklist>
+            <values>
+                <fullName>By Courier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>By Hand</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OPERATING_UNIT_NAME__c</picklist>
+            <values>
+                <fullName>SU-KAM POWER SYSTEMS LIMITED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Category__c</picklist>
+            <values>
+                <fullName>BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GENSET</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HUPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR CHARGE CONTROLLER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR INVERTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOLAR PRODUCT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Group__c</picklist>
+            <values>
+                <fullName>LA BATTERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMF BATTERY</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Road_Permit__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sale_Location_Type__c</picklist>
+            <values>
+                <fullName>Interstate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Within State</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stock_Transfer_Status__c</picklist>
+            <values>
+                <fullName>Received</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Entry__c</picklist>
+            <values>
+                <fullName>Add</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deduct</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Receipt__c</picklist>
+            <values>
+                <fullName>Purchase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Returned by Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stock Returned by Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Transfer__c</picklist>
+            <values>
+                <fullName>Stock Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transferred to Service Engineer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Document_Invoice_No__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Select_Component__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Document_Invoice_No__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Select_Component__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Document_Invoice_No__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Select_Component__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RECORDTYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CREATED_DATE</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Document_Invoice_No__c</searchFilterFields>
+        <searchFilterFields>Select_Component__c</searchFilterFields>
+        <searchFilterFields>Stock_Point_to_be_Reconciled__c</searchFilterFields>
+        <searchFilterFields>RECORDTYPE</searchFilterFields>
+        <searchFilterFields>CREATED_DATE</searchFilterFields>
+        <searchResultsAdditionalFields>OWNER.LAST_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Select_Component__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Stock_Transfer_Sl_No__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MRN_No__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Total_Quantity__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Cancelled__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Remarks__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>Component_and_Quantity1_Mandate</fullName>
+        <active>true</active>
+        <description>Where ever there is a Component chosen, it should have an associated quantity</description>
+        <errorConditionFormula>AND( 
+(Select_Component__c &lt;&gt; &quot;&quot; ), 
+(From_Org__c &lt;&gt; &apos;019-SC-GGN&apos; ), 
+( Type_of_Service_Request__c &lt;&gt; &quot;Warranty&quot;), 
+ISNULL(Quantity__c),
+ (Quantity__c &lt;&gt; 0))</errorConditionFormula>
+        <errorDisplayField>Quantity__c</errorDisplayField>
+        <errorMessage>Please enter a valid component and quantity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Component_and_Quantity2_Mandate</fullName>
+        <active>true</active>
+        <description>Where ever there is a Component chosen, it should have an associated quantity</description>
+        <errorConditionFormula>(Select_Component_2__c  &lt;&gt; &quot;&quot; &amp;&amp;( Quantity_2__c   &lt;=   0 || ISNULL(Quantity_2__c))) ||
+(Select_Component_2__c  = &quot;&quot; &amp;&amp;( Quantity_2__c   &lt;=   0 || NOT(ISNULL(Quantity_2__c)))) &amp;&amp;  From_Org__c &lt;&gt; &apos;019-SC-GGN&apos;</errorConditionFormula>
+        <errorDisplayField>Quantity_2__c</errorDisplayField>
+        <errorMessage>Please enter a valid component and quantity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Component_and_Quantity3_Mandate</fullName>
+        <active>true</active>
+        <description>Where ever there is a Component chosen, it should have an associated quantity</description>
+        <errorConditionFormula>(Select_Component_3__c &lt;&gt; &quot;&quot; &amp;&amp;( Quantity_3__c &lt;= 0 || ISNULL(Quantity_3__c))) || 
+(Select_Component_3__c = &quot;&quot; &amp;&amp;( Quantity_3__c &lt;= 0 || NOT(ISNULL(Quantity_3__c)))) &amp;&amp;  From_Org__c &lt;&gt; &apos;019-SC-GGN&apos;</errorConditionFormula>
+        <errorDisplayField>Quantity_3__c</errorDisplayField>
+        <errorMessage>Please enter a valid component and quantity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Component_and_Quantity4_Mandate</fullName>
+        <active>true</active>
+        <description>Where ever there is a Component chosen, it should have an associated quantity</description>
+        <errorConditionFormula>(Select_Component_4__c &lt;&gt; &quot;&quot; &amp;&amp;( Quantity_4__c &lt;= 0 || ISNULL(Quantity_4__c))) || 
+(Select_Component_4__c = &quot;&quot; &amp;&amp;( Quantity_4__c &lt;= 0 || NOT(ISNULL(Quantity_4__c)))) &amp;&amp;  From_Org__c &lt;&gt; &apos;019-SC-GGN&apos;</errorConditionFormula>
+        <errorDisplayField>Quantity_4__c</errorDisplayField>
+        <errorMessage>Please enter a valid component and quantity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Defective_Item_returned_Blank_Rule</fullName>
+        <active>false</active>
+        <errorConditionFormula>OR( IF( Defective_Item_is_different__c = True, 
+ISBLANK( Defective_Item_Returned__c ) , 
+False) , 
+IF(Defective_Item_is_different__c = False , 
+NOT( ISBLANK (Defective_Item_Returned__c) ) , 
+false) )</errorConditionFormula>
+        <errorDisplayField>Defective_Item_is_different__c</errorDisplayField>
+        <errorMessage>If defective item is different then defective item returned can not be blank.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Defective_Quantity_Validation</fullName>
+        <active>true</active>
+        <description>Defective Quantity Validation</description>
+        <errorConditionFormula>AND
+( ISPICKVAL(Component_Status__c , &apos;Defective&apos;), 
+ $RecordType.Name = &apos;Stock Inward&apos;,
+OR
+(
+ ISBLANK( Received_Quantity1__c ) = False, 
+ISBLANK( Received_Quantity2__c )= False,
+ISBLANK( Received_Quantity3__c )= False,
+ISBLANK( Received_Quantity4__c )= False
+))</errorConditionFormula>
+        <errorMessage>Usable Quantity cannot be received when Component status is Defective.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Defective_Quantity_can_be_entered_once</fullName>
+        <active>true</active>
+        <description>In case of Warranty, Defective Quantity Value can be entered only once</description>
+        <errorConditionFormula>AND(
+ISCHANGED(  Defective_Quantity_Returned__c ), 
+NOT(ISNULL (Defective_Quantity_Returned__c)))</errorConditionFormula>
+        <errorDisplayField>Defective_Quantity_Returned__c</errorDisplayField>
+        <errorMessage>In case of Warranty, Defective Quantity Value can be entered only once</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Dispatched_Through_Rule</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF( 
+         AND( RecordTypeId  = &quot;01290000000NxCl&quot;,
+                    ISPICKVAL( Type_of_Transfer__c , &quot;Stock Transfer&quot;) ) , 
+                   
+                AND( ISBLANK(  TEXT(Dispatched_Through__c) ) ,
+                                  ISBLANK(  TEXT( Road_Permit__c )) ) , 
+                                
+                       False)</errorConditionFormula>
+        <errorDisplayField>Dispatched_Through__c</errorDisplayField>
+        <errorMessage>In case of Stock Transfer Dispatched Through &amp; Road Permit ban not be blank.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>For_Service_Center_Rule</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( NOT( ISBLANK( For_Service_Center__c ) ) ,
+ Transferred_to_Stock_Point__c  &lt;&gt;  For_Service_Center__c ,
+  $Profile.Name  &lt;&gt; &apos;System Administrator&apos;,
+ ISPICKVAL(Stock_Transfer_Status__c , &apos;In Transit&apos;) ,
+ RecordTypeId  = &apos;01290000000NxCl&apos;
+)</errorConditionFormula>
+        <errorMessage>Transferred to Stock Point should be equal to For Service Center</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>In_Out_should_be_equal_in_warranty</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+( RecordType.DeveloperName  = &quot;Components Used in Service Request&quot;) ,
+(Defective_Quantity_Returned__c    &lt;&gt;    Quantity__c     ),
+OR(
+(  $ObjectType.Service_Request__c.Fields.Warranty_Status__c  = &quot;Yes&quot; )))</errorConditionFormula>
+        <errorMessage>In_Warranty_Qty._1_&amp;_Defective_should_be</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Mandatory_Sale_Price</fullName>
+        <active>true</active>
+        <description>Sale Price is mandatory for all Service Requests that are &quot;Sale of Component&quot; Type</description>
+        <errorConditionFormula>AND(Type_of_Service_Request__c = &quot;Sale of Component&quot;, Sale_Price_Unit__c = 0)</errorConditionFormula>
+        <errorMessage>Please put in a Sale Price for Item Selected</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>No_Recieving_Stock_Point</fullName>
+        <active>true</active>
+        <description>In Case of &quot;Returned by Customer&quot; Inward Movement, there is no &quot;Received from Stock Point&quot;</description>
+        <errorConditionFormula>AND( 
+ISPICKVAL(Type_of_Receipt__c, &quot;Returned by Customer&quot;), 
+(Received_from_Stock_Point__c &lt;&gt; &quot;&quot;))</errorConditionFormula>
+        <errorMessage>In Case of &quot;Returned by Customer&quot; Inward Movement, there is no &quot;Received from Stock Point&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>No_Recieving_Stock_Points</fullName>
+        <active>true</active>
+        <description>In Case of &quot;Purchase&quot; Inward Movement, there is no &quot;Received from Stock Point&quot;</description>
+        <errorConditionFormula>AND(
+ISPICKVAL(Type_of_Receipt__c, &quot;Purchase&quot;),   
+(Received_from_Stock_Point__c  &lt;&gt;  &quot;&quot;))</errorConditionFormula>
+        <errorMessage>In Case of &quot;Purchase&quot; Inward Movement, there is no &quot;Received from Stock Point&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>No_Sale_Price_for_FOC_Component</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(Type_of_Service_Request__c = &quot;FOC&quot;, Sale_Price_Unit__c  &lt;&gt; 0)</errorConditionFormula>
+        <errorMessage>Kindly check that the Component Sale Price is nil in case of FOC and Warranty Cases</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>No_Sale_Price_for_Warranty_Component</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(Type_of_Service_Request__c = &quot;Warranty&quot;, Sale_Price_Unit__c &lt;&gt; 0)</errorConditionFormula>
+        <errorMessage>Kindly check that the Component Sale Price is nil in case of FOC and Warranty Cases</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Once_Created_Can_not_be_changed</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( $Profile.Name  &lt;&gt; &apos;System Administrator&apos;, 
+                    $Profile.Name &lt;&gt; &apos;sukam System Administrator&apos; ,
+ Is_Created__c  = True ,
+ RecordTypeId  = &apos;01290000000NxCi&apos;)</errorConditionFormula>
+        <errorDisplayField>Basic__c</errorDisplayField>
+        <errorMessage>Can Not Change the record Once it has been Created.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Purchase_Rate_1_is_mandatory</fullName>
+        <active>true</active>
+        <description>For Inward Movement &quot;Purchase Rate&quot; is mandatory for Type of Reciept being PURCHASE</description>
+        <errorConditionFormula>AND(
+ISPICKVAL(  Type_of_Receipt__c  , &quot;Purchase&quot;) , 
+(Select_Component__c   &lt;&gt;   &quot;&quot; ),
+OR(
+(Purchase_Rate_Unit_1__c &lt;= 0),
+ISNULL(Purchase_Rate_Unit_1__c )))</errorConditionFormula>
+        <errorDisplayField>Purchase_Rate_Unit_1__c</errorDisplayField>
+        <errorMessage>Please put in the Purchase Rate / Unit 1</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Purchase_Rate_2_is_mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISPICKVAL(  Type_of_Receipt__c  , &quot;Purchase&quot;) , 
+( Select_Component_2__c  &lt;&gt;   &quot;&quot; ),
+OR(
+( Purchase_Rate_Unit_2__c  &lt;= 0),
+ISNULL( Purchase_Rate_Unit_2__c  )))</errorConditionFormula>
+        <errorDisplayField>Purchase_Rate_Unit_2__c</errorDisplayField>
+        <errorMessage>Please put in the Purchase Rate / Unit 2</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Purchase_Rate_3_is_mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+ISPICKVAL( Type_of_Receipt__c , &quot;Purchase&quot;) , 
+(  Select_Component_3__c  &lt;&gt; &quot;&quot; ), 
+OR( 
+(  Purchase_Rate_Unit_3__c &lt;= 0), 
+ISNULL(  Purchase_Rate_Unit_3__c  )))</errorConditionFormula>
+        <errorDisplayField>Purchase_Rate_Unit_3__c</errorDisplayField>
+        <errorMessage>Please put in the Purchase Rate / Unit 3</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Purchase_Rate_4_is_mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+ISPICKVAL( Type_of_Receipt__c , &quot;Purchase&quot;) , 
+(  Select_Component_4__c  &lt;&gt; &quot;&quot; ), 
+OR( 
+(  Purchase_Rate_Unit_4__c &lt;= 0), 
+ISNULL(  Purchase_Rate_Unit_4__c  )))</errorConditionFormula>
+        <errorDisplayField>Purchase_Rate_Unit_4__c</errorDisplayField>
+        <errorMessage>Please put in the Purchase Rate / Unit 4</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Qty_Used_is_equal_Qty_Returned_Defective</fullName>
+        <active>false</active>
+        <description>This is a validation to ensure that in case (Type of Service Request = FOC / Warranty) of &quot;Component Used in Service Request&quot;, the quantity of item issued is equal or more than the defective item returned</description>
+        <errorConditionFormula>AND( 
+(RecordTypeId = &quot;01290000000NxCi&quot;) , 
+(Defective_Quantity_Returned__c &gt; Quantity__c ), 
+OR( 
+( Type_of_Service_Request__c = &quot;Warranty&quot; ) , 
+( Type_of_Service_Request__c = &quot;FOC&quot; ) ) 
+)</errorConditionFormula>
+        <errorDisplayField>Defective_Quantity_Returned__c</errorDisplayField>
+        <errorMessage>Please check: Defective Quantity Returned cannot be more than Quantity 1(Quantity Issued).</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Quantity_Cannot_be_more_than_9999</fullName>
+        <active>true</active>
+        <description>The value in the fields quantity 1, quantity 2, quantity 3, quantity 4 cannot be more than 9999</description>
+        <errorConditionFormula>OR (  Quantity__c  &gt; 9999,  Quantity_2__c &gt; 9999, Quantity_3__c &gt; 9999, Quantity_4__c &gt; 9999 )</errorConditionFormula>
+        <errorDisplayField>Basic__c</errorDisplayField>
+        <errorMessage>The Quantity cannot be greater than 9999</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Road_permit_can_not_be_blank</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF( ISPICKVAL( Road_Permit__c , &quot;Yes&quot;) , 
+                   ISBLANK( Road_Permit_No__c ) , 
+                              False)</errorConditionFormula>
+        <errorDisplayField>Road_Permit_No__c</errorDisplayField>
+        <errorMessage>Fill Road Permit No. if road permit is YES.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Sale_Price_Mandatory</fullName>
+        <active>false</active>
+        <description>In case of Component Used in Service Request, If Type of Service Request is &quot;Sale of Component&quot; then Sale Price / Unit 1 is mandatory</description>
+        <errorConditionFormula>AND(
+(RecordTypeId = &quot;01290000000NxCi&quot;),
+(Type_of_Service_Request__c = &quot;Sale of Component&quot;),
+(Select_Component__c   &lt;&gt;   &quot;&quot; ),
+OR(
+( Sale_Price_Unit__c &lt;= 0),
+ISNULL( Sale_Price_Unit__c )))</errorConditionFormula>
+        <errorDisplayField>Sale_Price_Unit__c</errorDisplayField>
+        <errorMessage>Please put in value of &quot;Sale Price / Unit 1&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Service_Engineer_has_resigned</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordTypeId = &quot;01290000000NxCl&quot;, 
+ OR( Transferred_to_Stock_Point__r.Resign__c = True,
+                 Transferred_to_Stock_Point__r.Active__c  = False) ,
+ISPICKVAL(Type_of_Transfer__c, &quot;Transferred to Service Engineer&quot;) )</errorConditionFormula>
+        <errorMessage>Can not move stock to this Engineer as he has resigned.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Service_Request_No_is_manadatory</fullName>
+        <active>true</active>
+        <description>This is a validation to prevent user from creating any &quot;Component Used in Service Request&quot; transaction from &quot;Component Movement Table&quot;</description>
+        <errorConditionFormula>AND(
+(RecordTypeId = &quot;0122000000094Ca&quot;) ,
+(Service_Request__c = &quot;&quot;))</errorConditionFormula>
+        <errorMessage>Please go through the related list option to create this entry</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TRC_1_Branch_and_Defective_Status</fullName>
+        <active>true</active>
+        <description>can not send Defective items to TRC 1 Branch</description>
+        <errorConditionFormula>AND( ISPICKVAL(Component_Status__c , &apos;Defective&apos;) ,
+ Transferred_to_Stock_Point__r.Service_Center_Location_Code__c  = &apos;1111-TRC Branch 1&apos;)</errorConditionFormula>
+        <errorMessage>can not send Defective items to TRC 1 Branch</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_to_service_Engineer_Rule</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND( RecordTypeId  = &apos;01290000000NxCl&apos;,
+ ISPICKVAL( Type_of_Transfer__c , &quot;Transferred To Service Engineer&quot;) , 
+  Transferred_to_Stock_Point__r.Service_Center_Location_Code__c  &lt;&gt;  Transferred_to_Stock_Point__r.Related_to_Service_Center__r.Service_Center_Location_Code__c )</errorConditionFormula>
+        <errorMessage>Service Center can transfer stocks to his related service Engineer Only not to other Service Center&apos;s Engineers.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_to_service_Engineer_rule_1</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( ISPICKVAL( Type_of_Transfer__c , &apos;Stock Transfer&apos;) ,
+ Transferred_to_Stock_Point__r.RecordTypeId  = &quot;01290000000NwDa&quot;)</errorConditionFormula>
+        <errorDisplayField>Type_of_Transfer__c</errorDisplayField>
+        <errorMessage>Type of transfer should be Transferred to Service Eng. while transferring Stock to Service Engineer.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transferred_Qty_equals_Received_Qty</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(AND
+( ISPICKVAL(Component_Status__c , &apos;Usable&apos;), 
+ OR(( $RecordType.Name = &apos;Stock Inward&apos;),( $RecordType.Name  = &apos;Stock Received&apos;) ) ), 
+OR(
+(Quantity__c &lt;&gt;Received_Quantity1__c) , 
+AND (( NOT( ISNULL(Quantity__c) ) ), ISNULL(Received_Quantity1__c)),
+(Quantity_2__c &lt;&gt;Received_Quantity2__c) , 
+AND (( NOT( ISNULL(Quantity_2__c) ) ), ISNULL(Received_Quantity2__c)),
+(Quantity_3__c &lt;&gt; Received_Quantity3__c) ,
+AND (( NOT( ISNULL(Quantity_3__c ) ) ), ISNULL(Received_Quantity3__c)),
+(Quantity_4__c &lt;&gt; Received_Quantity4__c) ,
+AND (( NOT( ISNULL(Quantity_4__c ) ) ), ISNULL(Received_Quantity4__c))
+   ),
+false)</errorConditionFormula>
+        <errorDisplayField>Basic__c</errorDisplayField>
+        <errorMessage>Sum of Transferred Quantity should be equal to Received Quantity.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transferred_Qty_equals_to_Defective_Qty</fullName>
+        <active>true</active>
+        <description>Transferred Quantity = Defective Quantity</description>
+        <errorConditionFormula>IF(AND 
+( ISPICKVAL(Component_Status__c , &apos;Defective&apos;), 
+OR(( $RecordType.Name = &apos;Stock Inward&apos;),( $RecordType.Name = &apos;Stock Received&apos;) ) ), 
+OR( 
+(Quantity__c &lt;&gt;Defective_Quantity1__c) , 
+AND (( NOT( ISNULL(Quantity__c) ) ), ISNULL(Defective_Quantity1__c)), 
+(Quantity_2__c &lt;&gt;Defective_Quantity2__c) , 
+AND (( NOT( ISNULL(Quantity_2__c) ) ), ISNULL(Defective_Quantity2__c)), 
+(Quantity_3__c &lt;&gt; Defective_Quantity3__c) , 
+AND (( NOT( ISNULL(Quantity_3__c ) ) ), ISNULL(Defective_Quantity3__c)), 
+(Quantity_4__c &lt;&gt; Defective_Quantity4__c) , 
+AND (( NOT( ISNULL(Quantity_4__c ) ) ), ISNULL(Defective_Quantity4__c)) 
+) ,false)</errorConditionFormula>
+        <errorDisplayField>Basic__c</errorDisplayField>
+        <errorMessage>Transferred Quantity should be equal to Defective Quantity.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_Defective_Short_Quantity</fullName>
+        <active>true</active>
+        <description>Validate_Defective_Short_Quantity</description>
+        <errorConditionFormula>$RecordType.Name = &apos;Stock Inward&apos; &amp;&amp; Short_Receipt_Quantity1__c &lt; 0</errorConditionFormula>
+        <errorDisplayField>Received_Quantity1__c</errorDisplayField>
+        <errorMessage>Enter Appropriate Quantities</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_Owner_Id</fullName>
+        <active>true</active>
+        <errorConditionFormula>(ISPICKVAL(Type_of_Receipt__c,&apos;Stock Returned by Service Engineer&apos; ) || ISPICKVAL( Type_of_Transfer__c ,&apos;Transferred to Service Engineer&apos;) ) &amp;&amp; (Stock_Point_Owner_Id__c &lt;&gt; OwnerId) &amp;&amp; Stock_Point_Type__c = &apos;Service Engineer&apos;</errorConditionFormula>
+        <errorDisplayField>Basic__c</errorDisplayField>
+        <errorMessage>The Service Engineer Choosen doesn&apos;t belong to the Service Center. Choose an appropriate Service Engineer</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_SC_Stock_Point_Type</fullName>
+        <active>false</active>
+        <description>Validate_SC_Stock_Point_Type</description>
+        <errorConditionFormula>ISPICKVAL( Type_of_Transfer__c ,&apos;Stock Transfer&apos; ) &amp;&amp; Stock_Point_Type__c &lt;&gt; &apos;Service Center&apos; &amp;&amp; From_Org__c &lt;&gt;&apos;019-SC-GGN&apos;</errorConditionFormula>
+        <errorMessage>Please choose a Service Center for this transaction.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_SE_Stock_Point_Type</fullName>
+        <active>true</active>
+        <description>Validate_SE_Stock_Point_Type</description>
+        <errorConditionFormula>((ISPICKVAL(Type_of_Receipt__c,&apos;Stock Returned by Service Engineer&apos; ) || ISPICKVAL( Type_of_Transfer__c ,&apos;Transferred to Service Engineer&apos;) ) &amp;&amp; Stock_Point_Type__c &lt;&gt; &apos;Service Engineer&apos; )</errorConditionFormula>
+        <errorMessage>Please choose your own Service Engineer for this transaction.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>check_null</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND (( NOT( ISNULL(Quantity__c) ) ), ISNULL(Received_Quantity1__c))</errorConditionFormula>
+        <errorMessage>check</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>InvoicePDF</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>InvoicePDF</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/Invoice_ComponentMovement?id={!Component_Movement_Table__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Component_Movement_Table</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Component Movement Table</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a07/e?CF00N90000003PMGJ={!Service_Request__c.Name}&amp;CF00N90000003PMGJ_lkid={!Service_Request__c.Id}&amp;retURL=%2F{!Service_Request__c.Id}%3Fnooverride=0&amp;RecordType=01290000000NxCi&amp;ent=01I90000000tWCW</url>
+    </webLinks>
+</CustomObject>

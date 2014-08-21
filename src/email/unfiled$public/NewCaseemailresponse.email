@@ -1,0 +1,9 @@
+Dear {!Case.Contact},  
+
+Thank you for contacting {!Organization.Name}.  Our Service Engineer wil be contacting you shortly.    
+Your Customer ID no is {!Account.Customer_ID__c}
+Your Service Request No. is {!Case.FSR_No__c}
+
+Sincerely,  
+Customer Care Team 
+{!Organization.Name}

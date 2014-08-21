@@ -1,0 +1,3690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customers</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Access</value>
+        </caseValues>
+        <name>account_access</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Access Level</value>
+        </caseValues>
+        <name>account_access_level</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Contact Role</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Contact Roles</value>
+        </caseValues>
+        <name>account_contact_role</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Creator</value>
+        </caseValues>
+        <name>account_creator</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Currency</value>
+        </caseValues>
+        <name>account_currency</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Description</value>
+        </caseValues>
+        <name>account_description</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Detail Page</value>
+        </caseValues>
+        <name>account_detail_page</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Division</value>
+        </caseValues>
+        <name>account_division</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Edit</value>
+        </caseValues>
+        <name>account_edit</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Fax</value>
+        </caseValues>
+        <name>account_fax</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Field</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Fields</value>
+        </caseValues>
+        <name>account_field</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer General</value>
+        </caseValues>
+        <name>account_general</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Hierarchy</value>
+        </caseValues>
+        <name>account_hierarchy</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer History</value>
+        </caseValues>
+        <name>account_history</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer History Report</value>
+        </caseValues>
+        <name>account_history_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer ID</value>
+        </caseValues>
+        <name>account_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Information</value>
+        </caseValues>
+        <name>account_information</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Name</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Names</value>
+        </caseValues>
+        <name>account_name</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Number</value>
+        </caseValues>
+        <name>account_number</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Owner</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Owners</value>
+        </caseValues>
+        <name>account_owner</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Owner Alias</value>
+        </caseValues>
+        <name>account_owner_alias</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Owner Report</value>
+        </caseValues>
+        <name>account_owner_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Owner Role</value>
+        </caseValues>
+        <name>account_owner_role</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Ownership</value>
+        </caseValues>
+        <name>account_ownership</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Phone</value>
+        </caseValues>
+        <name>account_phone</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Rating</value>
+        </caseValues>
+        <name>account_rating</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Record</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Records</value>
+        </caseValues>
+        <name>account_record</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Record Type</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Record Types</value>
+        </caseValues>
+        <name>account_record_type</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Report</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Reports</value>
+        </caseValues>
+        <name>account_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Sharing</value>
+        </caseValues>
+        <name>account_sharing</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Site</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Sites</value>
+        </caseValues>
+        <name>account_site</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Source</value>
+        </caseValues>
+        <name>account_source</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Stage ID</value>
+        </caseValues>
+        <name>account_stage_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Team</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Teams</value>
+        </caseValues>
+        <name>account_team</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Team Member</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Team Members</value>
+        </caseValues>
+        <name>account_team_member</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Team Member ID</value>
+        </caseValues>
+        <name>account_team_member_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Team Report</value>
+        </caseValues>
+        <name>account_team_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Territory</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Territories</value>
+        </caseValues>
+        <name>account_territory</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Tool</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Tools</value>
+        </caseValues>
+        <name>account_tool</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Type</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Types</value>
+        </caseValues>
+        <name>account_type</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer View</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Views</value>
+        </caseValues>
+        <name>account_view</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Parent Customer</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Parent Customers</value>
+        </caseValues>
+        <name>parent_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Parent Customer Division</value>
+        </caseValues>
+        <name>parent_account_division</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Parent Customer ID</value>
+        </caseValues>
+        <name>parent_account_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Parent Customer Site</value>
+        </caseValues>
+        <name>parent_account_site</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Person Customer Record</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Person Customer Records</value>
+        </caseValues>
+        <name>person_account_record</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <name>AccountSource</name>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chat</masterLabel>
+            <translation><!-- Chat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer shop</masterLabel>
+            <translation><!-- Dealer shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Referral</masterLabel>
+            <translation><!-- Employee Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Referral</masterLabel>
+            <translation><!-- External Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoardings</masterLabel>
+            <translation><!-- Hoardings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newspaper/Magazine</masterLabel>
+            <translation><!-- Newspaper/Magazine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OOH</masterLabel>
+            <translation><!-- OOH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous customer</masterLabel>
+            <translation><!-- Previous customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Brochure/Flyer</masterLabel>
+            <translation><!-- Product Brochure/Flyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations</masterLabel>
+            <translation><!-- Public Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio</masterLabel>
+            <translation><!-- Radio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred by a friend</masterLabel>
+            <translation><!-- Referred by a friend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research</masterLabel>
+            <translation><!-- Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Internal</masterLabel>
+            <translation><!-- Seminar - Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Partner</masterLabel>
+            <translation><!-- Seminar - Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shopping Mall</masterLabel>
+            <translation><!-- Shopping Mall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Television</masterLabel>
+            <translation><!-- Television --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word of mouth</masterLabel>
+            <translation><!-- Word of mouth --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Alternate Phone No. --></label>
+        <name>Alternate_Phone_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Street --></label>
+        <name>Billing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch State --></label>
+        <name>Branch_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cust No --></label>
+        <name>Cust_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer ID --></label>
+        <name>Customer_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+        <picklistValues>
+            <masterLabel>24 PARAGANAS NORTH</masterLabel>
+            <translation><!-- 24 PARAGANAS NORTH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 PARAGANAS SOUTH</masterLabel>
+            <translation><!-- 24 PARAGANAS SOUTH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ADILABAD</masterLabel>
+            <translation><!-- ADILABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AGRA</masterLabel>
+            <translation><!-- AGRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AHMADABAD</masterLabel>
+            <translation><!-- AHMADABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AHMEDNAGAR</masterLabel>
+            <translation><!-- AHMEDNAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AIZAWL</masterLabel>
+            <translation><!-- AIZAWL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AJMER</masterLabel>
+            <translation><!-- AJMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AKOLA</masterLabel>
+            <translation><!-- AKOLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALIGARH</masterLabel>
+            <translation><!-- ALIGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALIRAJPUR</masterLabel>
+            <translation><!-- ALIRAJPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALLAHABAD</masterLabel>
+            <translation><!-- ALLAHABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALLPPY</masterLabel>
+            <translation><!-- ALLPPY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALMORA</masterLabel>
+            <translation><!-- ALMORA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALWAR</masterLabel>
+            <translation><!-- ALWAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMARAVATI</masterLabel>
+            <translation><!-- AMARAVATI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBALA</masterLabel>
+            <translation><!-- AMBALA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBEDKAR NAGAR</masterLabel>
+            <translation><!-- AMBEDKAR NAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMETHI</masterLabel>
+            <translation><!-- AMETHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMRELI</masterLabel>
+            <translation><!-- AMRELI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMRITSAR</masterLabel>
+            <translation><!-- AMRITSAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANAND</masterLabel>
+            <translation><!-- ANAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANANTNAG</masterLabel>
+            <translation><!-- ANANTNAG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANANTPUR</masterLabel>
+            <translation><!-- ANANTPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANJAW</masterLabel>
+            <translation><!-- ANJAW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANUGUL</masterLabel>
+            <translation><!-- ANUGUL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANUPPUR</masterLabel>
+            <translation><!-- ANUPPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARARIA</masterLabel>
+            <translation><!-- ARARIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIYALUR</masterLabel>
+            <translation><!-- ARIYALUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASANSOL</masterLabel>
+            <translation><!-- ASANSOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASHOKNAGAR</masterLabel>
+            <translation><!-- ASHOKNAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AURAIYA</masterLabel>
+            <translation><!-- AURAIYA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AURANGABAD</masterLabel>
+            <translation><!-- AURANGABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZAMGARH</masterLabel>
+            <translation><!-- AZAMGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BADAUN</masterLabel>
+            <translation><!-- BADAUN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BADGAM</masterLabel>
+            <translation><!-- BADGAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BADMER</masterLabel>
+            <translation><!-- BADMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BADWANI</masterLabel>
+            <translation><!-- BADWANI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAGALKOT</masterLabel>
+            <translation><!-- BAGALKOT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAGESHWAR</masterLabel>
+            <translation><!-- BAGESHWAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAGPATH</masterLabel>
+            <translation><!-- BAGPATH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAHRAICH</masterLabel>
+            <translation><!-- BAHRAICH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAKSA</masterLabel>
+            <translation><!-- BAKSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BALAGHAT</masterLabel>
+            <translation><!-- BALAGHAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BALANGIR</masterLabel>
+            <translation><!-- BALANGIR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BALASORE</masterLabel>
+            <translation><!-- BALASORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BALESHWAR</masterLabel>
+            <translation><!-- BALESHWAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BALLIA</masterLabel>
+            <translation><!-- BALLIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BALRAMPUR</masterLabel>
+            <translation><!-- BALRAMPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANAS KANTHA</masterLabel>
+            <translation><!-- BANAS KANTHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANDA</masterLabel>
+            <translation><!-- BANDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANDRA</masterLabel>
+            <translation><!-- BANDRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANGALORE RURAL</masterLabel>
+            <translation><!-- BANGALORE RURAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANGALORE URBAN</masterLabel>
+            <translation><!-- BANGALORE URBAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANKA</masterLabel>
+            <translation><!-- BANKA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANKURA</masterLabel>
+            <translation><!-- BANKURA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANSWARA</masterLabel>
+            <translation><!-- BANSWARA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BARABANKI</masterLabel>
+            <translation><!-- BARABANKI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BARAHATT</masterLabel>
+            <translation><!-- BARAHATT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BARAMULLA</masterLabel>
+            <translation><!-- BARAMULLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BARAN</masterLabel>
+            <translation><!-- BARAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BARDHAMAN</masterLabel>
+            <translation><!-- BARDHAMAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAREILLY</masterLabel>
+            <translation><!-- BAREILLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BARGARH</masterLabel>
+            <translation><!-- BARGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BARNALA</masterLabel>
+            <translation><!-- BARNALA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BARPETA</masterLabel>
+            <translation><!-- BARPETA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BASTAR</masterLabel>
+            <translation><!-- BASTAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BASTI</masterLabel>
+            <translation><!-- BASTI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATHINDA</masterLabel>
+            <translation><!-- BATHINDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAXER</masterLabel>
+            <translation><!-- BAXER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEED</masterLabel>
+            <translation><!-- BEED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEGUSARAI</masterLabel>
+            <translation><!-- BEGUSARAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BELAGAVI</masterLabel>
+            <translation><!-- BELAGAVI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BELLARY</masterLabel>
+            <translation><!-- BELLARY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BETUL</masterLabel>
+            <translation><!-- BETUL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHADRAK</masterLabel>
+            <translation><!-- BHADRAK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHAGALPUR</masterLabel>
+            <translation><!-- BHAGALPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHANDARA</masterLabel>
+            <translation><!-- BHANDARA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHANDIPORA</masterLabel>
+            <translation><!-- BHANDIPORA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHARATPUR</masterLabel>
+            <translation><!-- BHARATPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHARUCH</masterLabel>
+            <translation><!-- BHARUCH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHAVNAGAR</masterLabel>
+            <translation><!-- BHAVNAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHILWARA</masterLabel>
+            <translation><!-- BHILWARA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHIND</masterLabel>
+            <translation><!-- BHIND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHIWANI</masterLabel>
+            <translation><!-- BHIWANI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHOJPUR</masterLabel>
+            <translation><!-- BHOJPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHOPAL</masterLabel>
+            <translation><!-- BHOPAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHUBNESHWAR</masterLabel>
+            <translation><!-- BHUBNESHWAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIDAR</masterLabel>
+            <translation><!-- BIDAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIJAPUR</masterLabel>
+            <translation><!-- BIJAPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIJNOR</masterLabel>
+            <translation><!-- BIJNOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIKANER</masterLabel>
+            <translation><!-- BIKANER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BILASPUR</masterLabel>
+            <translation><!-- BILASPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIRBHUM</masterLabel>
+            <translation><!-- BIRBHUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BISHNUPUR</masterLabel>
+            <translation><!-- BISHNUPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BOKARO</masterLabel>
+            <translation><!-- BOKARO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BONGAIGAON</masterLabel>
+            <translation><!-- BONGAIGAON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BOUDH</masterLabel>
+            <translation><!-- BOUDH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BULANDSHAHR</masterLabel>
+            <translation><!-- BULANDSHAHR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BULDHANA</masterLabel>
+            <translation><!-- BULDHANA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BUNDI</masterLabel>
+            <translation><!-- BUNDI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BURHANPUR</masterLabel>
+            <translation><!-- BURHANPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CACHAR</masterLabel>
+            <translation><!-- CACHAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CENTRAL DELHI</masterLabel>
+            <translation><!-- CENTRAL DELHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHAMARAJANAGAR</masterLabel>
+            <translation><!-- CHAMARAJANAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHAMBA</masterLabel>
+            <translation><!-- CHAMBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHAMOLI</masterLabel>
+            <translation><!-- CHAMOLI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHAMPAWAT</masterLabel>
+            <translation><!-- CHAMPAWAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHAMPHAI</masterLabel>
+            <translation><!-- CHAMPHAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANDAULI</masterLabel>
+            <translation><!-- CHANDAULI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANDEL</masterLabel>
+            <translation><!-- CHANDEL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANDIGARH</masterLabel>
+            <translation><!-- CHANDIGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANDRAPUR</masterLabel>
+            <translation><!-- CHANDRAPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGLANG</masterLabel>
+            <translation><!-- CHANGLANG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHATRA</masterLabel>
+            <translation><!-- CHATRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHENNAI</masterLabel>
+            <translation><!-- CHENNAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHHATARPUR</masterLabel>
+            <translation><!-- CHHATARPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHHINDWADA</masterLabel>
+            <translation><!-- CHHINDWADA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHIKMAGALUR</masterLabel>
+            <translation><!-- CHIKMAGALUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHIRANG</masterLabel>
+            <translation><!-- CHIRANG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHITRADURGA</masterLabel>
+            <translation><!-- CHITRADURGA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHITRAKOOT</masterLabel>
+            <translation><!-- CHITRAKOOT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHITTOOR</masterLabel>
+            <translation><!-- CHITTOOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHITTORGARH</masterLabel>
+            <translation><!-- CHITTORGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHURACHANDPUR</masterLabel>
+            <translation><!-- CHURACHANDPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHURU</masterLabel>
+            <translation><!-- CHURU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COCHIN</masterLabel>
+            <translation><!-- COCHIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COIMBATORE</masterLabel>
+            <translation><!-- COIMBATORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COOCHBEHAR</masterLabel>
+            <translation><!-- COOCHBEHAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CUDDALORE</masterLabel>
+            <translation><!-- CUDDALORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CUTTACK</masterLabel>
+            <translation><!-- CUTTACK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DADRA &amp; NAGAR HAVELI</masterLabel>
+            <translation><!-- DADRA &amp; NAGAR HAVELI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAKSHINA KANNADA</masterLabel>
+            <translation><!-- DAKSHINA KANNADA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAMAN</masterLabel>
+            <translation><!-- DAMAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAMOH</masterLabel>
+            <translation><!-- DAMOH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DANG</masterLabel>
+            <translation><!-- DANG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DANTEWADA</masterLabel>
+            <translation><!-- DANTEWADA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DARBHANGA</masterLabel>
+            <translation><!-- DARBHANGA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DARJEELING</masterLabel>
+            <translation><!-- DARJEELING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DARRANG</masterLabel>
+            <translation><!-- DARRANG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DATIA</masterLabel>
+            <translation><!-- DATIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAUSA</masterLabel>
+            <translation><!-- DAUSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAVANAGERE</masterLabel>
+            <translation><!-- DAVANAGERE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEHRADUN</masterLabel>
+            <translation><!-- DEHRADUN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEOGARH</masterLabel>
+            <translation><!-- DEOGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEOGHAR</masterLabel>
+            <translation><!-- DEOGHAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEORIA</masterLabel>
+            <translation><!-- DEORIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEWAS</masterLabel>
+            <translation><!-- DEWAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHALAI</masterLabel>
+            <translation><!-- DHALAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHAMTARI</masterLabel>
+            <translation><!-- DHAMTARI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHANBAD</masterLabel>
+            <translation><!-- DHANBAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHAR</masterLabel>
+            <translation><!-- DHAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHARWAD</masterLabel>
+            <translation><!-- DHARWAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHEMAJI</masterLabel>
+            <translation><!-- DHEMAJI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHENKANAL</masterLabel>
+            <translation><!-- DHENKANAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHOLPUR</masterLabel>
+            <translation><!-- DHOLPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHRAMAPURI</masterLabel>
+            <translation><!-- DHRAMAPURI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHUBRI</masterLabel>
+            <translation><!-- DHUBRI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHULE</masterLabel>
+            <translation><!-- DHULE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIBANG VALLEY</masterLabel>
+            <translation><!-- DIBANG VALLEY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIBRUGARH</masterLabel>
+            <translation><!-- DIBRUGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIMA HASAO</masterLabel>
+            <translation><!-- DIMA HASAO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIMAPUR</masterLabel>
+            <translation><!-- DIMAPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DINAJPUR DAKSHIN</masterLabel>
+            <translation><!-- DINAJPUR DAKSHIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DINAJPUR UTTAR</masterLabel>
+            <translation><!-- DINAJPUR UTTAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DINDIGUL</masterLabel>
+            <translation><!-- DINDIGUL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DINDORI</masterLabel>
+            <translation><!-- DINDORI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DODA</masterLabel>
+            <translation><!-- DODA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOHAD</masterLabel>
+            <translation><!-- DOHAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DUMKA</masterLabel>
+            <translation><!-- DUMKA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DUNGARPUR</masterLabel>
+            <translation><!-- DUNGARPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DURG</masterLabel>
+            <translation><!-- DURG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EAST CHAMPARAN</masterLabel>
+            <translation><!-- EAST CHAMPARAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EAST DELHI</masterLabel>
+            <translation><!-- EAST DELHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EAST DISTRICT</masterLabel>
+            <translation><!-- EAST DISTRICT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EAST GODAWARI</masterLabel>
+            <translation><!-- EAST GODAWARI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EAST KAMENG</masterLabel>
+            <translation><!-- EAST KAMENG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EAST KASHI HILLS</masterLabel>
+            <translation><!-- EAST KASHI HILLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EAST SIANG</masterLabel>
+            <translation><!-- EAST SIANG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EAST SINGHBUM</masterLabel>
+            <translation><!-- EAST SINGHBUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERNAKULAM</masterLabel>
+            <translation><!-- ERNAKULAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERODE</masterLabel>
+            <translation><!-- ERODE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETAH</masterLabel>
+            <translation><!-- ETAH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETAWAH</masterLabel>
+            <translation><!-- ETAWAH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAIZABAD</masterLabel>
+            <translation><!-- FAIZABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FARIDABAD</masterLabel>
+            <translation><!-- FARIDABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FARIDKOT</masterLabel>
+            <translation><!-- FARIDKOT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FARRUKHABAD</masterLabel>
+            <translation><!-- FARRUKHABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FATEHABAD</masterLabel>
+            <translation><!-- FATEHABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FATEHGARH SAHIB</masterLabel>
+            <translation><!-- FATEHGARH SAHIB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FATEHPUR</masterLabel>
+            <translation><!-- FATEHPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIROZABAD</masterLabel>
+            <translation><!-- FIROZABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIROZEPUR</masterLabel>
+            <translation><!-- FIROZEPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FORMERLY NORTH CACHAR HILLS</masterLabel>
+            <translation><!-- FORMERLY NORTH CACHAR HILLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GADAG</masterLabel>
+            <translation><!-- GADAG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GADAK</masterLabel>
+            <translation><!-- GADAK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GADCHIROLI</masterLabel>
+            <translation><!-- GADCHIROLI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GAJAPATI</masterLabel>
+            <translation><!-- GAJAPATI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GANDERBAL</masterLabel>
+            <translation><!-- GANDERBAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GANJAM</masterLabel>
+            <translation><!-- GANJAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GARHWA</masterLabel>
+            <translation><!-- GARHWA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GAUTAMBUDH NAGAR</masterLabel>
+            <translation><!-- GAUTAMBUDH NAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GAYA</masterLabel>
+            <translation><!-- GAYA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GHANDHINAGAR</masterLabel>
+            <translation><!-- GHANDHINAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GHAZIABAD</masterLabel>
+            <translation><!-- GHAZIABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GHAZIPUR</masterLabel>
+            <translation><!-- GHAZIPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GIRIDIH</masterLabel>
+            <translation><!-- GIRIDIH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOALPARA</masterLabel>
+            <translation><!-- GOALPARA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GODDA</masterLabel>
+            <translation><!-- GODDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOLAGHAT</masterLabel>
+            <translation><!-- GOLAGHAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GONDA</masterLabel>
+            <translation><!-- GONDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GONDIA</masterLabel>
+            <translation><!-- GONDIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOPALGANJ</masterLabel>
+            <translation><!-- GOPALGANJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GORAKHPUR</masterLabel>
+            <translation><!-- GORAKHPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GULBARGA</masterLabel>
+            <translation><!-- GULBARGA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUMLA</masterLabel>
+            <translation><!-- GUMLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUNA</masterLabel>
+            <translation><!-- GUNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUNTUR</masterLabel>
+            <translation><!-- GUNTUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GURDASPUR</masterLabel>
+            <translation><!-- GURDASPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GURGAON</masterLabel>
+            <translation><!-- GURGAON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUWAHATI</masterLabel>
+            <translation><!-- GUWAHATI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GWALIOR</masterLabel>
+            <translation><!-- GWALIOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAILAKANDI</masterLabel>
+            <translation><!-- HAILAKANDI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HALDWANI</masterLabel>
+            <translation><!-- HALDWANI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAMIRPUR</masterLabel>
+            <translation><!-- HAMIRPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HANUMANGARH</masterLabel>
+            <translation><!-- HANUMANGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HARDA</masterLabel>
+            <translation><!-- HARDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HARDOI</masterLabel>
+            <translation><!-- HARDOI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HARIDWAR</masterLabel>
+            <translation><!-- HARIDWAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HASSAN</masterLabel>
+            <translation><!-- HASSAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HATHRAS</masterLabel>
+            <translation><!-- HATHRAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAVERI</masterLabel>
+            <translation><!-- HAVERI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAZARIBAGH</masterLabel>
+            <translation><!-- HAZARIBAGH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HINGOLI</masterLabel>
+            <translation><!-- HINGOLI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HISSAR</masterLabel>
+            <translation><!-- HISSAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOOGHLY</masterLabel>
+            <translation><!-- HOOGHLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOSHANGABAD</masterLabel>
+            <translation><!-- HOSHANGABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOSHIARPUR</masterLabel>
+            <translation><!-- HOSHIARPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOWRAH</masterLabel>
+            <translation><!-- HOWRAH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HUBLI</masterLabel>
+            <translation><!-- HUBLI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HYDERABAD</masterLabel>
+            <translation><!-- HYDERABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDUKKI</masterLabel>
+            <translation><!-- IDUKKI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IMPHAL EAST</masterLabel>
+            <translation><!-- IMPHAL EAST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IMPHAL WEST</masterLabel>
+            <translation><!-- IMPHAL WEST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDORE</masterLabel>
+            <translation><!-- INDORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ITARSI</masterLabel>
+            <translation><!-- ITARSI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JABALPUR</masterLabel>
+            <translation><!-- JABALPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAGATSINGHAPUR</masterLabel>
+            <translation><!-- JAGATSINGHAPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAHANABAD</masterLabel>
+            <translation><!-- JAHANABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAIAPUR</masterLabel>
+            <translation><!-- JAIAPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAINTIA HILLS</masterLabel>
+            <translation><!-- JAINTIA HILLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAIPUR</masterLabel>
+            <translation><!-- JAIPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAISALMER</masterLabel>
+            <translation><!-- JAISALMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JALANDHAR</masterLabel>
+            <translation><!-- JALANDHAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JALGAON</masterLabel>
+            <translation><!-- JALGAON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JALLAUN</masterLabel>
+            <translation><!-- JALLAUN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JALNA</masterLabel>
+            <translation><!-- JALNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JALOUR</masterLabel>
+            <translation><!-- JALOUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JALPAIGURI</masterLabel>
+            <translation><!-- JALPAIGURI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAMMU</masterLabel>
+            <translation><!-- JAMMU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAMNAGAR</masterLabel>
+            <translation><!-- JAMNAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAMSHEDPUR</masterLabel>
+            <translation><!-- JAMSHEDPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAMTARA</masterLabel>
+            <translation><!-- JAMTARA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAMUI</masterLabel>
+            <translation><!-- JAMUI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JANJGIR-CHAMPA</masterLabel>
+            <translation><!-- JANJGIR-CHAMPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JASHPUR</masterLabel>
+            <translation><!-- JASHPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAUNPUR</masterLabel>
+            <translation><!-- JAUNPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JHABUA</masterLabel>
+            <translation><!-- JHABUA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JHAJJAR</masterLabel>
+            <translation><!-- JHAJJAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JHALAWAR</masterLabel>
+            <translation><!-- JHALAWAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JHANSI</masterLabel>
+            <translation><!-- JHANSI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JHARSUGUDA</masterLabel>
+            <translation><!-- JHARSUGUDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JHUNJHUNU</masterLabel>
+            <translation><!-- JHUNJHUNU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JIND</masterLabel>
+            <translation><!-- JIND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JODHPUR</masterLabel>
+            <translation><!-- JODHPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JORHAT</masterLabel>
+            <translation><!-- JORHAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JP NAGAR</masterLabel>
+            <translation><!-- JP NAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JUNAGADH</masterLabel>
+            <translation><!-- JUNAGADH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KABIRDHAM</masterLabel>
+            <translation><!-- KABIRDHAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KACHCHH</masterLabel>
+            <translation><!-- KACHCHH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KADAPA</masterLabel>
+            <translation><!-- KADAPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KAIMUR</masterLabel>
+            <translation><!-- KAIMUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KAITHAL</masterLabel>
+            <translation><!-- KAITHAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KALAHANDI</masterLabel>
+            <translation><!-- KALAHANDI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KAMRUP</masterLabel>
+            <translation><!-- KAMRUP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KAMRUP METRO</masterLabel>
+            <translation><!-- KAMRUP METRO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANCHIPURAM</masterLabel>
+            <translation><!-- KANCHIPURAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANDHAMAL</masterLabel>
+            <translation><!-- KANDHAMAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANGRA</masterLabel>
+            <translation><!-- KANGRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANKER</masterLabel>
+            <translation><!-- KANKER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANNAUJ</masterLabel>
+            <translation><!-- KANNAUJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANNIYAKUMMARI</masterLabel>
+            <translation><!-- KANNIYAKUMMARI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANNUR</masterLabel>
+            <translation><!-- KANNUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANPUR</masterLabel>
+            <translation><!-- KANPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANPUR DEHAT</masterLabel>
+            <translation><!-- KANPUR DEHAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KAPURTHALA</masterLabel>
+            <translation><!-- KAPURTHALA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KARAIKAL</masterLabel>
+            <translation><!-- KARAIKAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KARAULI</masterLabel>
+            <translation><!-- KARAULI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KARBI ANGLONG</masterLabel>
+            <translation><!-- KARBI ANGLONG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KARGIL</masterLabel>
+            <translation><!-- KARGIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KARIMGANJ</masterLabel>
+            <translation><!-- KARIMGANJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KARIMNAGAR</masterLabel>
+            <translation><!-- KARIMNAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KARNAL</masterLabel>
+            <translation><!-- KARNAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KARUR</masterLabel>
+            <translation><!-- KARUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KASARKODU</masterLabel>
+            <translation><!-- KASARKODU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KASHIRAM NAGAR</masterLabel>
+            <translation><!-- KASHIRAM NAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KATHUA</masterLabel>
+            <translation><!-- KATHUA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KATIHAR</masterLabel>
+            <translation><!-- KATIHAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KATNI</masterLabel>
+            <translation><!-- KATNI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KAUSHAMBHI</masterLabel>
+            <translation><!-- KAUSHAMBHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENDRAPARA</masterLabel>
+            <translation><!-- KENDRAPARA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENDUJHAR</masterLabel>
+            <translation><!-- KENDUJHAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KHAGARIA</masterLabel>
+            <translation><!-- KHAGARIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KHANDWA</masterLabel>
+            <translation><!-- KHANDWA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KHARGON</masterLabel>
+            <translation><!-- KHARGON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KHEDA</masterLabel>
+            <translation><!-- KHEDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KHERI</masterLabel>
+            <translation><!-- KHERI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KHORDHA</masterLabel>
+            <translation><!-- KHORDHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KHUNTI</masterLabel>
+            <translation><!-- KHUNTI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KINNAUR</masterLabel>
+            <translation><!-- KINNAUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KIPHIRE</masterLabel>
+            <translation><!-- KIPHIRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KISANGANJ</masterLabel>
+            <translation><!-- KISANGANJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KISHTWAR</masterLabel>
+            <translation><!-- KISHTWAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KODAGU</masterLabel>
+            <translation><!-- KODAGU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KODERMA</masterLabel>
+            <translation><!-- KODERMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOHIMA</masterLabel>
+            <translation><!-- KOHIMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOKRAJHAR</masterLabel>
+            <translation><!-- KOKRAJHAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOLAR</masterLabel>
+            <translation><!-- KOLAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOLASIB</masterLabel>
+            <translation><!-- KOLASIB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOLHAPUR</masterLabel>
+            <translation><!-- KOLHAPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOLKATA</masterLabel>
+            <translation><!-- KOLKATA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOLLAM</masterLabel>
+            <translation><!-- KOLLAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOPPAL</masterLabel>
+            <translation><!-- KOPPAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KORAPUT</masterLabel>
+            <translation><!-- KORAPUT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KORBA</masterLabel>
+            <translation><!-- KORBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOREA</masterLabel>
+            <translation><!-- KOREA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOTA</masterLabel>
+            <translation><!-- KOTA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOTTAYAM</masterLabel>
+            <translation><!-- KOTTAYAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOZHIKKOD</masterLabel>
+            <translation><!-- KOZHIKKOD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KRISHNA</masterLabel>
+            <translation><!-- KRISHNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KRISHNAGIRI</masterLabel>
+            <translation><!-- KRISHNAGIRI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KULGAM</masterLabel>
+            <translation><!-- KULGAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KULLU</masterLabel>
+            <translation><!-- KULLU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KUPWARA</masterLabel>
+            <translation><!-- KUPWARA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KURNOOL</masterLabel>
+            <translation><!-- KURNOOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KURUKSHETRA</masterLabel>
+            <translation><!-- KURUKSHETRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KURUNG-KUMEY</masterLabel>
+            <translation><!-- KURUNG-KUMEY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KUSHINAGAR</masterLabel>
+            <translation><!-- KUSHINAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAHUL AND  SPITI</masterLabel>
+            <translation><!-- LAHUL AND  SPITI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAKHIMPUR</masterLabel>
+            <translation><!-- LAKHIMPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAKHISARAI</masterLabel>
+            <translation><!-- LAKHISARAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LALITPUR</masterLabel>
+            <translation><!-- LALITPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATEHAR</masterLabel>
+            <translation><!-- LATEHAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATUR</masterLabel>
+            <translation><!-- LATUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAWNGTLAI</masterLabel>
+            <translation><!-- LAWNGTLAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEH LADAKH</masterLabel>
+            <translation><!-- LEH LADAKH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOHARDAGA</masterLabel>
+            <translation><!-- LOHARDAGA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOHIT</masterLabel>
+            <translation><!-- LOHIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LONGLENG</masterLabel>
+            <translation><!-- LONGLENG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOWER DIBANG VALLEY</masterLabel>
+            <translation><!-- LOWER DIBANG VALLEY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOWER SUBANSIRI</masterLabel>
+            <translation><!-- LOWER SUBANSIRI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUCKNOW</masterLabel>
+            <translation><!-- LUCKNOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUDHIANA</masterLabel>
+            <translation><!-- LUDHIANA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUNGLEI</masterLabel>
+            <translation><!-- LUNGLEI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MADHEPURA</masterLabel>
+            <translation><!-- MADHEPURA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MADHUBANI</masterLabel>
+            <translation><!-- MADHUBANI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MADIKERI</masterLabel>
+            <translation><!-- MADIKERI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MADURAI</masterLabel>
+            <translation><!-- MADURAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAHAMAYA NAGAR</masterLabel>
+            <translation><!-- MAHAMAYA NAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAHARAJGANJ</masterLabel>
+            <translation><!-- MAHARAJGANJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAHASAMUND</masterLabel>
+            <translation><!-- MAHASAMUND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAHBUBNAGAR</masterLabel>
+            <translation><!-- MAHBUBNAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAHENDRAGARH</masterLabel>
+            <translation><!-- MAHENDRAGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAHESANA</masterLabel>
+            <translation><!-- MAHESANA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAHOBA</masterLabel>
+            <translation><!-- MAHOBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINPURI</masterLabel>
+            <translation><!-- MAINPURI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MALAPPURAM</masterLabel>
+            <translation><!-- MALAPPURAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MALDAH</masterLabel>
+            <translation><!-- MALDAH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MALKANGIRI</masterLabel>
+            <translation><!-- MALKANGIRI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAMIT</masterLabel>
+            <translation><!-- MAMIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANDI</masterLabel>
+            <translation><!-- MANDI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANDLA</masterLabel>
+            <translation><!-- MANDLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANDSOR</masterLabel>
+            <translation><!-- MANDSOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANDYA</masterLabel>
+            <translation><!-- MANDYA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANGALORE</masterLabel>
+            <translation><!-- MANGALORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANSA</masterLabel>
+            <translation><!-- MANSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MATHURA</masterLabel>
+            <translation><!-- MATHURA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAU</masterLabel>
+            <translation><!-- MAU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAYURBHANJ</masterLabel>
+            <translation><!-- MAYURBHANJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEDAK</masterLabel>
+            <translation><!-- MEDAK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEERUT</masterLabel>
+            <translation><!-- MEERUT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEWAT</masterLabel>
+            <translation><!-- MEWAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIDNAPUR</masterLabel>
+            <translation><!-- MIDNAPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIDNAPUR EAST</masterLabel>
+            <translation><!-- MIDNAPUR EAST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIDNAPUR WEST</masterLabel>
+            <translation><!-- MIDNAPUR WEST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRZAPUR</masterLabel>
+            <translation><!-- MIRZAPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOGA</masterLabel>
+            <translation><!-- MOGA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOKOKCHUNG</masterLabel>
+            <translation><!-- MOKOKCHUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MON</masterLabel>
+            <translation><!-- MON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MORADABAD</masterLabel>
+            <translation><!-- MORADABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MORENA</masterLabel>
+            <translation><!-- MORENA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MORIGAON</masterLabel>
+            <translation><!-- MORIGAON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MUKTSAR</masterLabel>
+            <translation><!-- MUKTSAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MUMBAI</masterLabel>
+            <translation><!-- MUMBAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MUNGER</masterLabel>
+            <translation><!-- MUNGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MURSHIDABAD</masterLabel>
+            <translation><!-- MURSHIDABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MUZAFFARNAGAR</masterLabel>
+            <translation><!-- MUZAFFARNAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MUZAFFARPUR</masterLabel>
+            <translation><!-- MUZAFFARPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MYSORE</masterLabel>
+            <translation><!-- MYSORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NADIA</masterLabel>
+            <translation><!-- NADIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAGAON</masterLabel>
+            <translation><!-- NAGAON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAGAPATTINAM</masterLabel>
+            <translation><!-- NAGAPATTINAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAGAUR</masterLabel>
+            <translation><!-- NAGAUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAGPUR</masterLabel>
+            <translation><!-- NAGPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAINITAL</masterLabel>
+            <translation><!-- NAINITAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NALANDA</masterLabel>
+            <translation><!-- NALANDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NALBARI</masterLabel>
+            <translation><!-- NALBARI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NALGONDA</masterLabel>
+            <translation><!-- NALGONDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAMAKHAL</masterLabel>
+            <translation><!-- NAMAKHAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NANDED</masterLabel>
+            <translation><!-- NANDED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NANDURBAR</masterLabel>
+            <translation><!-- NANDURBAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NARAYANPUR</masterLabel>
+            <translation><!-- NARAYANPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NARMADA</masterLabel>
+            <translation><!-- NARMADA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NARSINGHPUR</masterLabel>
+            <translation><!-- NARSINGHPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NASHIK</masterLabel>
+            <translation><!-- NASHIK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAVAPADA</masterLabel>
+            <translation><!-- NAVAPADA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAVARAGPUR</masterLabel>
+            <translation><!-- NAVARAGPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAVSARI</masterLabel>
+            <translation><!-- NAVSARI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAWADA</masterLabel>
+            <translation><!-- NAWADA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAWANSHAHR</masterLabel>
+            <translation><!-- NAWANSHAHR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAYAGARH</masterLabel>
+            <translation><!-- NAYAGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEEMACH</masterLabel>
+            <translation><!-- NEEMACH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NELLORE</masterLabel>
+            <translation><!-- NELLORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW DELHI</masterLabel>
+            <translation><!-- NEW DELHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NIZAMABAD</masterLabel>
+            <translation><!-- NIZAMABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOIDA</masterLabel>
+            <translation><!-- NOIDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DELHI</masterLabel>
+            <translation><!-- NORTH DELHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DISTRICT</masterLabel>
+            <translation><!-- NORTH DISTRICT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH EAST DELHI</masterLabel>
+            <translation><!-- NORTH EAST DELHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH GOA</masterLabel>
+            <translation><!-- NORTH GOA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH TRIPURA</masterLabel>
+            <translation><!-- NORTH TRIPURA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH WEST DELHI</masterLabel>
+            <translation><!-- NORTH WEST DELHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ODALGURI</masterLabel>
+            <translation><!-- ODALGURI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OSMANABAD</masterLabel>
+            <translation><!-- OSMANABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAKUR</masterLabel>
+            <translation><!-- PAKUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAKKAD</masterLabel>
+            <translation><!-- PALAKKAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAMU</masterLabel>
+            <translation><!-- PALAMU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALI</masterLabel>
+            <translation><!-- PALI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALWAL</masterLabel>
+            <translation><!-- PALWAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PANCH MAHALS</masterLabel>
+            <translation><!-- PANCH MAHALS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PANCHKULA</masterLabel>
+            <translation><!-- PANCHKULA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PANCHSHEEL NAGAR</masterLabel>
+            <translation><!-- PANCHSHEEL NAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PANIPAT</masterLabel>
+            <translation><!-- PANIPAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PANNA</masterLabel>
+            <translation><!-- PANNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAPUM PARE</masterLabel>
+            <translation><!-- PAPUM PARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PARBHANI</masterLabel>
+            <translation><!-- PARBHANI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PATAN</masterLabel>
+            <translation><!-- PATAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PATHANAMTHITTA</masterLabel>
+            <translation><!-- PATHANAMTHITTA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PATIALA</masterLabel>
+            <translation><!-- PATIALA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PATNA</masterLabel>
+            <translation><!-- PATNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAURI GARHWAL</masterLabel>
+            <translation><!-- PAURI GARHWAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PERAMBALUR</masterLabel>
+            <translation><!-- PERAMBALUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PEREN</masterLabel>
+            <translation><!-- PEREN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHEK</masterLabel>
+            <translation><!-- PHEK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PILIBHIT</masterLabel>
+            <translation><!-- PILIBHIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PITHORAGARH</masterLabel>
+            <translation><!-- PITHORAGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PONDICHERRY</masterLabel>
+            <translation><!-- PONDICHERRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POONCH</masterLabel>
+            <translation><!-- POONCH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PORBANDAR</masterLabel>
+            <translation><!-- PORBANDAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRAKASHAM</masterLabel>
+            <translation><!-- PRAKASHAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRATAPGARH</masterLabel>
+            <translation><!-- PRATAPGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUDUKKOTTAI</masterLabel>
+            <translation><!-- PUDUKKOTTAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PULWAMA</masterLabel>
+            <translation><!-- PULWAMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUNE</masterLabel>
+            <translation><!-- PUNE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PURI</masterLabel>
+            <translation><!-- PURI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PURNIA</masterLabel>
+            <translation><!-- PURNIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PURULIA</masterLabel>
+            <translation><!-- PURULIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIBAREILY</masterLabel>
+            <translation><!-- RAIBAREILY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAICHUR</masterLabel>
+            <translation><!-- RAICHUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIGAD</masterLabel>
+            <translation><!-- RAIGAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIGARH</masterLabel>
+            <translation><!-- RAIGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIPUR</masterLabel>
+            <translation><!-- RAIPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAISEN</masterLabel>
+            <translation><!-- RAISEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAJAURI</masterLabel>
+            <translation><!-- RAJAURI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAJGAD</masterLabel>
+            <translation><!-- RAJGAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAJGHARH</masterLabel>
+            <translation><!-- RAJGHARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAJKOT</masterLabel>
+            <translation><!-- RAJKOT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAJNANDGAON</masterLabel>
+            <translation><!-- RAJNANDGAON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAJSAMAND</masterLabel>
+            <translation><!-- RAJSAMAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAMBAN</masterLabel>
+            <translation><!-- RAMBAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAMGARH</masterLabel>
+            <translation><!-- RAMGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAMPUR</masterLabel>
+            <translation><!-- RAMPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RANCHI</masterLabel>
+            <translation><!-- RANCHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RANGAREDDY</masterLabel>
+            <translation><!-- RANGAREDDY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RANIKHET</masterLabel>
+            <translation><!-- RANIKHET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RATLAM</masterLabel>
+            <translation><!-- RATLAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RATNAGIRI</masterLabel>
+            <translation><!-- RATNAGIRI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAYAGADA</masterLabel>
+            <translation><!-- RAYAGADA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REASI</masterLabel>
+            <translation><!-- REASI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REWA</masterLabel>
+            <translation><!-- REWA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REWARI</masterLabel>
+            <translation><!-- REWARI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI BHOI</masterLabel>
+            <translation><!-- RI BHOI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROHTAK</masterLabel>
+            <translation><!-- ROHTAK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROHTAS</masterLabel>
+            <translation><!-- ROHTAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROURKELA</masterLabel>
+            <translation><!-- ROURKELA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUDRA PRAYAG</masterLabel>
+            <translation><!-- RUDRA PRAYAG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUPNAGAR</masterLabel>
+            <translation><!-- RUPNAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S.A.S. NAGAR</masterLabel>
+            <translation><!-- S.A.S. NAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SABAR KANTHA</masterLabel>
+            <translation><!-- SABAR KANTHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAGAR</masterLabel>
+            <translation><!-- SAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAHARANPUR</masterLabel>
+            <translation><!-- SAHARANPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAHARSA</masterLabel>
+            <translation><!-- SAHARSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAHEBGANJ</masterLabel>
+            <translation><!-- SAHEBGANJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAHJAHANPUR</masterLabel>
+            <translation><!-- SAHJAHANPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAIHA</masterLabel>
+            <translation><!-- SAIHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAJAPUR</masterLabel>
+            <translation><!-- SAJAPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALEM</masterLabel>
+            <translation><!-- SALEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAMASTIPUR</masterLabel>
+            <translation><!-- SAMASTIPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAMBA</masterLabel>
+            <translation><!-- SAMBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAMBALPUR</masterLabel>
+            <translation><!-- SAMBALPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANGLI</masterLabel>
+            <translation><!-- SANGLI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANGRUR</masterLabel>
+            <translation><!-- SANGRUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANT KABIR NAGAR</masterLabel>
+            <translation><!-- SANT KABIR NAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANT RAVIDA NAGAR</masterLabel>
+            <translation><!-- SANT RAVIDA NAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SARAIKELA KHARSAWAN</masterLabel>
+            <translation><!-- SARAIKELA KHARSAWAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SARAN</masterLabel>
+            <translation><!-- SARAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SATARA</masterLabel>
+            <translation><!-- SATARA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SATNA</masterLabel>
+            <translation><!-- SATNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAWAI MADHOPUR</masterLabel>
+            <translation><!-- SAWAI MADHOPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEHORE</masterLabel>
+            <translation><!-- SEHORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SENAPATI</masterLabel>
+            <translation><!-- SENAPATI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SENDHWA</masterLabel>
+            <translation><!-- SENDHWA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEOHAR</masterLabel>
+            <translation><!-- SEOHAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEONI</masterLabel>
+            <translation><!-- SEONI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERCHHIP</masterLabel>
+            <translation><!-- SERCHHIP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHAHDOL</masterLabel>
+            <translation><!-- SHAHDOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHAJAPUR</masterLabel>
+            <translation><!-- SHAJAPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHAMLI</masterLabel>
+            <translation><!-- SHAMLI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHEKHPURA</masterLabel>
+            <translation><!-- SHEKHPURA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHEOPUR</masterLabel>
+            <translation><!-- SHEOPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHIMLA</masterLabel>
+            <translation><!-- SHIMLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHIMOGA</masterLabel>
+            <translation><!-- SHIMOGA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHIVPURI</masterLabel>
+            <translation><!-- SHIVPURI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHOPIAN</masterLabel>
+            <translation><!-- SHOPIAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHOUPUR</masterLabel>
+            <translation><!-- SHOUPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHRAWASTI</masterLabel>
+            <translation><!-- SHRAWASTI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIBSAGAR</masterLabel>
+            <translation><!-- SIBSAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIDHARTH NAGAR</masterLabel>
+            <translation><!-- SIDHARTH NAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIDHI</masterLabel>
+            <translation><!-- SIDHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIKAR</masterLabel>
+            <translation><!-- SIKAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SILCHAR</masterLabel>
+            <translation><!-- SILCHAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SILIGURI</masterLabel>
+            <translation><!-- SILIGURI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIMDEGA</masterLabel>
+            <translation><!-- SIMDEGA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SINDUDURG</masterLabel>
+            <translation><!-- SINDUDURG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SINGROLI</masterLabel>
+            <translation><!-- SINGROLI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIRMAUR</masterLabel>
+            <translation><!-- SIRMAUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIROHI</masterLabel>
+            <translation><!-- SIROHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIRSA</masterLabel>
+            <translation><!-- SIRSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SITAMARHI</masterLabel>
+            <translation><!-- SITAMARHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SITAPUR</masterLabel>
+            <translation><!-- SITAPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIVAGANGA</masterLabel>
+            <translation><!-- SIVAGANGA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIWAN</masterLabel>
+            <translation><!-- SIWAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAN</masterLabel>
+            <translation><!-- SOLAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAPUR</masterLabel>
+            <translation><!-- SOLAPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SONBHADRA</masterLabel>
+            <translation><!-- SONBHADRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SONEPUR</masterLabel>
+            <translation><!-- SONEPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SONIPAT</masterLabel>
+            <translation><!-- SONIPAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SONITPUR</masterLabel>
+            <translation><!-- SONITPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DELHI</masterLabel>
+            <translation><!-- SOUTH DELHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DISTRICT</masterLabel>
+            <translation><!-- SOUTH DISTRICT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH GARO HILLS</masterLabel>
+            <translation><!-- SOUTH GARO HILLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH GOA</masterLabel>
+            <translation><!-- SOUTH GOA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH TRIPURA</masterLabel>
+            <translation><!-- SOUTH TRIPURA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH WEST DELHI</masterLabel>
+            <translation><!-- SOUTH WEST DELHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SRIGANGANAGAR</masterLabel>
+            <translation><!-- SRIGANGANAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SRIKAKULAM</masterLabel>
+            <translation><!-- SRIKAKULAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SRINAGAR</masterLabel>
+            <translation><!-- SRINAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SULTANPUR</masterLabel>
+            <translation><!-- SULTANPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUNDERGARH</masterLabel>
+            <translation><!-- SUNDERGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPOUL</masterLabel>
+            <translation><!-- SUPOUL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SURAT</masterLabel>
+            <translation><!-- SURAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SURENDRANAGAR</masterLabel>
+            <translation><!-- SURENDRANAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SURGUJA</masterLabel>
+            <translation><!-- SURGUJA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAMENGLONG</masterLabel>
+            <translation><!-- TAMENGLONG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TARN TARAN</masterLabel>
+            <translation><!-- TARN TARAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAWANG</masterLabel>
+            <translation><!-- TAWANG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEHRI GARHWAL</masterLabel>
+            <translation><!-- TEHRI GARHWAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THANE</masterLabel>
+            <translation><!-- THANE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THANJAVUR</masterLabel>
+            <translation><!-- THANJAVUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THE NILGIRIS</masterLabel>
+            <translation><!-- THE NILGIRIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THENI</masterLabel>
+            <translation><!-- THENI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THIRUVALLUR</masterLabel>
+            <translation><!-- THIRUVALLUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THIRUVARUR</masterLabel>
+            <translation><!-- THIRUVARUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THOUBAL</masterLabel>
+            <translation><!-- THOUBAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TIKAM GARH</masterLabel>
+            <translation><!-- TIKAM GARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TINSUKIA</masterLabel>
+            <translation><!-- TINSUKIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TIRAP</masterLabel>
+            <translation><!-- TIRAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TIRUCHIRAPPALLI</masterLabel>
+            <translation><!-- TIRUCHIRAPPALLI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TIRUNELVELI</masterLabel>
+            <translation><!-- TIRUNELVELI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TIRUPATI</masterLabel>
+            <translation><!-- TIRUPATI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TIRUPPUR</masterLabel>
+            <translation><!-- TIRUPPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TIRUVANNAMALAI</masterLabel>
+            <translation><!-- TIRUVANNAMALAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TONK</masterLabel>
+            <translation><!-- TONK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRICHOOR</masterLabel>
+            <translation><!-- TRICHOOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRIVANDRUM</masterLabel>
+            <translation><!-- TRIVANDRUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TUENSANG</masterLabel>
+            <translation><!-- TUENSANG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TUMKUR</masterLabel>
+            <translation><!-- TUMKUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TUTICORIN</masterLabel>
+            <translation><!-- TUTICORIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UDAIPUR</masterLabel>
+            <translation><!-- UDAIPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UDAM SINGH NAGAR</masterLabel>
+            <translation><!-- UDAM SINGH NAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UDHAMPUR</masterLabel>
+            <translation><!-- UDHAMPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UDUPI</masterLabel>
+            <translation><!-- UDUPI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UJJAIN</masterLabel>
+            <translation><!-- UJJAIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UKHRUL</masterLabel>
+            <translation><!-- UKHRUL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UMARIYA</masterLabel>
+            <translation><!-- UMARIYA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNA</masterLabel>
+            <translation><!-- UNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNNAO</masterLabel>
+            <translation><!-- UNNAO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPPER SIANG</masterLabel>
+            <translation><!-- UPPER SIANG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPPER SUBANSIRI</masterLabel>
+            <translation><!-- UPPER SUBANSIRI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTTAR KASHI</masterLabel>
+            <translation><!-- UTTAR KASHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTTARA KANNADA</masterLabel>
+            <translation><!-- UTTARA KANNADA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VADODARA</masterLabel>
+            <translation><!-- VADODARA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAISHALI</masterLabel>
+            <translation><!-- VAISHALI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALSAD</masterLabel>
+            <translation><!-- VALSAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VARANASI</masterLabel>
+            <translation><!-- VARANASI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VELLORE</masterLabel>
+            <translation><!-- VELLORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIDISHA</masterLabel>
+            <translation><!-- VIDISHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIJAYANAGARM</masterLabel>
+            <translation><!-- VIJAYANAGARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIJAYAWADA</masterLabel>
+            <translation><!-- VIJAYAWADA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VILLUPURAM</masterLabel>
+            <translation><!-- VILLUPURAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRUDHUNAGAR</masterLabel>
+            <translation><!-- VIRUDHUNAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VISHAKHAPATNAM</masterLabel>
+            <translation><!-- VISHAKHAPATNAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WARANGAL</masterLabel>
+            <translation><!-- WARANGAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WARDHA</masterLabel>
+            <translation><!-- WARDHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHIM</masterLabel>
+            <translation><!-- WASHIM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAYANADU</masterLabel>
+            <translation><!-- WAYANADU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST CHAMPARAN</masterLabel>
+            <translation><!-- WEST CHAMPARAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST DELHI</masterLabel>
+            <translation><!-- WEST DELHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST DISTRICT</masterLabel>
+            <translation><!-- WEST DISTRICT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST GARO HILLS</masterLabel>
+            <translation><!-- WEST GARO HILLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST GODAWARI</masterLabel>
+            <translation><!-- WEST GODAWARI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST KAMENG</masterLabel>
+            <translation><!-- WEST KAMENG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST SIANG</masterLabel>
+            <translation><!-- WEST SIANG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST SINGHBHUM</masterLabel>
+            <translation><!-- WEST SINGHBHUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST TRIPURA</masterLabel>
+            <translation><!-- WEST TRIPURA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WOKHA</masterLabel>
+            <translation><!-- WOKHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YAMUNANAGAR</masterLabel>
+            <translation><!-- YAMUNANAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YAVATMAL</masterLabel>
+            <translation><!-- YAVATMAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZUNHEBOTO</masterLabel>
+            <translation><!-- ZUNHEBOTO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Industry</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apparel</masterLabel>
+            <translation><!-- Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biotechnology</masterLabel>
+            <translation><!-- Biotechnology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals</masterLabel>
+            <translation><!-- Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronics</masterLabel>
+            <translation><!-- Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation><!-- Environmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare</masterLabel>
+            <translation><!-- Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machinery</masterLabel>
+            <translation><!-- Machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not For Profit</masterLabel>
+            <translation><!-- Not For Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreation</masterLabel>
+            <translation><!-- Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunications</masterLabel>
+            <translation><!-- Telecommunications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mobile No. --></label>
+        <name>Mobile_No__c</name>
+    </fields>
+    <fields>
+        <name>Ownership</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private</masterLabel>
+            <translation><!-- Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public</masterLabel>
+            <translation><!-- Public --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary</masterLabel>
+            <translation><!-- Subsidiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pin Code --></label>
+        <name>Pin_Code__c</name>
+    </fields>
+    <fields>
+        <name>Rating</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Center --></label>
+        <name>Service_Center__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Type --></label>
+        <name>Service_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+        <picklistValues>
+            <masterLabel>ANDHRA PRADESH</masterLabel>
+            <translation><!-- ANDHRA PRADESH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARUNCHAL PRADESH</masterLabel>
+            <translation><!-- ARUNCHAL PRADESH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSAM</masterLabel>
+            <translation><!-- ASSAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIHAR</masterLabel>
+            <translation><!-- BIHAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANDIGARH</masterLabel>
+            <translation><!-- CHANDIGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHATTISGARH</masterLabel>
+            <translation><!-- CHATTISGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DADRA &amp; NAGAR</masterLabel>
+            <translation><!-- DADRA &amp; NAGAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAMAN &amp; DIU</masterLabel>
+            <translation><!-- DAMAN &amp; DIU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOA</masterLabel>
+            <translation><!-- GOA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUJRAT</masterLabel>
+            <translation><!-- GUJRAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HARYANA</masterLabel>
+            <translation><!-- HARYANA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HIMACHAL PRADESH</masterLabel>
+            <translation><!-- HIMACHAL PRADESH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAMMU &amp; KASHMIR</masterLabel>
+            <translation><!-- JAMMU &amp; KASHMIR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JHARKHAND</masterLabel>
+            <translation><!-- JHARKHAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KARNATAKA</masterLabel>
+            <translation><!-- KARNATAKA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KERALA</masterLabel>
+            <translation><!-- KERALA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MADHYA PRADESH</masterLabel>
+            <translation><!-- MADHYA PRADESH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAHARASHTRA</masterLabel>
+            <translation><!-- MAHARASHTRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANIPUR</masterLabel>
+            <translation><!-- MANIPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEGHALAYA</masterLabel>
+            <translation><!-- MEGHALAYA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIZORAM</masterLabel>
+            <translation><!-- MIZORAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAGALAND</masterLabel>
+            <translation><!-- NAGALAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW DELHI</masterLabel>
+            <translation><!-- NEW DELHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ORISSA</masterLabel>
+            <translation><!-- ORISSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PONDICHERRY</masterLabel>
+            <translation><!-- PONDICHERRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUNJAB</masterLabel>
+            <translation><!-- PUNJAB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAJASTHAN</masterLabel>
+            <translation><!-- RAJASTHAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIKKIM</masterLabel>
+            <translation><!-- SIKKIM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAMIL NADU</masterLabel>
+            <translation><!-- TAMIL NADU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRIPURA</masterLabel>
+            <translation><!-- TRIPURA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTTAR PRADESH</masterLabel>
+            <translation><!-- UTTAR PRADESH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTTRAKHAND</masterLabel>
+            <translation><!-- UTTRAKHAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST BENGAL</masterLabel>
+            <translation><!-- WEST BENGAL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Analyst</masterLabel>
+            <translation><!-- Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integrator</masterLabel>
+            <translation><!-- Integrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor</masterLabel>
+            <translation><!-- Investor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Press</masterLabel>
+            <translation><!-- Press --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reseller</masterLabel>
+            <translation><!-- Reseller --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- trgCustomerID --></label>
+        <name>trgCustomerID__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Call Center / Service Center Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partner Person Account Layout</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Patner Account Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Person Account Layout</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Detail Page --></label>
+        <name>Detail_Page</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Enterprise Account --></label>
+        <name>EnterpriseAccount</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Person Account --></label>
+        <name>Person_Account</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- LANDLINE: Please put in the correct phone no. Eg. 0(STD Code)Phone No. - 01122120767; when STD Code is 011
+
+MOBILE: Please put in the correct phone no. Eg. 0Mobile No.
+Ex: 09988899888 --></errorMessage>
+        <name>Alternate_Phone_No_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill in the Billing Address and Shipping Address --></errorMessage>
+        <name>Billing_Address_is_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invalid &apos; found in Customer Name or Address information . Please remove and save the information --></errorMessage>
+        <name>Customer_Name_or_Address_Contains_Apostr</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- LANDLINE: Please put in the correct phone no. Eg. 0(STD Code)Phone No. - 01122120767; when STD Code is 011
+
+MOBILE: Please put in the correct phone no. Eg. 0Mobile No.
+Ex: 09988899888 --></errorMessage>
+        <name>Main_Phone</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- LANDLINE: Please put in the correct phone no. Eg. 0(STD Code)Phone No. - 01122120767; when STD Code is 011
+
+MOBILE: Please put in the correct phone no. Eg. 0Mobile No.
+Ex: 09988899888 --></errorMessage>
+        <name>Mobile_No_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- LANDLINE: Please put in the correct phone no. Eg. 0(STD Code)Phone No. - 01122120767; when STD Code is 011
+
+MOBILE: Please put in the correct phone no. Eg. 0Mobile No.
+Ex: 09988899888 --></errorMessage>
+        <name>PersonHomePhone_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- LANDLINE: Please put in the correct phone no. Eg. 0(STD Code)Phone No. - 01122120767; when STD Code is 011
+
+MOBILE: Please put in the correct phone no. Eg. 0Mobile No.
+Ex: 09988899888 --></errorMessage>
+        <name>PersonMobilePhone_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- LANDLINE: Please put in the correct phone no. Eg. 0(STD Code)Phone No. - 01122120767; when STD Code is 011
+
+MOBILE: Please put in the correct phone no. Eg. 0Mobile No.
+Ex: 09988899888 --></errorMessage>
+        <name>PersonOtherPhone_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- LANDLINE: Please put in the correct phone no. Eg. 0(STD Code)Phone No. - 01122120767; when STD Code is 011
+
+MOBILE: Please put in the correct phone no. Eg. 0Mobile No.
+Ex: 09988899888 --></errorMessage>
+        <name>Phone_No_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Address cannot be greater than 150 characters. --></errorMessage>
+        <name>Validate_Length_of_Address</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AddContactsfromHoovers --></label>
+        <name>AddContactsfromHoovers</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MoreHooversInformationandTools --></label>
+        <name>MoreHooversInformationandTools</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- UpdateAccountfromHoovers --></label>
+        <name>UpdateAccountfromHoovers</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

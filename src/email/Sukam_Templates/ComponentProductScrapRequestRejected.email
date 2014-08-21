@@ -1,0 +1,4 @@
+Sorry ! Your Component / Product Scrap Request has been Rejected
+
+Please click on the link below to see the response to your approval request:
+{!Scrap_del__c.Link}

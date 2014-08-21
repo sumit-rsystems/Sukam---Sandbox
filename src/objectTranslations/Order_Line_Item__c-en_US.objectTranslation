@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Order Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Order Line Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved Quantity --></label>
+        <name>Approved_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver Remarks --></label>
+        <name>Approved_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Basic --></label>
+        <name>Basic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capacity --></label>
+        <name>Capacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Despatched Quantity --></label>
+        <name>Despatched_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- ERP Code --></label>
+        <name>ERP_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model --></label>
+        <name>Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Line Item Despatch --></label>
+        <name>Order_Line_Item_Despatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Line Item Number --></label>
+        <name>Order_Line_Item_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Line Price --></label>
+        <name>Order_Line_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Quantity --></label>
+        <name>Order_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+        <relationshipLabel><!-- Order Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Price Rate --></label>
+        <name>Price_Rate__c</name>
+        <relationshipLabel><!-- Order Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+    </fields>
+    <layouts>
+        <layout>Order Line Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

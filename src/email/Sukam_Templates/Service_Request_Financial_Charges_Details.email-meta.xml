@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Service Request Financial Charges Details</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Service Request Financial Charges Details</name>
+    <style>none</style>
+    <subject>Service Request : Financial Charges Details for Service Request No.{!Service_Request__c.FSR_No__c}</subject>
+    <textOnly>Dear Sir, 
+
+Please find the details regarding Service Request No. {!Case.CaseNumber} 
+
+Owner Name	{!Service_Request__c.OwnerFullName}
+Location Code	 {!Service_Request__c.OwnerFullName}
+Customer Name  {!Service_Request__c.Contact_Name__c}/ {!Service_Request__c.Account__c}
+Customer Address (Bill To)	{!Account.BillingAddress}
+Customer Address (Ship To)	{!Account.ShippingAddress} 
+
+Complaint No	{!Service_Request__c.FSR_No__c}
+Type of Service Request	{!Service_Request__c.Type_of_Service_Request__c}
+Service Engineer Details	{!Service_Request__c.Service_Engineer_Name__c}
+
+
+***Total Payment Collected for this Service Request**** 
+
+Receiving Date	{!Service_Request__c.Receiving_Date__c}
+Bank
+Bank Name	 {!Service_Request__c.Bank_Name__c}
+Cheque Amount	 {!Service_Request__c.Cheque_Amount__c}
+Cheque No	{!Service_Request__c.Cheque_No__c}
+Cash
+Cash Amount	{!Service_Request__c.Cash_Amount__c}
+
+DETAILS FOR COMPONENT CHARGES
+
+Bill No	{!Service_Request__c.Component_Bill_No__c}
+Amount	{!Service_Request__c.Component_Charges__c}
+Tax %	12.5
+
+DETAILS FOR SERVICE CHARGES
+
+Bill No	{!Service_Request__c.Service_Bill_No__c}
+Type of Service Charge	{!Service_Request__c.Service_Charge_Type__c}
+Amount	{!Service_Request__c.Service_Charges__c}
+Tax %	10.36
+
+DETAILS FOR OTHER EXPENSES (Incurred by Service Engineer)
+
+Amount	{!Service_Request__c.Other_Expenses__c}
+
+
+Thanks,
+{!Service_Request__c.OwnerFullName}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,1528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Enquiry</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Enquiries</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Access</value>
+        </caseValues>
+        <name>lead_access</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Access Level</value>
+        </caseValues>
+        <name>lead_access_level</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Alert</value>
+        </caseValues>
+        <name>lead_alert</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Assignment Rule</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Enquiry Assignment Rules</value>
+        </caseValues>
+        <name>lead_assignment_rule</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Capture</value>
+        </caseValues>
+        <name>lead_capture</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Capture Interface</value>
+        </caseValues>
+        <name>lead_capture_interface</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Capture Page</value>
+        </caseValues>
+        <name>lead_capture_page</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Creator</value>
+        </caseValues>
+        <name>lead_creator</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Currency</value>
+        </caseValues>
+        <name>lead_currency</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Custom Field</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Enquiry Custom Fields</value>
+        </caseValues>
+        <name>lead_custom_field</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Data</value>
+        </caseValues>
+        <name>lead_data</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Division</value>
+        </caseValues>
+        <name>lead_division</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Edit</value>
+        </caseValues>
+        <name>lead_edit</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Field</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Enquiry Fields</value>
+        </caseValues>
+        <name>lead_field</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry General</value>
+        </caseValues>
+        <name>lead_general</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry History</value>
+        </caseValues>
+        <name>lead_history</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry History Report</value>
+        </caseValues>
+        <name>lead_history_report</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry ID</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Enquiry IDs</value>
+        </caseValues>
+        <name>lead_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Import</value>
+        </caseValues>
+        <name>lead_import</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Import Wizard</value>
+        </caseValues>
+        <name>lead_import_wizard</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Information</value>
+        </caseValues>
+        <name>lead_information</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Lifetime</value>
+        </caseValues>
+        <name>lead_lifetime</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry List Report</value>
+        </caseValues>
+        <name>lead_list_report</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Management</value>
+        </caseValues>
+        <name>lead_management</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Name</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Enquiry Names</value>
+        </caseValues>
+        <name>lead_name</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Owner</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Enquiry Owners</value>
+        </caseValues>
+        <name>lead_owner</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Owner Alias</value>
+        </caseValues>
+        <name>lead_owner_alias</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Owner Report</value>
+        </caseValues>
+        <name>lead_owner_report</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Picklists</value>
+        </caseValues>
+        <name>lead_picklist</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Queues</value>
+        </caseValues>
+        <name>lead_queue</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Rating</value>
+        </caseValues>
+        <name>lead_rating</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Record</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Enquiry Records</value>
+        </caseValues>
+        <name>lead_record</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Record Type</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Enquiry Record Types</value>
+        </caseValues>
+        <name>lead_record_type</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Report</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Enquiry Reports</value>
+        </caseValues>
+        <name>lead_report</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Setting</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Enquiry Settings</value>
+        </caseValues>
+        <name>lead_setting</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Setup</value>
+        </caseValues>
+        <name>lead_setup</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Source</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Enquiry Sources</value>
+        </caseValues>
+        <name>lead_source</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Stage ID</value>
+        </caseValues>
+        <name>lead_stage_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Status</value>
+        </caseValues>
+        <name>lead_status</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Status Report</value>
+        </caseValues>
+        <name>lead_status_report</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Enquiry Views</value>
+        </caseValues>
+        <name>lead_views</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- AC --></label>
+        <name>AC__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ASM Genset --></label>
+        <name>ASM_Genset__c</name>
+        <picklistValues>
+            <masterLabel>Ankush Sharma</masterLabel>
+            <translation><!-- Ankush Sharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G. Ravi Kumar</masterLabel>
+            <translation><!-- G. Ravi Kumar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajeev Bhardwaj</masterLabel>
+            <translation><!-- Rajeev Bhardwaj --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajeev Raman</masterLabel>
+            <translation><!-- Rajeev Raman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satpal Dabas</masterLabel>
+            <translation><!-- Satpal Dabas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sheetal Kumar Pal</masterLabel>
+            <translation><!-- Sheetal Kumar Pal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Audit Date --></label>
+        <name>Audit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Audit Response --></label>
+        <name>Audit_Response__c</name>
+        <picklistValues>
+            <masterLabel>Call Back Required</masterLabel>
+            <translation><!-- Call Back Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacted</masterLabel>
+            <translation><!-- Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Contacted</masterLabel>
+            <translation><!-- Not Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone not Reachable</masterLabel>
+            <translation><!-- Phone not Reachable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BM Name --></label>
+        <name>BM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backup Requirement --></label>
+        <name>Backup_Requirement__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation><!-- 13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation><!-- 14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16</masterLabel>
+            <translation><!-- 16 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17</masterLabel>
+            <translation><!-- 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18</masterLabel>
+            <translation><!-- 18 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19</masterLabel>
+            <translation><!-- 19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21</masterLabel>
+            <translation><!-- 21 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22</masterLabel>
+            <translation><!-- 22 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23</masterLabel>
+            <translation><!-- 23 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Budget --></label>
+        <name>Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Feedback --></label>
+        <name>Call_Feedback__c</name>
+        <picklistValues>
+            <masterLabel>BDM/RM Engaged</masterLabel>
+            <translation><!-- BDM/RM Engaged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bought</masterLabel>
+            <translation><!-- Bought --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bought Competion</masterLabel>
+            <translation><!-- Bought Competion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow-up Call Required</masterLabel>
+            <translation><!-- Follow-up Call Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Bought</masterLabel>
+            <translation><!-- Not Bought --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Manager Engaged</masterLabel>
+            <translation><!-- Product Manager Engaged --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Call Owner Name --></label>
+        <name>Call_Owner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Enquiry Notes --></label>
+        <name>Customer_Enquiry_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Profile --></label>
+        <name>Customer_Profile__c</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competition is Present</masterLabel>
+            <translation><!-- Competition is Present --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decision maker</masterLabel>
+            <translation><!-- Decision maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Offered</masterLabel>
+            <translation><!-- Price Offered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm &amp; Discussing</masterLabel>
+            <translation><!-- Warm &amp; Discussing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Segment --></label>
+        <name>Customer_Segment__c</name>
+        <picklistValues>
+            <masterLabel>Corporate</masterLabel>
+            <translation><!-- Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Verbatim --></label>
+        <name>Customer_Verbatim__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Name --></label>
+        <name>Dealer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealership Enquiry --></label>
+        <name>Dealership_Enquiry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Sales Rep --></label>
+        <name>Email_Sales_Rep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enquiry Forward --></label>
+        <name>Enquiry_Forward__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enquiry Type --></label>
+        <name>Enquiry_Type__c</name>
+        <picklistValues>
+            <masterLabel>Call</masterLabel>
+            <translation><!-- Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Final Status --></label>
+        <name>Final_Status__c</name>
+        <picklistValues>
+            <masterLabel>Hold</masterLabel>
+            <translation><!-- Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost to Competitor</masterLabel>
+            <translation><!-- Lost to Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Win</masterLabel>
+            <translation><!-- Win --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Happy Feet --></label>
+        <name>Happy_Feet__c</name>
+    </fields>
+    <fields>
+        <name>Industry</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apparel</masterLabel>
+            <translation><!-- Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biotechnology</masterLabel>
+            <translation><!-- Biotechnology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals</masterLabel>
+            <translation><!-- Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronics</masterLabel>
+            <translation><!-- Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation><!-- Environmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare</masterLabel>
+            <translation><!-- Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machinery</masterLabel>
+            <translation><!-- Machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not For Profit</masterLabel>
+            <translation><!-- Not For Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreation</masterLabel>
+            <translation><!-- Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunications</masterLabel>
+            <translation><!-- Telecommunications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Key Account Manager --></label>
+        <name>Key_Account_Manager__c</name>
+        <picklistValues>
+            <masterLabel>CHANDRA PRAKASH PANT</masterLabel>
+            <translation><!-- CHANDRA PRAKASH PANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KRISHNENDU SEN</masterLabel>
+            <translation><!-- KRISHNENDU SEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L.SURESH</masterLabel>
+            <translation><!-- L.SURESH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOHAN D BONDE</masterLabel>
+            <translation><!-- MOHAN D BONDE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NITIN ASTHANA</masterLabel>
+            <translation><!-- NITIN ASTHANA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAHUL KULKARNI</masterLabel>
+            <translation><!-- RAHUL KULKARNI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAJESH SRIVASTVA</masterLabel>
+            <translation><!-- RAJESH SRIVASTVA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAGAR SUDHAKAR PATIL</masterLabel>
+            <translation><!-- SAGAR SUDHAKAR PATIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANTOSH JOSHI</masterLabel>
+            <translation><!-- SANTOSH JOSHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHRINIVAS RAO</masterLabel>
+            <translation><!-- SHRINIVAS RAO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>LeadSource</name>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chat</masterLabel>
+            <translation><!-- Chat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer shop</masterLabel>
+            <translation><!-- Dealer shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Referral</masterLabel>
+            <translation><!-- Employee Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Referral</masterLabel>
+            <translation><!-- External Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoardings</masterLabel>
+            <translation><!-- Hoardings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newspaper/Magazine</masterLabel>
+            <translation><!-- Newspaper/Magazine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OOH</masterLabel>
+            <translation><!-- OOH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous customer</masterLabel>
+            <translation><!-- Previous customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Brochure/Flyer</masterLabel>
+            <translation><!-- Product Brochure/Flyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations</masterLabel>
+            <translation><!-- Public Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio</masterLabel>
+            <translation><!-- Radio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred by a friend</masterLabel>
+            <translation><!-- Referred by a friend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research</masterLabel>
+            <translation><!-- Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Internal</masterLabel>
+            <translation><!-- Seminar - Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Partner</masterLabel>
+            <translation><!-- Seminar - Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shopping Mall</masterLabel>
+            <translation><!-- Shopping Mall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Television</masterLabel>
+            <translation><!-- Television --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word of mouth</masterLabel>
+            <translation><!-- Word of mouth --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Entered By --></label>
+        <name>Lead_Entered_By__c</name>
+        <picklistValues>
+            <masterLabel>Manju</masterLabel>
+            <translation><!-- Manju --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meenakshi</masterLabel>
+            <translation><!-- Meenakshi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nagesh</masterLabel>
+            <translation><!-- Nagesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neetu</masterLabel>
+            <translation><!-- Neetu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pooja</masterLabel>
+            <translation><!-- Pooja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Randhir</masterLabel>
+            <translation><!-- Randhir --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sagar</masterLabel>
+            <translation><!-- Sagar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sheeba</masterLabel>
+            <translation><!-- Sheeba --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shubham</masterLabel>
+            <translation><!-- Shubham --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Passed To --></label>
+        <name>Lead_Passed_To__c</name>
+        <picklistValues>
+            <masterLabel>Key Account Manager</masterLabel>
+            <translation><!-- Key Account Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Manager</masterLabel>
+            <translation><!-- Product Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RM/BM</masterLabel>
+            <translation><!-- RM/BM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Transfer Date --></label>
+        <name>Lead_Transfer_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Followup Date --></label>
+        <name>Next_Followup_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Of Fans --></label>
+        <name>No_Of_Fans__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- No Of Lights --></label>
+        <name>No_Of_Lights__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Presently Using Inverter --></label>
+        <name>Presently_Using_Inverter__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pricing Requested --></label>
+        <name>Pricing_Requested__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+        <picklistValues>
+            <masterLabel>Automate batteries (Car/Truck/Tractor)</masterLabel>
+            <translation><!-- Automate batteries (Car/Truck/Tractor) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customized Solution</masterLabel>
+            <translation><!-- Customized Solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exports</masterLabel>
+            <translation><!-- Exports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Generators</masterLabel>
+            <translation><!-- Generators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inverter batteries</masterLabel>
+            <translation><!-- Inverter batteries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inverter/UPS – Business</masterLabel>
+            <translation><!-- Inverter/UPS – Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inverter/UPS – Home</masterLabel>
+            <translation><!-- Inverter/UPS – Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online UPS</masterLabel>
+            <translation><!-- Online UPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power Accessories</masterLabel>
+            <translation><!-- Power Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solar Solutions</masterLabel>
+            <translation><!-- Solar Solutions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Manager --></label>
+        <name>Product_Manager__c</name>
+        <picklistValues>
+            <masterLabel>Harpreet Singh</masterLabel>
+            <translation><!-- Harpreet Singh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pooja Kukreja</masterLabel>
+            <translation><!-- Pooja Kukreja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous customer</masterLabel>
+            <translation><!-- Previous customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puneet Chabra</masterLabel>
+            <translation><!-- Puneet Chabra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajnish Sharma</masterLabel>
+            <translation><!-- Rajnish Sharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renu Chauhan</masterLabel>
+            <translation><!-- Renu Chauhan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rudrendu Dutta</masterLabel>
+            <translation><!-- Rudrendu Dutta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rupesh Gupta</masterLabel>
+            <translation><!-- Rupesh Gupta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>exports@su-kam.com</masterLabel>
+            <translation><!-- exports@su-kam.com --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Solution Pitched --></label>
+        <name>Product_Solution_Pitched__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <name>Rating</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>East</masterLabel>
+            <translation><!-- East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North</masterLabel>
+            <translation><!-- North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South</masterLabel>
+            <translation><!-- South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Revenue Generated --></label>
+        <name>Revenue_Generated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Roof Space Available --></label>
+        <name>Roof_Space_Available__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Feedback --></label>
+        <name>Sales_Feedback__c</name>
+        <picklistValues>
+            <masterLabel>Closure Pending with Customer</masterLabel>
+            <translation><!-- Closure Pending with Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Changed Mind</masterLabel>
+            <translation><!-- Customer Changed Mind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow-up Required</masterLabel>
+            <translation><!-- Follow-up Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost to Competitor</masterLabel>
+            <translation><!-- Lost to Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Awaited</masterLabel>
+            <translation><!-- Payment Awaited --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Discussion</masterLabel>
+            <translation><!-- Price Discussion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Details Discussed</masterLabel>
+            <translation><!-- Product Details Discussed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quotation Sent</masterLabel>
+            <translation><!-- Quotation Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Closed</masterLabel>
+            <translation><!-- Sales Closed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Lead Owner --></label>
+        <name>Sales_Lead_Owner__c</name>
+        <picklistValues>
+            <masterLabel>Harpreet Singh</masterLabel>
+            <translation><!-- Harpreet Singh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pooja Kukreja</masterLabel>
+            <translation><!-- Pooja Kukreja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puneet Chabra</masterLabel>
+            <translation><!-- Puneet Chabra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajnish Sharma</masterLabel>
+            <translation><!-- Rajnish Sharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renu Chauhan</masterLabel>
+            <translation><!-- Renu Chauhan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rudrendu Dutta</masterLabel>
+            <translation><!-- Rudrendu Dutta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rupesh Gupta</masterLabel>
+            <translation><!-- Rupesh Gupta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shweta Mehta</masterLabel>
+            <translation><!-- Shweta Mehta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>exports@su-kam.com</masterLabel>
+            <translation><!-- exports@su-kam.com --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Mobile Number --></label>
+        <name>Sales_Mobile_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Rep Name --></label>
+        <name>Sales_Rep_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Source --></label>
+        <name>Secondary_Source__c</name>
+    </fields>
+    <fields>
+        <name>Status</name>
+        <picklistValues>
+            <masterLabel>Contact in Future</masterLabel>
+            <translation><!-- Contact in Future --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacted</masterLabel>
+            <translation><!-- Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacted and Passed to Sales</masterLabel>
+            <translation><!-- Contacted and Passed to Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Junk Lead</masterLabel>
+            <translation><!-- Junk Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost Lead</masterLabel>
+            <translation><!-- Lost Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Not Reachable</masterLabel>
+            <translation><!-- Phone Not Reachable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified</masterLabel>
+            <translation><!-- Qualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unqualified</masterLabel>
+            <translation><!-- Unqualified --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Television --></label>
+        <name>Television__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

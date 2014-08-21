@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Standard template for informing client on Case Closure</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Case Closed Notification</name>
+    <style>none</style>
+    <subject>Service Request  {!Service_Request__c.Name}: {!Service_Request__c.Reason__c}:Closed</subject>
+    <type>text</type>
+</EmailTemplate>

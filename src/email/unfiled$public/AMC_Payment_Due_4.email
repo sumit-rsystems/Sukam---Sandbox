@@ -1,0 +1,11 @@
+*** AMC Payment ALERT *** 
+
+This is to alert that 4th AMC Payment is due for the following: 
+
+Customer Name: {!Contract.Account}
+Contract Owner: {!Contract.OwnerFullName}
+Contract Number: {!Contract.ContractNumber}
+4th Payment Due Date: {!Contract.X4th_Payment_Due_Date__c}
+4th Payment Amount Due: {!Contract.X4th_Payment_Amount_Due__c}
+
+Click on the link to access the case: {!Contract.Link}

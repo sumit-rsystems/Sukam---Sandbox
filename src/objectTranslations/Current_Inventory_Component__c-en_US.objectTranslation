@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Current Stock</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Current Stock</value>
+    </caseValues>
+    <fields>
+        <label><!-- Component Code --></label>
+        <name>Component_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a component from Product Master --></help>
+        <label><!-- Component --></label>
+        <name>Component__c</name>
+        <relationshipLabel><!-- Current Stock --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cost/Unit --></label>
+        <name>Cost_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defective Quantity in Hand --></label>
+        <name>Defective_Quantity_in_Hand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defective Stock Value --></label>
+        <name>Defective_Stock_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Center Name --></label>
+        <name>Service_Center_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Engineer Name --></label>
+        <name>Service_Engineer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock Point --></label>
+        <name>Stock_Point__c</name>
+        <relationshipLabel><!-- Current Stock --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Usable Quantity in Hand --></label>
+        <name>Usable_Quantity_in_Hand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usable Stock Value --></label>
+        <name>Usable_Stock_Value__c</name>
+    </fields>
+    <layouts>
+        <layout>Current Inventory - Component Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Current Stock Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

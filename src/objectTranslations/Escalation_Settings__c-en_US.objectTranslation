@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Escalation Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Escalation Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- Please enter cc email addresses for first escalation. --></help>
+        <label><!-- Additional Emails 1 --></label>
+        <name>Additional_Emails_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter cc email addresses for second escalation. --></help>
+        <label><!-- Additional Emails 2 --></label>
+        <name>Additional_Emails_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the number of hours for first escalation. --></help>
+        <label><!-- Escalation Age Over 1 --></label>
+        <name>Escalation_Age_Over_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the number of hours for second escalation. --></help>
+        <label><!-- Escalation Age Over 2 --></label>
+        <name>Escalation_Age_Over_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the name of email tempate name used for sending mail for escalation notification. --></help>
+        <label><!-- Template Name --></label>
+        <name>Template_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

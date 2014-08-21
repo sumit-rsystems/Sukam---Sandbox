@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <frameHeight>600</frameHeight>
+    <hasSidebar>false</hasSidebar>
+    <label>Hoover&apos;s Search</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom15: People</motif>
+    <url>https://secure.hoovers.com/subscribe/sfdc/search/index.xhtml?sfurl={!API.Partner_Server_URL_70}&amp;sfsid={!API.Session_ID}</url>
+    <urlEncodingKey>ISO-8859-1</urlEncodingKey>
+</CustomTab>

@@ -1,0 +1,7 @@
+Dear {!Service_Request__c.Contact_Name__c}, 
+
+Your Service Request  #{!Service_Request__c.Name}:  has been closed. 
+
+Thank you, 
+{!User.Name} 
+{!Organization.Name}

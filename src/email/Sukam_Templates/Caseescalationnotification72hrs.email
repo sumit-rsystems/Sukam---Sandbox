@@ -1,0 +1,11 @@
+*** CASE ESCALATION ALERT ***  
+
+The following case has been escalated as the case has not been attended in the last 72 hours:  
+Company: {!Service_Request__c.Account__c}
+Case:{!Service_Request__c.Name} :   {!Service_Request__c.Subject__c}
+Status: {!Service_Request__c.Status__c}
+Owner:  {!Service_Request__c.OwnerFullName}
+Product: {!Service_Request__c.Products__c}
+Service Engineer: {!Service_Request__c.Service_Engineer_Name__c}
+
+Click on the link to access the case:  {!Service_Request__c.Link}

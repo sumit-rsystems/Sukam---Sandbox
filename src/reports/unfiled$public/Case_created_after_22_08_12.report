@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <currency>INR</currency>
+    <filter>
+        <criteriaItems>
+            <column>CUST_CREATED_DATE</column>
+            <operator>greaterThan</operator>
+            <value>8/22/2012 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Service_Request__c.Status__c</column>
+            <operator>equals</operator>
+            <value>New</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Case created after 22-08-12</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Service_Request__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_LAST_UPDATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

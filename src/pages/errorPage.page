@@ -1,0 +1,14 @@
+<apex:page controller="errorPageCtr">
+<apex:form >
+ <apex:pageBlock >
+  
+  <apex:sectionHeader title="Error"/>
+   <apex:pageBlockSection columns="1">
+    Sorry, orders once submitted/approved cannot be edited. 
+   </apex:pageBlockSection>
+    <apex:pageBlockButtons location="bottom">
+      <apex:commandButton value="View Order" action="{!viewOrder}"/>
+    </apex:pageBlockButtons>
+  </apex:pageBlock>
+</apex:form>
+</apex:page>

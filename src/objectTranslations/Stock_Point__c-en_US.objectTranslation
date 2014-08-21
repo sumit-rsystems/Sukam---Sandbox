@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Stock Point</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Stock Points</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+        <picklistValues>
+            <masterLabel>BANGALORE</masterLabel>
+            <translation><!-- BANGALORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BHUBANESWAR</masterLabel>
+            <translation><!-- BHUBANESWAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANDIGARH</masterLabel>
+            <translation><!-- CHANDIGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHENNAI</masterLabel>
+            <translation><!-- CHENNAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COCHIN</masterLabel>
+            <translation><!-- COCHIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEHRADUN</masterLabel>
+            <translation><!-- DEHRADUN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELHI</masterLabel>
+            <translation><!-- DELHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GHAZIABAD</masterLabel>
+            <translation><!-- GHAZIABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GURGAON</masterLabel>
+            <translation><!-- GURGAON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUWAHATI</masterLabel>
+            <translation><!-- GUWAHATI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HYDERABAD</masterLabel>
+            <translation><!-- HYDERABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDORE</masterLabel>
+            <translation><!-- INDORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAIPUR</masterLabel>
+            <translation><!-- JAIPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAMMU</masterLabel>
+            <translation><!-- JAMMU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KOLKATA</masterLabel>
+            <translation><!-- KOLKATA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUCKNOW</masterLabel>
+            <translation><!-- LUCKNOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUDHIANA</masterLabel>
+            <translation><!-- LUDHIANA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MUMBAI</masterLabel>
+            <translation><!-- MUMBAI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAGPUR</masterLabel>
+            <translation><!-- NAGPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PATNA</masterLabel>
+            <translation><!-- PATNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUNE</masterLabel>
+            <translation><!-- PUNE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAIPUR</masterLabel>
+            <translation><!-- RAIPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RANCHI</masterLabel>
+            <translation><!-- RANCHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROHTAK</masterLabel>
+            <translation><!-- ROHTAK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VADODARA</masterLabel>
+            <translation><!-- VADODARA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIJAYAWADA</masterLabel>
+            <translation><!-- VIJAYAWADA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CST Interstate --></label>
+        <name>CST_Interstate__c</name>
+    </fields>
+    <fields>
+        <label><!-- CST No. --></label>
+        <name>CST_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- CST within State --></label>
+        <name>CST_within_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Designation --></label>
+        <name>DESIGNATION__c</name>
+        <picklistValues>
+            <masterLabel>AREA SERVICE IN-CHARGE</masterLabel>
+            <translation><!-- AREA SERVICE IN-CHARGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AREA SERVICE IN-CHARGE (BATTERY)</masterLabel>
+            <translation><!-- AREA SERVICE IN-CHARGE (BATTERY) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSISTANT GENERAL MANAGER</masterLabel>
+            <translation><!-- ASSISTANT GENERAL MANAGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSISTANT MANAGER</masterLabel>
+            <translation><!-- ASSISTANT MANAGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSISTANT VICE PRESIDENT</masterLabel>
+            <translation><!-- ASSISTANT VICE PRESIDENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRANCH SERVICE IN-CHARGE</masterLabel>
+            <translation><!-- BRANCH SERVICE IN-CHARGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BSP</masterLabel>
+            <translation><!-- BSP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEPUTY GENERAL MANAGER</masterLabel>
+            <translation><!-- DEPUTY GENERAL MANAGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEPUTY MANAGER</masterLabel>
+            <translation><!-- DEPUTY MANAGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRICIAN</masterLabel>
+            <translation><!-- ELECTRICIAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENGINEER - TESTING</masterLabel>
+            <translation><!-- ENGINEER - TESTING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXECUTIVE</masterLabel>
+            <translation><!-- EXECUTIVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXECUTIVE - AUDIT</masterLabel>
+            <translation><!-- EXECUTIVE - AUDIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXECUTIVE - CALL CENTER</masterLabel>
+            <translation><!-- EXECUTIVE - CALL CENTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GENERAL MANAGER</masterLabel>
+            <translation><!-- GENERAL MANAGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HELPER</masterLabel>
+            <translation><!-- HELPER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANAGER</masterLabel>
+            <translation><!-- MANAGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REGIONAL SERVICE MANAGER</masterLabel>
+            <translation><!-- REGIONAL SERVICE MANAGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REGIONAL TRAINING SPECILIEST</masterLabel>
+            <translation><!-- REGIONAL TRAINING SPECILIEST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERVICE COORDINATOR</masterLabel>
+            <translation><!-- SERVICE COORDINATOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERVICE ENGINEER - BATTERY</masterLabel>
+            <translation><!-- SERVICE ENGINEER - BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERVICE ENGINEER - GEN SET</masterLabel>
+            <translation><!-- SERVICE ENGINEER - GEN SET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERVICE ENGINEER - HIGH CAPACITY</masterLabel>
+            <translation><!-- SERVICE ENGINEER - HIGH CAPACITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERVICE ENGINEER - LOW CAPACITY</masterLabel>
+            <translation><!-- SERVICE ENGINEER - LOW CAPACITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERVICE ENGINEER - SOLAR</masterLabel>
+            <translation><!-- SERVICE ENGINEER - SOLAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERVICE ENGINEER - TRC</masterLabel>
+            <translation><!-- SERVICE ENGINEER - TRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERVICE ENGINEER - VAN</masterLabel>
+            <translation><!-- SERVICE ENGINEER - VAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERVICE ENGINEER - WAREHOUSE</masterLabel>
+            <translation><!-- SERVICE ENGINEER - WAREHOUSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STORE IN-CHARGE</masterLabel>
+            <translation><!-- STORE IN-CHARGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUPERVISOR - CALL CENTER</masterLabel>
+            <translation><!-- SUPERVISOR - CALL CENTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sr. EXECUTIVE</masterLabel>
+            <translation><!-- Sr. EXECUTIVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sr. MANAGER</masterLabel>
+            <translation><!-- Sr. MANAGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sr. VICE PRESIDENT</masterLabel>
+            <translation><!-- Sr. VICE PRESIDENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VICE PRESIDENT</masterLabel>
+            <translation><!-- VICE PRESIDENT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Employee Code --></label>
+        <name>Employee_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pan No. --></label>
+        <name>Pan_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>CENTRAL</masterLabel>
+            <translation><!-- CENTRAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EAST</masterLabel>
+            <translation><!-- EAST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH</masterLabel>
+            <translation><!-- NORTH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH</masterLabel>
+            <translation><!-- SOUTH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST</masterLabel>
+            <translation><!-- WEST --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related To Branch --></label>
+        <name>Related_To_Branch__c</name>
+        <relationshipLabel><!-- Stock Points (Related To Branch) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related to Service Center --></label>
+        <name>Related_to_Service_Center__c</name>
+        <relationshipLabel><!-- Stock Points --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resign --></label>
+        <name>Resign__c</name>
+    </fields>
+    <fields>
+        <label><!-- STN Series --></label>
+        <name>STN_Series__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Service_Center_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Service_Center_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Code --></label>
+        <name>Service_Center_Location_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Required Field . Should match Oracle AR Customer Number --></help>
+        <label><!-- Service Engineer Id --></label>
+        <name>Service_Engineer_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Engineer Mobile No. --></label>
+        <name>Service_Engineer_Mobile_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Engineer Name --></label>
+        <name>Service_Engineer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- TCS --></label>
+        <name>TCS__c</name>
+    </fields>
+    <fields>
+        <label><!-- TIN No. --></label>
+        <name>TIN_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact No. --></label>
+        <name>Telephone__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT InterState --></label>
+        <name>VAT_InterState__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT within State --></label>
+        <name>VAT_within_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor State --></label>
+        <name>Vendor_State__c</name>
+        <picklistValues>
+            <masterLabel>Gujrat</masterLabel>
+            <translation><!-- Gujrat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haryana</masterLabel>
+            <translation><!-- Haryana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Punjab</masterLabel>
+            <translation><!-- Punjab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajasthan</masterLabel>
+            <translation><!-- Rajasthan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uttar Pradesh</masterLabel>
+            <translation><!-- Uttar Pradesh --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Service Center Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Service Engineer Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Stock Point Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vendor Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Branch --></label>
+        <name>Branch</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service Center --></label>
+        <name>ServiceCenter</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service Engineer --></label>
+        <name>ServiceEngineer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Vendors --></label>
+        <name>Vendors</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Either VAT  or CST can be applicable --></errorMessage>
+        <name>VAT_and_CST_Rule</name>
+    </validationRules>
+</CustomObjectTranslation>

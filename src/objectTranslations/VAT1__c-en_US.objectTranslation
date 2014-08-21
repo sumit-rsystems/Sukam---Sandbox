@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>VAT</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>VAT</value>
+    </caseValues>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+        <picklistValues>
+            <masterLabel>Battery</masterLabel>
+            <translation><!-- Battery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPONENT</masterLabel>
+            <translation><!-- COMPONENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HUPS</masterLabel>
+            <translation><!-- HUPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solar Inverter</masterLabel>
+            <translation><!-- Solar Inverter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS</masterLabel>
+            <translation><!-- UPS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+        <picklistValues>
+            <masterLabel>ANDHRA PRADESH</masterLabel>
+            <translation><!-- ANDHRA PRADESH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASSAM</masterLabel>
+            <translation><!-- ASSAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIHAR</masterLabel>
+            <translation><!-- BIHAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANDIGARH</masterLabel>
+            <translation><!-- CHANDIGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHATTISGARH</masterLabel>
+            <translation><!-- CHATTISGARH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELHI</masterLabel>
+            <translation><!-- DELHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUJARAT</masterLabel>
+            <translation><!-- GUJARAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HARYANA</masterLabel>
+            <translation><!-- HARYANA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HIMACHAL PRADESH</masterLabel>
+            <translation><!-- HIMACHAL PRADESH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J&amp;K</masterLabel>
+            <translation><!-- J&amp;K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JHARKHAND</masterLabel>
+            <translation><!-- JHARKHAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KARNATAKA</masterLabel>
+            <translation><!-- KARNATAKA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KERALA</masterLabel>
+            <translation><!-- KERALA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MADHYA PRADESH</masterLabel>
+            <translation><!-- MADHYA PRADESH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAHARASHTRA</masterLabel>
+            <translation><!-- MAHARASHTRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ORISSA</masterLabel>
+            <translation><!-- ORISSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUNJAB</masterLabel>
+            <translation><!-- PUNJAB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAJASTHAN</masterLabel>
+            <translation><!-- RAJASTHAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAMIL NADU</masterLabel>
+            <translation><!-- TAMIL NADU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTTAR PRADESH</masterLabel>
+            <translation><!-- UTTAR PRADESH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTTARAKHAND</masterLabel>
+            <translation><!-- UTTARAKHAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST BENGAL</masterLabel>
+            <translation><!-- WEST BENGAL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VAT Percentage --></label>
+        <name>VAT_Percentage__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

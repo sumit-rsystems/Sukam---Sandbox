@@ -1,0 +1,5 @@
+<apex:page standardController="Contracts__c" extensions="ContractOverrideCtrl" action="{!srRedirect}">
+    <apex:form >
+        
+    </apex:form>
+</apex:page>

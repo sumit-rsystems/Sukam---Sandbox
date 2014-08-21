@@ -1,0 +1,6 @@
+*** NEW SERVICE REQUEST ASSIGNMENT NOTIFICATION *** 
+
+The following Service Request has been assigned to you. 
+Service Request No.: {!Case.CaseNumber}
+
+Click on the link to access the Service Request directly: {!Case.Link}

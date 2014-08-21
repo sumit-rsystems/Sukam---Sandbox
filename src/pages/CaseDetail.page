@@ -1,0 +1,5 @@
+<apex:page standardController="Service_Request__c">
+    <apex:form >
+        <apex:detail inlineEdit="false" relatedList="true"/>
+    </apex:form>
+</apex:page>

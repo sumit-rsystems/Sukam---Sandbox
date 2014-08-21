@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Component Movement Table</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Components Movement Table</value>
+    </caseValues>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Components Movement Table --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount 1 --></label>
+        <name>Amount_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount 2 --></label>
+        <name>Amount_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount 3 --></label>
+        <name>Amount_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount 4 --></label>
+        <name>Amount_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Basic --></label>
+        <name>Basic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Location Type --></label>
+        <name>Branch_Location_Type__c</name>
+        <picklistValues>
+            <masterLabel>Interstate</masterLabel>
+            <translation><!-- Interstate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within State</masterLabel>
+            <translation><!-- Within State --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CST No. --></label>
+        <name>CST_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled --></label>
+        <name>Cancelled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Challan No Trig --></label>
+        <name>Challan_No_Trig__c</name>
+    </fields>
+    <fields>
+        <label><!-- Challan No. --></label>
+        <name>Challan_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component Code 2 --></label>
+        <name>Component_Code_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component Code 3 --></label>
+        <name>Component_Code_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component Code 4 --></label>
+        <name>Component_Code_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component Code 1 --></label>
+        <name>Component_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component Status --></label>
+        <name>Component_Status__c</name>
+        <picklistValues>
+            <masterLabel>Defective</masterLabel>
+            <translation><!-- Defective --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usable</masterLabel>
+            <translation><!-- Usable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Created By Stock Point --></label>
+        <name>Created_By_Stock_Point__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defective Amount1 --></label>
+        <name>Defective_Amount1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defective Amount2 --></label>
+        <name>Defective_Amount2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defective Amount3 --></label>
+        <name>Defective_Amount3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defective Amount4 --></label>
+        <name>Defective_Amount4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defective Item Returned --></label>
+        <name>Defective_Item_Returned__c</name>
+        <relationshipLabel><!-- Components Movement Table --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Defective Item is different --></label>
+        <name>Defective_Item_is_different__c</name>
+    </fields>
+    <fields>
+        <label><!-- Replaced Battery Serial No. --></label>
+        <name>Defective_Product_Serial_No_if_FG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defective Quantity1 --></label>
+        <name>Defective_Quantity1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defective Quantity2 --></label>
+        <name>Defective_Quantity2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defective Quantity3 --></label>
+        <name>Defective_Quantity3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defective Quantity4 --></label>
+        <name>Defective_Quantity4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defective Quantity Returned --></label>
+        <name>Defective_Quantity_Returned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination Branch --></label>
+        <name>Destination_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination State --></label>
+        <name>Destination_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Amount --></label>
+        <name>Discount_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount % --></label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount% --></label>
+        <name>Discount_in_component_charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dispatched Through --></label>
+        <name>Dispatched_Through__c</name>
+        <picklistValues>
+            <masterLabel>By Courier</masterLabel>
+            <translation><!-- By Courier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>By Hand</masterLabel>
+            <translation><!-- By Hand --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Document / Invoice No. --></label>
+        <name>Document_Invoice_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- ERP Date --></label>
+        <name>ERP_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ERP Received Date --></label>
+        <name>ERP_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ERP Shipped Date --></label>
+        <name>ERP_Shipped_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- FROM BRANCH --></label>
+        <name>FROM_BRANCH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filler1 --></label>
+        <name>Filler1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filler2 --></label>
+        <name>Filler2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filler3 --></label>
+        <name>Filler3__c</name>
+    </fields>
+    <fields>
+        <label><!-- For Service Center --></label>
+        <name>For_Service_Center__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Org --></label>
+        <name>From_Org__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate Invoice &amp; Bill No. --></label>
+        <name>Generate_Invoice_Bill_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grand Total For Product Sale --></label>
+        <name>Grand_Total_For_Product_Sale__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grand Total --></label>
+        <name>Grand_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice_No_Trig_No --></label>
+        <name>Invoice_No_Trig_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice No. --></label>
+        <name>Invoice_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Created --></label>
+        <name>Is_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issuing Service Center Address --></label>
+        <name>Issuing_Service_Center_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- MRN No Trig --></label>
+        <name>MRN_No_Trig__c</name>
+    </fields>
+    <fields>
+        <label><!-- MRN No. --></label>
+        <name>MRN_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Charges --></label>
+        <name>Misc_Component_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Service Engineer --></label>
+        <name>Name_of_Service_Engineer__c</name>
+    </fields>
+    <fields>
+        <label><!-- OPERATING UNIT NAME --></label>
+        <name>OPERATING_UNIT_NAME__c</name>
+        <picklistValues>
+            <masterLabel>SU-KAM POWER SYSTEMS LIMITED</masterLabel>
+            <translation><!-- SU-KAM POWER SYSTEMS LIMITED --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ORG ID --></label>
+        <name>ORG_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- OraFlag --></label>
+        <name>OraFlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ora Id 2 --></label>
+        <name>Ora_Id_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ora Id 3 --></label>
+        <name>Ora_Id_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ora Id 4 --></label>
+        <name>Ora_Id_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ora Id --></label>
+        <name>Ora_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- PAN No. --></label>
+        <name>PAN_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone No --></label>
+        <name>Phone_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+        <picklistValues>
+            <masterLabel>BATTERY</masterLabel>
+            <translation><!-- BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPONENT</masterLabel>
+            <translation><!-- COMPONENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GENSET</masterLabel>
+            <translation><!-- GENSET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HUPS</masterLabel>
+            <translation><!-- HUPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INVERTER</masterLabel>
+            <translation><!-- INVERTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation><!-- OTHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAR CHARGE CONTROLLER</masterLabel>
+            <translation><!-- SOLAR CHARGE CONTROLLER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAR INVERTER</masterLabel>
+            <translation><!-- SOLAR INVERTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAR PCU</masterLabel>
+            <translation><!-- SOLAR PCU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOLAR PRODUCT</masterLabel>
+            <translation><!-- SOLAR PRODUCT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS</masterLabel>
+            <translation><!-- UPS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Code 1 --></label>
+        <name>Product_Code_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Code 2 --></label>
+        <name>Product_Code_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Code 3 --></label>
+        <name>Product_Code_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Code 4 --></label>
+        <name>Product_Code_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Group --></label>
+        <name>Product_Group__c</name>
+        <picklistValues>
+            <masterLabel>LA BATTERY</masterLabel>
+            <translation><!-- LA BATTERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMF BATTERY</masterLabel>
+            <translation><!-- SMF BATTERY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Price / Unit at which the Item was purchased --></help>
+        <label><!-- Purchase Rate / Unit 1 --></label>
+        <name>Purchase_Rate_Unit_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Rate / Unit 2 --></label>
+        <name>Purchase_Rate_Unit_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Rate / Unit 3 --></label>
+        <name>Purchase_Rate_Unit_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Rate / Unit 4 --></label>
+        <name>Purchase_Rate_Unit_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity 2 --></label>
+        <name>Quantity_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity 3 --></label>
+        <name>Quantity_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity 4 --></label>
+        <name>Quantity_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity 1 --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Received Date --></label>
+        <name>Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Received Quantity1 --></label>
+        <name>Received_Quantity1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Received Quantity2 --></label>
+        <name>Received_Quantity2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Received Quantity3 --></label>
+        <name>Received_Quantity3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Received Quantity4 --></label>
+        <name>Received_Quantity4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Received from Stock Point --></label>
+        <name>Received_from_Stock_Point__c</name>
+        <relationshipLabel><!-- Components Movement Table --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Receiving Service Center Address --></label>
+        <name>Receiving_Service_Center_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Req No --></label>
+        <name>Req_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Road Permit No. --></label>
+        <name>Road_Permit_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Road Permit --></label>
+        <name>Road_Permit__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SFFLAG --></label>
+        <name>SFFlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale Bill No. --></label>
+        <name>Sale_Bill_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale_Bill_Trig_No --></label>
+        <name>Sale_Bill_Trig_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale Location Type --></label>
+        <name>Sale_Location_Type__c</name>
+        <picklistValues>
+            <masterLabel>Interstate</masterLabel>
+            <translation><!-- Interstate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within State</masterLabel>
+            <translation><!-- Within State --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sale Price / Unit 1 --></label>
+        <name>Sale_Price_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Select Component 2 --></label>
+        <name>Select_Component_2__c</name>
+        <relationshipLabel><!-- Components Movement Table (Select Component 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Select Component 3 --></label>
+        <name>Select_Component_3__c</name>
+        <relationshipLabel><!-- Components Movement Table (Select Component 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Select Component 4 --></label>
+        <name>Select_Component_4__c</name>
+        <relationshipLabel><!-- Components Movement Table (Select Component 4) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Used to select any stock type being transacted - component or finished good --></help>
+        <label><!-- Select Component 1 --></label>
+        <name>Select_Component__c</name>
+        <relationshipLabel><!-- Components Movement Table (Select Component 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Engineer Assigned --></label>
+        <name>Service_Engineer_Assigned__c</name>
+        <relationshipLabel><!-- Components Movement Table (Service Engineer Assigned) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Engineer Id --></label>
+        <name>Service_Engineer_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Engineer --></label>
+        <name>Service_Engineer_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Request --></label>
+        <name>Service_Request__c</name>
+        <relationshipLabel><!-- Components Movement Table --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Type --></label>
+        <name>Service_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipped Date --></label>
+        <name>Shipped_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Receipt Quantity1 --></label>
+        <name>Short_Receipt_Quantity1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Receipt Quantity2 --></label>
+        <name>Short_Receipt_Quantity2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Receipt Quantity3 --></label>
+        <name>Short_Receipt_Quantity3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Receipt Quantity4 --></label>
+        <name>Short_Receipt_Quantity4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Branch --></label>
+        <name>Source_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source State --></label>
+        <name>Source_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock Point Owner Id --></label>
+        <name>Stock_Point_Owner_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock Point Type --></label>
+        <name>Stock_Point_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock Point to be Reconciled --></label>
+        <name>Stock_Point_to_be_Reconciled__c</name>
+        <relationshipLabel><!-- Components Movement Table (Stock Point to be Reconciled) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stock Transfer Price / Unit 1 --></label>
+        <name>Stock_Transfer_Price_Unit_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock Transfer Price / Unit 2 --></label>
+        <name>Stock_Transfer_Price_Unit_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock Transfer Price / Unit 3 --></label>
+        <name>Stock_Transfer_Price_Unit_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock Transfer Price / Unit 4 --></label>
+        <name>Stock_Transfer_Price_Unit_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock Transfer Sl No Trig --></label>
+        <name>Stock_Transfer_Sl_No_Trig__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock Transfer Sl No --></label>
+        <name>Stock_Transfer_Sl_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock Transfer Status --></label>
+        <name>Stock_Transfer_Status__c</name>
+        <picklistValues>
+            <masterLabel>In Transit</masterLabel>
+            <translation><!-- In Transit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outward Movement</masterLabel>
+            <translation><!-- Outward Movement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received</masterLabel>
+            <translation><!-- Received --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stock Transfer Total --></label>
+        <name>Stock_Transfer_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- TIN NO. --></label>
+        <name>TIN_NO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Amount --></label>
+        <name>Tax_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Percentage --></label>
+        <name>Tax_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax --></label>
+        <name>Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total (Defective) --></label>
+        <name>Total_Defective__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Net Amount --></label>
+        <name>Total_Net_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Quantity --></label>
+        <name>Total_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total (Usable) --></label>
+        <name>Total_Usable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total VAT Amount --></label>
+        <name>Total_VAT_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total --></label>
+        <name>Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transfeerred to stock point CST No. --></label>
+        <name>Transfeerred_to_stock_point_CST_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transfeerred to stock point PAN No. --></label>
+        <name>Transfeerred_to_stock_point_PAN_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transfeerred to stock point TIN No. --></label>
+        <name>Transfeerred_to_stock_point_TIN_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transferred to Stock Point --></label>
+        <name>Transferred_to_Stock_Point__c</name>
+        <relationshipLabel><!-- Components Movement Table (Transferred to Stock Point) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type of Entry --></label>
+        <name>Type_of_Entry__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation><!-- Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deduct</masterLabel>
+            <translation><!-- Deduct --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Receipt --></label>
+        <name>Type_of_Receipt__c</name>
+        <picklistValues>
+            <masterLabel>Purchase</masterLabel>
+            <translation><!-- Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Returned by Customer</masterLabel>
+            <translation><!-- Returned by Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stock Returned by Service Engineer</masterLabel>
+            <translation><!-- Stock Returned by Service Engineer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Replacement --></label>
+        <name>Type_of_Replacement_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Service Request --></label>
+        <name>Type_of_Service_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Transfer --></label>
+        <name>Type_of_Transfer__c</name>
+        <picklistValues>
+            <masterLabel>Stock Transfer</masterLabel>
+            <translation><!-- Stock Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transferred to Service Engineer</masterLabel>
+            <translation><!-- Transferred to Service Engineer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UoM 1 --></label>
+        <name>UoM_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- UoM 2 --></label>
+        <name>UoM_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- UoM 3 --></label>
+        <name>UoM_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- UoM 4 --></label>
+        <name>UoM_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- UpsertId --></label>
+        <name>UpsertId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usable Amount1 --></label>
+        <name>Usable_Amount1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usable Amount2 --></label>
+        <name>Usable_Amount2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usable Amount3 --></label>
+        <name>Usable_Amount3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usable Amount4 --></label>
+        <name>Usable_Amount4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Used by Service Engineer --></label>
+        <name>Used_by_Service_Engineer__c</name>
+    </fields>
+    <fields>
+        <label><!-- UserAddress --></label>
+        <name>UserAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Vat Amount --></label>
+        <name>Vat_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vat Percentage --></label>
+        <name>Vat_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle No. --></label>
+        <name>Vehicle_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- trgOldOwnerId --></label>
+        <name>trgOldOwnerId__c</name>
+    </fields>
+    <layouts>
+        <layout>Auto Inward Movement Layout</layout>
+        <sections>
+            <label><!-- Component Details --></label>
+            <section>Component Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Components Used in Service Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Defective Item Details (if different) --></label>
+            <section>Defective Item Details (if different)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inward Movement Layout</layout>
+        <sections>
+            <label><!-- Component Details --></label>
+            <section>Component Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inward Movement Lock</layout>
+        <sections>
+            <label><!-- Component Details --></label>
+            <section>Component Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inward Received Layout</layout>
+        <sections>
+            <label><!-- Component Details --></label>
+            <section>Component Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Outward Movement Layout</layout>
+        <sections>
+            <label><!-- Component Details --></label>
+            <section>Component Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Outward Movement Lock</layout>
+        <sections>
+            <label><!-- Component Details --></label>
+            <section>Component Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Product Sale Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Reconciliation Layout</layout>
+        <sections>
+            <label><!-- Component Details --></label>
+            <section>Component Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Components Used in Service Request --></label>
+        <name>ComponentsUsedinServiceRequest</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Inward Movement --></label>
+        <name>InwardMovement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Inward Movement Lock --></label>
+        <name>Inward_Movement_Lock</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Outward Movement --></label>
+        <name>OutwardMovement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Outward Lock --></label>
+        <name>Outward_Lock</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product Sale --></label>
+        <name>Product_Sale</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Reconciliation --></label>
+        <name>Reconciliation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Short Receipt --></label>
+        <name>ShortReceipt</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Stock Inward --></label>
+        <name>Stock_Inward</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Stock Received --></label>
+        <name>Stock_Received</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid component and quantity --></errorMessage>
+        <name>Component_and_Quantity1_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid component and quantity --></errorMessage>
+        <name>Component_and_Quantity2_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid component and quantity --></errorMessage>
+        <name>Component_and_Quantity3_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid component and quantity --></errorMessage>
+        <name>Component_and_Quantity4_Mandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If defective item is different then defective item returned can not be blank. --></errorMessage>
+        <name>Defective_Item_returned_Blank_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Usable Quantity cannot be received when Component status is Defective. --></errorMessage>
+        <name>Defective_Quantity_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In case of Warranty, Defective Quantity Value can be entered only once --></errorMessage>
+        <name>Defective_Quantity_can_be_entered_once</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In case of Stock Transfer Dispatched Through &amp; Road Permit ban not be blank. --></errorMessage>
+        <name>Dispatched_Through_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Transferred to Stock Point should be equal to For Service Center --></errorMessage>
+        <name>For_Service_Center_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In_Warranty_Qty._1_&amp;_Defective_should_be --></errorMessage>
+        <name>In_Out_should_be_equal_in_warranty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in a Sale Price for Item Selected --></errorMessage>
+        <name>Mandatory_Sale_Price</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In Case of &quot;Returned by Customer&quot; Inward Movement, there is no &quot;Received from Stock Point&quot; --></errorMessage>
+        <name>No_Recieving_Stock_Point</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In Case of &quot;Purchase&quot; Inward Movement, there is no &quot;Received from Stock Point&quot; --></errorMessage>
+        <name>No_Recieving_Stock_Points</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Kindly check that the Component Sale Price is nil in case of FOC and Warranty Cases --></errorMessage>
+        <name>No_Sale_Price_for_FOC_Component</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Kindly check that the Component Sale Price is nil in case of FOC and Warranty Cases --></errorMessage>
+        <name>No_Sale_Price_for_Warranty_Component</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Can Not Change the record Once it has been Created. --></errorMessage>
+        <name>Once_Created_Can_not_be_changed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the Purchase Rate / Unit 1 --></errorMessage>
+        <name>Purchase_Rate_1_is_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the Purchase Rate / Unit 2 --></errorMessage>
+        <name>Purchase_Rate_2_is_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the Purchase Rate / Unit 3 --></errorMessage>
+        <name>Purchase_Rate_3_is_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in the Purchase Rate / Unit 4 --></errorMessage>
+        <name>Purchase_Rate_4_is_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please check: Defective Quantity Returned cannot be more than Quantity 1(Quantity Issued). --></errorMessage>
+        <name>Qty_Used_is_equal_Qty_Returned_Defective</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Quantity cannot be greater than 9999 --></errorMessage>
+        <name>Quantity_Cannot_be_more_than_9999</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fill Road Permit No. if road permit is YES. --></errorMessage>
+        <name>Road_permit_can_not_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please put in value of &quot;Sale Price / Unit 1&quot; --></errorMessage>
+        <name>Sale_Price_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Can not move stock to this Engineer as he has resigned. --></errorMessage>
+        <name>Service_Engineer_has_resigned</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please go through the related list option to create this entry --></errorMessage>
+        <name>Service_Request_No_is_manadatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- can not send Defective items to TRC 1 Branch --></errorMessage>
+        <name>TRC_1_Branch_and_Defective_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Service Center can transfer stocks to his related service Engineer Only not to other Service Center&apos;s Engineers. --></errorMessage>
+        <name>Transfer_to_service_Engineer_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Type of transfer should be Transferred to Service Eng. while transferring Stock to Service Engineer. --></errorMessage>
+        <name>Transfer_to_service_Engineer_rule_1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sum of Transferred Quantity should be equal to Received Quantity. --></errorMessage>
+        <name>Transferred_Qty_equals_Received_Qty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Transferred Quantity should be equal to Defective Quantity. --></errorMessage>
+        <name>Transferred_Qty_equals_to_Defective_Qty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter Appropriate Quantities --></errorMessage>
+        <name>Validate_Defective_Short_Quantity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Service Engineer Choosen doesn&apos;t belong to the Service Center. Choose an appropriate Service Engineer --></errorMessage>
+        <name>Validate_Owner_Id</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please choose a Service Center for this transaction. --></errorMessage>
+        <name>Validate_SC_Stock_Point_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please choose your own Service Engineer for this transaction. --></errorMessage>
+        <name>Validate_SE_Stock_Point_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- check --></errorMessage>
+        <name>check_null</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- InvoicePDF --></label>
+        <name>InvoicePDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Component_Movement_Table --></label>
+        <name>New_Component_Movement_Table</name>
+    </webLinks>
+</CustomObjectTranslation>

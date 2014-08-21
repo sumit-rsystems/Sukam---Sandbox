@@ -1,0 +1,112 @@
+<P>Dear Sir, 
+
+<P>Please find the details regarding Service Request No. <B>{!Case.FSR_No__c} </B>
+
+<P><TABLE Border = 1 >
+<TR>
+	<TD><B>Owner Name</B></TD>
+	<TD>{!Service_Request__c.OwnerFullName}</TD>
+</TR>
+<TR>
+	<TD><B>Customer Name</B></TD>
+	<TD>{!Contact.FirstName} {!Contact.LastName}/ {!Account.Name}</TD>
+</TR>
+<TR>
+	<TD><B>Customer Address (Bill To)</B></TD>
+	<TD>{!Account.BillingAddress}</TD>
+</TR>
+<TR>
+	<TD><B>Customer Address (Ship To)</B></TD>
+	<TD>{!Account.ShippingAddress} </TD>
+</TR>
+<TR>
+	<TD><B>Complaint No</B></TD>
+	<TD>{!Service_Request__c.FSR_No__c}</TD>
+</TR>
+<TR>
+	<TD><B>Type of Service Request</B></TD>
+	<TD>{!Service_Request__c.Type_of_Service_Request__c}</TD>
+</TR>
+<TR>
+	<TD><B>Service Engineer Details</B></TD>
+	<TD>{!Service_Request__c.Service_Engineer_Name__c}</TD>
+</TR>
+</TABLE>
+
+<P><B>Total Payment Collected for this Service Request</B>
+
+<P><TABLE Border = 1 >
+<TR>
+	<TD>Receiving Date</TD>
+	<TD>{!Service_Request__c.Receiving_Date__c}</TD>
+</TR>
+<TR>
+	<TD><B>Bank</B></TD>
+	
+</TR>
+<TR>
+	<TD>Bank Name</TD>
+	<TD>{!Service_Request__c.Bank_Name__c}</TD>
+</TR>
+<TR>
+	<TD>Cheque Amount</TD>
+	<TD>{!Service_Request__c.Cheque_Amount__c}</TD>
+</TR>
+<TR>
+	<TD>Cheque No</TD>
+	<TD>{!Service_Request__c.Cheque_No__c}</TD>
+</TR>
+<TR>
+	<TD><B>Cash</B></TD>
+	
+</TR>
+<TR>
+	<TD>Cash Amount	</TD>
+	<TD>{!Service_Request__c.Cash_Amount__c}</TD>
+</TR>
+</TABLE>
+	
+<P><B>DETAILS FOR COMPONENT CHARGES</B>
+<P><TABLE Border = 1 >
+<TR>
+	<TD><B>Bill No</B></TD>
+	<TD>{!Service_Request__c.Component_Bill_No__c}</TD>
+</TR>
+<TR>
+	<TD><B>Amount</B></TD>
+	<TD>{!Service_Request__c.Component_Charges__c}</TD>
+</TR>
+<TR>
+	<TD><B>Tax %</B></TD>
+	<TD>12.5</TD>
+</TR>
+</TABLE>
+
+<P><B>DETAILS FOR SERVICE CHARGES</B>
+
+<P><TABLE Border = 1>
+<TR>
+	<TD><B>Bill No</B></TD>
+	<TD>{!Service_Request__c.Service_Bill_No__c}</TD>
+</TR>
+<TR>
+	<TD><B>Type of Service Charge</B></TD>
+	<TD>{!Service_Request__c.Service_Charge_Type__c}</TD>
+</TR>
+<TR>
+	<TD><B>Service Charge</B></TD>
+	<TD>{!Service_Request__c.Service_Charge_Type__c}</TD>
+</TR>
+<TR>
+	<TD><B>Service Charge (Other) </B></TD>
+	<TD>{!Service_Request__c.Service_Charges_Other__c}</TD>
+</TR>
+<TR>
+	<TD><B>Tax %</B></TD>
+	<TD>10.36</TD>
+</TR>
+</TABLE>
+
+	 
+<P>Thanks,
+<BR><B>{!Service_Request__c.OwnerFullName}</B>

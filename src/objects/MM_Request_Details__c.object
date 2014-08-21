@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Approved_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Approver_Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Approver Remarks</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Dealer_Area__c</fullName>
+        <externalId>false</externalId>
+        <label>Dealer Area</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dealer_District__c</fullName>
+        <externalId>false</externalId>
+        <label>Dealer District</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dealer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Dealer Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Marketing_Material_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Marketing Material Name</label>
+        <referenceTo>Marketing_Material__c</referenceTo>
+        <relationshipLabel>MM Request Details</relationshipLabel>
+        <relationshipName>MM_Request_Details</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Remarks</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Service_Requests__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service Requests</label>
+        <referenceTo>Partner_Service_Request__c</referenceTo>
+        <relationshipLabel>MM Request Details</relationshipLabel>
+        <relationshipName>MM_Request_Details</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>MM Request Details</label>
+    <nameField>
+        <displayFormat>MM - {0000000}</displayFormat>
+        <label>MM Request</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>MM Request Details</pluralLabel>
+    <searchLayouts>
+        <searchFilterFields>NAME</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>Approval_required_for_MM_Service_Request</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (OR ($Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;PRM User CRM&quot;), OR ( ISBLANK(Approved_Quantity__c), Approved_Quantity__c == 0), OR( ISBLANK( Approver_Remarks__c), Approver_Remarks__c == &quot;-&quot;))</errorConditionFormula>
+        <errorMessage>The Approved Quantity / Approver Remarks should be provided for every Service Request line by the CRM user</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Quantity_less_than_1000</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+	NOT(
+		(ISPICKVAL(Service_Requests__r.Type_Of_Request__c, &apos;Dealer Certificate&apos;) )), Quantity__c &gt; 999)</errorConditionFormula>
+        <errorMessage>Quantity must be less than 1000.</errorMessage>
+    </validationRules>
+</CustomObject>

@@ -1,0 +1,81 @@
+<apex:page standardController="Indent_Request__c" extensions="ViewIndentExtension" action="{!createFilteredDetailList}">
+    <apex:form id="mainForm">
+        <apex:pageMessages id="msg1" escape="false"/>
+        <apex:pageBlock title="Indent Requestion Form">
+
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!saveDispatch}" value="Save"/>
+                <apex:commandButton action="{!cancelDispatch}" value="Cancel" immediate="true"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Indent Request">
+                <apex:outputField value="{!indentRequestObj.Name}"/>
+                <apex:outputField value="{!indentRequestObj.Ownerid}"/>
+                <apex:outputField value="{!indentRequestObj.Indent_Request_Status__c}"/>
+                <apex:outputField value="{!indentRequestObj.Requisition_Date__c}"/>
+                <apex:outputField value="{!indentRequestObj.Dispatch_Sts__c}"/>
+                <apex:outputField value="{!indentRequestObj.Approval_Date__c}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Address Details">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Service Centre</apex:outputLabel>
+                    <apex:outputText >{!scName}</apex:outputText>
+                </apex:pageBlockSectionItem>
+                <apex:outputField value="{!indentRequestObj.State__c}"/>
+                <apex:outputField value="{!indentRequestObj.Address__c}"/>
+                <apex:outputField value="{!indentRequestObj.City__c}"/>
+                <apex:outputText />
+                <apex:outputField value="{!indentRequestObj.Pincode__c}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Indent Request Details" columns="1">
+                <apex:outputPanel rendered="{!NOT(itemsExistFlag)}">
+                    <b>No Items To Be Dispatched</b>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!itemsExistFlag}">
+                    <apex:variable value="{!VALUE('0')}" var="num"/>
+                    <apex:pageBlockTable value="{!itemDetailFilteredList}" var="indentItem" columnsWidth="5%,28%,10%,10%,10%,10%,10%,17%">
+                    
+                        <apex:column headerValue="Sl No.">
+                            <apex:variable var="num" value="{!num + 1}"/>
+                            {!FLOOR(num)}
+                        </apex:column>
+                        
+                        <apex:column headerValue="Product">
+                            <apex:outputField value="{!indentItem.detailObj.Products__c}"/>
+                        </apex:column>
+                        
+                        <apex:column headerValue="Product Code">
+                            <apex:outputField value="{!indentItem.detailObj.Product_Code__c}"/>
+                        </apex:column>
+                        
+                        <apex:column headerValue="Approved Quantity">
+                            <apex:outputField value="{!indentItem.detailObj.Approved_Quantity__c}"/>
+                        </apex:column>
+                        
+                        <apex:column headerValue="Pending Quantity">
+                            <apex:outputField value="{!indentItem.detailObj.Pending_Quantity__c}"/>
+                        </apex:column>
+                        
+                        <apex:column headerValue="Dispatch Date">
+                            <!--<apex:inputField value="{!indentItem.dispatchDetailObj.Dispatch_Date__c}" rendered="{!IF(indentItem.detailObj.Line_Status__c = 'Rejected',false,true)}"/>-->
+                            <apex:inputField value="{!indentItem.dispatchDetailObj.Dispatch_Date__c}"/>
+                        </apex:column>
+                        
+                        <apex:column headerValue="Dispatch Quantity">
+                            <!--<apex:inputField value="{!indentItem.dispatchDetailObj.Dispatch_Quantity__c}" rendered="{!IF(indentItem.detailObj.Line_Status__c = 'Rejected',false,true)}"/>-->
+                            <apex:inputField value="{!indentItem.dispatchDetailObj.Dispatch_Quantity__c}" />
+                        </apex:column>
+                        
+                        <apex:column headerValue="Remarks">
+                            <!--<apex:inputTextarea value="{!indentItem.dispatchDetailObj.Remarks__c}" disabled="{!IF(indentItem.detailObj.Line_Status__c = 'Rejected',true,false)}"/>-->
+                            <apex:inputTextarea value="{!indentItem.dispatchDetailObj.Remarks__c}"/>
+                        </apex:column>
+                        
+                    </apex:pageBlockTable>
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+         </apex:pageBlock>
+    </apex:form>
+</apex:page>

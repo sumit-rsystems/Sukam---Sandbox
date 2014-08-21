@@ -1,0 +1,37 @@
+<apex:page standardController="Product__c" extensions="editPriceBookEntryCon">
+     <apex:sectionHeader title="Edit List Price"/>
+     <apex:form >
+         <apex:messages />
+         <apex:pageBlock >
+             <apex:pageBlockButtons >
+                 <apex:commandButton value="Save" action="{!doSave}"/>
+                 <apex:commandButton value="Cancel" action="{!doCancel}"/>
+             </apex:pageBlockButtons>
+             <apex:pageBlockTable value="{!pbeList }" var="fwl">
+        <!--<apex:dataTable  styleClass="tabularEditElement genericTable brndScnBrd">-->
+           <apex:column headervalue="Product" value="{!fwl.pbe.Product__r.Name}" />
+           <apex:column headervalue="Price Book" value="{!fwl.pbe.Price_Book__r.Name }" />
+           <apex:column headervalue="Use Standard Price" >
+                <table width="100%" style="border-bottom:0px white;">
+                    <tr>
+                        <td width="40%" align="left"  style="border-bottom:none;">{!fwl.pbe.CurrencyIsoCode}&nbsp;{!fwl.stdPrice }</td>
+                        <td width="20%" align="left" style="border-bottom:none;"><apex:inputCheckbox value="{!fwl.Selected}" id="checkThis"/>
+                        </td>
+                    </tr>
+                </table>
+                 
+                   
+           </apex:column>
+           <apex:column headervalue="List Price">
+               <apex:inputText value="{!fwl.pbe.UnitPrice__c}" id="uPrice"/>
+           </apex:column>          
+           <apex:column headerValue="Active">
+               <apex:inputCheckbox value="{!fwl.pbe.IsActive__c}"/>
+           </apex:column>
+           
+        </apex:pageBlockTable> 
+         
+         </apex:pageBlock>
+     </apex:form>
+      
+</apex:page>

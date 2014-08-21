@@ -1,0 +1,41 @@
+<P>Dear Sir,
+
+<P>Please be informed that a Stock Transfer (via MRN No.  <B>{!01I90000000tU9g.00N90000003PBtl} )</B> was recieved by <B>{!01I90000000tU9g.OwnerFullName}</B>
+
+
+<P>Transaction Id: <B>{!01I90000000tU9g.Name}</B>
+
+
+
+<P>The list of items received short is as follows
+
+<TABLE BORDER = 1 >
+<TR>
+	<TD><B>Component Code</B></TD>
+	<TD><B>Component Description</B></TD>
+	<TD><B>Short Quantity</B></TD>
+</TR>
+<TR>
+	<TD>{!01I90000000tU9g.00N90000003PBt0}</TD>
+	<TD>{!01I90000000tU9g.00N90000003PBue}</TD>
+	<TD>{!01I90000000tU9g.00N90000003PBui}</TD>
+</TR>
+<TR>
+	<TD>{!01I90000000tU9g.00N90000003PBsd}</TD>
+	<TD>{!01I90000000tU9g.00N90000003PBub}</TD>
+	<TD>{!01I90000000tU9g.00N90000003PBuj}</TD>
+</TR>
+<TR>
+	<TD>{!01I90000000tU9g.00N90000003PBsy}</TD>
+	<TD>{!01I90000000tU9g.00N90000003PBuc}</TD>
+	<TD>{!01I90000000tU9g.00N90000003PBuk}</TD>
+</TR>
+<TR>
+	<TD>{!01I90000000tU9g.00N90000003PBsz}</TD>
+	<TD>{!01I90000000tU9g.00N90000003PBud}</TD>
+	<TD>{!01I90000000tU9g.00N90000003PBul}</TD>
+</TR>
+</TABLE>
+
+<P>Regards,
+<BR><B>{!01I90000000tU9g.OwnerFullName}</B>

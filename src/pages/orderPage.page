@@ -1,0 +1,151 @@
+<apex:page standardController="Order__c" extensions="standardOrderController" id="pageId" action="{!editable}">
+ <apex:form id="mainForm">
+ 
+ <apex:actionFunction action="{!populateModel}" name="populateModel" reRender="lineItemSection" status="thisStatus"/>
+ <apex:actionFunction action="{!calculatePrice}" name="calculatePrice" reRender="totalPricePanel,grandTotalPanel" status="thisStatus"/>
+ <apex:actionFunction action="{!submitOrder}" name="submitOrder"/><!--  reRender="totalPricePanel,grandTotalPanel" status="thisStatus" -->
+ 
+ <apex:actionFunction action="{!sendMail}" name="sendMail"/> <!--  reRender="totalPricePanel,grandTotalPanel" status="thisStatus"-->
+ 
+ <apex:inputHidden value="{!hdnNumValue}" id="hdnFldId"/>
+ <apex:pageMessages id="msg1" escape="false"/>
+ 
+  <apex:pageBlock title="Order Requisition">
+   
+     <apex:pageBlockButtons >
+        <apex:commandButton action="{!saveOrder}" value="Save" oncomplete="sendMail();" rendered="{!saveBtnRendered}"/>
+        <apex:commandButton action="{!submitOrder}" oncomplete="sendMail();" value="Submit"/><!-- action="{!submitOrder}" -->
+        <apex:commandButton action="{!cancelAction}" value="Cancel" immediate="true"/>
+    </apex:pageBlockButtons>
+   
+    <apex:pageBlockSection title="Order Request" collapsible="false"> 
+        
+        
+
+
+        <apex:pageBlockSectionItem >
+            <apex:outputLabel >Distributer's Name</apex:outputLabel>
+            <apex:outputText value="{!distributorName}"/>
+        </apex:pageBlockSectionItem>
+        
+        <apex:pageBlockSectionItem >
+            <apex:outputLabel >Distributer's Address</apex:outputLabel>
+            <apex:outputText value="{!address}"/>
+        </apex:pageBlockSectionItem>
+        
+        <apex:outputField value="{!orderObj.Order_Status__c}"/>
+        <apex:outputField value="{!orderObj.Order_Date_Time__c}"/>
+        
+        <apex:outputField value="{!OrderObj.Dispatch_Status__c}"/>
+        
+        <input type="text" style="position:absolute; top:-300px;" />
+        
+        <!--<apex:commandButton value="sendMail" action="{!sendMail}"/>-->
+        
+    </apex:pageBlockSection>
+    
+    <apex:pageBlockSection title="Order Line Items" columns="1" id="lineItemSection" collapsible="false">
+       
+      <apex:actionStatus id="thisStatus" style="align:center">        
+        <apex:facet name="start"><apex:image value="/img/loading.gif" title="Processing..."/></apex:facet>
+        <apex:facet name="stop"></apex:facet>
+      </apex:actionStatus>  
+      
+      <apex:variable value="{!VALUE('0')}" var="num"/>
+        
+         <apex:pageBlockTable value="{!orderLineItemList}" var="item">
+         
+            
+             <apex:column headerValue="Sl No.">
+                {!FLOOR(num +1)}       
+             </apex:column>
+            
+             <apex:column headerValue="Category" headerClass="align:center">
+               
+                <apex:selectList value="{!item.lineItemObj.Product_Category__c}" onchange="setNum({!num});" size="1" style="width:150px">
+                   <!--<apex:actionSupport event="onchange" action="{!populateModel}"/>-->
+                   <apex:selectOptions value="{!item.categoryNameList}"/>
+                </apex:selectList>
+                
+                
+             </apex:column>
+                
+                
+                
+             <apex:column headerValue="Model">
+               <apex:outputPanel id="modelPanel">
+                 <apex:selectList value="{!item.lineItemObj.Model__c}" size="1" style="width:150px"> 
+                   <apex:actionSupport event="onchange" action="{!settingCapacity}" reRender="lineItemSection" status="thisStatus"/> 
+                    <!--<apex:actionSupport event="onchange" action="{!settingCategorynModel}" reRender="lineItemSection"/>-->
+                     <apex:selectOptions value="{!item.modelNameList}"/>
+                 </apex:selectList>
+               </apex:outputPanel>
+             </apex:column>
+             
+             <apex:column headerValue="Capacity">
+               <apex:outputPanel id="capacityPanel">
+                 <apex:selectList value="{!item.lineItemObj.Capacity__c}" size="1" style="width:80px">  
+                     <apex:actionSupport event="onchange" action="{!validateLineItem}" reRender="capacityPanel,msg1,pricePanel" status="thisStatus"/>
+                     <apex:selectOptions value="{!item.capacityNameList}"/>
+                 </apex:selectList>
+               </apex:outputPanel>
+             </apex:column>
+             
+             <apex:column headerValue="Rate">
+               <apex:outputPanel id="pricePanel">
+                 <apex:outputText value="{!item.lineItemObj.Basic__c}"/> 
+               </apex:outputPanel>
+             </apex:column>
+             
+             <apex:column headerValue="Quantity">
+               <apex:inputField value="{!item.lineItemObj.Order_Quantity__c}" style="width:50px" onblur="setNumValueForQuantity({!num});"/>
+                  <!--<apex:actionSupport event="onblur" action="{!calculatePrice}"/>-->
+                          
+             </apex:column>
+             
+             <apex:column headerValue="Total Price">
+               <apex:outputPanel id="totalPricePanel">
+                 <apex:outputField value="{!item.lineItemObj.Order_Line_Price__c}" style="width:25px"/>
+               </apex:outputPanel>
+               <apex:variable var="num" value="{!num + 1}"/>  
+             </apex:column>
+             
+         </apex:pageBlockTable>       
+         <apex:outputPanel id="grandTotalPanel">
+         <table width="100%">
+          <tr>
+           <td width="70%"></td>
+           <td width="20%"><b>Grand Total : {!grandTotal}</b></td>
+          </tr>
+         </table>
+         </apex:outputPanel>
+         
+        <apex:commandButton value="Add More" action="{!addMore}" reRender="lineItemSection"/>       
+    </apex:pageBlockSection>
+    
+  </apex:pageBlock>
+ </apex:form>
+ 
+ <script>
+   function setNum(num)
+   {
+     //alert(num);
+     var hdnValue=document.getElementById("pageId:mainForm:hdnFldId");
+     //alert(hdnValue);
+     hdnValue.value=num;
+     populateModel();
+     
+   }
+   
+   function setNumValueForQuantity(num)
+   {
+     //alert(num);
+     var hdnValue=document.getElementById("pageId:mainForm:hdnFldId");
+     //alert(hdnValue);
+     hdnValue.value=num;
+     calculatePrice();
+   }
+   
+  
+ </script>
+</apex:page>

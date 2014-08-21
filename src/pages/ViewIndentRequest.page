@@ -1,0 +1,130 @@
+<apex:page standardController="Indent_Request__c" extensions="ViewIndentExtension" id="pageId">
+    <apex:form id="form1">
+        <apex:actionFunction name="handleCollapse" action="{!handleCollapse}"/>
+        <apex:pageBlock title="View Indent Requisition" id="block1">
+        
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Edit" action="{!editBtnHandler}" rendered="{!editFlag}"/>
+                <apex:commandButton value="Cancel" styleClass="btnImportant" action="{!cancelBtnHandler}" rendered="{!cancelFlag}"/>
+                <apex:commandButton value="Pending Approval" action="{!pendingBtnHandler}" rendered="{!pendingApprovalFlag}"/>
+                <apex:commandButton value="Approve/Reject Indent" styleClass="btnSharing" action="{!approveBtnHandler}" rendered="{!approveRejectFlag}"/>
+                <apex:commandButton value="Dispatch" action="{!dispatchBtnHandler}" rendered="{!dispatchFlag}"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection title="Indent Request">
+                <apex:outputField value="{!indentRequestObj.Name}"/>
+                <apex:outputField value="{!indentRequestObj.Ownerid}"/>
+                <apex:outputField value="{!indentRequestObj.Indent_Request_Status__c}"/>
+                <apex:outputField value="{!indentRequestObj.Requisition_Date__c}"/>
+                <apex:outputField value="{!indentRequestObj.Dispatch_Sts__c}"/>
+                <apex:outputField value="{!indentRequestObj.Approval_Date__c}"/>
+                <apex:outputField value="{!indentRequestObj.Approval_Submission_Date__c}"/>
+
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Address Details">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Service Centre</apex:outputLabel>
+                    <apex:outputText >{!scName}</apex:outputText>
+                </apex:pageBlockSectionItem>
+                <apex:outputField value="{!indentRequestObj.State__c}"/>
+                <apex:outputField value="{!indentRequestObj.Address__c}"/>
+                <apex:outputField value="{!indentRequestObj.City__c}"/>
+                <apex:outputText />
+                <apex:outputField value="{!indentRequestObj.Pincode__c}"/>
+            </apex:pageBlockSection>
+            
+                <apex:actionFunction name="handleCollapse" action="{!handleCollapse}" reRender="form1"/>
+                
+                <apex:inputHidden value="{!itemIndex}" id="itemIndex"/>
+    
+                <apex:pageBlockSection title="Indent Items" columns="1" id="itemsSection">
+                <apex:outputPanel >
+                <apex:variable value="{!VALUE('0')}" var="num"/>
+                    <table width ="100%">
+                        <tr>
+                            <th width="2%"></th>
+                            <th width="5%">Sl No.</th>
+                            <th width="28%">Product</th>
+                            <th width="10%">Product Code</th>
+                            <th width="14%">Requested Quantity</th>
+                            <th width="14%">Approved Quantity</th>
+                            <th width="10%">Priority</th>
+                            <th width="17%">Remarks</th>
+                        </tr>
+                        
+                    <apex:repeat value="{!itemDetailList}" var="indentItem">
+                         
+                        <tr class="dataRow even  first  last " onmouseout="if (window.hiOff){hiOff(this);} " onBlur="if (window.hiOff){hiOff(this);}" onFocus="if (window.hiOn){hiOn(this );}" onmouseover="if (window.hiOn){hiOn(this);} ">   
+                            <td>
+                                <span id="imageId" style = "cursor:pointer"><apex:image value="{!IF(indentItem.isClicked,'/img/setup_minus.gif','/img/setup_plus.gif')}" rendered="{!indentItem.dispatchExists}" onclick="clickedRow('{!num}','{!$Component.itemIndex}');" onmouseover="changePointer('{!$Component.imageId}','over');" onmouseout="changePointer('{!$Component.imageId}','out');"/></span>
+                                <span id="imageId" style = "cursor:pointer"><apex:image value="{!IF(indentItem.isClicked,'/img/setup_minus.gif','/img/setup_plus.gif')}" rendered="{!indentItem.dispatchExists}" onclick="clickedRow('{!num}','{!$Component.itemIndex}');"/></span>
+                                <apex:variable var="num" value="{!num + 1}"/>                       
+                            </td>
+                            <td>{!FLOOR(num)}</td>
+                            <td><apex:outputField value="{!indentItem.detailObj.Products__c}"/></td>
+                            <td><apex:outputField value="{!indentItem.detailObj.Product_Code__c}"/></td>
+                            <td><apex:outputField value="{!indentItem.detailObj.Requested_Quantity__c}"/></td>
+                            <td><apex:outputField value="{!indentItem.detailObj.Approved_Quantity__c}"/></td>
+                            <td><apex:outputField value="{!indentItem.detailObj.Item_Priority__c}"/></td>
+                            <td><apex:outputField value="{!indentItem.detailObj.Remarks__c}"/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="7" align="center">
+                                <apex:outputPanel rendered="{!indentItem.isClicked}">
+                                    <br/>
+                                    <apex:dataTable value="{!indentItem.detailObj.Indent_Request_Dispatch_Details__r}" var="dispatchItem" border="1"  width="70%" columnsWidth="30%,30%,40%" rules="cols">
+                                        <apex:column headerValue="Dispatch Quantity">
+                                            <apex:outputField value="{!dispatchItem.Dispatch_Quantity__c}"/>  
+                                        </apex:column>
+                                        <apex:column headerValue="Dispatch Date">
+                                            <apex:outputField value="{!dispatchItem.Dispatch_Date__c}"/>
+                                        </apex:column>
+                                        <apex:column headerValue="Remarks">
+                                            <apex:outputField value="{!dispatchItem.Remarks__c}"/>
+                                        </apex:column>
+                                    </apex:dataTable>
+                                </apex:outputPanel>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>                   
+                    </apex:repeat>
+                    </table>
+                  </apex:outputPanel>
+                </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+       
+    </apex:form>
+      <script type="text/javascript">
+        function clickedRow(num,comp)
+        {
+            //alert(num);
+            document.getElementById(comp).value = num;
+            handleCollapse();
+        }
+        /*
+        function changePointer(obj,pos)
+        {
+            //alert(pos);
+            if(pos == 'over')
+            {
+                document.getElementById(obj).style = 'cursor:pointer';
+            }
+            else
+            {
+                document.getElementById(obj).style = 'cursor:default';
+            }
+        }
+        */
+   </script>
+</apex:page>

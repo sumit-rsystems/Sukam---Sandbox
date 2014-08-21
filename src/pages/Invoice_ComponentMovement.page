@@ -1,0 +1,16 @@
+<apex:page controller="GenerateInvoiceComponentMovement" renderAs="pdf"  action="{!GetInvoiceDetails}">
+  <!--<apex:form id="theForm">-->
+  <apex:message />
+  <div style="width:100%;font-style:bold;font-size:30px;text-align:center">Product Sale Invoice Details</div>
+        <table style="width:100%;margin-top:20px;">
+          <tr>
+            <td>
+              <div>Invoice No.</div><apex:outputText value="{!WObj.InvoiceNo}"></apex:outputText>
+            </td>
+            
+          </tr>
+              
+        </table>
+             
+    <!--</apex:form>-->
+</apex:page>

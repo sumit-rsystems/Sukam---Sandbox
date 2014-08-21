@@ -1,0 +1,5 @@
+<apex:page standardController="Service_Request__c" extensions="CaseOverrideCtrl" action="{!srRedirect}">
+    <apex:form >
+        
+    </apex:form>
+</apex:page>

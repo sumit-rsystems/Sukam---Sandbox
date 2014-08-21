@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <customSettingsVisibility>Public</customSettingsVisibility>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Additional_Emails_1__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter cc email addresses for first escalation.</inlineHelpText>
+        <label>Additional Emails 1</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Additional_Emails_2__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter cc email addresses for second escalation.</inlineHelpText>
+        <label>Additional Emails 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Escalation_Age_Over_1__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the number of hours for first escalation.</inlineHelpText>
+        <label>Escalation Age Over 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Escalation_Age_Over_2__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the number of hours for second escalation.</inlineHelpText>
+        <label>Escalation Age Over 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Template_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the name of email tempate name used for sending mail for escalation notification.</inlineHelpText>
+        <label>Template Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Escalation Settings</label>
+</CustomObject>

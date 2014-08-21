@@ -1,0 +1,1414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Enquiry</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inquiries</value>
+    </caseValues>
+    <fields>
+        <label><!-- AC --></label>
+        <name>AC__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ASM Genset --></label>
+        <name>ASM_Genset__c</name>
+        <picklistValues>
+            <masterLabel>Ankush Sharma</masterLabel>
+            <translation><!-- Ankush Sharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G. Ravi Kumar</masterLabel>
+            <translation><!-- G. Ravi Kumar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajeev Bhardwaj</masterLabel>
+            <translation><!-- Rajeev Bhardwaj --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajeev Raman</masterLabel>
+            <translation><!-- Rajeev Raman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satpal Dabas</masterLabel>
+            <translation><!-- Satpal Dabas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sheetal Kumar Pal</masterLabel>
+            <translation><!-- Sheetal Kumar Pal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Annual Revenue --></label>
+        <name>AnnualRevenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Audit Date --></label>
+        <name>Audit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Audit Response --></label>
+        <name>Audit_Response__c</name>
+        <picklistValues>
+            <masterLabel>Call Back Required</masterLabel>
+            <translation><!-- Call Back Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacted</masterLabel>
+            <translation><!-- Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Contacted</masterLabel>
+            <translation><!-- Not Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone not Reachable</masterLabel>
+            <translation><!-- Phone not Reachable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BM Name --></label>
+        <name>BM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backup Requirement --></label>
+        <name>Backup_Requirement__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation><!-- 13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation><!-- 14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16</masterLabel>
+            <translation><!-- 16 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17</masterLabel>
+            <translation><!-- 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18</masterLabel>
+            <translation><!-- 18 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19</masterLabel>
+            <translation><!-- 19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21</masterLabel>
+            <translation><!-- 21 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22</masterLabel>
+            <translation><!-- 22 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23</masterLabel>
+            <translation><!-- 23 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Budget --></label>
+        <name>Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Feedback --></label>
+        <name>Call_Feedback__c</name>
+        <picklistValues>
+            <masterLabel>BDM/RM Engaged</masterLabel>
+            <translation><!-- BDM/RM Engaged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bought</masterLabel>
+            <translation><!-- Bought --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bought Competion</masterLabel>
+            <translation><!-- Bought Competion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow-up Call Required</masterLabel>
+            <translation><!-- Follow-up Call Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Bought</masterLabel>
+            <translation><!-- Not Bought --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Manager Engaged</masterLabel>
+            <translation><!-- Product Manager Engaged --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Call Owner Name --></label>
+        <name>Call_Owner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company --></label>
+        <name>Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted Account ID --></label>
+        <name>ConvertedAccountId__c</name>
+        <relationshipLabel><!-- Enquiries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Converted Contact ID --></label>
+        <name>ConvertedContactId__c</name>
+        <relationshipLabel><!-- Enquiries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Converted Date --></label>
+        <name>ConvertedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted Opportunity ID --></label>
+        <name>ConvertedOpportunityId__c</name>
+        <relationshipLabel><!-- Enquiries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Enquiry Notes --></label>
+        <name>Customer_Enquiry_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Profile --></label>
+        <name>Customer_Profile__c</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Segment --></label>
+        <name>Customer_Segment__c</name>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate - Institutional</masterLabel>
+            <translation><!-- Corporate - Institutional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential</masterLabel>
+            <translation><!-- Residential --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Verbatim --></label>
+        <name>Customer_Verbatim__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Name --></label>
+        <name>Dealer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealership Enquiry --></label>
+        <name>Dealership_Enquiry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Call --></label>
+        <name>DoNotCall__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Bounced Date --></label>
+        <name>EmailBouncedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Bounced Reason --></label>
+        <name>EmailBouncedReason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Sales Rep --></label>
+        <name>Email_Sales_Rep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enquiry Forward --></label>
+        <name>Enquiry_Forward__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enquiry Type --></label>
+        <name>Enquiry_Type__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voice</masterLabel>
+            <translation><!-- Voice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Query</masterLabel>
+            <translation><!-- Web Query --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fax --></label>
+        <name>Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Status --></label>
+        <name>Final_Status__c</name>
+        <picklistValues>
+            <masterLabel>Hold</masterLabel>
+            <translation><!-- Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost to Competitor</masterLabel>
+            <translation><!-- Lost to Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales In Progress</masterLabel>
+            <translation><!-- Sales In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Win</masterLabel>
+            <translation><!-- Win --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>FullName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Happy Feet --></label>
+        <name>Happy_Feet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Opt Out --></label>
+        <name>HasOptedOutOfEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax Opt Out --></label>
+        <name>HasOptedOutOfFax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry --></label>
+        <name>Industry__c</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apparel</masterLabel>
+            <translation><!-- Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biotechnology</masterLabel>
+            <translation><!-- Biotechnology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals</masterLabel>
+            <translation><!-- Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronics</masterLabel>
+            <translation><!-- Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation><!-- Environmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare</masterLabel>
+            <translation><!-- Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machinery</masterLabel>
+            <translation><!-- Machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not For Profit</masterLabel>
+            <translation><!-- Not For Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreation</masterLabel>
+            <translation><!-- Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunications</masterLabel>
+            <translation><!-- Telecommunications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IsConverted --></label>
+        <name>IsConverted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key Account Manager --></label>
+        <name>Key_Account_Manager__c</name>
+        <picklistValues>
+            <masterLabel>CHANDRA PRAKASH PANT</masterLabel>
+            <translation><!-- CHANDRA PRAKASH PANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KRISHNENDU SEN</masterLabel>
+            <translation><!-- KRISHNENDU SEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L.SURESH</masterLabel>
+            <translation><!-- L.SURESH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOHAN D BONDE</masterLabel>
+            <translation><!-- MOHAN D BONDE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NITIN ASTHANA</masterLabel>
+            <translation><!-- NITIN ASTHANA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAHUL KULKARNI</masterLabel>
+            <translation><!-- RAHUL KULKARNI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAJESH SRIVASTVA</masterLabel>
+            <translation><!-- RAJESH SRIVASTVA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAGAR SUDHAKAR PATIL</masterLabel>
+            <translation><!-- SAGAR SUDHAKAR PATIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANTOSH JOSHI</masterLabel>
+            <translation><!-- SANTOSH JOSHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHRINIVAS RAO</masterLabel>
+            <translation><!-- SHRINIVAS RAO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- LastTransferDate --></label>
+        <name>LastTransferDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Source --></label>
+        <name>LeadSource__c</name>
+        <picklistValues>
+            <masterLabel>Chat</masterLabel>
+            <translation><!-- Chat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer shop</masterLabel>
+            <translation><!-- Dealer shop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee referral</masterLabel>
+            <translation><!-- Employee referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hoardings</masterLabel>
+            <translation><!-- Hoardings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newspaper/Magazine</masterLabel>
+            <translation><!-- Newspaper/Magazine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OOH</masterLabel>
+            <translation><!-- OOH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous customer</masterLabel>
+            <translation><!-- Previous customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Brochure/Flyer</masterLabel>
+            <translation><!-- Product Brochure/Flyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio</masterLabel>
+            <translation><!-- Radio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred by a friend</masterLabel>
+            <translation><!-- Referred by a friend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research</masterLabel>
+            <translation><!-- Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shopping Mall</masterLabel>
+            <translation><!-- Shopping Mall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Television</masterLabel>
+            <translation><!-- Television --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade shows</masterLabel>
+            <translation><!-- Trade shows --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Entered By --></label>
+        <name>Lead_Entered_By__c</name>
+        <picklistValues>
+            <masterLabel>Manju</masterLabel>
+            <translation><!-- Manju --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meenakshi</masterLabel>
+            <translation><!-- Meenakshi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nagesh</masterLabel>
+            <translation><!-- Nagesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neetu</masterLabel>
+            <translation><!-- Neetu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pooja</masterLabel>
+            <translation><!-- Pooja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Randhir</masterLabel>
+            <translation><!-- Randhir --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sagar</masterLabel>
+            <translation><!-- Sagar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sheeba</masterLabel>
+            <translation><!-- Sheeba --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shubham</masterLabel>
+            <translation><!-- Shubham --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Passed To --></label>
+        <name>Lead_Passed_To__c</name>
+        <picklistValues>
+            <masterLabel>Area Sales Manager</masterLabel>
+            <translation><!-- Area Sales Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BM/RM</masterLabel>
+            <translation><!-- BM/RM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer</masterLabel>
+            <translation><!-- Dealer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Key Account Manager</masterLabel>
+            <translation><!-- Key Account Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Manager</masterLabel>
+            <translation><!-- Product Manager --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Transfer Date --></label>
+        <name>Lead_Transfer_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>MobilePhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Followup Date --></label>
+        <name>Next_Followup_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Of Fans --></label>
+        <name>No_Of_Fans__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- No Of Lights --></label>
+        <name>No_Of_Lights__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- No. of Employees --></label>
+        <name>NumberOfEmployees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>PostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Presently Using Inverter --></label>
+        <name>Presently_Using_Inverter__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pricing Requested --></label>
+        <name>Pricing_Requested__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+        <picklistValues>
+            <masterLabel>Automate batteries (Car/Truck/Tractor)</masterLabel>
+            <translation><!-- Automate batteries (Car/Truck/Tractor) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Battery Accessories</masterLabel>
+            <translation><!-- Battery Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customized Solution</masterLabel>
+            <translation><!-- Customized Solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exports</masterLabel>
+            <translation><!-- Exports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Generators</masterLabel>
+            <translation><!-- Generators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inverter batteries</masterLabel>
+            <translation><!-- Inverter batteries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inverter/UPS – Business</masterLabel>
+            <translation><!-- Inverter/UPS – Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inverter/UPS – Home</masterLabel>
+            <translation><!-- Inverter/UPS – Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online UPS</masterLabel>
+            <translation><!-- Online UPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power Accessories</masterLabel>
+            <translation><!-- Power Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solar Solutions</masterLabel>
+            <translation><!-- Solar Solutions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Manager --></label>
+        <name>Product_Manager__c</name>
+        <picklistValues>
+            <masterLabel>Harpreet Singh</masterLabel>
+            <translation><!-- Harpreet Singh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pooja Kukreja</masterLabel>
+            <translation><!-- Pooja Kukreja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous customer</masterLabel>
+            <translation><!-- Previous customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puneet Chabra</masterLabel>
+            <translation><!-- Puneet Chabra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajnish Sharma</masterLabel>
+            <translation><!-- Rajnish Sharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renu Chauhan</masterLabel>
+            <translation><!-- Renu Chauhan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rudrendu Dutta</masterLabel>
+            <translation><!-- Rudrendu Dutta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rupesh Gupta</masterLabel>
+            <translation><!-- Rupesh Gupta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shweta Mehta</masterLabel>
+            <translation><!-- Shweta Mehta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>exports@su-kam.com</masterLabel>
+            <translation><!-- exports@su-kam.com --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Solution Pitched --></label>
+        <name>Product_Solution_Pitched__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating --></label>
+        <name>Rating__c</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>East</masterLabel>
+            <translation><!-- East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North</masterLabel>
+            <translation><!-- North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South</masterLabel>
+            <translation><!-- South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Revenue Generated --></label>
+        <name>Revenue_Generated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Roof Space Available --></label>
+        <name>Roof_Space_Available__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sale Enquiry --></label>
+        <name>Sale_Enquiry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Feedback --></label>
+        <name>Sales_Feedback__c</name>
+        <picklistValues>
+            <masterLabel>Closure Pending with Customer</masterLabel>
+            <translation><!-- Closure Pending with Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Changed Mind</masterLabel>
+            <translation><!-- Customer Changed Mind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow-up Required</masterLabel>
+            <translation><!-- Follow-up Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost to Competitor</masterLabel>
+            <translation><!-- Lost to Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Awaited</masterLabel>
+            <translation><!-- Payment Awaited --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Discussion</masterLabel>
+            <translation><!-- Price Discussion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Details Discussed</masterLabel>
+            <translation><!-- Product Details Discussed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quotation Sent</masterLabel>
+            <translation><!-- Quotation Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Closed</masterLabel>
+            <translation><!-- Sales Closed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Lead Owner --></label>
+        <name>Sales_Lead_Owner__c</name>
+        <picklistValues>
+            <masterLabel>Harpreet Singh</masterLabel>
+            <translation><!-- Harpreet Singh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pooja Kukreja</masterLabel>
+            <translation><!-- Pooja Kukreja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puneet Chabra</masterLabel>
+            <translation><!-- Puneet Chabra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajnish Sharma</masterLabel>
+            <translation><!-- Rajnish Sharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renu Chauhan</masterLabel>
+            <translation><!-- Renu Chauhan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rudrendu Dutta</masterLabel>
+            <translation><!-- Rudrendu Dutta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rupesh Gupta</masterLabel>
+            <translation><!-- Rupesh Gupta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shweta Mehta</masterLabel>
+            <translation><!-- Shweta Mehta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vikas Beniwal</masterLabel>
+            <translation><!-- Vikas Beniwal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>exports</masterLabel>
+            <translation><!-- exports --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Mobile Number --></label>
+        <name>Sales_Mobile_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Rep Name --></label>
+        <name>Sales_Rep_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salutation --></label>
+        <name>Salutation__c</name>
+        <picklistValues>
+            <masterLabel>Dr.</masterLabel>
+            <translation><!-- Dr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mr.</masterLabel>
+            <translation><!-- Mr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mrs.</masterLabel>
+            <translation><!-- Mrs. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ms.</masterLabel>
+            <translation><!-- Ms. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prof.</masterLabel>
+            <translation><!-- Prof. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Secondary Source --></label>
+        <name>Secondary_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- State/Province --></label>
+        <name>State__c</name>
+        <picklistValues>
+            <masterLabel>Andaman and Nicobar Islands</masterLabel>
+            <translation><!-- Andaman and Nicobar Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Andhra Pradesh</masterLabel>
+            <translation><!-- Andhra Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arunachal Pradesh</masterLabel>
+            <translation><!-- Arunachal Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assam</masterLabel>
+            <translation><!-- Assam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bihar</masterLabel>
+            <translation><!-- Bihar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chandigarh</masterLabel>
+            <translation><!-- Chandigarh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chhattisgarh</masterLabel>
+            <translation><!-- Chhattisgarh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dadra and Nagar Haveli</masterLabel>
+            <translation><!-- Dadra and Nagar Haveli --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daman and Diu</masterLabel>
+            <translation><!-- Daman and Diu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goa</masterLabel>
+            <translation><!-- Goa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gujarat</masterLabel>
+            <translation><!-- Gujarat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haryana</masterLabel>
+            <translation><!-- Haryana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Himachal Pradesh</masterLabel>
+            <translation><!-- Himachal Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jammu and Kashmir</masterLabel>
+            <translation><!-- Jammu and Kashmir --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jharkhand</masterLabel>
+            <translation><!-- Jharkhand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Karnataka</masterLabel>
+            <translation><!-- Karnataka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kerala</masterLabel>
+            <translation><!-- Kerala --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lakshadweep</masterLabel>
+            <translation><!-- Lakshadweep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Madhya Pradesh</masterLabel>
+            <translation><!-- Madhya Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maharashtra</masterLabel>
+            <translation><!-- Maharashtra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manipur</masterLabel>
+            <translation><!-- Manipur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meghalaya</masterLabel>
+            <translation><!-- Meghalaya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mizoram</masterLabel>
+            <translation><!-- Mizoram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nagaland</masterLabel>
+            <translation><!-- Nagaland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Capital Territory of Delhi</masterLabel>
+            <translation><!-- National Capital Territory of Delhi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orissa</masterLabel>
+            <translation><!-- Orissa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puducherry</masterLabel>
+            <translation><!-- Puducherry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Punjab</masterLabel>
+            <translation><!-- Punjab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajasthan</masterLabel>
+            <translation><!-- Rajasthan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sikkim</masterLabel>
+            <translation><!-- Sikkim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tamil Nadu</masterLabel>
+            <translation><!-- Tamil Nadu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tripura</masterLabel>
+            <translation><!-- Tripura --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uttar Pradesh</masterLabel>
+            <translation><!-- Uttar Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uttarakhand</masterLabel>
+            <translation><!-- Uttarakhand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Bengal</masterLabel>
+            <translation><!-- West Bengal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Contact in Future</masterLabel>
+            <translation><!-- Contact in Future --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacted</masterLabel>
+            <translation><!-- Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacted and Passed to Sales</masterLabel>
+            <translation><!-- Contacted and Passed to Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Junk Lead</masterLabel>
+            <translation><!-- Junk Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost Lead</masterLabel>
+            <translation><!-- Lost Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Not Reachable</masterLabel>
+            <translation><!-- Phone Not Reachable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Television --></label>
+        <name>Television__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website --></label>
+        <name>Website__c</name>
+    </fields>
+    <layouts>
+        <layout>Enquiry Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Audit --></label>
+            <section>Audit</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Information --></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales --></label>
+            <section>Sales</section>
+        </sections>
+        <sections>
+            <label><!-- Web To Lead --></label>
+            <section>Web To Lead</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

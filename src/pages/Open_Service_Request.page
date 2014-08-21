@@ -1,0 +1,29 @@
+<apex:page StandardController="Service_Request__c" extensions="OpenServiceRequest" id="page">
+    <apex:sectionHeader title="Open Service Request"/>
+         
+    <apex:form id="theForm">
+        
+        <apex:pageBlock id="pblock" title="Service Request Edit">
+            <apex:Pagemessages />
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!doSave}" rerender="pblock"/>
+                <apex:commandButton value="Cancel" action="{!doCancel}"/>
+            </apex:pageBlockButtons>
+
+            
+            <apex:pageBlockSection title="Service Request Details" collapsible="false">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Status"/>
+                    <apex:OutputPanel layout="block" styleClass="requiredInput">
+                        <apex:outputPanel layout="block" styleClass="requiredBlock"/>
+                        <apex:SelectList value="{!selectedStatus}" Size="1" id="Status">
+                            <apex:SelectOptions value="{!Options}"/>
+                       </apex:SelectList>
+                   </apex:OutputPanel>
+                </apex:pageBlockSectionItem>
+               
+            </apex:pageBlockSection>
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

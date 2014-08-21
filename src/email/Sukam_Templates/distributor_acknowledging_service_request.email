@@ -1,0 +1,5 @@
+Hi {!Partner_Service_Request__c.OwnerFullName}, 
+
+Thank you for logging the complaint. Your complaint number is {!Partner_Service_Request__c.Name} Our Customer Care Team will look into the same and will revert back to you at the earliest . 
+
+Thanks

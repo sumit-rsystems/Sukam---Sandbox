@@ -1,0 +1,7 @@
+Hi,
+The service request number {!Partner_Service_Request__c.Name} has been generated. Details are in the beow link. 
+
+{!Partner_Service_Request__c.Link}
+
+Thanks
+{!Partner_Service_Request__c.CreatedBy}

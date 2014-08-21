@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>Indent_Request__c.Requisition_Date__c</field>
+    </columns>
+    <columns>
+        <field>Indent_Request__c.Approval_Date__c</field>
+    </columns>
+    <columns>
+        <field>Indent_Request__c.Dispatch_Sts__c</field>
+    </columns>
+    <columns>
+        <field>Indent_Request__c.Indent_Request_Status__c</field>
+    </columns>
+    <columns>
+        <field>Indent_Request__c.Pincode__c</field>
+    </columns>
+    <columns>
+        <field>Indent_Request__c.State__c</field>
+    </columns>
+    <columns>
+        <field>Indent_Request__c.Approval_Submission_Date__c</field>
+    </columns>
+    <currency>INR</currency>
+    <format>Tabular</format>
+    <name>Indent Request</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Indent_Request__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

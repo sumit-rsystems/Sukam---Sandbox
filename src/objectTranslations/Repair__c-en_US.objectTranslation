@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Repair</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Repair</value>
+    </caseValues>
+    <fields>
+        <label><!-- Item Repaired 1 --></label>
+        <name>Item_Repaired_1__c</name>
+        <relationshipLabel><!-- Repair --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Item Repaired 2 --></label>
+        <name>Item_Repaired_2__c</name>
+        <relationshipLabel><!-- Repair (Item Repaired 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Item Repaired 3 --></label>
+        <name>Item_Repaired_3__c</name>
+        <relationshipLabel><!-- Repair (Item Repaired 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Item Repaired 4 --></label>
+        <name>Item_Repaired_4__c</name>
+        <relationshipLabel><!-- Repair (Item Repaired 4) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Code 1 --></label>
+        <name>Product_Code_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Code 2 --></label>
+        <name>Product_Code_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Code 3 --></label>
+        <name>Product_Code_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Code 4 --></label>
+        <name>Product_Code_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity 1 --></label>
+        <name>Quantity_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity 2 --></label>
+        <name>Quantity_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity 3 --></label>
+        <name>Quantity_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity 4 --></label>
+        <name>Quantity_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remark --></label>
+        <name>Remark__c</name>
+    </fields>
+    <layouts>
+        <layout>Repair Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Service Center Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

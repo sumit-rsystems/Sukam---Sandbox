@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Marketing Material</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Marketing Material</value>
+    </caseValues>
+    <fields>
+        <label><!-- Codeline No --></label>
+        <name>Codeline_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contents --></label>
+        <name>Contents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Id --></label>
+        <name>Document_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size --></label>
+        <name>Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thumbnail Id --></label>
+        <name>Thumbnail_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Board</masterLabel>
+            <translation><!-- Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoP-Brochure</masterLabel>
+            <translation><!-- PoP-Brochure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoP-CD</masterLabel>
+            <translation><!-- PoP-CD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoP-Catalogue</masterLabel>
+            <translation><!-- PoP-Catalogue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoP-Collaterals</masterLabel>
+            <translation><!-- PoP-Collaterals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoP-Dangler</masterLabel>
+            <translation><!-- PoP-Dangler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoP-Leaflet</masterLabel>
+            <translation><!-- PoP-Leaflet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoP-Poster</masterLabel>
+            <translation><!-- PoP-Poster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoP-Z cards</masterLabel>
+            <translation><!-- PoP-Z cards --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Marketing Material Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

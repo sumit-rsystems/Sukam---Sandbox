@@ -1,0 +1,6 @@
+Dear {!Service_Request__c.SuppliedName__c},   
+
+Thank you for submitting your question to us online. Case # {!Service_Request__c.Name}: "{!Service_Request__c.Subject__c}" has been created and a {!Organization.Name} Customer Representative will respond to you shortly.   
+
+Thank you,   
+Customer Representative  Team  {!Organization.Name}

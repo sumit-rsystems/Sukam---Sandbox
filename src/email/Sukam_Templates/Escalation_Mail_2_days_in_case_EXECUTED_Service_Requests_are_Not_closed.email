@@ -1,0 +1,6 @@
+Hi {!Partner_Service_Request__c.CreatedBy},,
+
+The service request number {!Partner_Service_Request__c.Name} has already been addressed. Kindly close the Service Request to avoid such mails.
+
+Thanks
+{!Partner_Service_Request__c.LastModifiedBy}

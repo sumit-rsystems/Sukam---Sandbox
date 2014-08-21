@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <colorRanges>
+        <aggregate>Sum</aggregate>
+        <columnName>Component_Movement_Table__c.Stock_Transfer_Total__c</columnName>
+        <highBreakpoint>100000.0</highBreakpoint>
+        <highColor>#C25454</highColor>
+        <lowBreakpoint>50000.0</lowBreakpoint>
+        <lowColor>#54C254</lowColor>
+        <midColor>#5454C2</midColor>
+    </colorRanges>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Component_Movement_Table__c.Stock_Transfer_Total__c</field>
+    </columns>
+    <currency>INR</currency>
+    <description>IN TRANSIT REPORT DATA</description>
+    <filter>
+        <criteriaItems>
+            <column>Component_Movement_Table__c.Stock_Transfer_Status__c</column>
+            <operator>equals</operator>
+            <value>In Transit</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Component_Movement_Table__c.Cancelled__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Component_Movement_Table__c.Component_Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Component_Movement_Table__c.Transferred_to_Stock_Point__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>IN TRANSIT REPORT</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Component_Movement_Table__c@Component_Movement_Table__c.Service_Request__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Component_Movement_Table__c.Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Scrap Sale</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Scrap Sales</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount 1 --></label>
+        <name>Amount_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount 2 --></label>
+        <name>Amount_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount 3 --></label>
+        <name>Amount_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount 4 --></label>
+        <name>Amount_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Date --></label>
+        <name>Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Location Type --></label>
+        <name>Branch_Location_Type__c</name>
+        <picklistValues>
+            <masterLabel>Interstate</masterLabel>
+            <translation><!-- Interstate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within State</masterLabel>
+            <translation><!-- Within State --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CST No. --></label>
+        <name>CST_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component Code1 --></label>
+        <name>Component_Code1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component Code2 --></label>
+        <name>Component_Code2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component Code3 --></label>
+        <name>Component_Code3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component Code4 --></label>
+        <name>Component_Code4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component Movement Details --></label>
+        <name>Component_Movement_Details__c</name>
+        <relationshipLabel><!-- Scrap Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Document / Invoice No. --></label>
+        <name>Document_Invoice_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- ERP Bill Date --></label>
+        <name>ERP_Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ERP Created Date --></label>
+        <name>ERP_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grand Total Inclusive Tax --></label>
+        <name>Grand_Total_Inclusive_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grand Total --></label>
+        <name>Grand_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operating Unit Name --></label>
+        <name>Operating_Unit_Name__c</name>
+        <picklistValues>
+            <masterLabel>SU-KAM POWER SYSTEMS LIMITED</masterLabel>
+            <translation><!-- SU-KAM POWER SYSTEMS LIMITED --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchaser&apos;s Billing Address --></label>
+        <name>Purchaser_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchaser&apos;s Billing State --></label>
+        <name>Purchaser_Billing_State__c</name>
+        <picklistValues>
+            <masterLabel>Andaman and Nicobar Islands</masterLabel>
+            <translation><!-- Andaman and Nicobar Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Andhra Pradesh</masterLabel>
+            <translation><!-- Andhra Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arunachal Pradesh</masterLabel>
+            <translation><!-- Arunachal Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assam</masterLabel>
+            <translation><!-- Assam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bihar</masterLabel>
+            <translation><!-- Bihar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chandigarh</masterLabel>
+            <translation><!-- Chandigarh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chhattisgarh</masterLabel>
+            <translation><!-- Chhattisgarh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dadra and Nagar Haveli</masterLabel>
+            <translation><!-- Dadra and Nagar Haveli --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daman and Diu</masterLabel>
+            <translation><!-- Daman and Diu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delhi</masterLabel>
+            <translation><!-- Delhi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goa</masterLabel>
+            <translation><!-- Goa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gujarat</masterLabel>
+            <translation><!-- Gujarat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haryana</masterLabel>
+            <translation><!-- Haryana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Himachal Pradesh</masterLabel>
+            <translation><!-- Himachal Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jammu &amp; Kashmir</masterLabel>
+            <translation><!-- Jammu &amp; Kashmir --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jharkhand</masterLabel>
+            <translation><!-- Jharkhand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Karnataka</masterLabel>
+            <translation><!-- Karnataka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kerala</masterLabel>
+            <translation><!-- Kerala --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lakshadweep</masterLabel>
+            <translation><!-- Lakshadweep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Madhya Pradesh</masterLabel>
+            <translation><!-- Madhya Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maharashtra</masterLabel>
+            <translation><!-- Maharashtra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manipur</masterLabel>
+            <translation><!-- Manipur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meghalaya</masterLabel>
+            <translation><!-- Meghalaya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mizoram</masterLabel>
+            <translation><!-- Mizoram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nagaland</masterLabel>
+            <translation><!-- Nagaland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orissa</masterLabel>
+            <translation><!-- Orissa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pondicherry</masterLabel>
+            <translation><!-- Pondicherry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Punjab</masterLabel>
+            <translation><!-- Punjab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajasthan</masterLabel>
+            <translation><!-- Rajasthan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sikkim</masterLabel>
+            <translation><!-- Sikkim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tamilnadu</masterLabel>
+            <translation><!-- Tamilnadu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tripura</masterLabel>
+            <translation><!-- Tripura --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uttar Pradesh</masterLabel>
+            <translation><!-- Uttar Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uttaranchal</masterLabel>
+            <translation><!-- Uttaranchal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Bengal</masterLabel>
+            <translation><!-- West Bengal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchaser CST No. --></label>
+        <name>Purchaser_CST_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchaser Name --></label>
+        <name>Purchaser_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchaser&apos;s Shipping Address --></label>
+        <name>Purchaser_Shipping_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchaser&apos;s Shipping State --></label>
+        <name>Purchaser_Shipping_State__c</name>
+        <picklistValues>
+            <masterLabel>Andaman and Nicobar Islands</masterLabel>
+            <translation><!-- Andaman and Nicobar Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Andhra Pradesh</masterLabel>
+            <translation><!-- Andhra Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arunachal Pradesh</masterLabel>
+            <translation><!-- Arunachal Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assam</masterLabel>
+            <translation><!-- Assam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bihar</masterLabel>
+            <translation><!-- Bihar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chandigarh</masterLabel>
+            <translation><!-- Chandigarh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chhattisgarh</masterLabel>
+            <translation><!-- Chhattisgarh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dadra and Nagar Haveli</masterLabel>
+            <translation><!-- Dadra and Nagar Haveli --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daman and Diu</masterLabel>
+            <translation><!-- Daman and Diu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delhi</masterLabel>
+            <translation><!-- Delhi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goa</masterLabel>
+            <translation><!-- Goa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gujarat</masterLabel>
+            <translation><!-- Gujarat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haryana</masterLabel>
+            <translation><!-- Haryana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Himachal Pradesh</masterLabel>
+            <translation><!-- Himachal Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jammu &amp; Kashmir</masterLabel>
+            <translation><!-- Jammu &amp; Kashmir --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jharkhand</masterLabel>
+            <translation><!-- Jharkhand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Karnataka</masterLabel>
+            <translation><!-- Karnataka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kerala</masterLabel>
+            <translation><!-- Kerala --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lakshadweep</masterLabel>
+            <translation><!-- Lakshadweep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Madhya Pradesh</masterLabel>
+            <translation><!-- Madhya Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maharashtra</masterLabel>
+            <translation><!-- Maharashtra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manipur</masterLabel>
+            <translation><!-- Manipur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meghalaya</masterLabel>
+            <translation><!-- Meghalaya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mizoram</masterLabel>
+            <translation><!-- Mizoram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nagaland</masterLabel>
+            <translation><!-- Nagaland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orissa</masterLabel>
+            <translation><!-- Orissa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pondicherry</masterLabel>
+            <translation><!-- Pondicherry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Punjab</masterLabel>
+            <translation><!-- Punjab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rajasthan</masterLabel>
+            <translation><!-- Rajasthan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sikkim</masterLabel>
+            <translation><!-- Sikkim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tamilnadu</masterLabel>
+            <translation><!-- Tamilnadu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tripura</masterLabel>
+            <translation><!-- Tripura --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uttar Pradesh</masterLabel>
+            <translation><!-- Uttar Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uttaranchal</masterLabel>
+            <translation><!-- Uttaranchal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Bengal</masterLabel>
+            <translation><!-- West Bengal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchaser TIN No. --></label>
+        <name>Purchaser_TIN_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchaser Type --></label>
+        <name>Purchaser_Type__c</name>
+        <picklistValues>
+            <masterLabel>Registered</masterLabel>
+            <translation><!-- Registered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unregistered</masterLabel>
+            <translation><!-- Unregistered --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quantity 1 --></label>
+        <name>Quantity_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity 2 --></label>
+        <name>Quantity_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity 3 --></label>
+        <name>Quantity_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity 4 --></label>
+        <name>Quantity_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate 1 --></label>
+        <name>Rate_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate 2 --></label>
+        <name>Rate_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate 3 --></label>
+        <name>Rate_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate 4 --></label>
+        <name>Rate_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFFLAG --></label>
+        <name>SFFLAG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale Location Type --></label>
+        <name>Sale_Location_Type__c</name>
+        <picklistValues>
+            <masterLabel>Interstate</masterLabel>
+            <translation><!-- Interstate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within State</masterLabel>
+            <translation><!-- Within State --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Scrap Approval Status --></label>
+        <name>Scrap_Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Select Item 1 --></label>
+        <name>Select_Item_1__c</name>
+        <relationshipLabel><!-- Scrap Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Select Item 2 --></label>
+        <name>Select_Item_2__c</name>
+        <relationshipLabel><!-- Scrap Sales (Select Item 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Select Item 3 --></label>
+        <name>Select_Item_3__c</name>
+        <relationshipLabel><!-- Scrap Sales (Select Item 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Select Item 4 --></label>
+        <name>Select_Item_4__c</name>
+        <relationshipLabel><!-- Scrap Sales (Select Item 4) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vendor Assigned --></label>
+        <name>Service_Engineer_Assigned__c</name>
+        <relationshipLabel><!-- Scrap Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Engineer Id --></label>
+        <name>Service_Engineer_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Type --></label>
+        <name>Service_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- TCS Amount --></label>
+        <name>TCS_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- TCS % --></label>
+        <name>TCS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Address --></label>
+        <name>TEST_Owner_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- TIN No. --></label>
+        <name>TIN_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Rate --></label>
+        <name>Tax_Rate1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Rate --></label>
+        <name>Tax_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax --></label>
+        <name>Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner CST No. --></label>
+        <name>Test_Owner_CST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner TIN No. --></label>
+        <name>Test_Owner_TIN_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Scrap --></label>
+        <name>Type_of_Scrap__c</name>
+        <picklistValues>
+            <masterLabel>Battery Scrap</masterLabel>
+            <translation><!-- Battery Scrap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Scrap</masterLabel>
+            <translation><!-- Other Scrap --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UoM 1 --></label>
+        <name>UoM_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- UoM 2 --></label>
+        <name>UoM_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- UoM 3 --></label>
+        <name>UoM_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- UoM 4 --></label>
+        <name>UoM_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT/CST % --></label>
+        <name>VAT_CST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vat Amount --></label>
+        <name>Vat_Amount__c</name>
+    </fields>
+    <layouts>
+        <layout>After Approval Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Item Details --></label>
+            <section>Item Details</section>
+        </sections>
+        <sections>
+            <label><!-- Purchaser Information --></label>
+            <section>Purchaser Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Scrap Sale Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Item Details --></label>
+            <section>Item Details</section>
+        </sections>
+        <sections>
+            <label><!-- Purchaser Information --></label>
+            <section>Purchaser Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- After Approval Scrap --></label>
+        <name>After_Approval_Scrap</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Purchaser TIN No is mandatory --></errorMessage>
+        <name>Purchaser_TIN_No_is_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- TCS % can&apos;t be negative. --></errorMessage>
+        <name>TCS_cant_be_negative</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please choose the Purchaser&apos;s Billing State --></errorMessage>
+        <name>Validate_State_for_InterState</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,57 @@
+<apex:page standardController="Product__c" extensions="CreatePriceBookEntryCon">
+    <apex:sectionHeader title="Add List Price"/>
+    <script type="text/javascript">
+    function checkAll(cb,cbid)
+        {
+            var inputElem = document.getElementsByTagName("input");                    
+            for(var i=0; i<inputElem.length; i++)
+            {            
+                 if(inputElem[i].id.indexOf(cbid)!=-1){                                       
+                    inputElem[i].checked = cb.checked;
+                }
+            }
+        }
+        
+    function varifyChecked(cId) {
+         var inputElem = document.getElementsByTagName("input");  
+         var flag = false;  
+         for(var i=0; i<inputElem.length; i++)
+            {         
+                 if(inputElem[i].id.indexOf(cId)!=-1){                                       
+                    if(inputElem[i].checked){
+                        flag = true;
+                    }    
+                }
+            }
+            if(flag == true)
+                return true;
+            else
+                {
+                alert('Please Select at least one row.');
+                return false
+                };      
+    } 
+    </script>
+    <apex:form >
+        <apex:pageblock >
+            <apex:pageblockButtons >
+                <apex:commandButton value="Select" action="{!onSelect}" onClick="return varifyChecked('checkedone');"/>
+                <apex:commandButton value="Cancel" action="{!doCancel}"/>
+            </apex:pageblockButtons>
+           <apex:pageBlockTable value="{!pbWrapperList}" var="p" >
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:inputCheckbox onclick="checkAll(this,'checkedone')"/> 
+                    </apex:facet>
+                    <apex:inputCheckbox value="{!p.Selected}"  id="checkedone" rendered="{!p.flag}"/>
+                </apex:column>
+                <apex:column headerValue="Price Book Name">
+                    <apex:outputLink value="/{!p.priceBook.id}" target="_blank">{!p.priceBook.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column value="{!p.priceBook.Description__c}" headerValue="Description"/>
+                <apex:column value="{!p.priceBook.LastModifiedDate}" headerValue="Last Modified Date"/>
+                <apex:column value="{!p.priceBook.IsActive__c}" headerValue="Active (Price Books)"/>
+            </apex:pageBlockTable>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>
